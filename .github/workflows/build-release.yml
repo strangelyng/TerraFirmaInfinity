@@ -395,10 +395,6 @@ jobs:
           # sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           # sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-          sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
-          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
-          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
-
       - name: Cache pakku
         uses: actions/cache@v4.3.0
         id: cache
