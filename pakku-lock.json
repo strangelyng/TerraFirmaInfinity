@@ -44,6 +44,83 @@
             ]
         },
         {
+            "pakku_id": "oCTn0gqJEqiz3CHc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ferritecore"
+            },
+            "name": {
+                "curseforge": "FerriteCore ((Neo)Forge)"
+            },
+            "id": {
+                "curseforge": "429235"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ferritecore-7.0.3-neoforge.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7524/151/ferritecore-7.0.3-neoforge.jar",
+                    "id": "7524151",
+                    "parent_id": "429235",
+                    "hashes": {
+                        "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+                        "md5": "e0374dac41d6c641903f9e241911e1d3"
+                    },
+                    "required_dependencies": [],
+                    "size": 121559,
+                    "date_published": "2026-01-25T12:59:44.447Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zKU74Wx5PdZ1mxnX",
+            "pakku_links": [
+                "aQLqJAOuH1cQqAYU"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "irisshaders"
+            },
+            "name": {
+                "curseforge": "Iris Shaders"
+            },
+            "id": {
+                "curseforge": "455508"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8242/804/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+                    "id": "8242804",
+                    "parent_id": "455508",
+                    "hashes": {
+                        "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+                        "md5": "6b68276a6718656ec476cfac69dfe013"
+                    },
+                    "required_dependencies": [
+                        "394468"
+                    ],
+                    "size": 2540723,
+                    "date_published": "2026-06-13T15:58:55.503Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "yg6Dpsgvsbk4fE3r",
             "type": "MOD",
             "slug": {
@@ -122,6 +199,49 @@
             ]
         },
         {
+            "pakku_id": "QUbMV7u7baMRvKlT",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM",
+                "RCJtDvydi8alVpwa"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubejs-tfc"
+            },
+            "name": {
+                "curseforge": "KubeJS TFC"
+            },
+            "id": {
+                "curseforge": "841001"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "kubejs_tfc-1.21.1-2.0.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8468/127/kubejs_tfc-1.21.1-2.0.2.jar",
+                    "id": "8468127",
+                    "parent_id": "841001",
+                    "hashes": {
+                        "sha1": "7119e0ef6fb95cd297faada427e0bca186683db3",
+                        "md5": "758642cf92af749ff968445db421b57d"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "238086"
+                    ],
+                    "size": 745973,
+                    "date_published": "2026-07-19T23:39:19.147Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "KZRW5UAa7QkxCnme",
             "type": "MOD",
             "slug": {
@@ -158,8 +278,45 @@
             ]
         },
         {
+            "pakku_id": "Xz2854MkUGd553bB",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "modernfix"
+            },
+            "name": {
+                "curseforge": "ModernFix"
+            },
+            "id": {
+                "curseforge": "790626"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "modernfix-neoforge-5.27.20+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8459/650/modernfix-neoforge-5.27.20+mc1.21.1.jar",
+                    "id": "8459650",
+                    "parent_id": "790626",
+                    "hashes": {
+                        "sha1": "bc1a70e72e7dba8a3ff41404765fdd03a7ac6575",
+                        "md5": "b488341cd5172f6bb16b5ec6d0856c4d"
+                    },
+                    "required_dependencies": [],
+                    "size": 599474,
+                    "date_published": "2026-07-18T18:21:19.420Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ZEtzixlbI4k7Rmta",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "mouse-tweaks"
             },
@@ -227,6 +384,44 @@
                     "required_dependencies": [],
                     "size": 646777,
                     "date_published": "2026-03-08T20:49:54.427Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "GsQPJgUZDvWXfJgs",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "probejs"
+            },
+            "name": {
+                "curseforge": "ProbeJS"
+            },
+            "id": {
+                "curseforge": "585406"
+            },
+            "export": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ProbeJS-8.0.3.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8304/356/ProbeJS-8.0.3.jar",
+                    "id": "8304356",
+                    "parent_id": "585406",
+                    "hashes": {
+                        "sha1": "f0529482eff9596fa01de8a34abdce50529bdf55",
+                        "md5": "e75f422ff541ead9aa48ac5ce21e9448"
+                    },
+                    "required_dependencies": [],
+                    "size": 3405057,
+                    "date_published": "2026-06-23T03:39:13.240Z"
                 }
             ]
         },
@@ -346,6 +541,47 @@
                     ],
                     "size": 65278650,
                     "date_published": "2026-08-03T02:21:08.703Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "cU5MD6bJ3TNGPtJH",
+            "pakku_links": [
+                "gOiUlVBGm0SNIv44"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tmrv"
+            },
+            "name": {
+                "curseforge": "TooManyRecipeViewers (TMRV)"
+            },
+            "id": {
+                "curseforge": "1194921"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "toomanyrecipeviewers-0.9.0+mc.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8336/857/toomanyrecipeviewers-0.9.0+mc.21.1.jar",
+                    "id": "8336857",
+                    "parent_id": "1194921",
+                    "hashes": {
+                        "sha1": "d82ca1db3f4323534b1ce5f43b94a5ae31f65edb",
+                        "md5": "43c678a25240ad380e308c4218c9b99a"
+                    },
+                    "required_dependencies": [
+                        "580555"
+                    ],
+                    "size": 1241625,
+                    "date_published": "2026-06-28T20:48:06.290Z"
                 }
             ]
         }

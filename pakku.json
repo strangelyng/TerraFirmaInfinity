@@ -8,8 +8,12 @@
         "config",
         "defaultconfigs",
         "kubejs",
+        "!kubejs/eslint.config.mjs",
+        "!kubejs/package.json",
+        "!kubejs/package-lock.json",
         "!kubejs/probe/**",
-        "!kubejs/assets/**"
+        "!kubejs/assets/**",
+        "!kubejs/dx/**"
     ],
     "server_overrides": [
     ],
@@ -20,6 +24,9 @@
     ],
     "projects": {
         "mouse-tweaks": {
+            "side": "CLIENT"
+        },
+        "irisshaders": {
             "side": "CLIENT"
         },
         "probejs": {

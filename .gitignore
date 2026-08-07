@@ -14,6 +14,7 @@ fancymenu_data/
 ESM/
 
 icon.png
+command_history.txt
 options.txt
 rhino.local.properties
 usercache.json
@@ -36,11 +37,15 @@ build/
 # Idea
 /.idea/*
 
+# Github (added by ProbeJS)
+/.github/agents/**
+
 # VSCode
 !/.vscode/*.code-workspace
 /.vscode/*
 
 # ProbeJS
+/.probe/*
 /kubejs/probe/
 /kubejs/config/probejs.json
 /kubejs/config/probe-settings.json
