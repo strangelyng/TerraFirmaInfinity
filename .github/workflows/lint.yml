@@ -29,6 +29,6 @@ jobs:
         uses: rkuykendall/lint-action@master
         with:
           eslint_dir: ./kubejs
-          auto_fix: true
+          auto_fix: false
           eslint: true
-          eslint_auto_fix: true
+          eslint_auto_fix: false
