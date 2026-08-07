@@ -1,0 +1,354 @@
+{
+    "target": "curseforge",
+    "mc_versions": [
+        "1.21.1"
+    ],
+    "loaders": {
+        "neoforge": "21.1.248"
+    },
+    "projects": [
+        {
+            "pakku_id": "gOiUlVBGm0SNIv44",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emi"
+            },
+            "name": {
+                "curseforge": "EMI"
+            },
+            "id": {
+                "curseforge": "580555"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emi-1.1.24+1.21.1+neoforge.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8081/408/emi-1.1.24+1.21.1+neoforge.jar",
+                    "id": "8081408",
+                    "parent_id": "580555",
+                    "hashes": {
+                        "sha1": "3fd494b37027dfbc7f78414d7cbf251c9eb6738a",
+                        "md5": "e4aede758ec7c675d2255234df7ed4ff"
+                    },
+                    "required_dependencies": [],
+                    "size": 1111538,
+                    "date_published": "2026-05-13T06:32:09.470Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "yg6Dpsgvsbk4fE3r",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jade"
+            },
+            "name": {
+                "curseforge": "Jade 🔍"
+            },
+            "id": {
+                "curseforge": "324717"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8591/319/Jade-1.21.1-NeoForge-15.10.6.jar",
+                    "id": "8591319",
+                    "parent_id": "324717",
+                    "hashes": {
+                        "sha1": "88ee316e68900080b017f60c12162e2731924cf8",
+                        "md5": "67b89f182472859d1e478477716c9462"
+                    },
+                    "required_dependencies": [],
+                    "size": 726853,
+                    "date_published": "2026-08-06T23:11:53.513Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RCJtDvydi8alVpwa",
+            "pakku_links": [
+                "2i1i6k1OUHo6vcEr"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubejs"
+            },
+            "name": {
+                "curseforge": "KubeJS"
+            },
+            "id": {
+                "curseforge": "238086"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "kubejs-neoforge-2101.7.2-build.368.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8083/208/kubejs-neoforge-2101.7.2-build.368.jar",
+                    "id": "8083208",
+                    "parent_id": "238086",
+                    "hashes": {
+                        "sha1": "cd8e1e392d642e4d0f1fbc099d93da105c263d0d",
+                        "md5": "95792a5239ae2f1d478d2a674dcf557f"
+                    },
+                    "required_dependencies": [
+                        "416294"
+                    ],
+                    "size": 2281720,
+                    "date_published": "2026-05-13T15:17:34.293Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "KZRW5UAa7QkxCnme",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lithium"
+            },
+            "name": {
+                "curseforge": "Lithium (Fabric/NeoForge)"
+            },
+            "id": {
+                "curseforge": "360438"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8330/365/lithium-neoforge-0.15.4+mc1.21.1.jar",
+                    "id": "8330365",
+                    "parent_id": "360438",
+                    "hashes": {
+                        "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+                        "md5": "969860e6a6ebe4dc2e2154b56f05483e"
+                    },
+                    "required_dependencies": [],
+                    "size": 774220,
+                    "date_published": "2026-06-27T17:11:48.737Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ZEtzixlbI4k7Rmta",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mouse-tweaks"
+            },
+            "name": {
+                "curseforge": "Mouse Tweaks"
+            },
+            "id": {
+                "curseforge": "60089"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5637/846/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+                    "id": "5637846",
+                    "parent_id": "60089",
+                    "hashes": {
+                        "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
+                        "md5": "4ab6e808a59fdebecfbc92438b85b470"
+                    },
+                    "required_dependencies": [],
+                    "size": 73938,
+                    "date_published": "2024-08-17T15:55:16.403Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "F41rce9zDSiA0tb8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "patchouli"
+            },
+            "name": {
+                "curseforge": "Patchouli"
+            },
+            "id": {
+                "curseforge": "306770"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Patchouli-1.21.1-93-NEOFORGE.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7730/942/Patchouli-1.21.1-93-NEOFORGE.jar",
+                    "id": "7730942",
+                    "parent_id": "306770",
+                    "hashes": {
+                        "sha1": "5413bb9b8fc35ebe46b06b48bf9afafbd8471140",
+                        "md5": "8178d65cd07dd7a646446729058ae2bf"
+                    },
+                    "required_dependencies": [],
+                    "size": 646777,
+                    "date_published": "2026-03-08T20:49:54.427Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2i1i6k1OUHo6vcEr",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rhino"
+            },
+            "name": {
+                "curseforge": "Rhino"
+            },
+            "id": {
+                "curseforge": "416294"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rhino-2101.2.8-build.91.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.4",
+                        "1.21.1",
+                        "1.21.3",
+                        "1.21.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8463/898/rhino-2101.2.8-build.91.jar",
+                    "id": "8463898",
+                    "parent_id": "416294",
+                    "hashes": {
+                        "sha1": "56eab1d464ed0811c64040c64bd047df5cbc3aad",
+                        "md5": "c8227681747c8fad25d1fc4e06542717"
+                    },
+                    "required_dependencies": [],
+                    "size": 980936,
+                    "date_published": "2026-07-19T10:21:57.760Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "aQLqJAOuH1cQqAYU",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sodium"
+            },
+            "name": {
+                "curseforge": "Sodium"
+            },
+            "id": {
+                "curseforge": "394468"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sodium-neoforge-0.8.13-beta.2+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8591/792/sodium-neoforge-0.8.13-beta.2+mc1.21.1.jar",
+                    "id": "8591792",
+                    "parent_id": "394468",
+                    "hashes": {
+                        "sha1": "af0f6e28638b1e6696d0501dd8496d230e9519ae",
+                        "md5": "ff9bcdbbd283c224379de386dc316c0e"
+                    },
+                    "required_dependencies": [],
+                    "size": 1292887,
+                    "date_published": "2026-08-07T00:56:39.137Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "rC3LQ0L3IKrourKM",
+            "pakku_links": [
+                "F41rce9zDSiA0tb8"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "terrafirmacraft"
+            },
+            "name": {
+                "curseforge": "TerraFirmaCraft"
+            },
+            "id": {
+                "curseforge": "302973"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaCraft-NeoForge-1.21.1-4.2.7.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8566/530/TerraFirmaCraft-NeoForge-1.21.1-4.2.7.jar",
+                    "id": "8566530",
+                    "parent_id": "302973",
+                    "hashes": {
+                        "sha1": "de5824bbba770914d24ac06585b088a4f0640bf3",
+                        "md5": "96e315d467a4d5749552194e3526f287"
+                    },
+                    "required_dependencies": [
+                        "306770"
+                    ],
+                    "size": 65278650,
+                    "date_published": "2026-08-03T02:21:08.703Z"
+                }
+            ]
+        }
+    ],
+    "lockfile_version": 1
+}

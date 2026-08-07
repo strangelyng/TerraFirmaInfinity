@@ -1,0 +1,30 @@
+{
+    "name": "TerraFirmaInfinity",
+    "version": "DEV",
+    "release_type": "alpha",
+    "description": "A semi-cozy TerraFirmaCraft/GregTech pack featuring HexTech",
+    "author": "Strangelyng",
+    "overrides": [
+        "config",
+        "defaultconfigs",
+        "kubejs",
+        "!kubejs/probe/**",
+        "!kubejs/assets/**"
+    ],
+    "server_overrides": [
+    ],
+    "client_overrides": [
+        "resourcepacks",
+        "shaderpacks",
+        "kubejs/assets/**"
+    ],
+    "projects": {
+        "mouse-tweaks": {
+            "side": "CLIENT"
+        },
+        "probejs": {
+            "side": "CLIENT",
+            "export": false
+        }
+    }
+}
