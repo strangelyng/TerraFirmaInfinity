@@ -12,11 +12,16 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+gtceu/
+
+/.sable/*
+/.mixin.out/*
 
 icon.png
 command_history.txt
 options.txt
 rhino.local.properties
+ponders_watched.json
 usercache.json
 usernamecache.json
 emi.json
@@ -87,6 +92,7 @@ config/emi.css
 config/darkmodeeverywhereshaders*
 config/ichunutil/themes/
 config/gtceu.yaml
+config/iris.properties
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
 
 # Linux

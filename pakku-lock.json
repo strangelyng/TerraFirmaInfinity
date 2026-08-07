@@ -8,6 +8,289 @@
     },
     "projects": [
         {
+            "pakku_id": "zzZzMVvnlTtMm03M",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "arborfirmacraft"
+            },
+            "name": {
+                "curseforge": "ArborFirmaCraft"
+            },
+            "id": {
+                "curseforge": "877545"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "afc-2.1.2-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8543/58/afc-2.1.2-1.21.1.jar",
+                    "id": "8543058",
+                    "parent_id": "877545",
+                    "hashes": {
+                        "sha1": "074de67c8452ab13851adf9c5e0e78b2c8a22975",
+                        "md5": "87f814b343a6276891a8de60724ae542"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 6481446,
+                    "date_published": "2026-07-30T20:18:32.223Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "qnTWUsMhkgXdNNJd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "balm"
+            },
+            "name": {
+                "curseforge": "Balm"
+            },
+            "id": {
+                "curseforge": "531761"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "balm-neoforge-1.21.1-21.0.64.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8545/422/balm-neoforge-1.21.1-21.0.64.jar",
+                    "id": "8545422",
+                    "parent_id": "531761",
+                    "hashes": {
+                        "sha1": "db544a4fb95f7847cd4b1de9479c39cfa31fd529",
+                        "md5": "c833ed1fce8ca18adbf9733ca3ce5362"
+                    },
+                    "required_dependencies": [],
+                    "size": 783793,
+                    "date_published": "2026-07-31T06:05:23.710Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "numrtZgxntwsl8sC",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM",
+                "F41rce9zDSiA0tb8"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "beneath"
+            },
+            "name": {
+                "curseforge": "Beneath"
+            },
+            "id": {
+                "curseforge": "1113980"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Beneath-NeoForge-1.21.1-2.0.3.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8453/107/Beneath-NeoForge-1.21.1-2.0.3.jar",
+                    "id": "8453107",
+                    "parent_id": "1113980",
+                    "hashes": {
+                        "sha1": "a50b9e2f99c079dc7d38562f5ee2910737893edc",
+                        "md5": "244ac36ec3e27cb72950cd529acd9fb2"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "306770"
+                    ],
+                    "size": 1354110,
+                    "date_published": "2026-07-17T17:48:16.730Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ts80wQYf1LyG03Ws",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cacophony-tfc"
+            },
+            "name": {
+                "curseforge": "Cacophony-TFC"
+            },
+            "id": {
+                "curseforge": "1629976"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cacophony-0.1.0-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8566/679/cacophony-0.1.0-1.21.1.jar",
+                    "id": "8566679",
+                    "parent_id": "1629976",
+                    "hashes": {
+                        "sha1": "b5ee7d8164e129970c80f0435fa7066b82132f4d",
+                        "md5": "beb1ec7c6fe1a3898506f611c8e0b9d4"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 34132879,
+                    "date_published": "2026-08-03T02:49:18.267Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "cM6lFVeALFJgNOOc",
+            "pakku_links": [
+                "qnTWUsMhkgXdNNJd"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "client-tweaks"
+            },
+            "name": {
+                "curseforge": "Client Tweaks"
+            },
+            "id": {
+                "curseforge": "251407"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "clienttweaks-neoforge-1.21.1-21.1.14.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8526/31/clienttweaks-neoforge-1.21.1-21.1.14.jar",
+                    "id": "8526031",
+                    "parent_id": "251407",
+                    "hashes": {
+                        "sha1": "faf5d806df2dd053178045d6eee0be5fc30734e8",
+                        "md5": "aec7963ea07950d6e5efb5c666c08728"
+                    },
+                    "required_dependencies": [
+                        "531761"
+                    ],
+                    "size": 177995,
+                    "date_published": "2026-07-28T11:14:16.193Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "LTtAerLY12Y87Uq9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create"
+            },
+            "name": {
+                "curseforge": "Create"
+            },
+            "id": {
+                "curseforge": "328085"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create-1.21.1-6.0.10.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar",
+                    "id": "7963363",
+                    "parent_id": "328085",
+                    "hashes": {
+                        "sha1": "0e97e49837bed766e6f28a4c95b04885d6acc353",
+                        "md5": "179189c52b45a469e683570be4e77188"
+                    },
+                    "required_dependencies": [],
+                    "size": 19123767,
+                    "date_published": "2026-04-21T22:20:00.503Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "0Oh8PGKVYjyzHF3r",
+            "pakku_links": [
+                "CCzn8IbfEEdCnk71",
+                "LTtAerLY12Y87Uq9"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-aeronautics"
+            },
+            "name": {
+                "curseforge": "Create Aeronautics"
+            },
+            "id": {
+                "curseforge": "676721"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8240/58/create-aeronautics-bundled-1.21.1-1.3.0.jar",
+                    "id": "8240058",
+                    "parent_id": "676721",
+                    "hashes": {
+                        "sha1": "a2b08963ebc9f331f52c626aebcd65013e100d69",
+                        "md5": "27e0597b184778e49f1b4d5351bedc60"
+                    },
+                    "required_dependencies": [
+                        "1312371",
+                        "328085"
+                    ],
+                    "size": 33120013,
+                    "date_published": "2026-06-13T03:13:23.787Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "gOiUlVBGm0SNIv44",
             "type": "MOD",
             "slug": {
@@ -80,11 +363,120 @@
             ]
         },
         {
+            "pakku_id": "9RXr7r06sPww690T",
+            "pakku_links": [
+                "F41rce9zDSiA0tb8",
+                "rC3LQ0L3IKrourKM"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "firmalife"
+            },
+            "name": {
+                "curseforge": "FirmaLife"
+            },
+            "id": {
+                "curseforge": "453394"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Firmalife-NeoForge-1.21.1-3.0.11.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8364/676/Firmalife-NeoForge-1.21.1-3.0.11.jar",
+                    "id": "8364676",
+                    "parent_id": "453394",
+                    "hashes": {
+                        "sha1": "75da0f065eda98be3491786c497909a1ee1a84e3",
+                        "md5": "a921e46e95d5a2516e7da32bf838a708"
+                    },
+                    "required_dependencies": [
+                        "306770",
+                        "302973"
+                    ],
+                    "size": 4483619,
+                    "date_published": "2026-07-03T17:46:30.093Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RgJ8L19I8kdFiEWN",
+            "type": "MOD",
+            "slug": {
+                "github": "GregTechCEu/GregTech-Modern"
+            },
+            "name": {
+                "github": "GregTech-Modern"
+            },
+            "id": {
+                "github": "615400306"
+            },
+            "files": [
+                {
+                    "type": "github",
+                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20260803-132217-8201bf3.jar",
+                    "release_type": "release",
+                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20260803-132217-8201bf3.jar",
+                    "id": "500086382",
+                    "parent_id": "615400306",
+                    "hashes": {
+                        "sha256": "5ae5e86b554ef60e72d1a52035658bd5ac33e7d1518bf787ee7846ba6c19822e"
+                    },
+                    "size": 16607159,
+                    "date_published": "2026-08-03T13:22:22Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "goRWJrgKOAhAkpJi",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "ihearttfc"
+            },
+            "name": {
+                "curseforge": "I ❤ TFC (I Heart TFC)"
+            },
+            "id": {
+                "curseforge": "1118578"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "I Heart TFC-1.21.1-1.1.3.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7455/936/I Heart TFC-1.21.1-1.1.3.jar",
+                    "id": "7455936",
+                    "parent_id": "1118578",
+                    "hashes": {
+                        "sha1": "cc9f7a0b77e0f2cc8d7f2edbc6c11cecb9b944c8",
+                        "md5": "cb4b482bb5f1690212a31940556c777d"
+                    },
+                    "required_dependencies": [],
+                    "size": 104152,
+                    "date_published": "2026-01-13T21:15:11.280Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "zKU74Wx5PdZ1mxnX",
             "pakku_links": [
                 "aQLqJAOuH1cQqAYU"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "irisshaders"
             },
@@ -468,6 +860,42 @@
             ]
         },
         {
+            "pakku_id": "CCzn8IbfEEdCnk71",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sable"
+            },
+            "name": {
+                "curseforge": "Sable"
+            },
+            "id": {
+                "curseforge": "1312371"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sable-neoforge-1.21.1-2.0.3.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8263/584/sable-neoforge-1.21.1-2.0.3.jar",
+                    "id": "8263584",
+                    "parent_id": "1312371",
+                    "hashes": {
+                        "sha1": "f3ba9a497122ba29d9e94ebe6f9a3a3aaa5fa756",
+                        "md5": "66ce01f745ab0ce5941e4070ae5eb949"
+                    },
+                    "required_dependencies": [],
+                    "size": 12889000,
+                    "date_published": "2026-06-17T04:32:49.490Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "aQLqJAOuH1cQqAYU",
             "type": "MOD",
             "slug": {
@@ -500,6 +928,92 @@
                     "required_dependencies": [],
                     "size": 1292887,
                     "date_published": "2026-08-07T00:56:39.137Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "CmVt7cobUzigQu3K",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM",
+                "yg6Dpsgvsbk4fE3r"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "tfc-support-indicator"
+            },
+            "name": {
+                "curseforge": "TFC Support Indicator"
+            },
+            "id": {
+                "curseforge": "1195624"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfc_support_indicator-1.0.7+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7699/998/tfc_support_indicator-1.0.7+mc1.21.1.jar",
+                    "id": "7699998",
+                    "parent_id": "1195624",
+                    "hashes": {
+                        "sha1": "b968cc860682e54805c37ad36a5ea96c3dee3ee1",
+                        "md5": "3ae82c103ff9f9897ce672c3950bf40a"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "324717"
+                    ],
+                    "size": 7699,
+                    "date_published": "2026-03-02T08:12:39.910Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2OGtnPCmunadrYAw",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "tfc-vessel-tooltip"
+            },
+            "name": {
+                "curseforge": "TFC Vessel Tooltip"
+            },
+            "id": {
+                "curseforge": "952386"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TFCVesselTooltip-NeoForge-1.21.1-2.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7041/417/TFCVesselTooltip-NeoForge-1.21.1-2.0.jar",
+                    "id": "7041417",
+                    "parent_id": "952386",
+                    "hashes": {
+                        "sha1": "07acdddabf558c693f2bee2073676cf8575ab9f0",
+                        "md5": "3eb4c845ab5ae4108657b0c8ce252821"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 5983,
+                    "date_published": "2025-09-28T07:36:10.680Z"
                 }
             ]
         },

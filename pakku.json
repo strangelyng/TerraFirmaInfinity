@@ -23,10 +23,22 @@
         "kubejs/assets/**"
     ],
     "projects": {
+        "client-tweaks": {
+            "side": "CLIENT"
+        },
+        "ihearttfc": {
+            "side": "CLIENT"
+        },
         "mouse-tweaks": {
             "side": "CLIENT"
         },
         "irisshaders": {
+            "side": "CLIENT"
+        },
+        "tfc-support-indicator": {
+            "side": "CLIENT"
+        },
+        "tfc-vessel-tooltip": {
             "side": "CLIENT"
         },
         "probejs": {
