@@ -1059,6 +1059,34 @@
             ]
         },
         {
+            "pakku_id": "7lWudeUHTv6lONlo",
+            "type": "MOD",
+            "slug": {
+                "github": "strangelyng/TerraFirmaInfinity-Core"
+            },
+            "name": {
+                "github": "TerraFirmaInfinity-Core"
+            },
+            "id": {
+                "github": "1327263374"
+            },
+            "files": [
+                {
+                    "type": "github",
+                    "file_name": "TerraFirmaInfinity-Core-0.0.1.jar",
+                    "release_type": "release",
+                    "url": "https://github.com/strangelyng/TerraFirmaInfinity-Core/releases/download/0.0.1/TerraFirmaInfinity-Core-0.0.1.jar",
+                    "id": "505882210",
+                    "parent_id": "1327263374",
+                    "hashes": {
+                        "sha256": "b5e57bc22d30f24764045e56e0fa8c8014d33fe7dca22135f66ff1135507480c"
+                    },
+                    "size": 5104,
+                    "date_published": "2026-08-08T01:23:06Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cU5MD6bJ3TNGPtJH",
             "pakku_links": [
                 "gOiUlVBGm0SNIv44"
