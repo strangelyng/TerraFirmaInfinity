@@ -26,6 +26,12 @@
         "client-tweaks": {
             "side": "CLIENT"
         },
+        "colorwheel": {
+            "side": "CLIENT"
+        },
+        "euphoria-patches": {
+            "side": "CLIENT"
+        },
         "ihearttfc": {
             "side": "CLIENT"
         },

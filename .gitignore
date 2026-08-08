@@ -6,6 +6,7 @@ logs/
 crash-reports/
 backups/
 resourcepacks/
+shaderpacks/
 server-resource-packs/
 screenshots/
 downloads/
@@ -93,6 +94,7 @@ config/darkmodeeverywhereshaders*
 config/ichunutil/themes/
 config/gtceu.yaml
 config/iris.properties
+config/*.bak
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
 
 # Linux

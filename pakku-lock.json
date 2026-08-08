@@ -8,6 +8,47 @@
     },
     "projects": [
         {
+            "pakku_id": "5cKeJzF3EObnmb3g",
+            "pakku_links": [
+                "LZjQZq1bNDMwDCn0"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "applied-energistics-2"
+            },
+            "name": {
+                "curseforge": "Applied Energistics 2"
+            },
+            "id": {
+                "curseforge": "223794"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "appliedenergistics2-19.2.17.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7027/323/appliedenergistics2-19.2.17.jar",
+                    "id": "7027323",
+                    "parent_id": "223794",
+                    "hashes": {
+                        "sha1": "49c18d6a4af487957d7e5a6ad5dcbf71090b8e14",
+                        "md5": "1d9768edc90fb50f065949f2628ea991"
+                    },
+                    "required_dependencies": [
+                        "1173950"
+                    ],
+                    "size": 8230896,
+                    "date_published": "2025-09-23T23:32:36.190Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "zzZzMVvnlTtMm03M",
             "pakku_links": [
                 "rC3LQ0L3IKrourKM"
@@ -211,6 +252,91 @@
             ]
         },
         {
+            "pakku_id": "a7mn60dekTIjkl0q",
+            "pakku_links": [
+                "zKU74Wx5PdZ1mxnX"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "colorwheel"
+            },
+            "name": {
+                "curseforge": "Colorwheel"
+            },
+            "id": {
+                "curseforge": "1254143"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "colorwheel-neoforge-1.2.9+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8206/645/colorwheel-neoforge-1.2.9+mc1.21.1.jar",
+                    "id": "8206645",
+                    "parent_id": "1254143",
+                    "hashes": {
+                        "sha1": "33f3f4976755d0b315d3853f2e2aad38e11825c2",
+                        "md5": "5fb6fde45515060b695c245ecbf5f1ae"
+                    },
+                    "required_dependencies": [
+                        "455508"
+                    ],
+                    "size": 398004,
+                    "date_published": "2026-06-06T17:16:41.660Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "URiKPTLTn9yLRoQn",
+            "type": "SHADER",
+            "slug": {
+                "curseforge": "complementary-reimagined"
+            },
+            "name": {
+                "curseforge": "Complementary Shaders - Reimagined"
+            },
+            "id": {
+                "curseforge": "627557"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ComplementaryReimagined_r5.8.1.zip",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.8",
+                        "1.21.5",
+                        "1.21.4",
+                        "1.21.1",
+                        "1.21.6",
+                        "1.21.3",
+                        "1.21.7",
+                        "1.21.2",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8123/287/ComplementaryReimagined_r5.8.1.zip",
+                    "id": "8123287",
+                    "parent_id": "627557",
+                    "hashes": {
+                        "sha1": "5a021081f0178ed91dd911194071465ab0a4348b",
+                        "md5": "8dbb914ed233d6e8183ce34eb26beaab"
+                    },
+                    "required_dependencies": [],
+                    "size": 546925,
+                    "date_published": "2026-05-21T14:52:53.817Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LTtAerLY12Y87Uq9",
             "type": "MOD",
             "slug": {
@@ -291,6 +417,42 @@
             ]
         },
         {
+            "pakku_id": "IKM7YevEGs5kswL8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "curios"
+            },
+            "name": {
+                "curseforge": "Curios API"
+            },
+            "id": {
+                "curseforge": "309927"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "curios-neoforge-9.5.1+1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6529/130/curios-neoforge-9.5.1+1.21.1.jar",
+                    "id": "6529130",
+                    "parent_id": "309927",
+                    "hashes": {
+                        "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4",
+                        "md5": "e8f0a3574264bb202c153b90293dc84c"
+                    },
+                    "required_dependencies": [],
+                    "size": 410690,
+                    "date_published": "2025-05-14T13:34:49.793Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "gOiUlVBGm0SNIv44",
             "type": "MOD",
             "slug": {
@@ -323,6 +485,89 @@
                     "required_dependencies": [],
                     "size": 1111538,
                     "date_published": "2026-05-13T06:32:09.470Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "4zkQJdW2MgcQfn1P",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "embers-re-ignited"
+            },
+            "name": {
+                "curseforge": "Embers Re-Ignited"
+            },
+            "id": {
+                "curseforge": "1579725"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "embers-reignited-1.21.1-1.5.7.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8519/743/embers-reignited-1.21.1-1.5.7.jar",
+                    "id": "8519743",
+                    "parent_id": "1579725",
+                    "hashes": {
+                        "sha1": "e290ba54df279b1b323b34651cd4370c8cf2c14f",
+                        "md5": "232600dec6b7f00904ae3d601553f06a"
+                    },
+                    "required_dependencies": [],
+                    "size": 15879472,
+                    "date_published": "2026-07-27T12:17:45.417Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "GOQM7Q0Slvhqvb6E",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "euphoria-patches"
+            },
+            "name": {
+                "curseforge": "Euphoria Patches"
+            },
+            "id": {
+                "curseforge": "915902"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "EuphoriaPatcher-1.9.3-r5.8.1-neoforge.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.8",
+                        "1.21.5",
+                        "1.21.4",
+                        "1.21.1",
+                        "1.21.6",
+                        "1.21.3",
+                        "1.21.7",
+                        "1.21.2",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8177/588/EuphoriaPatcher-1.9.3-r5.8.1-neoforge.jar",
+                    "id": "8177588",
+                    "parent_id": "915902",
+                    "hashes": {
+                        "sha1": "a8e8a45390d30b82f722acc669d5cb2a5d9fff79",
+                        "md5": "a9345aa0e7ef271ce23c8bbc56fc8972"
+                    },
+                    "required_dependencies": [],
+                    "size": 4210708,
+                    "date_published": "2026-05-31T22:11:31.820Z"
                 }
             ]
         },
@@ -430,6 +675,42 @@
                     },
                     "size": 16607159,
                     "date_published": "2026-08-03T13:22:22Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "LZjQZq1bNDMwDCn0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "guideme"
+            },
+            "name": {
+                "curseforge": "GuideME"
+            },
+            "id": {
+                "curseforge": "1173950"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "guideme-21.1.17.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8420/861/guideme-21.1.17.jar",
+                    "id": "8420861",
+                    "parent_id": "1173950",
+                    "hashes": {
+                        "sha1": "060e374f578db694a0b8f3ad409bd424cae86359",
+                        "md5": "4fae423576e04c1a3c834189054a4486"
+                    },
+                    "required_dependencies": [],
+                    "size": 9309396,
+                    "date_published": "2026-07-12T19:49:00.503Z"
                 }
             ]
         },
@@ -666,6 +947,85 @@
                     "required_dependencies": [],
                     "size": 774220,
                     "date_published": "2026-06-27T17:11:48.737Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "vQGf6EhQvtQmbmD9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lodestone"
+            },
+            "name": {
+                "curseforge": "Lodestone"
+            },
+            "id": {
+                "curseforge": "616457"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "lodestone-1.21.1-1.8.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7264/731/lodestone-1.21.1-1.8.2.jar",
+                    "id": "7264731",
+                    "parent_id": "616457",
+                    "hashes": {
+                        "sha1": "d1f7c638fac5192e01b1873f27e694a3c262ad11",
+                        "md5": "de0e38b222129dc010a7ffee59a07ea5"
+                    },
+                    "required_dependencies": [],
+                    "size": 818829,
+                    "date_published": "2025-11-26T15:33:46.263Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "skDDRnvAa2CLhHtj",
+            "pakku_links": [
+                "vQGf6EhQvtQmbmD9",
+                "IKM7YevEGs5kswL8"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "malum"
+            },
+            "name": {
+                "curseforge": "Malum"
+            },
+            "id": {
+                "curseforge": "484064"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "malum-1.21.1-1.8.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7307/339/malum-1.21.1-1.8.2.jar",
+                    "id": "7307339",
+                    "parent_id": "484064",
+                    "hashes": {
+                        "sha1": "7bea3f874f186a17ad3e271df145c179e81c2a1d",
+                        "md5": "8a02ac3ac7bc02d4600bea6ea0f546aa"
+                    },
+                    "required_dependencies": [
+                        "616457",
+                        "309927"
+                    ],
+                    "size": 33585331,
+                    "date_published": "2025-12-08T08:32:19.107Z"
                 }
             ]
         },
