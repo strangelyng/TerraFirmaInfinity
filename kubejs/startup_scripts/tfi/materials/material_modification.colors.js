@@ -64,8 +64,8 @@ function registerTFIColorsMaterialModification(event) {
 	GTMaterials.Electrum.setMaterialARGB(0xFFF9B8)
 	GTMaterials.Electrum.setMaterialSecondaryARGB(0xBF581D)
 
-	GTMaterials.HastelloyX.setMaterialARGB(0xEBF5FF)
-	GTMaterials.HastelloyX.setMaterialSecondaryARGB(0xA1B5D4)
+	GTMaterials.HastelloyC276.setMaterialARGB(0xEBF5FF)
+	GTMaterials.HastelloyC276.setMaterialSecondaryARGB(0xA1B5D4)
 
 	GTMaterials.HSLASteel.setMaterialARGB(0xCED9F0)
 	GTMaterials.HSLASteel.setMaterialSecondaryARGB(0x7297C2)

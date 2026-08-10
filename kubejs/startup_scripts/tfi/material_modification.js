@@ -3,8 +3,5 @@
 
 const registerTFIMaterialModification = (event) => {
     registerTFIColorsMaterialModification(event);
-}
-
-const registerTFIMaterialRegistryModification = (event) => {
-    registerTFIPropertyMaterialModification(event);
+    registerTFIToolMaterialModification(event);
 }
