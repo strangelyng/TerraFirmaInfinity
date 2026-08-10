@@ -257,6 +257,7 @@
                 "zKU74Wx5PdZ1mxnX"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "colorwheel"
             },
@@ -527,6 +528,7 @@
         {
             "pakku_id": "GOQM7Q0Slvhqvb6E",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "euphoria-patches"
             },
@@ -1433,16 +1435,16 @@
             "files": [
                 {
                     "type": "github",
-                    "file_name": "TerraFirmaInfinity-Core-0.0.1.jar",
+                    "file_name": "TerraFirmaInfinity-Core-0.0.2.jar",
                     "release_type": "release",
-                    "url": "https://github.com/strangelyng/TerraFirmaInfinity-Core/releases/download/0.0.1/TerraFirmaInfinity-Core-0.0.1.jar",
-                    "id": "505882210",
+                    "url": "https://github.com/strangelyng/TerraFirmaInfinity-Core/releases/download/0.0.2/TerraFirmaInfinity-Core-0.0.2.jar",
+                    "id": "506193218",
                     "parent_id": "1327263374",
                     "hashes": {
-                        "sha256": "b5e57bc22d30f24764045e56e0fa8c8014d33fe7dca22135f66ff1135507480c"
+                        "sha256": "ae1f8dcf09245d550d6290170b6f7b285f5715e12310f75734be8065cf306519"
                     },
-                    "size": 5104,
-                    "date_published": "2026-08-08T01:23:06Z"
+                    "size": 5110,
+                    "date_published": "2026-08-08T08:11:16Z"
                 }
             ]
         },
@@ -1484,6 +1486,44 @@
                     ],
                     "size": 1241625,
                     "date_published": "2026-06-28T20:48:06.290Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wJgIeNmUeSdX1FkC",
+            "pakku_links": [
+                "rC3LQ0L3IKrourKM"
+            ],
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "terrafirmacraft-vexxed-visuals"
+            },
+            "name": {
+                "curseforge": "Vexxed Visuals: TerraFirmaCraft"
+            },
+            "id": {
+                "curseforge": "664832"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Vexxed_Visuals_TFC_v1.3.8.zip",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7453/324/Vexxed_Visuals_TFC_v1.3.8.zip",
+                    "id": "7453324",
+                    "parent_id": "664832",
+                    "hashes": {
+                        "sha1": "26979030baba683918ce47a391a3ad5bbd73ed39",
+                        "md5": "ce4461104dd5b0693611c79f2cf88ef0"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 12178702,
+                    "date_published": "2026-01-13T05:11:22.603Z"
                 }
             ]
         }
