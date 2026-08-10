@@ -97,6 +97,12 @@ config/iris.properties
 config/*.bak
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
 
+config/gtceu-early.properties
+config/sodium_options.json
+config/tmrv_plugins.json5
+
+kubejs/config/common.json
+
 # Linux
 *~
 .fuse_hidden*
