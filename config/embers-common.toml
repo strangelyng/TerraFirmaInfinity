@@ -4,7 +4,7 @@
 	#NEVER disables both ores. ALWAYS generates both ores.
 	#AUTO disables each Embers ore when another mod adds a matching ore feature to an Overworld biome.
 	#Allowed Values: NEVER, ALWAYS, AUTO
-	generate_ores = "AUTO"
+	generate_ores = "NEVER"
 
 #Settings for machine/item/misc parameters
 [parameters]
@@ -172,7 +172,7 @@
 	#If true, Embers homing projectiles will go for neutral players.
 	everybodyIsEnemy = false
 	#Which domains are preferred for recipes with dynamic outputs.
-	tagPreferences = ["minecraft", "embers"]
+	tagPreferences = ["tficore", "create", "tfc", "gtceu", "minecraft", "embers"]
 	#Which items are preferred as the result of breaking down a tool on an anvil.
 	itemPreferences = ["minecraft:oak_planks", "minecraft:cobblestone"]
 

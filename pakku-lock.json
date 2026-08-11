@@ -490,6 +490,48 @@
             ]
         },
         {
+            "pakku_id": "nHlsH5IEeWP8bNJd",
+            "pakku_links": [
+                "IKM7YevEGs5kswL8"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "eidolon-repraised"
+            },
+            "name": {
+                "curseforge": "Eidolon : Repraised"
+            },
+            "id": {
+                "curseforge": "870250"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "eidolon_repraised-1.21.1-0.5.0.2.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8064/602/eidolon_repraised-1.21.1-0.5.0.2.jar",
+                    "id": "8064602",
+                    "parent_id": "870250",
+                    "hashes": {
+                        "sha1": "1f05ffd2f9fa672dc2ecff3c32de092cdbcde989",
+                        "md5": "9386b41c2e4eba3b538d92a954549d27"
+                    },
+                    "required_dependencies": [
+                        "309927"
+                    ],
+                    "size": 4050310,
+                    "date_published": "2026-05-09T18:42:37.517Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "4zkQJdW2MgcQfn1P",
             "type": "MOD",
             "slug": {
