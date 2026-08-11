@@ -1477,16 +1477,16 @@
             "files": [
                 {
                     "type": "github",
-                    "file_name": "TerraFirmaInfinity-Core-0.0.2.jar",
+                    "file_name": "TerraFirmaInfinity-Core-0.0.3.jar",
                     "release_type": "release",
-                    "url": "https://github.com/strangelyng/TerraFirmaInfinity-Core/releases/download/0.0.2/TerraFirmaInfinity-Core-0.0.2.jar",
-                    "id": "506193218",
+                    "url": "https://github.com/strangelyng/TerraFirmaInfinity-Core/releases/download/0.0.3/TerraFirmaInfinity-Core-0.0.3.jar",
+                    "id": "509891367",
                     "parent_id": "1327263374",
                     "hashes": {
-                        "sha256": "ae1f8dcf09245d550d6290170b6f7b285f5715e12310f75734be8065cf306519"
+                        "sha256": "40c951cb14495db111798ca314e20fed9c9d6b79ebaae6ee4ee27aabab18ab85"
                     },
-                    "size": 5110,
-                    "date_published": "2026-08-08T08:11:16Z"
+                    "size": 19763,
+                    "date_published": "2026-08-11T08:44:23Z"
                 }
             ]
         },
