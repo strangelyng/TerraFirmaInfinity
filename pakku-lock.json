@@ -695,7 +695,7 @@
             ]
         },
         {
-            "pakku_id": "RgJ8L19I8kdFiEWN",
+            "pakku_id": "jihUagbq3fqZpDWz",
             "type": "MOD",
             "slug": {
                 "github": "GregTechCEu/GregTech-Modern"
@@ -709,16 +709,16 @@
             "files": [
                 {
                     "type": "github",
-                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20260803-132217-8201bf3.jar",
+                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20260809-033829-844c71d.jar",
                     "release_type": "release",
-                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20260803-132217-8201bf3.jar",
-                    "id": "500086382",
+                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20260809-033829-844c71d.jar",
+                    "id": "507066233",
                     "parent_id": "615400306",
                     "hashes": {
-                        "sha256": "5ae5e86b554ef60e72d1a52035658bd5ac33e7d1518bf787ee7846ba6c19822e"
+                        "sha256": "d1fbf27febc16b8afd45ddbc1b4a436332caf38ea30fe1649381c49c44f38a14"
                     },
-                    "size": 16607159,
-                    "date_published": "2026-08-03T13:22:22Z"
+                    "size": 16608242,
+                    "date_published": "2026-08-09T03:38:34Z"
                 }
             ]
         },
