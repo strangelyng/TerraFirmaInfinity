@@ -1,5 +1,8 @@
 # Changelog
 
+## [Unreleased]
+### Changes
+
 ## [0.0.2]
 ### Changes
 
@@ -16,8 +19,8 @@
 
 #### Embers
 - Config Changes:
-    - Made Embers never spawn its ores
-    - Changed tag preference ordering
+  - Made Embers never spawn its ores
+  - Changed tag preference ordering
 
 #### TFC
 - Made Crucible, Molds, and Small Vessel fluid capacities match GT's assumption (1 Ingot:144mB as opposed to TFC's default 1 Ingot:100mB)

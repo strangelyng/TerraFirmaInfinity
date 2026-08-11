@@ -84,3 +84,8 @@ function registerTFIColorsMaterialModification(event) {
 	GTMaterials.Platinum.setMaterialARGB(0xccdff5)
 	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
 }
+
+function registerTFIIconSetsModification(event) {
+    GTMaterials.Aluminium.setMaterialIconSet(GTMaterialIconSet.SHINY);
+    GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY);
+}
