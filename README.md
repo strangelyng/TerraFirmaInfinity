@@ -13,6 +13,8 @@ Exploration is encouraged via the use of climate-dependent resources, mobs, and 
 
 What else lies outside this plane of the overworld? Caves deep beneath the surface, otherworldly dimensions beyond the fade, or greater frontiers beyond the stars.
 
+**Coremod page**: [TerraFirmaInfinity-Core](https://github.com/strangelyng/TerraFirmaInfinity-Core)
+
 ## Credits
 - Much credit must go to TerraFirmaGreg and its team for their work on creating an incredible example of TerraFirmaCraft-GregTech integration. I can only hope that this pack will manage to step out of its shadow.
 - Other modpack inspirations include Creatorio: Supply Chain, and Cosmic Frontiers
