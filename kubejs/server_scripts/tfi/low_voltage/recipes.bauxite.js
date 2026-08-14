@@ -1,6 +1,6 @@
-function registerTFILVMaterialRecipes(event) {
+function registerTFIBauxiteRecipes(event) {
     // #region Bauxite Processing
-    event.recipes.gtceu.chemical_reactor('tfi:bauxite_slurry')
+    event.recipes.gtceu.autoclave('tfi:bauxite_slurry')
         .itemInputs('gtceu:crushed_bauxite_ore')
         .inputFluids('1000x tfc:lye')
         .outputFluids('1000x gtceu:bauxite_slurry')
@@ -9,7 +9,7 @@ function registerTFILVMaterialRecipes(event) {
 
     event.recipes.gtceu.centrifuge('tfi:sodium_aluminate')
         .inputFluids('1000x gtceu:bauxite_slurry')
-        .outputFluids('600x tfi:sodium_aluminate')
+        .outputFluids('600x tfi:sodium_aluminate', '400x tfi:bauxite_tailings')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
     

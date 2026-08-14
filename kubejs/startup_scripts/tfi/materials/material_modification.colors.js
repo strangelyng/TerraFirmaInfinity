@@ -38,6 +38,8 @@ function registerTFIColorsMaterialModification(event) {
 	/* Misc GT Mats */
 	GTMaterials.Cobalt.setMaterialARGB(0xA1CDD6)
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x382757)
+	GTMaterials.Cobaltite.setMaterialARGB(0x6a8fb7)
+	GTMaterials.Cobaltite.setMaterialSecondaryARGB(0x382757)
 
 	GTMaterials.Manganese.setMaterialARGB(0xA79A95)
 	GTMaterials.Manganese.setMaterialSecondaryARGB(0x33241f)
@@ -87,5 +89,6 @@ function registerTFIColorsMaterialModification(event) {
 
 function registerTFIIconSetsModification(event) {
     GTMaterials.Aluminium.setMaterialIconSet(GTMaterialIconSet.SHINY);
+	GTMaterials.Borax.setMaterialIconSet(GTMaterialIconSet.ROUGH);
     GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY);
 }

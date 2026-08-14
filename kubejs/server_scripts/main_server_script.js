@@ -4,3 +4,7 @@
 ServerEvents.recipes(event => {
     registerTFIRecipes(event);
 })
+
+GTCEuServerEvents.oreVeins(event => {
+    event.removeAll();
+})

@@ -1,5 +1,6 @@
 "use strict";
 
 const registerTFIRecipes = (event) => {
-    // registerTFILVMaterialRecipes(event)
+    // registerTFIBauxiteRecipes(event);
+    registerTFIZirconiumUHTCCompositeRecipes(event);
 }
