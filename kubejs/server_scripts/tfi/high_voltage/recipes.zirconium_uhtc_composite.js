@@ -1,7 +1,7 @@
 function registerTFIZirconiumUHTCCompositeRecipes(event) {
     // Zirconium 
     event.recipes.gtceu.electric_blast_furnace('tfi:zirconia_dust')
-        .itemInputs('gtceu:coke_dust', 'tfi:zircon_dust')
+        .itemInputs('gtceu:graphite_dust', 'tfi:zircon_dust')
         .itemOutputs('tfi:zirconia_dust', 'gtceu:silicon_dioxide_dust')
         .blastFurnaceTemp(3073)
         .duration(200).EUt(GTValues.V[GTValues.HV])
