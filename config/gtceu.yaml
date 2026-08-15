@@ -2,7 +2,7 @@ recipes:
   # Whether to generate Flawed and Chipped Gems for materials and recipes involving them.
   # Useful for mods like TerraFirmaCraft.
   # Default: false
-  generateLowQualityGems: false
+  generateLowQualityGems: true
 
   # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
   # Default: true
@@ -242,7 +242,7 @@ machines:
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
-  enableWorldAccelerators: true
+  enableWorldAccelerators: false
 
   # List of TileEntities that the World Accelerator should not accelerate.
   # GregTech TileEntities are always blocked.

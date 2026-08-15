@@ -38,11 +38,11 @@
 
 [progression]
 	#If set to true, malum will hide some of it's content related to a certain feature. This is the intended way to play the mod.
-	hide_recipes = true
+	hide_recipes = false
 
 [codex]
 	#If set to true, one of the first undead enemies a player slays will drop the encyclopedia arcana.
-	enableCodexDrop = true
+	enableCodexDrop = false
 
 [magic_damage]
 	#If set to true, damage types tagged under malum:bypasses_half_armor will pierce only half of the player's armor stat, as opposed to piercing it entirely. In addition, armor will not take durability damage.

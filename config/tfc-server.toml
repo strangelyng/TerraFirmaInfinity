@@ -326,7 +326,7 @@
 		# Fluid capacity (in mB) of the output tank of the blast furnace.
 		# Default: 10000
 		# Range: > 1
-		blastFurnaceFluidCapacity = 10000
+		blastFurnaceFluidCapacity = 14400
 		#
 		# A multiplier for how fast the blast furnace consumes fuel. Higher values = faster fuel consumption.
 		# Default: 4
@@ -893,7 +893,7 @@
 		nutritionRotationHungerWindow = 80
 		#
 		# If player's nutrition should be kept even after death. Hunger and thirst are not affected and will be reset.
-		keepNutritionAfterDeath = true
+		keepNutritionAfterDeath = false
 		#
 		# How many ticks should different foods ignore when trying to stack together automatically?
 		# Food made with different creation dates doesn't stack by default, unless it's within a specific window. This is the number of ticks that different foods will try and stack together at the loss of a little extra expiry time.
