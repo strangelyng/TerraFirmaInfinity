@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/dull/tool_head_saw",
+    "layer2": "gtceu:item/material_sets/dull/tool_head_saw_overlay"
+  }
+}
