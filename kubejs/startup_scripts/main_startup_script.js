@@ -4,5 +4,6 @@
 Platform.mods.kubejs.name = "TerraFirmaInfinity-Core";
 
 GTCEuStartupEvents.materialModification(event => {
-    registerTFIMaterialModification(event);
+    registerTFIMaterialModificationCosmetic(event);
+    registerTFIMaterialModificationGameplay(event);
 })
