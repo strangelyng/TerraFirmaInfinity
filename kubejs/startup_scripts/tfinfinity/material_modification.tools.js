@@ -1,9 +1,7 @@
 // priority: 0
 "use strict";
 
-const registerTFIMaterialModificationGameplay = (event) => {
-    // #region Tools
-
+const registerTFIMaterialModificationTools = (event) => {
     const ULVTools = [
         GTToolType.AXE,
         GTToolType.BUTCHERY_KNIFE,
