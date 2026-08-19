@@ -6,6 +6,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.AXE,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
+        InfinityToolType.CHISEL,
         GTToolType.FILE,
         GTToolType.HARD_HAMMER,
         GTToolType.HOE,
@@ -20,6 +21,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.SHOVEL,
         GTToolType.SPADE,
         GTToolType.SWORD,
+        InfinityToolType.MACE,
         GTToolType.WIRE_CUTTER,
         GTToolType.WRENCH
     ]
@@ -29,6 +31,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.CHAINSAW_LV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
+        InfinityToolType.CHISEL,
         GTToolType.FILE,
         GTToolType.HARD_HAMMER,
         GTToolType.HOE,
@@ -46,6 +49,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.SHOVEL,
         GTToolType.SPADE,
         GTToolType.SWORD,
+        InfinityToolType.MACE,
         GTToolType.WIRE_CUTTER,
         GTToolType.WIRE_CUTTER_LV,
         GTToolType.WRENCH,
@@ -56,6 +60,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.CHAINSAW_LV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
+        InfinityToolType.CHISEL,
         GTToolType.FILE,
         GTToolType.HARD_HAMMER,
         GTToolType.KNIFE,
@@ -67,6 +72,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.SHEARS,
         GTToolType.SPADE,
         GTToolType.SWORD,
+        InfinityToolType.MACE,
         GTToolType.WIRE_CUTTER_LV,
         GTToolType.WRENCH_LV
     ]
@@ -75,6 +81,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.CHAINSAW_HV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
+        InfinityToolType.CHISEL,
         GTToolType.FILE,
         GTToolType.HARD_HAMMER,
         GTToolType.KNIFE,
@@ -86,6 +93,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.SHEARS,
         GTToolType.SPADE,
         GTToolType.SWORD,
+        InfinityToolType.MACE,
         GTToolType.WIRE_CUTTER_HV,
         GTToolType.WRENCH_HV
     ]
@@ -94,6 +102,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.CHAINSAW_HV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
+        InfinityToolType.CHISEL,
         GTToolType.FILE,
         GTToolType.HARD_HAMMER,
         GTToolType.KNIFE,
@@ -105,6 +114,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.SHEARS,
         GTToolType.SPADE,
         GTToolType.SWORD,
+        InfinityToolType.MACE,
         GTToolType.WIRE_CUTTER_HV,
         GTToolType.WRENCH_HV
     ]
@@ -113,6 +123,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.CHAINSAW_IV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
+        InfinityToolType.CHISEL,
         GTToolType.FILE,
         GTToolType.HARD_HAMMER,
         GTToolType.KNIFE,
@@ -124,6 +135,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.SHEARS,
         GTToolType.SPADE,
         GTToolType.SWORD,
+        InfinityToolType.MACE,
         GTToolType.WIRE_CUTTER_IV,
         GTToolType.WRENCH_IV
     ]
