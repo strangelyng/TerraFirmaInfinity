@@ -57,7 +57,7 @@ const registerTFIMaterialModificationTools = (event) => {
     ]
 
     const MVTools = [
-        GTToolType.CHAINSAW_LV,
+        InfinityToolType.CHAINSAW_MV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
         InfinityToolType.CHISEL,
@@ -66,15 +66,15 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.KNIFE,
         GTToolType.MORTAR,
         GTToolType.DRILL_MV,
-        GTToolType.BUZZSAW_LV,
-        GTToolType.SCREWDRIVER_LV,
+        InfinityToolType.BUZZSAW_MV,
+        InfinityToolType.SCREWDRIVER_MV,
         GTToolType.SCYTHE,
         GTToolType.SHEARS,
         GTToolType.SPADE,
         GTToolType.SWORD,
         InfinityToolType.MACE,
-        GTToolType.WIRE_CUTTER_LV,
-        GTToolType.WRENCH_LV
+        InfinityToolType.WIRE_CUTTER_MV,
+        InfinityToolType.WRENCH_MV
     ]
 
     const HVTools = [
@@ -87,7 +87,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.KNIFE,
         GTToolType.MORTAR,
         GTToolType.DRILL_HV,
-        GTToolType.BUZZSAW_LV,
+        InfinityToolType.BUZZSAW_HV,
         GTToolType.SCREWDRIVER_HV,
         GTToolType.SCYTHE,
         GTToolType.SHEARS,
@@ -99,7 +99,7 @@ const registerTFIMaterialModificationTools = (event) => {
     ]
 
     const EVTools = [
-        GTToolType.CHAINSAW_HV,
+        InfinityToolType.CHAINSAW_EV,
         GTToolType.BUTCHERY_KNIFE,
         GTToolType.CROWBAR,
         InfinityToolType.CHISEL,
@@ -108,15 +108,15 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.KNIFE,
         GTToolType.MORTAR,
         GTToolType.DRILL_EV,
-        GTToolType.BUZZSAW_LV,
-        GTToolType.SCREWDRIVER_HV,
+        InfinityToolType.BUZZSAW_EV,
+        InfinityToolType.SCREWDRIVER_EV,
         GTToolType.SCYTHE,
         GTToolType.SHEARS,
         GTToolType.SPADE,
         GTToolType.SWORD,
         InfinityToolType.MACE,
-        GTToolType.WIRE_CUTTER_HV,
-        GTToolType.WRENCH_HV
+        InfinityToolType.WIRE_CUTTER_EV,
+        InfinityToolType.WRENCH_EV
     ]
 
     const IVTools = [
@@ -129,7 +129,7 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.KNIFE,
         GTToolType.MORTAR,
         GTToolType.DRILL_IV,
-        GTToolType.BUZZSAW_LV,
+        InfinityToolType.BUZZSAW_IV,
         GTToolType.SCREWDRIVER_IV,
         GTToolType.SCYTHE,
         GTToolType.SHEARS,
