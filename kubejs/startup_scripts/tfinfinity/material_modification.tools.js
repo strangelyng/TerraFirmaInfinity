@@ -146,6 +146,7 @@ const registerTFIMaterialModificationTools = (event) => {
 
     const toRemove = [
         /* Tool Materials to be Removed (No Replace) */
+        GTMaterials.Flint,
         GTMaterials.Aluminium,
         GTMaterials.Diamond,
         GTMaterials.CobaltBrass,
@@ -177,7 +178,6 @@ const registerTFIMaterialModificationTools = (event) => {
         }
     })
 
-    // TODO: Add Stone, Obsidian Basic Tools per TFC
     // TODO: Add TFC Tool Types
 
     // #region Tool Properties

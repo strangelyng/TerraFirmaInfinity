@@ -8,6 +8,21 @@ const $TFC_PROPERTY = Java.loadClass('net.terrafirmainfinity.core.common.data.ma
 // OR               (meltTemp, baseHeatCapacity, anvilTier)
 
 const registerTFIMaterialModificationProperties = (event) => {
+    GTMaterials.Copper.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.BismuthBronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Bronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.BlackBronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Bismuth.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Brass.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Gold.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Nickel.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.RoseGold.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Silver.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.SterlingSilver.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Tin.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Zinc.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
+    GTMaterials.Iron.addFlags(InfinityMaterialFlags.TFC_CASTABLE); // Cast Iron
+
     GTMaterials.Copper.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, 1));
     GTMaterials.BismuthBronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(985, 0.35, 2));
     GTMaterials.Bronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(950, 0.35, 2));
