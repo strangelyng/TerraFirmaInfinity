@@ -1,5 +1,6 @@
 {
     "material.gtceu.cooperite": "Cooperite",
     "material.gtceu.quartzite": "Quartz",
-    "material.gtceu.rock_salt": "Halite"
+    "material.gtceu.rock_salt": "Halite",
+    "item.gtceu.tool.lv_buzzsaw": "%s Buzzsaw (LV)"
 }

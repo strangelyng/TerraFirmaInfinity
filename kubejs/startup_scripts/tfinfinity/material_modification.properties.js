@@ -8,6 +8,7 @@ const $TFC_PROPERTY = Java.loadClass('net.terrafirmainfinity.core.common.data.ma
 // OR               (meltTemp, baseHeatCapacity, anvilTier)
 
 const registerTFIMaterialModificationProperties = (event) => {
+    // TFC Materials
     GTMaterials.Copper.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
     GTMaterials.BismuthBronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
     GTMaterials.Bronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
@@ -52,6 +53,20 @@ const registerTFIMaterialModificationProperties = (event) => {
     GTMaterials.SterlingSilver.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(950, 0.35, 1));
     GTMaterials.Tin.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, 1));
     GTMaterials.Zinc.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, 1));
+
+    // GTMaterials
+    // GTMaterials.CobaltBrass.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    GTMaterials.Electrum.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    GTMaterials.Lead.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    GTMaterials.Potin.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    InfinityMaterials.Pewter.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+
+    GTMaterials.Cobalt.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495, 0.35, 1));
+    // GTMaterials.CobaltBrass.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(928, 0.35, 1));
+    GTMaterials.Electrum.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 0.35, 1));
+    GTMaterials.Lead.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(327, 0.14, 1));
+    GTMaterials.Potin.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(800, 0.35, 1));
+    InfinityMaterials.Pewter.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, 1));
 
     // TODO: Ores
 }
