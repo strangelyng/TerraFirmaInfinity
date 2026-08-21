@@ -150,5 +150,61 @@ const registerTFIMaterialRecipes = (event) => {
         if (!buzzsawBladeItem.isEmpty()) {
             TFCAnvilRecipe(event, buzzsawBladeItem, doublePlateItem, ['bend_last', 'hit_second_last', 'draw_third_last'], false, material, 'buzzsaw_blade');
         }
+
+        // Additional TFC Blocks/Items
+        const anvilItem = ChemicalHelper.get(InfinityTagPrefix.anvil, material, 1);
+
+        if (!anvilItem.isEmpty()) {
+            TFCMeltingRecipe(event, anvilItem, material, getMaterialAmount(InfinityTagPrefix.anvil, material) * 144, 'anvil');
+        }
+
+        const barsItem = ChemicalHelper.get(InfinityTagPrefix.bars, material, 1);
+
+        if (!barsItem.isEmpty()) {
+            TFCMeltingRecipe(event, barsItem, material, getMaterialAmount(InfinityTagPrefix.bars, material) * 144, 'bars');
+            TFCAnvilRecipe(event, barsItem.withCount(4), ingotItem, ['upset_last', 'punch_second_last', 'punch_third_last'], false, material, 'bars');
+            TFCAnvilRecipe(event, barsItem.withCount(8), doubleIngotItem, ['upset_last', 'punch_second_last', 'punch_third_last'], false, material, 'bars_double');
+        }
+
+        // TODO: Bell
+
+        const chainItem = ChemicalHelper.get(InfinityTagPrefix.chain, material, 1);
+
+        if (!chainItem.isEmpty()) {
+            TFCMeltingRecipe(event, chainItem, material, getMaterialAmount(InfinityTagPrefix.chain, material) * 144, 'chain');
+            TFCAnvilRecipe(event, chainItem.withCount(16), ingotItem, ['hit_any', 'draw_not_last'], false, material, 'chain');
+        }
+
+        const lampItem = ChemicalHelper.get(InfinityTagPrefix.lamp, material, 1);
+        const unfinishedLampItem = ChemicalHelper.get(InfinityTagPrefix.lampUnfinished, material, 1);
+
+        if (!lampItem.isEmpty() && !unfinishedLampItem.isEmpty()) {
+            TFCMeltingRecipe(event, lampItem, material, 144, 'lamp');
+            TFCMeltingRecipe(event, unfinishedLampItem, material, 144, 'unfinished_lamp');
+            TFCAnvilRecipe(event, unfinishedLampItem, ingotItem, ['bend_last', 'bend_second_last', 'draw_third_last'], false, material, 'unfinished_lamp')
+        }
+
+        const trapdoorItem = ChemicalHelper.get(InfinityTagPrefix.trapdoor, material, 1);
+
+        if (!trapdoorItem.isEmpty()) {
+            TFCMeltingRecipe(event, trapdoorItem, material, 144, 'trapdoor');
+            TFCAnvilRecipe(event, trapdoorItem, plateItem, ['bend_last', 'draw_second_last', 'draw_third_last'], false, material, 'trapdoor');
+        }
+
+        const grateItem = ChemicalHelper.get(InfinityTagPrefix.grate, material, 1);
+
+        if (!grateItem.isEmpty()) {
+            TFCMeltingRecipe(event, grateItem, material, getMaterialAmount(InfinityTagPrefix.grate, material) * 144, 'grate');
+        }
+
+        const platedBlockItem = ChemicalHelper.get(InfinityTagPrefix.blockPlated, material, 1);
+        const platedSlabItem = ChemicalHelper.get(InfinityTagPrefix.slabPlated, material, 1);
+        const platedStairsItem = ChemicalHelper.get(InfinityTagPrefix.stairsPlated, material, 1);
+
+        if (!platedBlockItem.isEmpty()) {
+            TFCMeltingRecipe(event, platedBlockItem, material, getMaterialAmount(InfinityTagPrefix.blockPlated, material) * 144, 'plated_block');
+            TFCMeltingRecipe(event, platedSlabItem, material, getMaterialAmount(InfinityTagPrefix.slabPlated, material) * 144, 'plated_slab');
+            TFCMeltingRecipe(event, platedStairsItem, material, getMaterialAmount(InfinityTagPrefix.stairsPlated, material) * 144, 'plated_stairs');
+        }
     })
 }

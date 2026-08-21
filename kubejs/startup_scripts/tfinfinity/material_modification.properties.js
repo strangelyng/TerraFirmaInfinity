@@ -32,7 +32,7 @@ const registerTFIMaterialModificationProperties = (event) => {
     GTMaterials.Iron.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3)); // Represents Cast Iron
     // Pig Iron
     GTMaterials.Steel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 4));
-    GTMaterials.BlackSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 5));
+    GTMaterials.BlackSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1485, 0.35, 5));
     GTMaterials.BlueSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 6));
     GTMaterials.RedSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 6));
     InfinityMaterials.WeakSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 5));

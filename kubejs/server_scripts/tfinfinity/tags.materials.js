@@ -7,14 +7,12 @@ const registerTFIMaterialFluidTags = (event) => {
 
         if (tfcProperty === null) return;
 
-        if (material.hasFlag(InfinityMaterialFlags.TFC_CASTABLE)) {
-            let fluid = tfcProperty.getOutputFluid() !== null ? tfcProperty.getOutputFluid() : material.getFluid();
+        let fluid = tfcProperty.getOutputFluid() !== null ? tfcProperty.getOutputFluid() : material.getFluid();
 
-            event.add('tfc:usable_in_ingot_mold', fluid);
+        event.add('tfc:usable_in_ingot_mold', fluid);
 
-            if (material.hasProperty(PropertyKey.TOOL)) {
-                event.add('tfc:usable_in_tool_head_mold', fluid)
-            }
+        if (material.hasFlag(InfinityMaterialFlags.TFC_CASTABLE) && material.hasProperty(PropertyKey.TOOL)) {
+            event.add('tfc:usable_in_tool_head_mold', fluid)
         }
     })
 }

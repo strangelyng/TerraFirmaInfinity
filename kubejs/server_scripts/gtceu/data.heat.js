@@ -72,6 +72,17 @@ const registerGTMaterialHeats = (event) => {
             makeItemHeatByTagPrefix(InfinityTagPrefix.toolHeadSpade, material, tfcProperty)
             makeItemHeatByTagPrefix(InfinityTagPrefix.toolHeadButcheryKnife, material, tfcProperty)
 
+            makeItemHeatByTagPrefix(InfinityTagPrefix.anvil, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.bars, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.chain, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.lamp, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.lampUnfinished, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.trapdoor, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.grate, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.blockPlated, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.slabPlated, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlated, material, tfcProperty);
+
             // TODO: Ores
 
 
