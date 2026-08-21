@@ -7,6 +7,11 @@ function getMaterialAmount(tagPrefix, material) {
     return tagPrefix.getMaterialAmount(material) / GTValues.M;
 }
 
+function calcAmountOfMetal(baseTotal, percent) {
+    const value = baseTotal * (percent / 100);
+    return value % 2 === 0 ? value : Math.round(value) - 1;
+}
+
 // #region Recipe Functions
 function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);

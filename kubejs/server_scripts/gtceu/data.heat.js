@@ -84,7 +84,7 @@ const registerGTMaterialHeats = (event) => {
             makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlated, material, tfcProperty);
 
             // TODO: Ores
-
+            makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty);
 
             // Fluid Heat
             makeFluidHeat(material, tfcProperty);

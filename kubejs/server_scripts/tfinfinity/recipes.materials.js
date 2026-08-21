@@ -206,5 +206,16 @@ const registerTFIMaterialRecipes = (event) => {
             TFCMeltingRecipe(event, platedSlabItem, material, getMaterialAmount(InfinityTagPrefix.slabPlated, material) * 144, 'plated_slab');
             TFCMeltingRecipe(event, platedStairsItem, material, getMaterialAmount(InfinityTagPrefix.stairsPlated, material) * 144, 'plated_stairs');
         }
+
+        // #region Ores
+        const oreProperty = material.getProperty(PropertyKey.ORE);
+
+        if (oreProperty == null) return;
+
+        const rawOreItem = ChemicalHelper.get(TagPrefix.rawOre, material, 1);
+
+        if (!rawOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore')
+        }
     })
 }
