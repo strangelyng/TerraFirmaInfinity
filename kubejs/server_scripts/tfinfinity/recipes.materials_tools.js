@@ -6,108 +6,140 @@ const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelp
 const registerTFIToolHeadRecipes = (event) => {
     // TODO: Systematize, once done testing
 
-    const material = GTMaterials.Copper;
+    forEachMaterial(material => {
+        const materialName = material.getName();
 
-    const materialName = material.getName();
+        const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
-    const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
+        if (tfcProperty == null) return;
+        
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+        const doubleIngotItem = ChemicalHelper.get(InfinityTagPrefix.ingotDouble, material, 1);
+        const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
 
-    const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-    const doubleIngotItem = ChemicalHelper.get(InfinityTagPrefix.ingotDouble, material, 1);
-    const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
+        const pickaxeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadPickaxe, material, 1);
+        if (!pickaxeHead.isEmpty()) {
+            TFCMeltingRecipe(event, pickaxeHead, material, 144, 'pickaxe_head');
+            TFCCastingRecipe(event, pickaxeHead, 'tfc:ceramic/pickaxe_head_mold', false, null, material, InfinityTagPrefix.toolHeadPickaxe, 144);
+            TFCAnvilRecipe(event, pickaxeHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'pickaxe_head');
+        }
 
-    const pickaxeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadPickaxe, material, 1);
-    if (tfcProperty !== null && !pickaxeHead.isEmpty()) {
-        TFCAnvilRecipe(event, pickaxeHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'pickaxe_head');
-    }
+        const axeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadAxe, material, 1);
+        if (!axeHead.isEmpty()) {
+            TFCMeltingRecipe(event, axeHead, material, 144, 'axe_head');
+            TFCCastingRecipe(event, axeHead, 'tfc:ceramic/axe_head_mold', false, null, material, InfinityTagPrefix.toolHeadAxe, 144);
+            TFCAnvilRecipe(event, axeHead, ingotItem, ['punch_last', 'hit_second_last', 'upset_third_last'], true, material, 'axe_head');
+        }
 
-    const axeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadAxe, material, 1);
-    if (tfcProperty !== null && !axeHead.isEmpty()) {
-        TFCAnvilRecipe(event, axeHead, ingotItem, ['punch_last', 'hit_second_last', 'upset_third_last'], true, material, 'axe_head');
-    }
+        const shovelHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadShovel, material, 1);
+        if (!shovelHead.isEmpty()) {
+            TFCMeltingRecipe(event, shovelHead, material, 144, 'shovel_head');
+            TFCCastingRecipe(event, shovelHead, 'tfc:ceramic/shovel_head_mold', false, null, material, InfinityTagPrefix.toolHeadShovel, 144);
+            TFCAnvilRecipe(event, shovelHead, ingotItem, ['punch_last', 'hit_not_last'], true, material, 'shovel_head');
+        }
 
-    const shovelHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadShovel, material, 1);
-    if (tfcProperty !== null && !shovelHead.isEmpty()) {
-        TFCAnvilRecipe(event, shovelHead, ingotItem, ['punch_last', 'hit_not_last'], true, material, 'shovel_head');
-    }
+        const hoeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadHoe, material, 1);
+        if (!hoeHead.isEmpty()) {
+            TFCMeltingRecipe(event, hoeHead, material, 144, 'hoe_head');
+            TFCCastingRecipe(event, hoeHead, 'tfc:ceramic/hoe_head_mold', false, null, material, InfinityTagPrefix.toolHeadHoe, 144);
+            TFCAnvilRecipe(event, hoeHead, ingotItem, ['punch_last', 'hit_not_last', 'bend_not_last'], true, material, 'hoe_head');
+        }
 
-    const hoeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadHoe, material, 1);
-    if (tfcProperty !== null && !hoeHead.isEmpty()) {
-        TFCAnvilRecipe(event, hoeHead, ingotItem, ['punch_last', 'hit_not_last', 'bend_not_last'], true, material, 'hoe_head');
-    }
+        const chiselHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadChisel, material, 1);
+        if (!chiselHead.isEmpty()) {
+            TFCMeltingRecipe(event, chiselHead, material, 144, 'chisel_head');
+            TFCCastingRecipe(event, chiselHead, 'tfc:ceramic/chisel_head_mold', false, null, material, InfinityTagPrefix.toolHeadChisel, 144);
+            TFCAnvilRecipe(event, chiselHead, ingotItem, ['hit_last', 'draw_not_last', 'hit_not_last'], true, material, 'chisel_head');
+        }
 
-    const chiselHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadChisel, material, 1);
-    if (tfcProperty !== null && !chiselHead.isEmpty()) {
-        TFCAnvilRecipe(event, chiselHead, ingotItem, ['hit_last', 'draw_not_last', 'hit_not_last'], true, material, 'chisel_head');
-    }
+        const hammerHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadHammer, material, 1);
+        if (!hammerHead.isEmpty()) {
+            TFCMeltingRecipe(event, hammerHead, material, 144, 'hammer_head');
+            TFCCastingRecipe(event, hammerHead, 'tfc:ceramic/hammer_head_mold', false, null, material, InfinityTagPrefix.toolHeadHammer, 144);
+            TFCAnvilRecipe(event, hammerHead, ingotItem, ['punch_last', 'shrink_not_last'], true, material, 'hammer_head');
+        }
 
-    const hammerHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadHammer, material, 1);
-    if (tfcProperty !== null && !hammerHead.isEmpty()) {
-        TFCAnvilRecipe(event, hammerHead, ingotItem, ['punch_last', 'shrink_not_last'], true, material, 'hammer_head');
-    }
+        const sawBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadSaw, material, 1);
+        if (!sawBlade.isEmpty()) {
+            TFCMeltingRecipe(event, sawBlade, material, 144, 'saw_blade');
+            TFCCastingRecipe(event, sawBlade, 'tfc:ceramic/saw_blade_mold', false, null, material, InfinityTagPrefix.toolHeadSaw, 144);
+            TFCAnvilRecipe(event, sawBlade, ingotItem, ['hit_last', 'hit_second_last'], true, material, 'saw_blade');
+        }
 
-    const sawBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadSaw, material, 1);
-    if (tfcProperty !== null && !sawBlade.isEmpty()) {
-        TFCAnvilRecipe(event, sawBlade, ingotItem, ['hit_last', 'hit_second_last'], true, material, 'saw_blade');
-    }
+        const knifeBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadKnife, material, 1);
+        if (!knifeBlade.isEmpty()) {
+            TFCMeltingRecipe(event, knifeBlade, material, 144, 'knife_blade');
+            TFCCastingRecipe(event, knifeBlade, 'tfc:ceramic/knife_blade_mold', false, null, material, InfinityTagPrefix.toolHeadKnife, 144);
+            TFCAnvilRecipe(event, knifeBlade, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'knife_blade');
+        }
 
-    const knifeBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadKnife, material, 1);
-    if (tfcProperty !== null && !knifeBlade.isEmpty()) {
-        TFCAnvilRecipe(event, knifeBlade, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'knife_blade');
-    }
+        const scytheBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadScythe, material, 1);
+        if (!scytheBlade.isEmpty()) {
+            TFCMeltingRecipe(event, scytheBlade, material, 144*2, 'scythe_blade');
+            TFCCastingRecipe(event, scytheBlade, 'tfc:ceramic/scythe_blade_mold', false, null, material, InfinityTagPrefix.toolHeadScythe, 288);
+            TFCAnvilRecipe(event, scytheBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'scythe_blade');
+        }
 
-    const scytheBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadScythe, material, 1);
-    if (tfcProperty !== null && !scytheBlade.isEmpty()) {
-        TFCAnvilRecipe(event, scytheBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'scythe_blade');
-    }
+        const swordBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadSword, material, 1);
+        if (!swordBlade.isEmpty()) {
+            TFCMeltingRecipe(event, swordBlade, material, 144*2, 'sword_blade');
+            TFCCastingRecipe(event, swordBlade, 'tfc:ceramic/sword_blade_mold', false, null, material, InfinityTagPrefix.toolHeadSword, 288);
+            TFCAnvilRecipe(event, swordBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'sword_blade');
+        }
 
-    const swordBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadSword, material, 1);
-    if (tfcProperty !== null && !swordBlade.isEmpty()) {
-        TFCAnvilRecipe(event, swordBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'sword_blade');
-    }
+        const maceHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadMace, material, 1);
+        if (!maceHead.isEmpty()) {
+            TFCMeltingRecipe(event, maceHead, material, 144*2, 'mace_head');
+            TFCCastingRecipe(event, maceHead, 'tfc:ceramic/mace_head_mold', false, null, material, InfinityTagPrefix.toolHeadMace, 288);
+            TFCAnvilRecipe(event, maceHead, doubleIngotItem, ['hit_last', 'bend_not_last', 'shrink_not_last'], true, material, 'mace_head');
+        }
 
-    const maceHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadMace, material, 1);
-    if (tfcProperty !== null && !maceHead.isEmpty()) {
-        TFCAnvilRecipe(event, maceHead, doubleIngotItem, ['hit_last', 'bend_not_last', 'shrink_not_last'], true, material, 'mace_head');
-    }
+        const fileHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadFile, material, 1);
+        if (!fileHead.isEmpty()) {
+            TFCMeltingRecipe(event, fileHead, material, 144, 'file_head');
+            // Need Mold Item
+            TFCAnvilRecipe(event, fileHead, ingotItem, ['upset_last', 'bend_not_last', 'punch_not_last'], true, material, 'file_head');
+        }
 
-    const fileHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadFile, material, 1);
-    if (tfcProperty !== null && !fileHead.isEmpty()) {
-        TFCAnvilRecipe(event, fileHead, ingotItem, ['upset_last', 'bend_not_last', 'punch_not_last'], true, material, 'file_head');
-    }
+        const miningHammerHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadMiningHammer, material, 1);
+        if (!miningHammerHead.isEmpty()) {
+            TFCMeltingRecipe(event, miningHammerHead, material, 144*2, 'mining_hammer_head');
+            TFCAnvilRecipe(event, miningHammerHead, doubleIngotItem, ['punch_last', 'shrink_not_last'], true, material, 'mining_hammer_head');
+        }
 
-    const miningHammerHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadMiningHammer, material, 1);
-    if (tfcProperty !== null && !miningHammerHead.isEmpty()) {
-        TFCAnvilRecipe(event, miningHammerHead, doubleIngotItem, ['punch_last', 'shrink_not_last'], true, material, 'mining_hammer_head');
-    }
+        const spadeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadSpade, material, 1);
+        if (!spadeHead.isEmpty()) {
+            TFCMeltingRecipe(event, spadeHead, material, 144*2, 'spade_head');
+            TFCAnvilRecipe(event, spadeHead, doubleIngotItem, ['punch_last', 'hit_not_last'], true, material, 'spade_head');
+        }
 
-    const spadeHead = ChemicalHelper.get(InfinityTagPrefix.toolHeadSpade, material, 1);
-    if (tfcProperty !== null && !spadeHead.isEmpty()) {
-        TFCAnvilRecipe(event, spadeHead, doubleIngotItem, ['punch_last', 'hit_not_last'], true, material, 'spade_head');
-    }
+        const butcheryKnifeBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadButcheryKnife, material, 1);
+        if (!butcheryKnifeBlade.isEmpty()) {
+            TFCMeltingRecipe(event, butcheryKnifeBlade, material, 144*2, 'butchery_knife_blade');
+            TFCAnvilRecipe(event, butcheryKnifeBlade, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'], true, material, 'butchery_knife_blade');
+        }
 
-    const butcheryKnifeBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadButcheryKnife, material, 1);
-    if (tfcProperty !== null && !butcheryKnifeBlade.isEmpty()) {
-        TFCAnvilRecipe(event, butcheryKnifeBlade, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'], true, material, 'butchery_knife_blade');
-    }
+        const screwdriverHead = ChemicalHelper.get(TagPrefix.toolHeadScrewdriver, material, 1);
+        if (!screwdriverHead.isEmpty()) {
+            TFCMeltingRecipe(event, screwdriverHead, material, 144, 'screwdriver_head');
+            TFCAnvilRecipe(event, screwdriverHead, ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'screwdriver_tip');
+        }
 
-    const screwdriverHead = ChemicalHelper.get(TagPrefix.toolHeadScrewdriver, material, 1);
-    if (tfcProperty !== null && !screwdriverHead.isEmpty()) {
-        TFCAnvilRecipe(event, screwdriverHead, ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'screwdriver_tip');
-    }
+        const wrenchHead = ChemicalHelper.get(TagPrefix.toolHeadWrench, material, 1);
+        if (!wrenchHead.isEmpty()) {
+            TFCMeltingRecipe(event, wrenchHead, material, 144*2, 'wrench_tip');
+            TFCAnvilRecipe(event, wrenchHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wrench_tip');
+        }
 
-    const wrenchHead = ChemicalHelper.get(TagPrefix.toolHeadWrench, material, 1);
-    if (tfcProperty !== null && !wrenchHead.isEmpty()) {
-        TFCAnvilRecipe(event, wrenchHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wrench_tip');
-    }
+        const wireCutterHead = ChemicalHelper.get(TagPrefix.toolHeadWireCutter, material, 1);
+        if (!wireCutterHead.isEmpty()) {
+            TFCMeltingRecipe(event, wireCutterHead, material, 144*2, 'wire_cutter_head');
+            TFCAnvilRecipe(event, wireCutterHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wire_cutter_head');
+        }
 
-    const wireCutterHead = ChemicalHelper.get(TagPrefix.toolHeadWireCutter, material, 1);
-    if (tfcProperty !== null && !wireCutterHead.isEmpty()) {
-        TFCAnvilRecipe(event, wireCutterHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wire_cutter_head');
-    }
-
-    const shears = $ToolHelper.get(GTToolType.SHEARS, material);
-    if (tfcProperty !== null && !shears.isEmpty() && !knifeBlade.isEmpty()) {
-        TFCWeldingRecipe(event, shears, knifeBlade, knifeBlade, material, 'copy_worst', tfcProperty.getAnvilTier(), 1, 1, 'shears')
-    }
+        const shears = $ToolHelper.get(GTToolType.SHEARS, material);
+        if (!shears.isEmpty() && !knifeBlade.isEmpty()) {
+            TFCWeldingRecipe(event, shears, knifeBlade, knifeBlade, material, 'copy_worst', tfcProperty.getAnvilTier(), 1, 1, 'shears')
+        }
+    })
 }

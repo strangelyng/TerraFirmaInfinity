@@ -4,11 +4,7 @@
 const registerTFIMaterialRecipes = (event) => {
     // TODO: Systematize, once done testing
 
-    let materials = [
-        GTMaterials.Copper, GTMaterials.Lead
-    ]
-
-    materials.forEach(material => {
+    forEachMaterial(material => {
         const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
         if (tfcProperty == null) return;
@@ -126,6 +122,8 @@ const registerTFIMaterialRecipes = (event) => {
         if (!nuggetItem.isEmpty()) {
             TFCMeltingRecipe(event, nuggetItem, material, 144/9, 'nugget');
 
+            // TODO: add Nugget Casting
+
             TFCAnvilRecipe(event, nuggetItem.withCount(9), ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'], false, material, 'nugget')
         }
 
@@ -133,6 +131,8 @@ const registerTFIMaterialRecipes = (event) => {
 
         if (!smallGearItem.isEmpty()) {
             TFCMeltingRecipe(event, smallGearItem, material, getMaterialAmount(TagPrefix.gearSmall, material) * 144, 'small_gear');
+
+            // TODO: add Small Gear Casting
 
             TFCAnvilRecipe(event, smallGearItem, ingotItem, ['hit_last', 'shrink_second_last', 'draw_third_last'], false, material, 'small_gear');
         }

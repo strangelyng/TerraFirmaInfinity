@@ -2,17 +2,18 @@
 "use strict";
 
 const registerGTMaterialHeats = (event) => {
+
     // TODO: Systematize, once done testing
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty) {
         let item = ChemicalHelper.get(tagPrefix, material, 1);
-        let prefixHeatCapacity = Math.max(0.124, tfcProperty.getHeatCapacity(tagPrefix));
+        let prefixHeatCapacity = Math.max(0.124, tfcProperty.getHeatCapacity(tagPrefix)); // Ensure that heatCapacity value doesn't get tooooo low
 
         if (!item.isEmpty()) event.heat({
             ingredient: item,
             heatCapacity: prefixHeatCapacity,
             forgingTemperature: tfcProperty.getForgingTemp(),
             weldingTemperature: tfcProperty.getWeldingTemp()
-        })
+        }, `tfinfinity:${material.getName()}/${tagPrefix.name}`)
     }
 
     function makeFluidHeat(material, tfcProperty) {
@@ -27,11 +28,7 @@ const registerGTMaterialHeats = (event) => {
         }
     }
 
-    let materials = [
-        GTMaterials.Copper, GTMaterials.Lead
-    ]
-
-    materials.forEach(material => {
+    forEachMaterial(material => {
         let tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
         if (tfcProperty !== null) {
@@ -82,5 +79,4 @@ const registerGTMaterialHeats = (event) => {
             makeFluidHeat(material, tfcProperty);
         }
     })
-
 }

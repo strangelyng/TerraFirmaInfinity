@@ -16,7 +16,7 @@ function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) 
         return;
 
     event.recipes.tfc.heating(inputItem, tfcProperty.getMeltTemp())
-        .resultFluid(Fluid.of(material.getFluid(), mbAmount))
+        .resultFluid(Fluid.of(outputMaterial.getFluid(), mbAmount))
         .useDurability(true)
         .id(`tfinfinity:heating/metal/${material.getName()}_${recipeIdSuffix}`);
 }

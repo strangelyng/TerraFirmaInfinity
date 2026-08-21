@@ -704,7 +704,7 @@
 		# Tank capacity of a Bell mold (in mB).
 		# Default: 100
 		# Range: 0 ~ 2147483645
-		moldScytheBladeCapacity = 144
+		moldScytheBladeCapacity = 288
 
 	[items.jug]
 		#

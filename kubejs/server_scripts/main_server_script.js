@@ -9,6 +9,10 @@ ServerEvents.tags('block', event => {
     registerAE2BlockTags(event);
 })
 
+ServerEvents.tags('fluid', event => {
+    registerTFIMaterialFluidTags(event);
+})
+
 TFCEvents.data(event => {
     registerGTMaterialHeats(event);
 })
