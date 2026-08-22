@@ -1,6 +1,18 @@
 {
     "material.gtceu.cooperite": "Cooperite",
     "material.gtceu.quartzite": "Quartz",
-    "material.gtceu.rock_salt": "Halite",
-    "item.gtceu.tool.lv_buzzsaw": "%s Buzzsaw (LV)"
+    "material.gtceu.iron": "Cast Iron",
+    "material.gtceu.nether_quartz": "Smoky Quartz",
+    "material.gtceu.rock_salt": "Sylvite",
+    "material.gtceu.salt": "Halite",
+    "material.gtceu.yellow_limonite": "Limonite",
+    "material.gtceu.hsla_steel": "HSLA Steel",
+    "material.gtceu.hsss": "HSS-S",
+    "material.gtceu.hsse": "HSS-E",
+    "material.gtceu.hssg": "HSS-G",
+    "item.gtceu.iron_dust": "Iron Dust",
+    "item.gtceu.small_iron_dust": "Small Pile of Iron Dust",
+    "item.gtceu.tiny_iron_dust": "Tiny Pile of Iron Dust",
+    "item.gtceu.tool.lv_buzzsaw": "%s Buzzsaw (LV)",
+    "tagprefix.raw": "Normal Raw %s"
 }

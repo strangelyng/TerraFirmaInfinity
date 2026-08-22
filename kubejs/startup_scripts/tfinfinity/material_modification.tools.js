@@ -140,9 +140,9 @@ const registerTFIMaterialModificationTools = (event) => {
         GTToolType.WRENCH_IV
     ]
 
-    // Cast Iron Tools are Trash
+    // Cast Iron Tools perform similarly to Bronze Tools, but their durability is very limited
     GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
-    GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
+    GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.0, 4.0, 70, 2, [GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.HARD_HAMMER]).build());
 
     const toRemove = [
         /* Tool Materials to be Removed (No Replace) */

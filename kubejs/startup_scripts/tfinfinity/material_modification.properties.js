@@ -3,7 +3,7 @@
 
 const $TFC_PROPERTY = Java.loadClass('net.terrafirmainfinity.core.common.data.material.property.TFCProperty')
 
-// TFC_PROPERTY =   (forgingTemp, weldingTemp, meltTemp, baseHeatCapacity, anvilTier)
+// TFC_PROPERTY     (meltTemp, baseHeatCapacity, outputMaterial, anvilTier, percentOfMaterial)
 // OR               (meltTemp, baseHeatCapacity, outputMaterial, anvilTier)
 // OR               (meltTemp, baseHeatCapacity, anvilTier)
 
@@ -68,5 +68,21 @@ const registerTFIMaterialModificationProperties = (event) => {
     GTMaterials.Potin.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(800, 0.35, 1));
     InfinityMaterials.Pewter.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, 1));
 
-    // TODO: Ores
+    // Base TFC Ores
+    InfinityMaterials.Bismuthinite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(270, 0.14, GTMaterials.Bismuth, 1, 90));
+
+    GTMaterials.Cassiterite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, GTMaterials.Tin, 1, 90));
+
+    GTMaterials.Garnierite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 90));
+
+    GTMaterials.Hematite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+    GTMaterials.YellowLimonite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+    GTMaterials.Magnetite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+
+    GTMaterials.Malachite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+    GTMaterials.Tetrahedrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+
+    GTMaterials.Sphalerite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, GTMaterials.Zinc, 1, 90));
+
+    // TODO GT Ores
 }

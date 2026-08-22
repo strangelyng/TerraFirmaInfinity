@@ -13,10 +13,10 @@ const registerTFIMaterialRecipes = (event) => {
 
         if (!dustItem.isEmpty()) {
             const tinyDustItem = ChemicalHelper.get(TagPrefix.dustTiny, material, 1);
-            TFCMeltingRecipe(event, tinyDustItem, material, 144/9, 'tiny_dust');
+            TFCMeltingRecipe(event, tinyDustItem, material, calcAmountOfMetal(144/9, tfcProperty.getPercentOfMaterial()), 'tiny_dust');
             const smallDustItem = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
-            TFCMeltingRecipe(event, smallDustItem, material, 144/4, 'small_dust');
-            TFCMeltingRecipe(event, dustItem, material, 144, 'dust');
+            TFCMeltingRecipe(event, smallDustItem, material, calcAmountOfMetal(144/4, tfcProperty.getPercentOfMaterial()), 'small_dust');
+            TFCMeltingRecipe(event, dustItem, material, calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial()), 'dust');
 
             if (material.hasProperty(PropertyKey.INGOT)) {
                 const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
@@ -212,10 +212,58 @@ const registerTFIMaterialRecipes = (event) => {
 
         if (oreProperty == null) return;
 
+        const smallOreItem = ChemicalHelper.get(InfinityTagPrefix.oreSmall, material, 1);
+
+        if (!smallOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, smallOreItem, material, calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial()), 'small_ore');
+        }
+
+        const poorRawOreItem = ChemicalHelper.get(InfinityTagPrefix.poorRawOre, material, 1);
+
+        if (!poorRawOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, poorRawOreItem, material, calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial()), 'poor_ore');
+        }
+
         const rawOreItem = ChemicalHelper.get(TagPrefix.rawOre, material, 1);
 
         if (!rawOreItem.isEmpty()) {
-            TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore')
+            TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore');
+        }
+
+        const richRawOreItem = ChemicalHelper.get(InfinityTagPrefix.richRawOre, material, 1);
+
+        if (!rawOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, richRawOreItem, material, calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial()), 'rich_ore');
+        }
+
+        const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+
+        if (!crushedOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, crushedOreItem, material, calcAmountOfMetal(64, tfcProperty.getPercentOfMaterial()), 'crushed_ore');
+        }
+
+        const purifiedOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1);
+
+        if (!purifiedOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, purifiedOreItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'purified_ore');
+        }
+
+        const refinedOreItem = ChemicalHelper.get(TagPrefix.crushedRefined, material, 1);
+
+        if (!refinedOreItem.isEmpty()) {
+            TFCMeltingRecipe(event, refinedOreItem, material, calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial()), 'refined_ore');
+        }
+
+        const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
+
+        if (!impureDustItem.isEmpty()) {
+            TFCMeltingRecipe(event, impureDustItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'impure_dust');
+        }
+
+        const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
+
+        if (!pureDustItem.isEmpty()) {
+            TFCMeltingRecipe(event, pureDustItem, material, calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial()), 'pure_dust');
         }
     })
 }

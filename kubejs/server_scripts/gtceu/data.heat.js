@@ -83,8 +83,15 @@ const registerGTMaterialHeats = (event) => {
             makeItemHeatByTagPrefix(InfinityTagPrefix.slabPlated, material, tfcProperty);
             makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlated, material, tfcProperty);
 
-            // TODO: Ores
+            makeItemHeatByTagPrefix(InfinityTagPrefix.oreSmall, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.poorRawOre, material, tfcProperty);
             makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.richRawOre, material, tfcProperty);
+            makeItemHeatByTagPrefix(TagPrefix.crushed, material, tfcProperty);
+            makeItemHeatByTagPrefix(TagPrefix.crushedPurified, material, tfcProperty);
+            makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty);
+            makeItemHeatByTagPrefix(TagPrefix.dustImpure, material, tfcProperty);
+            makeItemHeatByTagPrefix(TagPrefix.dustPure, material, tfcProperty);
 
             // Fluid Heat
             makeFluidHeat(material, tfcProperty);
