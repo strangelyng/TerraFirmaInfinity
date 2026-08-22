@@ -1,0 +1,36 @@
+{
+  "feature": "malum:azure_runewood_tree",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 64
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 3,
+        "min_inclusive": 1
+      }
+    },
+    {
+      "type": "tfc:climate",
+      "min_temperature": -16,
+      "max_temperature": -4,
+      "min_groundwater": 220,
+      "max_groundwater": 500,
+      "forest_types": [
+        "primary_diverse",
+        "primary_alternate",
+        "clearing"
+      ]
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    }
+  ]
+}
