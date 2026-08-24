@@ -4,7 +4,11 @@
 const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelper');
 
 const registerTFIToolHeadRecipes = (event) => {
+    // event.remove({ id: /tfc:anvil\/metal\/.*/ })
+
     // TODO: Systematize, once done testing
+
+    // TODO: bucket
 
     forEachMaterial(material => {
         const materialName = material.getName();
@@ -14,6 +18,7 @@ const registerTFIToolHeadRecipes = (event) => {
         if (tfcProperty == null) return;
         
         const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+        const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
         const doubleIngotItem = ChemicalHelper.get(InfinityTagPrefix.ingotDouble, material, 1);
         const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
 
@@ -141,5 +146,135 @@ const registerTFIToolHeadRecipes = (event) => {
         if (!shears.isEmpty() && !knifeBlade.isEmpty()) {
             TFCWeldingRecipe(event, shears, knifeBlade, knifeBlade, material, 'copy_worst', tfcProperty.getAnvilTier(), 1, 1, 'shears')
         }
+
+        /**
+         * 
+         * @param {String} string ItemId to get 
+         * @returns If it exists, returns ItemStack of the Item, otherwise returns Item.empty;
+         */
+        function tryGetItem(string) {
+            return Item.exists(string) ? Item.of(string) : Item.empty;
+        }
+
+        const tuyereItem = tryGetItem(`tfc:metal/tuyere/${materialName}`);
+
+        if (!tuyereItem.isEmpty()) {
+            TFCAnvilRecipe(event, tuyereItem, doublePlateItem, ['bend_last', 'bend_second_last'], true, material, 'tuyere');
+            TFCMeltingRecipe(event, tuyereItem, material, 144*2, 'tuyere');
+        }
+
+        // #region Non-TagPrefix Items
+
+        const propickHead = tryGetItem(`tfc:metal/propick_head/${materialName}`);
+        const propickItem = tryGetItem(`tfc:metal/propick/${materialName}`);
+
+        if (!propickItem.isEmpty() || !propickHead.isEmpty()) {
+            TFCAnvilRecipe(event, propickHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'propick_head');
+            TFCMeltingRecipe(event, propickHead, material, 144, 'propick_head');
+            TFCCastingRecipe(event, propickHead, 'tfc:ceramic/propick_head_mold', false, null, material, 'propick_head', 144);
+        }
+
+        const javelinHead = tryGetItem(`tfc:metal/javelin_head/${materialName}`);
+        const javelinItem = tryGetItem(`tfc:metal/javelin/${materialName}`);
+
+        if (!javelinHead.isEmpty() || !javelinItem.isEmpty()) {
+            TFCAnvilRecipe(event, javelinHead, ingotItem, ['hit_last', 'hit_second_last', 'draw_third_last'], true, material, 'javelin_head');
+            TFCMeltingRecipe(event, javelinHead, material, 144, 'javelin_head');
+            TFCCastingRecipe(event, javelinHead, 'tfc:ceramic/javelin_head_mold', false, null, material, 'javelin_head', 144);
+        }
+
+        const fishHook = tryGetItem(`tfc:metal/fish_hook/${materialName}`);
+        const fishingRodItem = tryGetItem(`tfc:metal/fishing_rod/${materialName}`);
+
+        if (!fishHook.isEmpty() || !fishingRodItem.isEmpty()) {
+            TFCAnvilRecipe(event, fishHook, ingotItem, ['bend_any', 'hit_any', 'draw_not_last'], false, material, 'fish_hook');
+            TFCMeltingRecipe(event, fishHook, material, 144, 'fish_hook');
+        }
+
+        // #region Armor
+        const unfinishedHelmetItem = tryGetItem(`tfc:metal/unfinished_helmet/${materialName}`);
+        const helmetItem = tryGetItem(`tfc:metal/helmet/${materialName}`);
+
+        if (!unfinishedHelmetItem.isEmpty() && !helmetItem.isEmpty()) {
+            TFCAnvilRecipe(event, unfinishedHelmetItem, doublePlateItem, ['hit_last', 'bend_second_last', 'bend_third_last'], true, material, 'unfinished_helmet');
+            TFCMeltingRecipe(event, unfinishedHelmetItem, material, 144*2, 'unfinished_helmet');
+            TFCMeltingRecipe(event, helmetItem, material, 144*3, 'helmet');
+            TFCWeldingRecipe(event, helmetItem, unfinishedHelmetItem, plateItem, material, 'copy_best', tfcProperty.getAnvilTier(), 1, 1, 'helmet');
+        }
+
+        const unfinishedChestplateItem = tryGetItem(`tfc:metal/unfinished_chestplate/${materialName}`);
+        const chestplateItem = tryGetItem(`tfc:metal/chestplate/${materialName}`);
+
+        if (!unfinishedChestplateItem.isEmpty() && !chestplateItem.isEmpty()) {
+            TFCAnvilRecipe(event, unfinishedChestplateItem, doublePlateItem, ['hit_last', 'hit_second_last', 'upset_third_last'], true, material, 'unfinsihed_chestplate');
+            TFCMeltingRecipe(event, unfinishedChestplateItem, material, 144*2, 'unfinished_chestplate');
+            TFCMeltingRecipe(event, chestplateItem, material, 144*4, 'chestplate');
+            TFCWeldingRecipe(event, chestplateItem, unfinishedChestplateItem, doublePlateItem, material, 'copy_best', tfcProperty.getAnvilTier(), 1, 1, 'chestplate');
+        } 
+
+        const unfinishedGreavesItem = tryGetItem(`tfc:metal/unfinished_greaves/${materialName}`);
+        const greavesItem = tryGetItem(`tfc:metal/greaves/${materialName}`);
+
+        if (!unfinishedGreavesItem.isEmpty() && !greavesItem.isEmpty()) {
+            TFCAnvilRecipe(event, unfinishedGreavesItem, doublePlateItem, ['bend_any', 'draw_any', 'hit_any'], true, material, 'unfinished_greaves');
+            TFCMeltingRecipe(event, unfinishedGreavesItem, material, 144*2, 'unfinished_greaves');
+            TFCMeltingRecipe(event, greavesItem, material, 144*3, 'greaves');
+            TFCWeldingRecipe(event, greavesItem, unfinishedGreavesItem, plateItem, material, 'copy_best', tfcProperty.getAnvilTier(), 1, 1, 'greaves');
+        }
+
+        const unfinishedBootsItem = tryGetItem(`tfc:metal/unfinished_boots/${materialName}`);
+        const bootsItem = tryGetItem(`tfc:metal/boots/${materialName}`);
+
+        if (!unfinishedBootsItem.isEmpty() && !bootsItem.isEmpty()) {
+            TFCAnvilRecipe(event, unfinishedBootsItem, plateItem, ['bend_last', 'bend_second_last', 'shrink_third_last'], true, material, 'unfinished_boots');
+            TFCMeltingRecipe(event, unfinishedBootsItem, material, 144, 'unfinished_boots');
+            TFCMeltingRecipe(event, bootsItem, material, 144*2, 'boots');
+            TFCWeldingRecipe(event, bootsItem, unfinishedBootsItem, plateItem, material, 'copy_best', tfcProperty.getAnvilTier(), 1, 1, 'boots');
+        }
+
+        const shieldItem = tryGetItem(`tfc:metal/shield/${materialName}`);
+
+        if (!shieldItem.isEmpty()) {
+            TFCMeltingRecipe(event, shieldItem, material, 144*2, 'shield');
+            TFCAnvilRecipe(event, shieldItem, doublePlateItem, ['upset_last', 'bend_second_last', 'bend_third_last'], true, material, 'shield');
+        }
+
+        const horseArmorItem = tryGetItem(`tfc:metal/horse_armor/${materialName}`);
+
+        if (!horseArmorItem.isEmpty()) {
+            TFCMeltingRecipe(event, horseArmorItem, material, 144*6, 'horse_armor');
+        }
+
+        // #region Bells
+        const bellItem = tryGetItem(materialName == 'gold' ? 'minecraft:bell' : `tfc:${materialName}_bell`);
+
+        if (!bellItem.isEmpty()) {
+            TFCCastingRecipe(event, bellItem, 'tfc:ceramic/bell_mold', false, null, material, 'bell', 144);
+            TFCMeltingRecipe(event, bellItem, material, 144, 'bell');
+        }
     })
+
+    // #region Buckets
+    TFCAnvilRecipe(event, 
+        Item.of('tfc:metal/bucket/blue_steel'), 
+        ChemicalHelper.get(TagPrefix.plate, GTMaterials.BlueSteel, 1),
+        ['hit_last', 'bend_second_last', 'bend_third_last'],
+        false,
+        GTMaterials.BlueSteel,
+        'bucket'
+    );
+
+    TFCAnvilRecipe(event,
+        Item.of('tfc:metal/bucket/red_steel'),
+        ChemicalHelper.get(TagPrefix.plate, GTMaterials.RedSteel, 1),
+        ['hit_last', 'bend_second_last', 'bend_third_last'],
+        false,
+        GTMaterials.RedSteel,
+        'bucket'
+    )
+
+    event.recipes.tfc.welding(TFC.isp.of('minecraft:bucket').copyHeat(), Item.of('tfc:metal/bucket/blue_steel'), Item.of('tfc:metal/bucket/red_steel'))
+        .tier(6)
+        .bonusBehavior('ignore')
+        .id('tfinfinity:welding/bucket');
 }
