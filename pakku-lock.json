@@ -1222,6 +1222,90 @@
             ]
         },
         {
+            "pakku_id": "GykJ0fFiCeCQl2QK",
+            "pakku_links": [
+                "JaldIin1JTQnKXKT"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "reliable-recipes"
+            },
+            "name": {
+                "curseforge": "Reliable Recipes"
+            },
+            "id": {
+                "curseforge": "1414959"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "reliable_recipes-neoforge-1.21.1-3.1.5.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8682/173/reliable_recipes-neoforge-1.21.1-3.1.5.jar",
+                    "id": "8682173",
+                    "parent_id": "1414959",
+                    "hashes": {
+                        "sha1": "923ac76239144af9b0a649c52cf5da27057aceb8",
+                        "md5": "b6ad4e50564ff3553b904c3c3a770c9a"
+                    },
+                    "required_dependencies": [
+                        "667299"
+                    ],
+                    "size": 127007,
+                    "date_published": "2026-08-19T04:13:21.770Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ZcAtBpi038BMwKJs",
+            "pakku_links": [
+                "JaldIin1JTQnKXKT",
+                "GykJ0fFiCeCQl2QK"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "reliable-remover"
+            },
+            "name": {
+                "curseforge": "Reliable Remover"
+            },
+            "id": {
+                "curseforge": "1420447"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "reliable_remover-neoforge-1.21.1-2.12.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8651/826/reliable_remover-neoforge-1.21.1-2.12.1.jar",
+                    "id": "8651826",
+                    "parent_id": "1420447",
+                    "hashes": {
+                        "sha1": "d99e4b44d9f0d07f67315d53ce7cb3c3d8fc9a1c",
+                        "md5": "1473f61d5e6ba30e3df7c83d7f7e4756"
+                    },
+                    "required_dependencies": [
+                        "667299",
+                        "1414959"
+                    ],
+                    "size": 137893,
+                    "date_published": "2026-08-15T03:51:12.603Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "2i1i6k1OUHo6vcEr",
             "type": "MOD",
             "slug": {
@@ -1566,6 +1650,43 @@
                     ],
                     "size": 12178702,
                     "date_published": "2026-01-13T05:11:22.603Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "JaldIin1JTQnKXKT",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yacl"
+            },
+            "name": {
+                "curseforge": "YetAnotherConfigLib"
+            },
+            "id": {
+                "curseforge": "667299"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7437/845/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+                    "id": "7437845",
+                    "parent_id": "667299",
+                    "hashes": {
+                        "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb",
+                        "md5": "c346120062c3364a0d215c228354030e"
+                    },
+                    "required_dependencies": [],
+                    "size": 1118651,
+                    "date_published": "2026-01-09T16:34:33.460Z"
                 }
             ]
         }
