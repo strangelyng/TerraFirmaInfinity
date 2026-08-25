@@ -17,6 +17,7 @@ What else lies outside this plane of the overworld? Caves deep beneath the surfa
 
 ## Credits
 - Much credit must go to TerraFirmaGreg and its team for their work on creating an incredible example of TerraFirmaCraft-GregTech integration. I can only hope that this pack will manage to step out of its shadow.
+- Many credits go to Vexxel, the creator of the [Vexxed Visuals: TerraFirmaCraft](https://www.curseforge.com/minecraft/texture-packs/terrafirmacraft-vexxed-visuals) resource pack. Many of her textures are included as defaults in the kubejs/assets folder. The Vexxed Visuals resource pack and its assets are licensed under the [EUPLv1.2](https://eupl.eu/1.2/en/).
 - Other modpack inspirations include Creatorio: Supply Chain, and Cosmic Frontiers
 - Inspired by properties including Arcane (LoL) and Infinity Nikki (to which it also owes some of its namesake)
 - Modpack template based on [PanPack](https://github.com/ThePansmith/PanPack)
