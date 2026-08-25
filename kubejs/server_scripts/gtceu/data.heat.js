@@ -2,8 +2,8 @@
 "use strict";
 
 const registerGTMaterialHeats = (event) => {
-
     // TODO: Systematize, once done testing
+    
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty) {
         let item = ChemicalHelper.get(tagPrefix, material, 1);
         let prefixHeatCapacity = Math.max(0.124, tfcProperty.getHeatCapacity(tagPrefix)); // Ensure that heatCapacity value doesn't get tooooo low
@@ -82,6 +82,21 @@ const registerGTMaterialHeats = (event) => {
             makeItemHeatByTagPrefix(InfinityTagPrefix.blockPlated, material, tfcProperty);
             makeItemHeatByTagPrefix(InfinityTagPrefix.slabPlated, material, tfcProperty);
             makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlated, material, tfcProperty);
+            
+            makeItemHeatByTagPrefix(InfinityTagPrefix.grateExposed, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.blockPlatedExposed, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.slabPlatedExposed, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlatedExposed, material, tfcProperty);
+            
+            makeItemHeatByTagPrefix(InfinityTagPrefix.grateWeathered, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.blockPlatedWeathered, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.slabPlatedWeathered, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlatedWeathered, material, tfcProperty);
+            
+            makeItemHeatByTagPrefix(InfinityTagPrefix.grateOxidized, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.blockPlatedOxidized, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.slabPlatedOxidized, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.stairsPlatedOxidized, material, tfcProperty);
 
             makeItemHeatByTagPrefix(InfinityTagPrefix.oreSmall, material, tfcProperty);
             makeItemHeatByTagPrefix(InfinityTagPrefix.poorRawOre, material, tfcProperty);

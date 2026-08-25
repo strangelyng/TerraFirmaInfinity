@@ -24,13 +24,21 @@ const registerTFIMaterialModificationProperties = (event) => {
     GTMaterials.Zinc.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
     GTMaterials.Iron.addFlags(InfinityMaterialFlags.TFC_CASTABLE); // Cast Iron
 
+    GTMaterials.Brass.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+    GTMaterials.Bronze.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+    GTMaterials.Copper.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+    GTMaterials.Silver.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+    GTMaterials.Steel.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+    GTMaterials.SterlingSilver.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+    GTMaterials.WroughtIron.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
+
     GTMaterials.Copper.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, 1));
     GTMaterials.BismuthBronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(985, 0.35, 2));
     GTMaterials.Bronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(950, 0.35, 2));
     GTMaterials.BlackBronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1070, 0.35, 2));
     GTMaterials.WroughtIron.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3));
     GTMaterials.Iron.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3)); // Represents Cast Iron
-    // Pig Iron
+    InfinityMaterials.PigIron.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, 1));
     GTMaterials.Steel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 4));
     GTMaterials.BlackSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1485, 0.35, 5));
     GTMaterials.BlueSteel.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 0.35, 6));
@@ -84,5 +92,5 @@ const registerTFIMaterialModificationProperties = (event) => {
 
     GTMaterials.Sphalerite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, GTMaterials.Zinc, 1, 90));
 
-    // TODO GT Ores
+    // TODO: GT Ores
 }

@@ -4,11 +4,7 @@
 const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelper');
 
 const registerTFIToolHeadRecipes = (event) => {
-    // event.remove({ id: /tfc:anvil\/metal\/.*/ })
-
     // TODO: Systematize, once done testing
-
-    // TODO: bucket
 
     forEachMaterial(material => {
         const materialName = material.getName();
@@ -147,15 +143,6 @@ const registerTFIToolHeadRecipes = (event) => {
             TFCWeldingRecipe(event, shears, knifeBlade, knifeBlade, material, 'copy_worst', tfcProperty.getAnvilTier(), 1, 1, 'shears')
         }
 
-        /**
-         * 
-         * @param {String} string ItemId to get 
-         * @returns If it exists, returns ItemStack of the Item, otherwise returns Item.empty;
-         */
-        function tryGetItem(string) {
-            return Item.exists(string) ? Item.of(string) : Item.empty;
-        }
-
         const tuyereItem = tryGetItem(`tfc:metal/tuyere/${materialName}`);
 
         if (!tuyereItem.isEmpty()) {
@@ -249,6 +236,8 @@ const registerTFIToolHeadRecipes = (event) => {
         const bellItem = tryGetItem(materialName == 'gold' ? 'minecraft:bell' : `tfc:${materialName}_bell`);
 
         if (!bellItem.isEmpty()) {
+            event.remove({ id: `tfc:heating/${materialName}_bell` })
+
             TFCCastingRecipe(event, bellItem, 'tfc:ceramic/bell_mold', false, null, material, 'bell', 144);
             TFCMeltingRecipe(event, bellItem, material, 144, 'bell');
         }

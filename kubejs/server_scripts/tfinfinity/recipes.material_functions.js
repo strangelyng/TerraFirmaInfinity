@@ -12,6 +12,15 @@ function calcAmountOfMetal(baseTotal, percent) {
     return value % 2 === 0 ? value : Math.round(value) - 1;
 }
 
+/**
+ * 
+ * @param {String} string ItemId to get 
+ * @returns If it exists, returns ItemStack of the Item, otherwise returns Item.empty;
+ */
+function tryGetItem(string) {
+    return Item.exists(string) ? Item.of(string) : Item.empty;
+}
+
 // #region Recipe Functions
 function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
