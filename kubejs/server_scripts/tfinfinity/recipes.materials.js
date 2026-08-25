@@ -41,6 +41,13 @@ const registerTFIMaterialRecipes = (event) => {
                 if (!ingotItem.isEmpty()) {
                     event.recipes.tfc.quern(quernDust, ingotItem)
                         .id(`tfinfinity:quern/${material.getName()}_ingot_to_dust`);
+                    
+                    event.recipes.gtceu.shaped(quernDust, [
+                        " X ",
+                        " m "
+                    ], {
+                        X: ingotItem.getItem()
+                    }).id(`gtceu:shaped/mortar_grind_${material.getName()}`)
                 }
             }
         }
@@ -361,8 +368,17 @@ const registerTFIMaterialRecipes = (event) => {
         if (!hcIngotItem.isEmpty()) {
             TFCMeltingRecipe(event, hcIngotItem, material, 144, 'from_high_carbon_ingot')
 
-            event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), hcIngotItem)
-                .id(`tfinfinity:quern/${material.getName()}_ingot_to_dust`);
+            let quernDust = ChemicalHelper.get(TagPrefix.dust, material, 1);
+
+            event.recipes.tfc.quern(quernDust, hcIngotItem)
+                .id(`tfinfinity:quern/${ingot}_ingot_to_dust`);
+                    
+            event.recipes.gtceu.shaped(quernDust, [
+                " X ",
+                " m "
+            ], {
+                X: hcIngotItem.getItem()
+            }).id(`gtceu:shaped/mortar_grind_${material.getName()}`)
         }
     })
 

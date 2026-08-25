@@ -12,6 +12,30 @@ function calcAmountOfMetal(baseTotal, percent) {
     return value % 2 === 0 ? value : Math.round(value) - 1;
 }
 
+// Recycling Functions
+function getMacerateOutput(material, count) {
+    let outputMaterial = material.getProperty(PropertyKey.INGOT).getMacerateInto();
+
+    return ChemicalHelper.get(TagPrefix.dust, outputMaterial != null ? outputMaterial : material, count);
+}
+
+function getArcOutput(material, count) {
+    let outputMaterial = material.getProperty(PropertyKey.INGOT).getArcSmeltingInto();
+
+    return ChemicalHelper.get(TagPrefix.ingot, outputMaterial != null ? outputMaterial : material, count);
+}
+
+function getExtractOutput(material, count) {
+    let outputMaterial = material.getProperty(PropertyKey.INGOT).getMacerateInto();
+
+    return outputMaterial != null ? outputMaterial.getFluid(144*count) : material.getFluid(144*count);
+}
+
+function calcRecycleDuration(material, count) {
+    let duration = GTValues.M * material.getMass() * count; 
+    return Math.max(1, duration / GTValues.M)
+}
+
 /**
  * 
  * @param {String} string ItemId to get 
@@ -77,4 +101,35 @@ function TFCWeldingRecipe(event, outputItem, inputItem1, inputItem2, material, b
     }
 
     // TODO: GT Forming Press / Basin Welding
+}
+
+/**
+ * Only built to handle a single material that recycles into whole dust amounts
+ */
+function simpleRecyclingRecipes(event, tagPrefix, material) {
+    const materialName = material.getName();
+    const inputItem = ChemicalHelper.get(tagPrefix, material, 1);
+    const materialAmount = tagPrefix.getMaterialAmount(material) / GTValues.M;
+    const recipeDuration = calcRecycleDuration(material, materialAmount);
+
+    event.recipes.gtceu.arc_furnace(`arc_${materialName}_${tagPrefix.name}`)
+        .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+        .itemInputs(inputItem)
+        .itemOutputs(getArcOutput(material, materialAmount))
+        .duration(recipeDuration)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.macerator(`macerate_${materialName}_${tagPrefix.name}`)
+        .category(GTRecipeCategories.MACERATOR_RECYCLING)
+        .itemInputs(inputItem)
+        .itemOutputs(getMacerateOutput(material, materialAmount))
+        .duration(recipeDuration)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.extractor(`extract_${materialName}_${tagPrefix.name}`)
+        .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+        .itemInputs(inputItem)
+        .outputFluids(getExtractOutput(material, materialAmount))
+        .duration(recipeDuration)
+        .EUt(GTValues.VA[GTValues.MV])
 }

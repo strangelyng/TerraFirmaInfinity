@@ -116,7 +116,7 @@ const registerTFIToolHeadRecipes = (event) => {
 
         const butcheryKnifeBlade = ChemicalHelper.get(InfinityTagPrefix.toolHeadButcheryKnife, material, 1);
         if (!butcheryKnifeBlade.isEmpty()) {
-            TFCMeltingRecipe(event, butcheryKnifeBlade, material, 144*2, 'butchery_knife_blade');
+            TFCMeltingRecipe(event, butcheryKnifeBlade, material, 144, 'butchery_knife_blade');
             TFCAnvilRecipe(event, butcheryKnifeBlade, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'], true, material, 'butchery_knife_blade');
         }
 
