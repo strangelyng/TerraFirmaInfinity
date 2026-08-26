@@ -52,6 +52,14 @@ const registerTFIMaterialRecipes = (event) => {
             }
         }
 
+        const powderItem = ChemicalHelper.get(InfinityTagPrefix.powder, material, 1);
+
+        if (!powderItem.isEmpty()) {
+            TFCMeltingRecipe(event, powderItem, material, calcAmountOfMetal(144/4, tfcProperty.getPercentOfMaterial()), 'powder');
+            event.recipes.tfc.quern(powderItem.withCount(4), dustItem)
+                .id(`tfinfinity:quern/${material.getName()}_dust_to_powder`)
+        }
+
         const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 
         if (!ingotItem.isEmpty()) {
@@ -341,12 +349,10 @@ const registerTFIMaterialRecipes = (event) => {
 
     event.recipes.tfc.anvil(Item.of('tfc:refined_iron_bloom'), Item.of('tfc:raw_iron_bloom'), ['hit_last', 'hit_second_last', 'hit_third_last'])
         .tier(2)
-        .applyBonus(false)
         .id('tfinfinity:anvil/refined_iron_bloom');
 
     event.recipes.tfc.anvil(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 1), Item.of('tfc:refined_iron_bloom'), ['hit_last', 'hit_second_last', 'hit_third_last'])
         .tier(2)
-        .applyBonus(false)
         .id('tfinfinity:anvil/wrought_iron_ingot');
 
     event.recipes.tfc.blast_furnace(
@@ -385,8 +391,7 @@ const registerTFIMaterialRecipes = (event) => {
     event.recipes.tfc.anvil(Item.of('tfc:metal/ingot/high_carbon_steel'),
         ChemicalHelper.get(TagPrefix.ingot, InfinityMaterials.PigIron, 1),
         ['hit_third_last', 'hit_second_last', 'hit_last'])
-        .tier(-1)
-        .applyBonus(false)
+        .tier(0)
         .id('tfinfinity:anvil/high_carbon_steel_ingot')
 
     let hcSteelsToIngots = {
@@ -402,8 +407,7 @@ const registerTFIMaterialRecipes = (event) => {
 
         if (!inputIngot.isEmpty()) {
             event.recipes.tfc.anvil(outputIngot, inputIngot, ['hit_third_last', 'hit_second_last', 'hit_last'])
-                .tier(-1)
-                .applyBonus(false)
+                .tier(0)
                 .id(`tfinfinity:anvil/${outputMaterial.getName()}/ingot`)
         }
     })
@@ -438,7 +442,7 @@ const registerTFIMaterialRecipes = (event) => {
 
         if (!hcIngotItem.isEmpty()) {
             event.recipes.tfc.welding(TFC.isp.of(hcIngotItem).copyHeat(), input1, input2)
-                .tier(-1)
+                .tier(0)
                 .bonusBehavior('ignore')
                 .id(`tfinfinity:welding/high_carbon_${material}_ingot`)
         }

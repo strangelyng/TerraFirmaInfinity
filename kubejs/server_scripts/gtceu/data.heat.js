@@ -107,6 +107,7 @@ const registerGTMaterialHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty);
             makeItemHeatByTagPrefix(TagPrefix.dustImpure, material, tfcProperty);
             makeItemHeatByTagPrefix(TagPrefix.dustPure, material, tfcProperty);
+            makeItemHeatByTagPrefix(InfinityTagPrefix.powder, material, tfcProperty);
 
             // Fluid Heat
             makeFluidHeat(material, tfcProperty);
