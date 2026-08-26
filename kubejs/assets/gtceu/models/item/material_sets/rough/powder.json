@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gtceu:item/material_sets/rough/powder",
+        "layer1": "gtceu:item/material_sets/rough/powder_secondary"
+    }
+}
