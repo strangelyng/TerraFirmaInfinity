@@ -1,0 +1,25 @@
+{
+    "filters": [
+        {
+            "category": "minecraft:blasting"
+        },
+        {
+            "category": "minecraft:smoking"
+        },
+        {
+            "category": "minecraft:campfire_cooking"
+        },
+        {
+            "category": "emi:anvil_repairing"
+        },
+        {
+            "category": "emi:grinding"
+        },
+        {
+            "category": "minecraft:brewing"
+        },
+        {
+            "category": "emi:composting"
+        }
+    ]
+}

@@ -16,3 +16,7 @@ const registerTFIMaterialFluidTags = (event) => {
         }
     })
 }
+
+const registerTFIMaterialItemTags = (event) => {
+    event.add('c:ingots/all_iron', ['#c:ingots/wrought_iron', '#c:ingots/cast_iron'])
+}

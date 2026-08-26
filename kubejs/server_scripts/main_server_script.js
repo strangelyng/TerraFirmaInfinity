@@ -2,6 +2,10 @@
 "use strict";
 
 ServerEvents.recipes(event => {
+    event.remove({ type: 'minecraft:blasting' })
+    event.remove({ type: 'minecraft:smoking' })
+    event.remove({ type: 'minecraft:campfire_cooking' })
+
     registerEidolonRepraisedRecipes(event);
     registerTFIRecipes(event);
 })
@@ -12,6 +16,7 @@ ServerEvents.tags('block', event => {
 
 ServerEvents.tags('item', event => {
     registerTFCItemTags(event);
+    registerTFIMaterialItemTags(event);
 })
 
 ServerEvents.tags('fluid', event => {

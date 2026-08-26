@@ -1,0 +1,16 @@
+{
+    "filters": [
+        {
+            "id": "tfc:barrel/olive_oil_cooling"
+        },
+        {
+            "id": "tfc:barrel/salt_water_cooling"
+        },
+        {
+            "id": "tfc:barrel/water_cooling"
+        },
+        {
+            "id": "tfc:barrel/canola_oil_cooling"
+        }
+    ]
+}

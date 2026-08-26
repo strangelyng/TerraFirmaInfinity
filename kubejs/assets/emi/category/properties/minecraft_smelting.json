@@ -1,0 +1,7 @@
+{
+    "minecraft:smelting": {
+        "icon": {
+            "stack": "item:gtceu:hp_steam_furnace"
+        }
+    }
+}
