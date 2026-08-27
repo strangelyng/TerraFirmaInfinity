@@ -24,8 +24,9 @@ ServerEvents.tags('fluid', event => {
 })
 
 TFCEvents.data(event => {
+    registerGTCEuData(event);
+    registerAFCData(event);
     registerTFCData(event);
-    registerGTMaterialHeats(event);
 })
 
 GTCEuServerEvents.oreVeins(event => {

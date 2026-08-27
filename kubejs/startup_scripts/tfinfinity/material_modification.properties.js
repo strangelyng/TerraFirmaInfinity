@@ -32,6 +32,17 @@ const registerTFIMaterialModificationProperties = (event) => {
     GTMaterials.SterlingSilver.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
     GTMaterials.WroughtIron.addFlags(InfinityMaterialFlags.HAS_TFC_OXIDATION);
 
+    GTMaterials.Copper.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.BismuthBronze.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.Bronze.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.BlackBronze.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.WroughtIron.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.Steel.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.BlackSteel.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.BlueSteel.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    GTMaterials.RedSteel.addFlags(InfinityMaterialFlags.HAS_TFC_ARMOR);
+    
+
     GTMaterials.Copper.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, 1));
     GTMaterials.BismuthBronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(985, 0.35, 2));
     GTMaterials.Bronze.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(950, 0.35, 2));

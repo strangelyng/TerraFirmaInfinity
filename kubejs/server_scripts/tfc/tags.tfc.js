@@ -14,6 +14,7 @@ const registerTFCItemTags = (event) => {
     ]
 
     storageBlocksToRemove.forEach(material => {
+        // TODO: Make Plated Block Stair/Slab crafting recipes use new tag
         event.remove(`c:storage_blocks/${material}`, `tfc:metal/block/${material}`)
     })
 }

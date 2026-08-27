@@ -14,6 +14,15 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.BlackBronze.setMaterialARGB(0x8F648C)
 	GTMaterials.BlackBronze.setMaterialSecondaryARGB(0x3C3852)
 
+	GTMaterials.Garnierite.setMaterialARGB(0x5e7951)
+	GTMaterials.Garnierite.setMaterialSecondaryARGB(0x1c3d32)
+
+	GTMaterials.YellowLimonite.setMaterialARGB(0xc0a05a)
+	GTMaterials.YellowLimonite.setMaterialSecondaryARGB(0xa56f32)
+
+	GTMaterials.Sphalerite.setMaterialARGB(0xbcbebb)
+	GTMaterials.Sphalerite.setMaterialSecondaryARGB(0xa0a097)
+
 	// Credits to TerraFirmaGreg
 	GTMaterials.Steel.setMaterialARGB(0x9AA9AB)
 	GTMaterials.SteelMagnetic.setMaterialARGB(0x9AA9AB)

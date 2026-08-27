@@ -1,7 +1,7 @@
 // priority: 0
 "use strict";
 
-const registerGTMaterialHeats = (event) => {
+const registerGTCEuData = (event) => {
     // TODO: Systematize, once done testing
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty) {

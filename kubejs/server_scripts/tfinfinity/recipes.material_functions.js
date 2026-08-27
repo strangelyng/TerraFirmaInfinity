@@ -8,8 +8,8 @@ function getMaterialAmount(tagPrefix, material) {
 }
 
 function calcAmountOfMetal(baseTotal, percent) {
-    const value = baseTotal * (percent / 100);
-    return value % 2 === 0 ? value : Math.round(value) - 1;
+    const value = Math.floor(baseTotal * (percent / 100));
+    return value % 2 === 0 ? value : value - 1;
 }
 
 // Recycling Functions
