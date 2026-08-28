@@ -390,6 +390,10 @@ client:
   # Default: true
   machinesHaveBERsByDefault: true
 
+  # Whether april fools "features" should always be enabled.
+  # Default: false
+  aprilFoolsMode: false
+
   # Whether or not sounds should be played when using tools outside of crafting.
   # Default: true
   toolUseSounds: true
@@ -449,6 +453,10 @@ client:
     # Whether or not to color wire/cable highlights based on voltage tier or material color
     # Default: true
     coloredWireOutline: true
+
+    # The color of the assembly line lasers
+    # Default: #1FA1FC
+    assemblyLineLaser: #1FA1FC
 
   # Config options for bloom and other post-processing effects
   bloom:

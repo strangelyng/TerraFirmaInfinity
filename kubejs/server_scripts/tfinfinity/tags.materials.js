@@ -19,4 +19,16 @@ const registerTFIMaterialFluidTags = (event) => {
 
 const registerTFIMaterialItemTags = (event) => {
     event.add('c:ingots/all_iron', ['#c:ingots/wrought_iron', '#c:ingots/cast_iron'])
+
+    forEachMaterial(material => {
+        if (!material.hasProperty(InfinityPropertyKey.TFC_PROPERTY)) {
+            return;
+        }
+
+        const bars = ChemicalHelper.get(InfinityTagPrefix.bars, material, 1);
+
+        if (!bars.isEmpty()) {
+            event.add('tfinfinity:metal_bars', bars.getId())
+        }
+    })
 }

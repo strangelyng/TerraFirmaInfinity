@@ -695,7 +695,7 @@
             ]
         },
         {
-            "pakku_id": "jihUagbq3fqZpDWz",
+            "pakku_id": "rUrcpylQNMRDAHfW",
             "type": "MOD",
             "slug": {
                 "github": "GregTechCEu/GregTech-Modern"
@@ -709,16 +709,16 @@
             "files": [
                 {
                     "type": "github",
-                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20260809-033829-844c71d.jar",
+                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20260826-111823-3ed9cd8.jar",
                     "release_type": "release",
-                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20260809-033829-844c71d.jar",
-                    "id": "507066233",
+                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20260826-111823-3ed9cd8.jar",
+                    "id": "530700645",
                     "parent_id": "615400306",
                     "hashes": {
-                        "sha256": "d1fbf27febc16b8afd45ddbc1b4a436332caf38ea30fe1649381c49c44f38a14"
+                        "sha256": "fd0e9d8b3e696b5a431e1a8473eb97b7284cc34094116d67f80001e28e271874"
                     },
-                    "size": 16608242,
-                    "date_published": "2026-08-09T03:38:34Z"
+                    "size": 16675200,
+                    "date_published": "2026-08-26T11:18:30Z"
                 }
             ]
         },
@@ -1575,7 +1575,7 @@
             ]
         },
         {
-            "pakku_id": "cU5MD6bJ3TNGPtJH",
+            "pakku_id": "mIHzsy3lZ2GEn9O9",
             "pakku_links": [
                 "gOiUlVBGm0SNIv44"
             ],
@@ -1592,7 +1592,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "toomanyrecipeviewers-0.9.0+mc.21.1.jar",
+                    "file_name": "toomanyrecipeviewers-0.8.1+mc.21.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -1600,18 +1600,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8336/857/toomanyrecipeviewers-0.9.0+mc.21.1.jar",
-                    "id": "8336857",
+                    "url": "https://edge.forgecdn.net/files/8145/845/toomanyrecipeviewers-0.8.1+mc.21.1.jar",
+                    "id": "8145845",
                     "parent_id": "1194921",
                     "hashes": {
-                        "sha1": "d82ca1db3f4323534b1ce5f43b94a5ae31f65edb",
-                        "md5": "43c678a25240ad380e308c4218c9b99a"
+                        "sha1": "4f349431752b0881f900a52475de494de5d83f53",
+                        "md5": "d0419aeb177c8737056179d6f72277a2"
                     },
                     "required_dependencies": [
                         "580555"
                     ],
-                    "size": 1241625,
-                    "date_published": "2026-06-28T20:48:06.290Z"
+                    "size": 1175532,
+                    "date_published": "2026-05-25T21:23:40.437Z"
                 }
             ]
         },
