@@ -18,24 +18,42 @@ const registerTFIMaterialRecipes = (event) => {
         const toolProperty = material.getProperty(PropertyKey.TOOL);
         if (toolProperty !== null) {
             processScrewdriverHead(event, material);
+            processGTTool(event, GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, material);
             processWrenchHead(event, material);
+            processGTTool(event, GTToolType.WRENCH, TagPrefix.toolHeadWrench, material);
             processWireCutterHead(event, material);
+            processGTTool(event, GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, material);
 
             processPickaxeHead(event, material);
+            processGTTool(event, GTToolType.PICKAXE, InfinityTagPrefix.toolHeadPickaxe, material);
             processAxeHead(event, material);
+            processGTTool(event, GTToolType.AXE, InfinityTagPrefix.toolHeadAxe, material);
             processShovelHead(event, material);
+            processGTTool(event, GTToolType.SHOVEL, InfinityTagPrefix.toolHeadShovel, material);
             processHoeHead(event, material);
+            processGTTool(event, GTToolType.HOE, InfinityTagPrefix.toolHeadHoe, material);
             processChiselHead(event, material);
+            processGTTool(event, InfinityToolType.CHISEL, InfinityTagPrefix.toolHeadChisel, material);
             processHammerHead(event, material);
+            processGTTool(event, GTToolType.HARD_HAMMER, InfinityTagPrefix.toolHeadHammer, material);
             processSawBlade(event, material);
+            processGTTool(event, GTToolType.SAW, InfinityTagPrefix.toolHeadSaw, material);
             processKnifeBlade(event, material);
+            processGTTool(event, GTToolType.KNIFE, InfinityTagPrefix.toolHeadKnife, material);
             processScytheBlade(event, material);
+            processGTTool(event, GTToolType.SCYTHE, InfinityTagPrefix.toolHeadScythe, material);
             processSwordBlade(event, material);
+            processGTTool(event, GTToolType.SWORD, InfinityTagPrefix.toolHeadSword, material);
             processMaceHead(event, material);
+            processGTTool(event, InfinityToolType.MACE, InfinityTagPrefix.toolHeadMace, material);
             processFileHead(event, material);
+            processGTTool(event, GTToolType.FILE, InfinityTagPrefix.toolHeadFile, material);
             processMiningHammerHead(event, material);
+            processGTTool(event, GTToolType.MINING_HAMMER, InfinityTagPrefix.toolHeadMiningHammer, material);
             processSpadeHead(event, material);
+            processGTTool(event, GTToolType.SPADE, InfinityTagPrefix.toolHeadSpade, material);
             processButcheryKnifeBlade(event, material);
+            processGTTool(event, GTToolType.BUTCHERY_KNIFE, InfinityTagPrefix.toolHeadButcheryKnife, material);
 
             processTuyere(event, material);
             processPropickHead(event, material);
