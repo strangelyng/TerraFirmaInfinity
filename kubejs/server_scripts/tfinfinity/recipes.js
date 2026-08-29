@@ -3,6 +3,7 @@
 
 const registerTFIRecipes = (event) => {
     registerTFIMaterialRecipes(event);
+    registerTFICasingRecipes(event);
     registerTFIComponentRecipes(event);
     registerTFIMaterialMiscRecipes(event);
     registerTFIAlloyRecipes(event);
