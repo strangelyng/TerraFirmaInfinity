@@ -780,6 +780,24 @@ function processPlatedBlock(event, material) {
         TFCMeltingRecipe(event, platedBlockItem, material, getMaterialAmount(InfinityTagPrefix.blockPlated, material) * 144, 'plated_block');
         TFCMeltingRecipe(event, platedSlabItem, material, getMaterialAmount(InfinityTagPrefix.slabPlated, material) * 144, 'plated_slab');
         TFCMeltingRecipe(event, platedStairsItem, material, getMaterialAmount(InfinityTagPrefix.stairsPlated, material) * 144, 'plated_stairs');
+
+        let recipeIdName = material != GTMaterials.Iron ? material.getName() : 'cast_iron';
+
+        event.shaped(platedSlabItem.withCount(6), [
+            'AAA'
+            ], {
+                A: platedBlockItem
+            }
+        ).id(`tfc:crafting/metal/block/${recipeIdName}_slab`)
+
+        event.shaped(platedStairsItem.withCount(8), [
+            'A  ',
+            'AA ',
+            'AAA'
+            ], {
+                A: platedBlockItem
+            }
+        ).id(`tfc:crafting/metal/block/${recipeIdName}_stairs`)
         
         if (material.hasFlag(InfinityMaterialFlags.HAS_TFC_OXIDATION)) {
             const exposedPlatedBlock = ChemicalHelper.get(InfinityTagPrefix.blockPlatedExposed, material, 1);

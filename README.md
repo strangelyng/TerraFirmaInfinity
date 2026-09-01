@@ -16,8 +16,9 @@ What else lies outside this plane of the overworld? Caves deep beneath the surfa
 **Coremod page**: [TerraFirmaInfinity-Core](https://github.com/strangelyng/TerraFirmaInfinity-Core)
 
 ## Credits
-- Much credit must go to TerraFirmaGreg and its team for their work on creating an incredible example of TerraFirmaCraft-GregTech integration. I can only hope that this pack will manage to step out of its shadow.
-- Many credits go to Vexxel, the creator of the [Vexxed Visuals: TerraFirmaCraft](https://www.curseforge.com/minecraft/texture-packs/terrafirmacraft-vexxed-visuals) resource pack. Many of her textures are included as defaults in the kubejs/assets folder. The Vexxed Visuals resource pack and its assets are licensed under the [EUPLv1.2](https://eupl.eu/1.2/en/).
+- Much credit must go to TerraFirmaGreg and its team for their work on creating an incredible example of TerraFirmaCraft-GregTech integration. A fair portion of the KubeJS scripts, specifically for handling standardized material recipes, are based on their work.
+- Many credits go to Vexxel, the creator of the [Vexxed Visuals: TerraFirmaCraft](https://www.curseforge.com/minecraft/texture-packs/terrafirmacraft-vexxed-visuals) resource pack. Many of her textures are included as defaults in the kubejs/assets folder. The Vexxed Visuals resource pack and its assets are licensed under the [EUPLv1.2](https://eupl.eu/1.2/en/). Some textures from the Vexxed Visuals resource pack have been modified or to create new textures for this project.
+- Some textures are modifications of the [GTRefreshed Resource Pack](https://github.com/ULSTICK/GregTechRefreshed) by ULSTICK included in GregTech CEu Modern, which is licensed under the [MIT](https://opensource.org/license/MIT) license.
 - Other modpack inspirations include Creatorio: Supply Chain, and Cosmic Frontiers
 - Inspired by properties including Arcane (LoL) and Infinity Nikki (to which it also owes some of its namesake)
 - Modpack template based on [PanPack](https://github.com/ThePansmith/PanPack)

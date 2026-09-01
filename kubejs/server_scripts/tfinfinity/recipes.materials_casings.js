@@ -27,4 +27,33 @@ const registerTFICasingRecipes = (event) => {
         A: '#c:plates/lead',
         B: 'embers:caminite_bricks'
     }).id('tfinfinity:shaped/lead_brick_casing')
+
+    event.recipes.gtceu.shaped('2x tfinfinity:lead_pipe_casing', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: '#c:plates/lead',
+        B: 'gtceu:lead_normal_fluid_pipe',
+        C: '#c:frames/lead'
+    }).id('tfinfinity:shaped/lead_pipe_casing')
+
+    event.recipes.gtceu.shaped('2x tfinfinity:stainless_steel_pipe_casing', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: '#c:plates/stainless_steel',
+        B: 'gtceu:stainless_steel_normal_fluid_pipe',
+        C: '#c:frames/stainless_steel'
+    }).id('tfinfinity:shaped/stainless_steel_pipe_casing')
+
+    event.recipes.gtceu.shaped('2x tfinfinity:hp_steam_machine_casing', [
+        'AhA',
+        'ABA',
+        'AwA'
+    ], {
+        A: '#c:plates/steel',
+        B: 'minecraft:bricks'
+    }).id('tfinifinity:shaped/hp_steam_machine_casing')
 }

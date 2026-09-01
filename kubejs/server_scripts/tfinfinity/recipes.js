@@ -14,8 +14,7 @@ const registerTFIRecipes = (event) => {
     event.replaceInput({ input: 'minecraft:crafting_table' }, 'minecraft:crafting_table', '#tfc:workbenches' )
     event.replaceInput({ input: 'minecraft:blast_furnace' }, 'minecraft:blast_furnace', 'tfc:blast_furnace' )
 
-    event.replaceInput({ input: 'minecraft:iron_ingot' }, 'minecraft:iron_ingot', '#c:ingots/wrought_iron' )
-    event.replaceInput({ input: 'minecraft:iron_ingot' }, 'minecraft:iron_ingot', '#c:ingots/wrought_iron' )
+    // event.replaceInput({ input: 'minecraft:iron_ingot' }, 'minecraft:iron_ingot', '#c:ingots/wrought_iron' )
 
     event.replaceInput({ input: 'minecraft:iron_block' }, 'minecraft:iron_block', '#c:storage_blocks/wrought_iron' )
     event.replaceInput({ input: 'minecraft:chain' }, 'minecraft:chain', '#c:chains' )
