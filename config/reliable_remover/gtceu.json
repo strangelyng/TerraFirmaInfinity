@@ -1,0 +1,32 @@
+{
+	"action": "remove",
+	"items": [
+                "gtceu:firebrick",
+                "gtceu:firebricks",
+                "gtceu:compressed_clay",
+                "gtceu:compressed_fireclay",
+                "gtceu:fireclay_dust",
+                "gtceu:small_fireclay_dust",
+                "gtceu:tiny_fireclay_dust",
+
+                "gtceu:primitive_blast_furnace",
+                "gtceu:primitive_pump",
+                "gtceu:pump_deck",
+                "gtceu:pump_hatch",
+                
+                "gtceu:bronze_helmet",
+                "gtceu:bronze_chestplate",
+                "gtceu:bronze_leggings",
+                "gtceu:bronze_boots",
+
+                "gtceu:steel_helmet",
+                "gtceu:steel_chestplate",
+                "gtceu:steel_leggings",
+                "gtceu:steel_boots",
+                
+                "gtceu:titanium_helmet",
+                "gtceu:titanium_chestplate",
+                "gtceu:titanium_leggings",
+                "gtceu:titanium_boots"
+	]
+}

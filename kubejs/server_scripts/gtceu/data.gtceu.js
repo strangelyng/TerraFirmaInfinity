@@ -113,4 +113,10 @@ const registerGTCEuData = (event) => {
             makeFluidHeat(material, tfcProperty);
         }
     })
+
+    
+    event.heat({
+        ingredient: 'gtceu:compressed_coke_clay',
+        heatCapacity: 1.0
+    }, 'tfinfinity:compressed_coke_clay')
 }

@@ -1,0 +1,39 @@
+{
+	"action": "remove",
+	"items": [
+		"ae2:nether_quartz_pickaxe",
+		"ae2:nether_quartz_axe",
+		"ae2:nether_quartz_shovel",
+		"ae2:nether_quartz_hoe",
+		"ae2:nether_quartz_sword",
+
+		"ae2:fluix_upgrade_smithing_template",
+		"ae2:fluix_axe",
+		"ae2:fluix_shovel",
+		"ae2:fluix_pickaxe",
+		"ae2:fluix_hoe",
+		"ae2:fluix_sword",
+		
+		"ae2:certus_quartz_hoe",
+		"ae2:certus_quartz_pickaxe",
+		"ae2:certus_quartz_axe",
+		"ae2:certus_quartz_shovel",
+		"ae2:certus_quartz_sword",
+
+		"ae2:silicon",
+		"ae2:printed_silicon",
+		"ae2:silicon_press",
+
+		"ae2:inscriber",
+		"ae2:charger",
+		"ae2:crank",
+
+		"ae2:meteorite_compass",
+
+		"ae2:sky_stone_chest",
+		"ae2:smooth_sky_stone_chest",
+		"ae2:sky_stone_tank",
+		
+		"ae2:tiny_tnt"
+	]
+}
