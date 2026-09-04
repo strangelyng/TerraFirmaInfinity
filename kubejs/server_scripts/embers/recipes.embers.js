@@ -2,6 +2,31 @@
 "use_strict";
 
 const registerEmbersRecipes = (event) => {
+    let recipesToRemove = [
+        'embers:dawnstone_anvil/tool_breakdown',
+        'embers:raw_ingot_stamp',
+        'embers:raw_caminite_plate',
+        'embers:raw_plate_stamp',
+        'embers:raw_gear_stamp',
+        'embers:raw_nugget_stamp',
+        'embers:raw_flat_stamp',
+
+        /embers:melting\/gears\/.*/,
+        /embers:melting\/ingots\/.*/,
+        /embers:melting\/nuggets\/.*/,
+        /embers:melting\/ores\/.*/,
+        /embers:melting\/plates\/.*/,
+        /embers:melting\/raw_materials\/.*/,
+        /embers:melting\/storage_blocks\/.*/,
+        
+        /embers:stamping\/gears\/.*/,
+        /embers:stamping\/ingots\/.*/,
+        /embers:stamping\/nuggets\/.*/,
+        /embers:stamping\/plates\/.*/
+    ].forEach(recipeId => {
+        event.remove({ id: recipeId });
+    })
+
     // #region Caminite Knapping
     event.recipes.tfc.knapping(
         '3x tfinfinity:unfired_caminite_brick',

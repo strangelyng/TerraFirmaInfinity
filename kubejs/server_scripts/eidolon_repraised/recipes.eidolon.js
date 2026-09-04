@@ -2,6 +2,7 @@
 "use_strict";
 
 const registerEidolonRepraisedRecipes = (event) => {
+    // #region Armor
     // Bonelord Helm
     event.custom({
         type: 'eidolon_repraised:worktable',
@@ -99,4 +100,13 @@ const registerEidolonRepraisedRecipes = (event) => {
             id: 'eidolon_repraised:bonelord_greaves'
         }
     }).id('eidolon_repraised:bonelord_greaves')
+
+    // #region Devices
+    event.recipes.gtceu.shaped('eidolon_repraised:crucible', [
+        'A A',
+        'AhA',
+        'AAA'
+    ], {
+        A: '#c:plates/pewter'
+    }).id('eidolon_repraised:crucible')
 }

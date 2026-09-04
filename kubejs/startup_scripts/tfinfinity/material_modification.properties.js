@@ -8,7 +8,7 @@ const $TFC_PROPERTY = Java.loadClass('net.terrafirmainfinity.core.common.data.ma
 // OR               (meltTemp, baseHeatCapacity, anvilTier)
 
 const registerTFIMaterialModificationProperties = (event) => {
-    // TFC Materials
+    // #region TFC Materials
     GTMaterials.Copper.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
     GTMaterials.BismuthBronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
     GTMaterials.Bronze.addFlags(InfinityMaterialFlags.TFC_CASTABLE);
@@ -73,19 +73,30 @@ const registerTFIMaterialModificationProperties = (event) => {
     GTMaterials.Tin.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, 1));
     GTMaterials.Zinc.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, 1));
 
-    // GTMaterials
+    // #region GTMaterials
     // GTMaterials.CobaltBrass.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
     GTMaterials.Electrum.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
     GTMaterials.Lead.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
     GTMaterials.Potin.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
-    InfinityMaterials.Pewter.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    GTMaterials.Invar.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    GTMaterials.TinAlloy.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
 
     GTMaterials.Cobalt.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495, 0.35, 1));
     // GTMaterials.CobaltBrass.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(928, 0.35, 1));
     GTMaterials.Electrum.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 0.35, 1));
     GTMaterials.Lead.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(327, 0.14, 1));
     GTMaterials.Potin.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(800, 0.35, 1));
+    GTMaterials.Invar.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1427, 0.35, 3))
+    GTMaterials.TinAlloy.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(984, 0.35, 3))
+
+    // #region IntegrationMaterials
+    InfinityMaterials.Pewter.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    InfinityMaterials.Dawnstone.addFlags(InfinityMaterialFlags.TFC_CASTABLE, InfinityMaterialFlags.GENERATE_DOUBLE_INGOT);
+    
     InfinityMaterials.Pewter.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, 1));
+    InfinityMaterials.Dawnstone.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(826, 0.35, 1));
+
+    // #region IntegrationMaterials
 
     // Base TFC Ores
     InfinityMaterials.Bismuthinite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(270, 0.14, GTMaterials.Bismuth, 1, 90));

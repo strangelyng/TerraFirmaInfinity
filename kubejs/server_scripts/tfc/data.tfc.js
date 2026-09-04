@@ -7,4 +7,10 @@ const registerTFCData = (event) => {
         duration: 2100,
         temperature: 1540
     })
+
+    event.itemSize({
+        ingredient: 'tfc:kaolin_clay',
+        weight: 'very_light',
+        size: 'very_small'
+    }, 'tfinfinity:kaolin_clay')
 }

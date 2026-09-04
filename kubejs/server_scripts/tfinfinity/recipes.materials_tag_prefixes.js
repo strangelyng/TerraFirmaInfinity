@@ -68,6 +68,8 @@ function processIngot(event, material) {
         TFCMeltingRecipe(event, ingotItem, material, 144, 'ingot');
         TFCCastingRecipe(event, ingotItem, 'tfc:ceramic/ingot_mold', false, null, material, 'ingot', 144);
         TFCCastingRecipe(event, ingotItem, 'tfc:ceramic/fire_ingot_mold', true, null, material, 'ingot', 144);
+
+        EmbersStampingRecipe(event, ingotItem, 'embers:ingot_stamp', material, 'ingot', 144);
     }
 }
 
@@ -102,6 +104,8 @@ function processPlate(event, material) {
         if (!doubleIngotItem.isEmpty()) {
             TFCAnvilRecipe(event, plateItem, doubleIngotItem, ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'plate');
         }
+
+        EmbersStampingRecipe(event, plateItem, 'embers:plate_stamp', material, 'plate', 144*1.5)
     }
 }
 
@@ -270,6 +274,8 @@ function processNugget(event, material) {
         if (!ingotItem.isEmpty()) {
             TFCAnvilRecipe(event, nuggetItem.withCount(9), ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'], false, material, 'nugget')
         }
+
+        EmbersStampingRecipe(event, nuggetItem, 'embers:nugget_stamp', material, 'nugget', 144/9)
     }
 }
 
@@ -289,6 +295,8 @@ function processGearSmall(event, material) {
         if (!ingotItem.isEmpty()) {
             TFCAnvilRecipe(event, smallGearItem, ingotItem, ['hit_last', 'shrink_second_last', 'draw_third_last'], false, material, 'small_gear');
         }
+
+        EmbersStampingRecipe(event, smallGearItem, 'embers:gear_stamp', material, 'small_gear', 144)
     }
 }
 

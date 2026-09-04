@@ -1,0 +1,6 @@
+{
+    "item.embers.gear_stamp": "Small Gear Stamp",
+    "item.embers.raw_gear_stamp": "Raw Small Gear Stamp",
+    "item.embers.gear_stamp.tooltip": "Presses molten metal into small gears.",
+    "item.embers.raw_gear_stamp.tooltip": "An unfired stamp blank for small gears."
+}

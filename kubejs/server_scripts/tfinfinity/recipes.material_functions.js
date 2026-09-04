@@ -57,6 +57,34 @@ function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) 
         .resultFluid(Fluid.of(outputMaterial.getFluid(), mbAmount))
         .useDurability(true)
         .id(`tfinfinity:heating/metal/${material.getName()}_${recipeIdSuffix}`);
+
+    // TODO: Move to its own function?
+    if (inputItem instanceof Array || inputItem.hasTag('c:tools') || inputItem.hasTag('c:armors')) {
+        return;
+    }
+
+    let meltingJson = {
+        type: 'embers:melting',
+        input: {
+            item: inputItem.getId()
+        },
+        output: {
+            amount: mbAmount,
+            fluid: outputMaterial.getFluid().id
+        }
+    }
+
+    // TODO: Bonus for OreProperty byproduct 16mB
+    event.custom({
+        type: 'embers:melting',
+        input: {
+            item: inputItem.getId()
+        },
+        output: {
+            amount: mbAmount,
+            fluid: outputMaterial.getFluid().id
+        }
+    }).id(`tfinfinity:embers/melting/${material.getName()}_${recipeIdSuffix}`)
 }
 
 function TFCAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, recipeIdSuffix) {
@@ -87,6 +115,33 @@ function TFCCastingRecipe(event, outputItem, ceramicMold, isFireMold, gtMold, ma
     }
 
     // TODO: GT Casting
+}
+
+function EmbersStampingRecipe(event, outputItem, stampItem, material, tagPrefixName, mbAmount) {
+    const materialName = material.getName();
+
+    const canBeCasted = material.hasFlag(InfinityMaterialFlags.TFC_CASTABLE) || tagPrefixName == 'ingot';
+
+    if (canBeCasted
+        && material !== GTMaterials.WroughtIron) {
+        const outputId = outputItem.getId();
+        const fluidId = material.getFluid().id;
+        const recipeId = `${materialName}_${tagPrefixName}`;
+
+        event.custom({
+            type: 'embers:stamping',
+            fluid: {
+                amount: mbAmount,
+                fluid: fluidId
+            },
+            output: {
+                item: outputId
+            },
+            stamp: {
+                item: stampItem
+            }
+        }).id(`tfinfinity:stamping/${recipeId}`)
+    }
 }
 
 function TFCWeldingRecipe(event, outputItem, inputItem1, inputItem2, material, bonusBehavior, anvilTier, nonTFCTier, circuit, recipeIdSuffix) {
