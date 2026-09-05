@@ -3,12 +3,18 @@
 
 const registerSulfideMineralData = (event) => {
     registerChalcociteHeatData(event);
+    registerChalcopyriteHeatData(event);
     registerGalenaHeatData(event);
+    registerPyriteHeatData(event);
+    registerSphaleriteHeatData(event);
 }
 
 const registerSulfideMineralRecipes = (event) => {
     registerChalcociteRecipes(event);
+    registerChalcopyriteRecipes(event);
     registerGalenaRecipes(event);
+    registerPyriteRecipes(event);
+    registerSphaleriteRecipes(event);
 
     // #region Cobaltite
     /*
@@ -22,29 +28,6 @@ const registerSulfideMineralRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // #region Pyrite
-    event.remove({ id: 'gtceu:electric_blast_furnace/pyrite_metallurgy' });
-
-    event.recipes.tfinfinity.roaster('oxidative_roasting_pyrite')
-        .itemInputs('gtceu:pyrite_dust')
-        .inputFluids('3000x gtceu:oxygen')
-        .itemOutputs('gtceu:hematite_dust')
-        .outputFluids('2000x gtceu:sulfur_dioxide')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // #region Sphalerite
-    event.remove({ id: 'gtceu:electric_blast_furnace/sphalerite_metallurgy' });
-
-    // Sphalerite Oxidative Roasting (ZnS + 3O -> ZnO + SO2)
-    event.recipes.tfinfinity.roaster('oxidative_roasting_sphalerite')
-        .itemInputs('gtceu:sphalerite_dust')
-        .inputFluids('3000x gtceu:oxygen')
-        .itemOutputs('gtceu:zincite_dust')
-        .outputFluids('1000x gtceu:sulfur_dioxide')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
     // #region Tetrahedrite
     event.remove({ id: 'gtceu:electric_blast_furnace/tetrahedrite_metallurgy' });
     
@@ -52,17 +35,6 @@ const registerSulfideMineralRecipes = (event) => {
         .itemInputs('gtceu:tetrahedrite_dust')
         .inputFluids('3000x gtceu:oxygen')
         .itemOutputs('gtceu:cupric_oxide_dust', '3x gtceu:tiny_antimony_trioxide_dust')
-        .outputFluids('2000x gtceu:sulfur_dioxide')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // #region Chalcopyrite
-    event.remove({ id: 'gtceu:electric_blast_furnace/chalcopyrite_metallurgy' });
-
-    event.recipes.tfinfinity.roaster('oxidative_roasting_chalcopyrite')
-        .itemInputs('gtceu:chalcopyrite_dust', 'gtceu:silicon_dioxide_dust')
-        .inputFluids('3000x gtceu:oxygen')
-        .itemOutputs('gtceu:cupric_oxide_dust', 'gtceu:ferrosilite_dust')
         .outputFluids('2000x gtceu:sulfur_dioxide')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])

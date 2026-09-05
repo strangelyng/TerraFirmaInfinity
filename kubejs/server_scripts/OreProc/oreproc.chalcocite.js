@@ -34,7 +34,7 @@ const registerChalcociteHeatData = (event) => {
         fluid: 'gtceu:crude_copper',
         meltTemperature: 1130,
         specificHeatCapacity: 0.008571429
-    }, 'tfinfinity:crude_lead')
+    }, 'tfinfinity:crude_copper')
 }
 
 const registerChalcociteRecipes = (event) => {
