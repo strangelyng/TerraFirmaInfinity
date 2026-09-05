@@ -46,4 +46,10 @@ const registerOreProcMaterials = (event) => {
         .ingot()
         .color(0x6a8fb7)
         .liquid(new GTFluidBuilder().temperature(1768))
+
+    // #region Bismuth
+    event.create('gtceu:bismuth_oxide')
+        .dust()
+        .color(0x43677D)
+        .components('2x gtceu:bismuth', '3x gtceu:oxygen')
 }

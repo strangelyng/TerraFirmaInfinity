@@ -2,6 +2,7 @@
 "use_strict";
 
 const registerSulfideMineralData = (event) => {
+    registerBismuthiniteHeatData(event);
     registerChalcociteHeatData(event);
     registerChalcopyriteHeatData(event);
     registerCobaltiteHeatData(event);
@@ -14,6 +15,7 @@ const registerSulfideMineralData = (event) => {
 }
 
 const registerSulfideMineralRecipes = (event) => {
+    registerBismuthiniteRecipes(event);
     registerChalcociteRecipes(event);
     registerChalcopyriteRecipes(event);
     registerCobaltiteRecipes(event);
