@@ -60,7 +60,6 @@ const registerPyriteRecipes = (event) => {
         .id('tfinfinity:heating/tiny_pyrite_cinder_dust')
 
     // #region LV Processing
-
     // Pyrite Oxidative Roasting (FeS2 + 3O -> Fe2O3 + 2SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_pyrite')
         .itemInputs('gtceu:pyrite_dust')

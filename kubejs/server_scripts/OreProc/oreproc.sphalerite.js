@@ -29,12 +29,6 @@ const registerSphaleriteHeatData = (event) => {
         ingredient: 'gtceu:tiny_zincite_dust',
         heatCapacity: 0.21
     }, 'tfinfinity:tiny_zincite_dust')
-
-    event.fluidHeat({
-        fluid: 'gtceu:crude_zinc',
-        meltTemperature: 1000,
-        specificHeatCapacity: 0.021428572
-    }, 'tfinfinity:crude_zinc')
 }
 
 const registerSphaleriteRecipes = (event) => {
@@ -54,25 +48,18 @@ const registerSphaleriteRecipes = (event) => {
         .id('tfinfinity:heating/roasting/tiny_sphalerite_dust')
         
     event.recipes.tfc.heating('gtceu:zincite_dust', 1000)
-        .resultFluid(Fluid.of('gtceu:crude_zinc', 128))
+        .resultFluid(Fluid.of('gtceu:zinc', 128))
         .id('tfinfinity:heating/zincite_dust')
         
     event.recipes.tfc.heating('gtceu:small_zincite_dust', 1000)
-        .resultFluid(Fluid.of('gtceu:crude_zinc', 32))
+        .resultFluid(Fluid.of('gtceu:zinc', 32))
         .id('tfinfinity:heating/small_zincite_dust')
         
     event.recipes.tfc.heating('gtceu:tiny_zincite_dust', 1000)
-        .resultFluid(Fluid.of('gtceu:crude_zinc', 14))
+        .resultFluid(Fluid.of('gtceu:zinc', 14))
         .id('tfinfinity:heating/tiny_zincite_dust')
-    
-    event.recipes.tfc.blast_furnace(
-        Fluid.of('gtceu:zinc', 1),
-        'tfc:powder/flux',
-        Fluid.of('gtceu:crude_zinc', 1)
-    ).id('tfinfinity:blast_furnace/zinc')
 
     // #region LV Processing
-
     // Sphalerite Oxidative Roasting (ZnS + 3O -> ZnO + SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_sphalerite')
         .itemInputs('gtceu:sphalerite_dust')

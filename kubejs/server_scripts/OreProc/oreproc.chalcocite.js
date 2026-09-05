@@ -29,12 +29,6 @@ const registerChalcociteHeatData = (event) => {
         ingredient: 'gtceu:tiny_cuprous_oxide_dust',
         heatCapacity: 0.35
     }, 'tfinfinity:tiny_cuprous_oxide_dust')
-
-    event.fluidHeat({
-        fluid: 'gtceu:crude_copper',
-        meltTemperature: 1130,
-        specificHeatCapacity: 0.008571429
-    }, 'tfinfinity:crude_copper')
 }
 
 const registerChalcociteRecipes = (event) => {
@@ -54,25 +48,18 @@ const registerChalcociteRecipes = (event) => {
         .id('tfinfinity:heating/roasting_tiny_chalcocite_dust')
 
     event.recipes.tfc.heating('gtceu:cuprous_oxide_dust', 1130)
-        .resultFluid(Fluid.of('gtceu:crude_copper', 128))
+        .resultFluid(Fluid.of('gtceu:copper', 128))
         .id('tfinfinity:heating/cuprous_oxide_dust')
 
     event.recipes.tfc.heating('gtceu:small_cuprous_oxide_dust', 1130)
-        .resultFluid(Fluid.of('gtceu:crude_copper', 32))
+        .resultFluid(Fluid.of('gtceu:copper', 32))
         .id('tfinfinity:heating/small_cuprous_oxide_dust')
 
     event.recipes.tfc.heating('gtceu:tiny_cuprous_oxide_dust', 1130)
-        .resultFluid(Fluid.of('gtceu:crude_copper', 14))
+        .resultFluid(Fluid.of('gtceu:copper', 14))
         .id('tfinfinity:heating/tiny_cuprous_oxide_dust')
-    
-    event.recipes.tfc.blast_furnace(
-        Fluid.of('gtceu:copper', 1),
-        'tfc:powder/flux',
-        Fluid.of('gtceu:crude_copper', 1)
-    ).id('tfinfinity:blast_furnace/copper')
 
     // #region LV Processing
-
     // Chalcocite Oxidative Roasting (Cu2S + 3O -> Cu2O + SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_chalcocite')
         .itemInputs('gtceu:chalcocite_dust')

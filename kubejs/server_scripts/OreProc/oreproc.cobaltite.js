@@ -78,7 +78,6 @@ const registerCobaltiteRecipes = (event) => {
     ).id('tfinfinity:blast_furnace/cobalt_matte')
         
     // #region LV Processing
-
     // Cobaltite Oxidative Roasting (CoAsS + 3O -> CoO + As2O3 + SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_cobaltite')
         .itemInputs('gtceu:cobaltite_dust')

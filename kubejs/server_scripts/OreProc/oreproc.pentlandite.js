@@ -72,13 +72,13 @@ const registerPentlanditeRecipes = (event) => {
         .id('tfinfinity:heating/tiny_ferronickel_oxide_dust')
 
     event.recipes.tfc.blast_furnace(
-        Fluid.of('gtceu:ferronickel', 1),
+        Fluid.of('gtceu:nickel_matte', 1),
         'gtceu:silicon_dioxide_dust',
         Fluid.of('gtceu:crude_ferronickel')
-    ).id('tfinfinity:blast_furnace/ferronickel')
+    ).id('tfinfinity:blast_furnace/nickel_matte')
 
     // #region LV Process
-    
+
     // Pentlandite Oxidative Roasting (Ni9S8 + 3O -> NiO + SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_pentlandite')
         .itemInputs('gtceu:pentlandite_dust')

@@ -72,7 +72,6 @@ const registerGalenaRecipes = (event) => {
     ).id('tfinfinity:blast_furnace/lead')
 
     // #region LV Processing
-
     // Galena Oxidative Roasting (PbS + 3O -> PbO + SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_galena')
         .itemInputs('gtceu:galena_dust')

@@ -31,12 +31,6 @@ const registerStibniteHeatData = (event) => {
     }, 'tfinfinity:tiny_antimony_trioxide_dust')
 
     event.fluidHeat({
-        fluid: 'gtceu:crude_antimony',
-        meltTemperature: 630,
-        specificHeatCapacity: 0.021428572
-    }, 'tfinfinity:crude_antimony')
-
-    event.fluidHeat({
         fluid: 'gtceu:antimony',
         meltTemperature: 630,
         specificHeatCapacity: 0.021428572
@@ -60,25 +54,18 @@ const registerStibniteRecipes = (event) => {
         .id('tfinfinity:heating/roasting_tiny_stibnite_dust')
 
     event.recipes.tfc.heating('gtceu:antimony_trioxide_dust', 800)
-        .resultFluid(Fluid.of('gtceu:crude_antimony', 128))
+        .resultFluid(Fluid.of('gtceu:antimony', 128))
         .id('tfinfinity:heating/antimony_trioxide_dust')
 
     event.recipes.tfc.heating('gtceu:small_antimony_trioxide_dust', 800)
-        .resultFluid(Fluid.of('gtceu:crude_antimony', 32))
+        .resultFluid(Fluid.of('gtceu:antimony', 32))
         .id('tfinfinity:heating/small_antimony_trioxide_dust')
 
     event.recipes.tfc.heating('gtceu:tiny_antimony_trioxide_dust', 800)
-        .resultFluid(Fluid.of('gtceu:crude_antimony', 14))
+        .resultFluid(Fluid.of('gtceu:antimony', 14))
         .id('tfinfinity:heating/tiny_antimony_trioxide_dust')
-    
-    event.recipes.tfc.blast_furnace(
-        Fluid.of('gtceu:antimony', 1),
-        'tfc:powder/flux',
-        Fluid.of('gtceu:crude_antimony', 1)
-    ).id('tfinfinity:blast_furnace/antimony')
 
     // #region LV Processing
-
     // Stibnite Oxidative Roasting (Sb2S3 + 3O -> Sb2O3 + 1.5SO2)
     event.recipes.tfinfinity.roaster('oxidative_roasting_stibnite')
         .itemInputs('gtceu:stibnite_dust')
