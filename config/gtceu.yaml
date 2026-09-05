@@ -125,7 +125,6 @@ worldgen:
 
   # Whether to increase number of rolls for dungeon chests. Increases dungeon loot drastically.
   # Default: true
-  # WARNING: Currently unimplemented.
   increaseDungeonLoot: true
 
   # Allow GregTech to add additional GregTech Items as loot in various structures.
@@ -461,7 +460,7 @@ client:
   # Config options for bloom and other post-processing effects
   bloom:
     # Bloom Algorithm
-    # Requires reloading all chunks 
+    # Requires reloading all chunks
     # UNITY - Unity-like Bloom (rescale)
     # UNREAL - Unreal-like Bloom (gaussian blur)
     # DISABLED - No bloom
@@ -500,9 +499,9 @@ client:
     # Default: 1.5
     strength: 1.5
 
-    # Blur Step (bloom range)
-    # Default: 1
-    step: 1.0
+    # Blur Sample Step (bloom range)
+    # Default: 1.0
+    blurSampleStep: 1.0
 
   tankItemFluidPreview:
     # Set true to render the including fluid icons to GT Drums

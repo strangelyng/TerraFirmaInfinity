@@ -81,6 +81,8 @@ const registerTFIMaterialRecipes = (event) => {
             processGear(event, material);
 
             processBuzzsawBlade(event, material);
+
+            processAspectus(event, material);
         }
 
         if (material.hasProperty(PropertyKey.GEM)) {

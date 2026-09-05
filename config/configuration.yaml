@@ -1,0 +1,89 @@
+bool: true
+
+character: c
+
+byteSimple: 123
+
+byteRanged: 15
+
+byteSlider: 0
+
+shortSimple: 123
+
+shortRanged: 15
+
+shortSlider: 0
+
+intSimple: 15
+
+# Ranged value
+intRanged: 10
+
+intSlider: 15
+
+# Requires game restart
+intGameRestartRestriction: 50
+
+# Synchronized value
+intSynchronized: 123
+
+longNumber: 16644564564561651
+
+floatNumber: 151.3123
+
+doubleNumber: 316.15646556
+
+string: random text
+
+color: #33AADD
+
+color2: #66771166
+
+boolArray:
+  - false
+  - false
+  - true
+  - false
+
+intArray:
+  - 153
+  - 123
+  - 54
+
+longArray:
+  - 13
+  - 56
+  - 133
+
+floatArray:
+  - 500.0
+  - 1561.23
+
+stringArray:
+  - minecraft:test
+
+# Allowed values:
+# - A
+# - B
+# - C
+# - D
+testEnum: C
+
+# Allowed values:
+# - A
+# - B
+# - C
+# - D
+testEnumArray:
+  - A
+  - C
+
+nestedTest:
+  testInt: 13
+
+  testInt2: 15
+
+  test:
+    # Nested boolean value
+    bool: true
+

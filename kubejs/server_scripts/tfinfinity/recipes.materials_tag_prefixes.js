@@ -834,3 +834,14 @@ function processPlatedBlock(event, material) {
         }
     }
 }
+
+function processAspectus(event, material) {
+    const aspectusItem = ChemicalHelper.get(InfinityTagPrefix.aspectus, material, 1);
+    if (aspectusItem.isEmpty()) return;
+
+    const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
+
+    if (tfcProperty !== null) {
+        EmbersStampingRecipe(event, aspectusItem, 'embers:ingot_stamp', material, 'aspectus', 144, 'embers:ember_shard');
+    }
+}

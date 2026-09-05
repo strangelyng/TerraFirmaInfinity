@@ -22,10 +22,37 @@ const registerEmbersRecipes = (event) => {
         /embers:stamping\/gears\/.*/,
         /embers:stamping\/ingots\/.*/,
         /embers:stamping\/nuggets\/.*/,
-        /embers:stamping\/plates\/.*/
+        /embers:stamping\/plates\/.*/,
+        /embers:stamping\/.*_aspectus/
     ].forEach(recipeId => {
         event.remove({ id: recipeId });
     })
+
+    event.shaped('3x tfinfinity:unfired_caminite_brick', [
+        'XXX',
+        'XfX'
+    ], {
+        X: 'embers:caminite_blend',
+        f: 'gtceu:brick_wooden_form'
+    }).keepIngredient('gtceu:brick_wooden_form').id('tfinfinity:shaped/unfired_caminite_brick')
+
+    event.shaped('4x embers:caminite_bricks', [
+        'BMB',
+        'MBM',
+        'BMB'
+    ], {
+        B: 'embers:caminite_brick',
+        M: 'tfc:mortar'
+    }).id('embers:caminite_bricks')
+
+    event.shaped('4x embers:archaic_bricks', [
+        'BMB',
+        'MBM',
+        'BMB'
+    ], {
+        B: 'embers:archaic_brick',
+        M: 'tfc:mortar'
+    }).id('embers:archaic_bricks')
 
     // #region Caminite Knapping
     event.recipes.tfc.knapping(

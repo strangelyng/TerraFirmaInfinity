@@ -114,5 +114,22 @@ const registerTFIMaterialModificationProperties = (event) => {
 
     GTMaterials.Sphalerite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, GTMaterials.Zinc, 1, 90));
 
-    // TODO: GT Ores
+    // GT Ores
+    GTMaterials.CassiteriteSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, GTMaterials.Tin, 1, 80));
+
+    GTMaterials.Bornite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+    GTMaterials.Chalcopyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+    GTMaterials.Chalcocite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+
+    GTMaterials.Cobaltite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495, 0.35, GTMaterials.Cobalt, 1, 90));
+
+    GTMaterials.Galena.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(327, 0.14, GTMaterials.Lead, 1, 90));
+
+    GTMaterials.Pentlandite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 90));
+
+    GTMaterials.Goethite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+    GTMaterials.Pyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+    GTMaterials.VanadiumMagnetite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+    GTMaterials.GraniticMineralSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 80));
+    GTMaterials.BasalticMineralSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 80));
 }

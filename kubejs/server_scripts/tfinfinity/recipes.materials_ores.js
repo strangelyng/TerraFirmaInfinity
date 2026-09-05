@@ -19,7 +19,7 @@ function processPoorRawOre(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, poorRawOreItem, material, calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial()), 'poor_ore');
+        TFCMeltingRecipe(event, poorRawOreItem, material, calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial()), 'poor_ore', true);
     }
 }
 
@@ -30,7 +30,7 @@ function processNormalRawOre(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore');
+        TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore', true);
     }
 }
 
@@ -41,7 +41,7 @@ function processRichRawOre(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, richRawOreItem, material, calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial()), 'rich_ore');
+        TFCMeltingRecipe(event, richRawOreItem, material, calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial()), 'rich_ore', true);
     }
 }
 
@@ -52,7 +52,7 @@ function processCrushedOre(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, crushedOreItem, material, calcAmountOfMetal(64, tfcProperty.getPercentOfMaterial()), 'crushed_ore');
+        TFCMeltingRecipe(event, crushedOreItem, material, calcAmountOfMetal(64, tfcProperty.getPercentOfMaterial()), 'crushed_ore', true, 0);
     }
 }
 
@@ -63,7 +63,7 @@ function processPurifiedOre(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, purifiedOreItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'purified_ore');
+        TFCMeltingRecipe(event, purifiedOreItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'purified_ore', true, 1);
     }
 }
 
@@ -74,7 +74,7 @@ function processRefinedOre(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, refinedOreItem, material, calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial()), 'refined_ore');
+        TFCMeltingRecipe(event, refinedOreItem, material, calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial()), 'refined_ore', true, 2);
     }
 }
 
@@ -85,7 +85,7 @@ function processImpureDust(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, impureDustItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'impure_dust');
+        TFCMeltingRecipe(event, impureDustItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'impure_dust', true, 0);
     }
 }
 
@@ -96,6 +96,6 @@ function processPureDust(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        TFCMeltingRecipe(event, pureDustItem, material, calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial()), 'pure_dust');
+        TFCMeltingRecipe(event, pureDustItem, material, calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial()), 'pure_dust', true, 1);
     }
 }

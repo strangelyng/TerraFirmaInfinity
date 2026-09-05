@@ -52,26 +52,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "firmalife": {
-    "barrel_press": true,
-    "keg_sub": true,
-    "string": true,
-    "vat": true,
-    "drying_mat": true,
-    "tumbler": true,
-    "climate_station": true,
-    "keg": true,
-    "cheese": true,
-    "shelf": true,
-    "oven_top": true,
-    "pumping_station": true,
-    "solar_drier": true,
-    "pot": true,
-    "oven_bottom": true,
-    "fruit_tree_sapling": true,
-    "jarbnet": true,
-    "hanger": true
-  },
   "tfc": {
     "bloomery": true,
     "nest_box": true,
@@ -133,11 +113,6 @@
     "anemometer": true,
     "ingot_pile": true
   },
-  "beneath": {
-    "hellforge_side": true,
-    "ancient_altar": true,
-    "hellforge": true
-  },
   "jade_access": {
     "held_item": true,
     "sign": true,
@@ -164,6 +139,7 @@
     "stained_color": true,
     "cable_info": true,
     "parallel_info": true,
+    "programmed_circuit_info": true,
     "ldp_endpoint": true,
     "controllable_provider": true,
     "exhaust_vent_info": true,
@@ -188,9 +164,6 @@
   },
   "kubejs_tfc": {
     "heat_consumer": true
-  },
-  "balm": {
-    "jade": true
   },
   "tfc_support_indicator": {
     "support_indicator": true

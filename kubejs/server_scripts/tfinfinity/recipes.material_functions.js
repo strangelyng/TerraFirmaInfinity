@@ -46,7 +46,22 @@ function tryGetItem(string) {
 }
 
 // #region Recipe Functions
-function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) {
+
+/**
+ * 
+ * @param {$RecipesKubeEvent} event
+ * @param {Item} inputItem The item to be melted
+ * @param {Material} material The material of the item to be melted
+ * @param {Number} mbAmount The amount of fluid that the item will melt into
+ * @param {String} recipeIdSuffix The suffix for the recipe idea
+ * @param {Boolean} isOreMelting Whether to add potential byproducts with the Embers Geologic Separator. Defaults to false. 
+ * @param {Number} byproductNum The ore byproduct number to use for the Geologic Separator. Defaults to 0
+ */
+function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix, isOreMelting, byproductNum) {
+    if (isOreMelting === null || isOreMelting === undefined) {
+        isOreMelting = false;
+    }
+
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
     const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 
@@ -58,12 +73,40 @@ function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) 
         .useDurability(true)
         .id(`tfinfinity:heating/metal/${material.getName()}_${recipeIdSuffix}`);
 
-    // TODO: Move to its own function?
+    // TODO: Maybe this bit could be handled better
     if (inputItem instanceof Array || inputItem.hasTag('c:tools') || inputItem.hasTag('c:armors')) {
         return;
     }
 
-    let meltingJson = {
+    if (isOreMelting) {
+        EmbersOreMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix, byproductNum);
+    } else {
+        event.custom({
+            type: 'embers:melting',
+            input: {
+                item: inputItem.getId()
+            },
+            output: {
+                amount: mbAmount,
+                fluid: outputMaterial.getFluid().id
+            }
+        }).id(`tfinfinity:embers/melting/${material.getName()}_${recipeIdSuffix}`)
+    }
+
+}
+
+function EmbersOreMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix, byproductNum) {
+    if (byproductNum === null || byproductNum === undefined) {
+        byproductNum = 0;
+    }
+
+    const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
+    const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
+
+    if (!outputMaterial.hasProperty(PropertyKey.FLUID))
+        return;
+
+    let recipeJson = {
         type: 'embers:melting',
         input: {
             item: inputItem.getId()
@@ -74,17 +117,28 @@ function TFCMeltingRecipe(event, inputItem, material, mbAmount, recipeIdSuffix) 
         }
     }
 
-    // TODO: Bonus for OreProperty byproduct 16mB
-    event.custom({
-        type: 'embers:melting',
-        input: {
-            item: inputItem.getId()
-        },
-        output: {
-            amount: mbAmount,
-            fluid: outputMaterial.getFluid().id
+    let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(byproductNum, material);
+
+    if (byproductMaterial.hasProperty(InfinityPropertyKey.TFC_PROPERTY)) {
+        let tfcPropertySecondary = byproductMaterial.getProperty(InfinityPropertyKey.TFC_PROPERTY);
+        let outputMaterialSecondary = (tfcPropertySecondary.getOutputMaterial() === null) ? byproductMaterial : tfcPropertySecondary.getOutputMaterial();
+
+        let byproductBase = Math.floor(mbAmount / 9);
+        let byproductAmount = byproductBase % 2 === 0 ? byproductBase : byproductBase - 1;
+
+        if (byproductAmount > 0 && outputMaterialSecondary.hasProperty(PropertyKey.FLUID) && outputMaterialSecondary.getFluid() !== outputMaterial.getFluid()) {
+            let bonusJson = {
+                amount: byproductAmount,
+                fluid: outputMaterialSecondary.getFluid().id
+            }
+
+            recipeJson.bonus = bonusJson;
         }
-    }).id(`tfinfinity:embers/melting/${material.getName()}_${recipeIdSuffix}`)
+    }
+
+    event.custom(
+        recipeJson
+    ).id(`tfinfinity:embers/melting/${material.getName()}_${recipeIdSuffix}`)
 }
 
 function TFCAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, recipeIdSuffix) {
@@ -117,7 +171,7 @@ function TFCCastingRecipe(event, outputItem, ceramicMold, isFireMold, gtMold, ma
     // TODO: GT Casting
 }
 
-function EmbersStampingRecipe(event, outputItem, stampItem, material, tagPrefixName, mbAmount) {
+function EmbersStampingRecipe(event, outputItem, stampItem, material, tagPrefixName, mbAmount, inputItem) {
     const materialName = material.getName();
 
     const canBeCasted = material.hasFlag(InfinityMaterialFlags.TFC_CASTABLE) || tagPrefixName == 'ingot';
@@ -128,7 +182,7 @@ function EmbersStampingRecipe(event, outputItem, stampItem, material, tagPrefixN
         const fluidId = material.getFluid().id;
         const recipeId = `${materialName}_${tagPrefixName}`;
 
-        event.custom({
+        let recipeJson = {
             type: 'embers:stamping',
             fluid: {
                 amount: mbAmount,
@@ -140,7 +194,19 @@ function EmbersStampingRecipe(event, outputItem, stampItem, material, tagPrefixN
             stamp: {
                 item: stampItem
             }
-        }).id(`tfinfinity:stamping/${recipeId}`)
+        }
+
+        if (inputItem !== null && inputItem !== undefined) {
+            let inputJson = {
+                item: inputItem
+            }
+
+            recipeJson.input = inputJson;
+        }
+
+        event.custom(
+            recipeJson
+        ).id(`tfinfinity:stamping/${recipeId}`)
     }
 }
 

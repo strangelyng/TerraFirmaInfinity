@@ -286,7 +286,7 @@ const registerTFIAlloyRecipes = (event) => {
             {
                 fluid: GTMaterials.Copper.getFluid(),
                 min: 0.6,
-                max: 0.75
+                max: 0.7
             },
             {
                 fluid: GTMaterials.Tin.getFluid(),
@@ -295,7 +295,7 @@ const registerTFIAlloyRecipes = (event) => {
             },
             {
                 fluid: GTMaterials.Lead.getFluid(),
-                min: 0.1,
+                min: 0.05,
                 max: 0.15
             }
         ]

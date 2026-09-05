@@ -109,4 +109,14 @@ const registerEidolonRepraisedRecipes = (event) => {
     ], {
         A: '#c:plates/pewter'
     }).id('eidolon_repraised:crucible')
+
+    // #region Building Blocks
+    event.shaped('4x eidolon_repraised:elder_bricks', [
+        'BMB',
+        'MBM',
+        'BMB'
+    ], {
+        B: 'eidolon_repraised:elder_brick',
+        M: 'tfc:mortar'
+    }).id('eidolon_repraised:elder_bricks')
 }
