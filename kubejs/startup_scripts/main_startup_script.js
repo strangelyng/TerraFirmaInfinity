@@ -3,6 +3,10 @@
 
 Platform.mods.kubejs.name = "TerraFirmaInfinity-Core";
 
+StartupEvents.registry('gtceu:material', event => {
+    registerOreProcMaterials(event);
+})
+
 StartupEvents.registry('item', event => {
     registerTFIItems(event);
 })

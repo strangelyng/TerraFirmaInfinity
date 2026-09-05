@@ -21,6 +21,8 @@ TFCEvents.data(event => {
     registerGTCEuData(event);
     registerMinecraftData(event);
     registerTFCData(event);
+
+    registerSulfideMineralData(event);
 })
 
 ServerEvents.recipes(event => {
@@ -35,6 +37,8 @@ ServerEvents.recipes(event => {
     registerMinecraftRecipes(event);
     registerTFCRecipes(event);
     registerTFIRecipes(event);
+
+    registerSulfideMineralRecipes(event);
 })
 
 GTCEuServerEvents.oreVeins(event => {
