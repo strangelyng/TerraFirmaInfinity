@@ -3,6 +3,25 @@
 
 const registerGTCEuData = (event) => {
     // TODO: Systematize, once done testing
+
+    function makeSluicingData(material) {
+        let materialName = material.getName();
+
+        let crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+
+        if (crushedOreItem.isEmpty()) return;
+
+        event.deposit(
+            crushedOreItem.getId(),
+            `gtceu:deposit/crushed_ore/${materialName}`,
+            [
+                'minecraft:block/gravel',
+                'minecraft:block/gravel',
+                'minecraft:block/gravel'
+            ],
+            `tfinfinity:crushed_${materialName}_ore`
+        )
+    }
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty) {
         let item = ChemicalHelper.get(tagPrefix, material, 1);
@@ -112,8 +131,11 @@ const registerGTCEuData = (event) => {
             // Fluid Heat
             makeFluidHeat(material, tfcProperty);
         }
-    })
 
+        if (material.hasProperty(PropertyKey.ORE)) {
+            makeSluicingData(material);
+        }
+    })
     
     event.heat({
         ingredient: 'gtceu:compressed_coke_clay',

@@ -15,6 +15,10 @@ ServerEvents.tags('fluid', event => {
     registerTFIMaterialFluidTags(event);
 })
 
+LootJS.lootTables(event => {
+    createOreSluicingLootTables(event);
+})
+
 TFCEvents.data(event => {
     registerAFCData(event);
     registerEmbersData(event);

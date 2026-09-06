@@ -10,9 +10,17 @@ function processSmallOre(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, smallOreItem, material, calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial()), 'small_ore');
     }
+
+    const smallDustItem = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
+    if (smallDustItem.isEmpty()) return;
+
+    event.recipes.tfc.quern(smallDustItem, smallOreItem)
+        .id(`tfinfinity:quern/small_${material.getName()}`)
 }
 
 function processPoorRawOre(event, material) {
+    const materialName = material.getName();
+
     const poorRawOreItem = ChemicalHelper.get(InfinityTagPrefix.poorRawOre, material, 1);
     if (poorRawOreItem.isEmpty()) return;
 
@@ -21,6 +29,41 @@ function processPoorRawOre(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, poorRawOreItem, material, calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial()), 'poor_ore', true);
     }
+
+    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+
+    if (crushedOreItem.isEmpty()) return;
+    
+    const oreProperty = material.getProperty(PropertyKey.ORE);
+    const oreMultiplier = oreProperty.getOreMultiplier();
+    crushedOreItem.setCount(crushedOreItem.getCount() * oreMultiplier);
+
+    if (oreMultiplier > 1) {
+        event.recipes.tfc.quern(
+            crushedOreItem.copyWithCount(oreMultiplier / 2),
+            poorRawOreItem
+        ).id(`tfinfinity:quern/crushed_ore_from_poor_raw_${materialName}`)
+    } else {
+        event.recipes.tfc.quern(
+            ChemicalHelper.get(TagPrefix.dustSmall, material, 2),
+            poorRawOreItem
+        ).id(`tfinfinity:quern/crushed_ore_from_poor_raw_${materialName}`)
+    }
+
+    const byproductMaterial = oreProperty.getOreByProduct(0, material);
+    let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
+
+    if (byproductItem.isEmpty()) {
+        byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1);
+    }
+
+    event.recipes.gtceu.macerator(`macerate_poor_raw_${materialName}_ore_to_crushed_ore`)
+        .itemInputs(poorRawOreItem)
+        .itemOutputs(crushedOreItem)
+        .chancedOutput(byproductItem, 700)
+        .duration(400)
+        .EUt(2)
+        .category(GTRecipeCategories.ORE_CRUSHING)
 }
 
 function processNormalRawOre(event, material) {
@@ -32,9 +75,24 @@ function processNormalRawOre(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore', true);
     }
+
+    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+
+    if (crushedOreItem.isEmpty()) return;
+    
+    const oreProperty = material.getProperty(PropertyKey.ORE);
+    const oreMultiplier = oreProperty.getOreMultiplier();
+    crushedOreItem.setCount(oreMultiplier);
+
+    event.recipes.tfc.quern(
+        crushedOreItem,
+        rawOreItem
+    ).id(`tfinfinity:quern/crushed_ore_from_normal_raw_${material.getName()}`)
 }
 
 function processRichRawOre(event, material) {
+    const materialName = material.getName();
+
     const richRawOreItem = ChemicalHelper.get(InfinityTagPrefix.richRawOre, material, 1);
     if (richRawOreItem.isEmpty()) return;
 
@@ -43,6 +101,36 @@ function processRichRawOre(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, richRawOreItem, material, calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial()), 'rich_ore', true);
     }
+
+    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+
+    if (crushedOreItem.isEmpty()) return;
+    
+    const oreProperty = material.getProperty(PropertyKey.ORE);
+    const oreMultiplier = oreProperty.getOreMultiplier() * 2;
+    crushedOreItem.setCount(oreMultiplier);
+
+    event.recipes.tfc.quern(
+        crushedOreItem,
+        richRawOreItem
+    ).id(`tfinfinity:quern/crushed_ore_from_rich_raw_${materialName}`)
+
+
+    const byproductMaterial = oreProperty.getOreByProduct(0, material);
+    let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
+
+    if (byproductItem.isEmpty()) {
+        byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1);
+    }
+
+    event.recipes.gtceu.macerator(`macerate_rich_raw_${materialName}_ore_to_crushed_ore`)
+        .itemInputs(richRawOreItem)
+        .itemOutputs(crushedOreItem)
+        .chancedOutput(crushedOreItem.copyWithCount(1), 5000)
+        .chancedOutput(byproductItem, 2100)
+        .duration(400)
+        .EUt(2)
+        .category(GTRecipeCategories.ORE_CRUSHING)
 }
 
 function processCrushedOre(event, material) {
