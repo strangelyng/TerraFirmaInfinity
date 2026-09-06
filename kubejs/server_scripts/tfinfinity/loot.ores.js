@@ -2,6 +2,7 @@ const createOreSluicingLootTables = (event) => {
     forEachMaterial(material => {
         if (material.hasProperty(PropertyKey.ORE)) {
             createCrushedOreSluicingLootTable(material, event);
+            createDustSluicingLootTable(material, event);
         }
     })
 }
@@ -29,6 +30,19 @@ function createCrushedOreSluicingLootTable(material, event) {
         .createPool(pool => {
             pool.addEntry(
                 LootEntry.of(byproductItem.getId()).randomChance(0.33)
+            )
+        })
+}
+
+function createDustSluicingLootTable(material, event) {
+    const materialName = material.getName();
+
+    const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
+
+    event.create(`gtceu:deposit/dusts/${materialName}`)
+        .createPool(pool => {
+            pool.addEntry(
+                LootEntry.of(dustItem.getId())
             )
         })
 }

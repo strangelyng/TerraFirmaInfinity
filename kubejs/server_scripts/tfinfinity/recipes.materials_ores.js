@@ -2,6 +2,8 @@
 "use strict";
 
 function processSmallOre(event, material) {
+    const materialName = material.getName();
+
     const smallOreItem = ChemicalHelper.get(InfinityTagPrefix.oreSmall, material, 1);
     if (smallOreItem.isEmpty()) return;
 
@@ -15,7 +17,23 @@ function processSmallOre(event, material) {
     if (smallDustItem.isEmpty()) return;
 
     event.recipes.tfc.quern(smallDustItem, smallOreItem)
-        .id(`tfinfinity:quern/small_${material.getName()}`)
+        .id(`tfinfinity:quern/small_${materialName}`)
+
+    event.recipes.gtceu.forge_hammer(`hammer_small_${materialName}_ore_to_small_dust`)
+        .itemInputs(smallOreItem)
+        .itemOutputs(smallDustItem)
+        .duration(100)
+        .EUt(GTValues.VH[GTValues.LV])
+        .category(GTRecipeCategories.ORE_FORGING)
+        
+    event.recipes.gtceu.macerator(`macerate_small_${materialName}_ore_to_small_dust`)
+        .itemInputs(smallOreItem)
+        .itemOutputs(smallDustItem)
+        .chancedOutput(smallDustItem, 5000)
+        .chancedOutput(smallDustItem, 2500)
+        .duration(400)
+        .EUt(2)
+        .category(GTRecipeCategories.ORE_CRUSHING)
 }
 
 function processPoorRawOre(event, material) {
@@ -38,6 +56,8 @@ function processPoorRawOre(event, material) {
     const oreMultiplier = oreProperty.getOreMultiplier();
     crushedOreItem.setCount(crushedOreItem.getCount() * oreMultiplier);
 
+    const smallDustItem = ChemicalHelper.get(TagPrefix.dustSmall, material, 2);
+
     if (oreMultiplier > 1) {
         event.recipes.tfc.quern(
             crushedOreItem.copyWithCount(oreMultiplier / 2),
@@ -45,10 +65,17 @@ function processPoorRawOre(event, material) {
         ).id(`tfinfinity:quern/crushed_ore_from_poor_raw_${materialName}`)
     } else {
         event.recipes.tfc.quern(
-            ChemicalHelper.get(TagPrefix.dustSmall, material, 2),
+            smallDustItem,
             poorRawOreItem
         ).id(`tfinfinity:quern/crushed_ore_from_poor_raw_${materialName}`)
     }
+
+    event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${materialName}_ore_to_crushed_ore`)
+        .itemInputs(poorRawOreItem)
+        .itemOutputs(smallDustItem)
+        .duration(100)
+        .EUt(GTValues.VH[GTValues.LV])
+        .category(GTRecipeCategories.ORE_FORGING)
 
     const byproductMaterial = oreProperty.getOreByProduct(0, material);
     let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
@@ -114,6 +141,13 @@ function processRichRawOre(event, material) {
         crushedOreItem,
         richRawOreItem
     ).id(`tfinfinity:quern/crushed_ore_from_rich_raw_${materialName}`)
+
+    event.recipes.gtceu.forge_hammer(`hammer_rich_raw_${materialName}_ore_to_crushed_ore`)
+        .itemInputs(richRawOreItem)
+        .itemOutputs(crushedOreItem)
+        .duration(100)
+        .EUt(GTValues.VH[GTValues.LV])
+        .category(GTRecipeCategories.ORE_FORGING)
 
 
     const byproductMaterial = oreProperty.getOreByProduct(0, material);
