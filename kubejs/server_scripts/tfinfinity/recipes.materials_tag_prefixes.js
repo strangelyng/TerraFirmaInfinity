@@ -49,12 +49,12 @@ function processPowder(event, material) {
 
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, powderItem, material, calcAmountOfMetal(144/4, tfcProperty.getPercentOfMaterial()), 'powder');
+    }
         
-        const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
-        if (!dustItem.isEmpty()) {
-            event.recipes.tfc.quern(powderItem.withCount(4), dustItem)
-                .id(`tfinfinity:quern/${material.getName()}_powder_from_dust`)
-        }
+    const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
+    if (!dustItem.isEmpty()) {
+        event.recipes.tfc.quern(powderItem.withCount(4), dustItem)
+            .id(`tfinfinity:quern/${material.getName()}_powder_from_dust`)
     }
 }
 

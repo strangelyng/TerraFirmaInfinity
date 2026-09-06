@@ -1,0 +1,9 @@
+{
+    "item.tfc.powder.salt": "Table Salt",
+    "item.tfc.powder.flux": "Calcium Carbonate Flux",
+    "item.tfc.powder.lime": "Quicklime Powder",
+    "item.tfc.powder.soda_ash": "Soda Ash Powder",
+    "block.tfc.fluid.lye": "Potash Lye",
+    "item.tfc.bucket.lye": "Potash Lye Bucket",
+    "fluid.tfc.lye": "Potash Lye"
+}

@@ -126,6 +126,8 @@ const registerTFIMaterialRecipes = (event) => {
             processRefinedOre(event, material);
             processImpureDust(event, material);
             processPureDust(event, material);
+
+            processRawOreBlock(event, material);
         }
     })
 }

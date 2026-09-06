@@ -6,6 +6,7 @@ const registerTFCItemTags = (event) => {
 
     event.add('tfc:blast_furnace_fuel', '#c:gems/coke')
     event.add('tfc:forge_fuel', '#c:gems/coke')
+    event.add('tfc:welding_flux', '#c:powders/borax')
 
     let storageBlocksToRemove = [
         'bismuth', 'bismuth_bronze', 'black_bronze', 'bronze', 'brass', 'copper', 'gold', 'nickel', 'rose_gold',
