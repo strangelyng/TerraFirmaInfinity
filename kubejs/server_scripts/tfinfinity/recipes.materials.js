@@ -105,10 +105,11 @@ const registerTFIMaterialRecipes = (event) => {
             processLamp(event, material);
             processTrapdoor(event, material);
             processGrate(event, material);
-            processPlatedBlock(event, material);
 
             processTFCHangingSigns(event, material);
         }
+        
+        processPlatedBlock(event, material); // Chromium and Stainless Steel (firmalife) do not have TFC PROPERTY
 
         if (material.hasFlag(InfinityMaterialFlags.HAS_TFC_ARMOR)) {
             processTFCArmor(event, material);

@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
     registerAE2Recipes(event);
     registerEidolonRepraisedRecipes(event);
     registerEmbersRecipes(event);
+    registerFirmalifeRecipes(event);
     registerGTCEURecipes(event);
     registerMinecraftRecipes(event);
     registerTFCRecipes(event);
