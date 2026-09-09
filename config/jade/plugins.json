@@ -1,4 +1,23 @@
 {
+  "firmalife": {
+    "barrel_press": true,
+    "keg_sub": true,
+    "string": true,
+    "vat": true,
+    "drying_mat": true,
+    "tumbler": true,
+    "climate_station": true,
+    "keg": true,
+    "cheese": true,
+    "shelf": true,
+    "oven_top": true,
+    "pumping_station": true,
+    "solar_drier": true,
+    "pot": true,
+    "oven_bottom": true,
+    "jarbnet": true,
+    "hanger": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -65,6 +84,7 @@
     "frog": true,
     "vane": true,
     "camel": true,
+    "armadillo": true,
     "sapling": true,
     "rabbit": true,
     "composter": true,
@@ -112,6 +132,11 @@
     "trip_hammer": true,
     "anemometer": true,
     "ingot_pile": true
+  },
+  "beneath": {
+    "hellforge_side": true,
+    "ancient_altar": true,
+    "hellforge": true
   },
   "jade_access": {
     "held_item": true,

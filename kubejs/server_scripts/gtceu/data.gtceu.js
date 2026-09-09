@@ -10,46 +10,28 @@ const registerGTCEuData = (event) => {
         let crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
 
         if (!crushedOreItem.isEmpty()) {
-            event.deposit(
-                crushedOreItem.getId(),
-                `gtceu:deposit/crushed_ore/${materialName}`,
-                [
-                    'minecraft:block/gravel',
-                    'minecraft:block/gravel',
-                    'minecraft:block/gravel'
-                ],
-                `tfinfinity:crushed_${materialName}_ore`
-            )
+            event.deposit({
+                ingredient: crushedOreItem.getId(),
+                loot: `gtceu:deposit/crushed_ore/${materialName}`
+            }, `tfinfinity:crushed_${materialName}_ore`)
         }
 
         let impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
 
         if (!impureDustItem.isEmpty()) {
-            event.deposit(
-                impureDustItem.getId(),
-                `gtceu:deposit/dusts/${materialName}`,
-                [
-                    'minecraft:block/gravel',
-                    'minecraft:block/gravel',
-                    'minecraft:block/gravel'
-                ],
-                `tfinfinity:impure_${materialName}_dust`
-            )
+            event.deposit({
+                ingredient: impureDustItem.getId(),
+                loot: `gtceu:deposit/dusts/${materialName}`
+            }, `tfinfinity:impure_${materialName}_dust`)
         }
 
         let pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
 
         if (!pureDustItem.isEmpty()) {
-            event.deposit(
-                pureDustItem.getId(),
-                `gtceu:deposit/dusts/${materialName}`,
-                [
-                    'minecraft:block/gravel',
-                    'minecraft:block/gravel',
-                    'minecraft:block/gravel'
-                ],
-                `tfinfinity:pure_${materialName}_dust`
-            )
+            event.deposit({
+                ingredient: pureDustItem.getId(),
+                loot: `gtceu:deposit/dusts/${materialName}`
+            }, `tfinfinity:pure_${materialName}_dust`)
         }
     }
     
