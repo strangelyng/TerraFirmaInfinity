@@ -8,6 +8,9 @@ const registerTFIRecipes = (event) => {
     registerTFIMaterialMiscRecipes(event);
     registerTFIAlloyRecipes(event);
 
+    registerTFIStoneRecipes(event);
+    registerTFIWoodRecipes(event);
+
     event.replaceInput({ input: 'minecraft:chest' }, 'minecraft:chest', '#c:chests/wooden' )
     event.replaceInput({ input: 'minecraft:barrel' }, 'minecraft:barrel', 'gtceu:wood_crate' )
     

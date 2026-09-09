@@ -156,20 +156,9 @@ function processTFCHangingSigns(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
     if (tfcProperty === null) return;
 
-    const TFC_WOODS = [
-        'acacia', 'ash', 'aspen', 'birch', 'blackwood', 'chestnut', 'douglas_fir', 
-        'hickory', 'kapok', 'mangrove', 'maple', 'oak', 'palm', 'pine', 'rosewood', 
-        'sequoia', 'spruce', 'sycamore', 'white_cedar', 'willow'
-    ]
-
-    const AFC_WOODS = [
-        'baobab', 'eucalyptus', 'mahogany', 'hevea', 'tualang', 'teak', 'cypress',
-        'fig', 'ironwood', 'ipe', 'araucaria', 'beech', 'ginkgo', 'mahoe'
-    ]
-
     let hangingSignItems = [];
 
-    for (const wood of TFC_WOODS) {
+    for (const wood of global.TFC_LUMBER) {
         let signItem = tryGetItem(`tfc:wood/hanging_sign/${material.getName()}/${wood}`);
 
         if (signItem.isEmpty()) {
@@ -179,7 +168,7 @@ function processTFCHangingSigns(event, material) {
         }
     }
 
-    for (const wood of AFC_WOODS) {
+    for (const wood of global.AFC_LUMBER) {
         let signItem = tryGetItem(`afc:wood/hanging_sign/${material.getName()}/${wood}`);
 
         if (signItem.isEmpty()) {

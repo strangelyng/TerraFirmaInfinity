@@ -19,6 +19,10 @@ LootJS.lootTables(event => {
     createOreSluicingLootTables(event);
 })
 
+LootJS.modifiers(event => {
+    registerOreLootTables(event);
+})
+
 TFCEvents.data(event => {
     registerAFCData(event);
     registerEmbersData(event);

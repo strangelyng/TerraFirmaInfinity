@@ -1,19 +1,14 @@
 // priority: 0
 "use strict";
 
-const registerAFCData = (event) => {    
-    const AFC_WOODS = [
-        'baobab', 'eucalyptus', 'mahogany', 'hevea', 'tualang', 'teak', 'cypress',
-        'fig', 'ironwood', 'ipe', 'araucaria', 'beech', 'ginkgo', 'mahoe'
-    ]
-
+const registerAFCData = (event) => {
     forEachMaterial(material => {
         let tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
         if (tfcProperty !== null) {  
             let hangingSignItems = [];
 
-            for (const wood of AFC_WOODS) {
+            for (const wood of global.AFC_LUMBER) {
                 let signItem = tryGetItem(`afc:wood/hanging_sign/${material.getName()}/${wood}`);
 
                 if (signItem.isEmpty()) {
