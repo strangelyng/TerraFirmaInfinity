@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     // #region Almandine
+    // Al2Fe3SiO12 + Na2CO3 + 3CaO + 1/2O2 -> 2NaAlO2 + Fe3O4 + 3CaSiO3 + CO2
     event.recipes.gtceu.electric_blast_furnace('almandine_sintering')
         .itemInputs('20x gtceu:almandine_dust')
         .itemInputs('6x gtceu:soda_ash_dust')
@@ -44,6 +45,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         
     // #region Andradite
+    // Ca3Fe2(SiO4)3 + Na2CO3 -> 2NaFeO2 + 3CaSiO3
     event.recipes.gtceu.electric_blast_furnace('andradite_sintering')
         .itemInputs('20x gtceu:andradite_dust')
         .itemInputs('6x gtceu:soda_ash_dust')
@@ -69,6 +71,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         
     // #region Grossular
+    // Ca3Al2(SiO4)3 + Na2CO3 -> 2NaAlO2 + 3CaSiO3 + CO2
     event.recipes.gtceu.electric_blast_furnace('grossular_sintering')
         .itemInputs('20x gtceu:grossular_dust')
         .itemInputs('6x gtceu:soda_ash_dust')
@@ -87,6 +90,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         
     // #region Pyrope
+    // Mg3Al2(SiO4)3 + Na2CO3 + 3CaO -> 2NaAlO2 + 3CaSiO3 + 3MgO + CO2
     event.recipes.gtceu.electric_blast_furnace('pyrope_sintering')
         .itemInputs('20x gtceu:pyrope_dust')
         .itemInputs('6x gtceu:soda_ash_dust')
@@ -113,6 +117,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         
     // #region Spessartine
+    // Mn3Al2(SiO4)3 + Na2CO3 + 3CaO + 1.5O2 -> 2NaAlO2 + 3CaSiO3 + 3MnO2 + 2CO2
     event.recipes.gtceu.electric_blast_furnace('spessartine_sintering')
         .itemInputs('20x gtceu:spessartine_dust')
         .itemInputs('6x gtceu:soda_ash_dust')
@@ -140,6 +145,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     // #region Uvarovite
+    // Ca3Cr2Si3O12 + 2Na2CO3 + 1.5O2 -> 2Na2CrO4 + 3CaSiO3 + 2CO2
     event.recipes.gtceu.electric_blast_furnace('uvarovite_sintering')
         .itemInputs('20x gtceu:uvarovite_dust')
         .itemInputs('12x gtceu:soda_ash_dust')

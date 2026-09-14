@@ -79,4 +79,23 @@ ServerEvents.recipes(event => {
         .outputFluids('3000x gtceu:carbon_dioxide')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // #region Minerals
+    // Alunite
+    // KAl3S2H6O14 -> 0.5K2SO4 + 1.5Al2O3 + 1.5SO3 + 3H2O
+    event.recipes.tfinfinity.roaster('alunite_calcination')
+        .itemInputs('26x gtceu:alunite_dust')
+        .itemOutputs('tfinfinity:roasted_alunite_calcine')
+        .outputFluids('2000x gtceu:sulfur_trioxide')
+        // .outputFluids('3000x gtceu:steam')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_bath('wash_roasted_alunite_calcine')
+        .itemInputs('tfinfinity:roasted_alunite_calcine')
+        .itemOutputs('7x tfinfinity:alumina_dust')
+        .itemOutputs('2x tfinfinity:small_alumina_dust')
+        .outputFluids('500x tfinfinity:potassium_sulfate_solution')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
 })

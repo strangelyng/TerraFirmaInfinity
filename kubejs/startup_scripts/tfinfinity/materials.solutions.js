@@ -39,4 +39,11 @@ StartupEvents.registry('gtceu:material', event => {
         .components('1x tfinfinity:aluminium_chloride', '1x water')
         .color(0xF4F7E6)
         .secondaryColor(0xD6DBBE)
+
+    // Contains 7 Potassium Sulfate Dust
+    event.create('tfinfinity:potassium_sulfate_solution')
+        .liquid()
+        .components('1x potassium_sulfate', '1x water')
+        .color(0xebab34)
+        .secondaryColor(0xb5570e)
 })
