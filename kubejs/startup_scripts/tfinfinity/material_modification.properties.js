@@ -97,39 +97,44 @@ const registerTFIMaterialModificationProperties = (event) => {
     InfinityMaterials.Dawnstone.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(826, 0.35, 1));
 
     // #region IntegrationMaterials
-
+    
     // Base TFC Ores
-    InfinityMaterials.Bismuthinite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(270, 0.14, GTMaterials.Bismuth, 1, 90));
+    InfinityMaterials.Bismuthinite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(270, 0.14, GTMaterials.Bismuth, 1, 75)); // Sulfide
 
-    GTMaterials.Cassiterite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, GTMaterials.Tin, 1, 90));
+    GTMaterials.Cassiterite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, GTMaterials.Tin, 1, 90)); // Oxide
 
-    GTMaterials.Garnierite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 90));
+    GTMaterials.Garnierite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 90)); // Oxide
 
-    GTMaterials.Hematite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
-    GTMaterials.YellowLimonite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
-    GTMaterials.Magnetite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
+    GTMaterials.Hematite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90)); // Oxide
+    GTMaterials.YellowLimonite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 80)); // Hydroxide
+    GTMaterials.Magnetite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90)); // Oxide
 
-    GTMaterials.Malachite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
-    GTMaterials.Tetrahedrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+    GTMaterials.Malachite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 75)); // Carbonate Hydroxide
+    GTMaterials.Tetrahedrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 75)); // Sulfosalt
 
-    GTMaterials.Sphalerite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, GTMaterials.Zinc, 1, 90));
+    GTMaterials.Sphalerite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(420, 0.21, GTMaterials.Zinc, 1, 75)); // Sulfide
 
     // GT Ores
-    GTMaterials.CassiteriteSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, GTMaterials.Tin, 1, 80));
+    GTMaterials.CassiteriteSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(230, 0.14, GTMaterials.Tin, 1, 50)); // Sand
 
-    GTMaterials.Bornite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
-    GTMaterials.Chalcopyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
-    GTMaterials.Chalcocite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 90));
+    GTMaterials.Bornite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 75)); // Sulfide
+    GTMaterials.Chalcopyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 75)); // Sulfide
+    GTMaterials.Chalcocite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1080, 0.35, GTMaterials.Copper, 1, 75)); // Sulfide
 
-    GTMaterials.Cobaltite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495, 0.35, GTMaterials.Cobalt, 1, 90));
+    GTMaterials.Cobaltite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495, 0.35, GTMaterials.Cobalt, 1, 75)); // Sulfide
 
-    GTMaterials.Galena.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(327, 0.14, GTMaterials.Lead, 1, 90));
+    GTMaterials.Galena.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(327, 0.14, GTMaterials.Lead, 1, 75)); // Sulfide
 
-    GTMaterials.Pentlandite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 90));
+    GTMaterials.Pentlandite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 75)); // Sulfide
 
-    GTMaterials.Goethite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
-    GTMaterials.Pyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
-    GTMaterials.VanadiumMagnetite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90));
-    GTMaterials.GraniticMineralSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 80));
-    GTMaterials.BasalticMineralSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 80));
+    GTMaterials.Goethite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 80)); // Hydroxide
+    GTMaterials.Pyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 75)); // Sulfide
+    GTMaterials.VanadiumMagnetite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 90)); // Oxide
+    GTMaterials.GraniticMineralSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 50)); // Sand
+    GTMaterials.BasalticMineralSand.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 3, 50)); // Sand
+
+    // Infinity Ores
+    InfinityMaterials.Acanthite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(961, 0.48, GTMaterials.Silver, 1, 75)); // Sulfide
+    InfinityMaterials.Arsenopyrite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1535, 0.35, GTMaterials.Iron, 1, 75)); // Sulfide
+    InfinityMaterials.Millerite.setProperty(InfinityPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1453, 0.48, GTMaterials.Nickel, 1, 75)); // Sulfide
 }
