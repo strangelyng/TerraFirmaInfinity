@@ -93,6 +93,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_bath('wash_roasted_alunite_calcine')
         .itemInputs('tfinfinity:roasted_alunite_calcine')
+        .inputFluids('500x minecraft:water')
         .itemOutputs('7x tfinfinity:alumina_dust')
         .itemOutputs('2x tfinfinity:small_alumina_dust')
         .outputFluids('500x tfinfinity:potassium_sulfate_solution')

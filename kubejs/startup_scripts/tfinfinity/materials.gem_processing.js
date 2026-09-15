@@ -1,4 +1,5 @@
 StartupEvents.registry('gtceu:material', event => {
+    // Wollastonite and Larnite
     event.create('tfinfinity:wollastonite')
         .dust()
         .components('1x calcium', '1x silicon', '3x oxygen')
@@ -40,7 +41,6 @@ StartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xC99E93)
 
     // Sodalite Group
-    
     event.create('tfinfinity:sodalite_leach_liquor')
         .liquid()
         .components('3x tfinfinity:sodium_aluminate', '1x salt')
@@ -49,7 +49,6 @@ StartupEvents.registry('gtceu:material', event => {
         .secondaryColor(0xAEC0D0)
 
     // Topaz Group
-
     event.create('tfinfinity:blue_topaz_sludge_residue')
         .dust()
         .components('1x tfinfinity:larnite', '1x gtceu:fluorite')
@@ -61,22 +60,15 @@ StartupEvents.registry('gtceu:material', event => {
         .components('2x tfinfinity:larnite', '1x gtceu:fluorite')
         .color(0xBAB699)
         .secondaryColor(0x7B7584)
-    
-    // event.create('tfinfinity:sodium_metasilicate')
-    //     .dust()
-    //     .components('2x sodium', '1x silicon', '3x oxygen')
-    //     .color(0xCBEAE6)
-    //     .secondaryColor(0x88B7B1)
 
     // Corundum Group
-    
     event.create('tfinfinity:ruby_leach_liquor')
         .liquid()
         .components('1x tfinfinity:sodium_aluminate', '1x tfinfinity:sodium_chromate')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .color(0xFC7815)
         .secondaryColor(0xC62F00)
-    
+        
     // Beryl Group
     event.create('tfinfinity:emerald_sludge_residue')
         .dust()
@@ -119,12 +111,14 @@ StartupEvents.registry('gtceu:material', event => {
 
     event.create('tfinfinity:ammonium_bifluoride')
         .liquid()
-        .components('1x ammonia', '1x hydrofluoric_acid')
+        .components('1x nitrogen', '5x hydrogen', '2x fluorine')
+        .formula('(NH4)(HF2)')
         .colorAverage()
 
     event.create('tfinfinity:ammonium_tetrafluoroberyllate')
         .dust()
-        .components('2x ammonia', '1x beryllium', '4x fluorine')
+        .components('2x nitrogen', '8x hydrogen', '1x beryllium', '4x fluorine')
+        .formula('(NH4)2BeF4')
         .colorAverage()
 
     event.create('tfinfinity:sodium_fluoride')

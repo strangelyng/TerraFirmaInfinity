@@ -46,6 +46,7 @@ StartupEvents.registry('gtceu:material', event => {
 
     event.create('tfinfinity:ammonium_sulfate')
         .liquid()
-        .components('2x ammonia', '1x sulfur', '4x oxygen')
+        .components('2x nitrogen', '8x hydrogen', '1x sulfur', '4x oxygen')
+        .formula('(NH4)2SO4')
         .colorAverage()
 })

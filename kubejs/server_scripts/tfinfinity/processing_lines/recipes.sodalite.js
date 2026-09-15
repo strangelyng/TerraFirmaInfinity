@@ -44,12 +44,4 @@ ServerEvents.recipes(event => {
         .outputFluids('1000x gtceu:salt_water')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
-    
-    // event.recipes.gtceu.chemical_reactor('silicon_dioxide_from_sodium_metasilicate')
-    //     .itemInputs('6x tfinfinity:sodium_metasilicate_dust')
-    //     .inputFluids('2000x gtceu:hydrochloric_acid')
-    //     .itemOutputs('3x gtceu:silicon_dioxide_dust')
-    //     .outputFluids('2000x gtceu:salt_water')
-    //     .duration(200)
-    //     .EUt(GTValues.VA[GTValues.LV])
 })
