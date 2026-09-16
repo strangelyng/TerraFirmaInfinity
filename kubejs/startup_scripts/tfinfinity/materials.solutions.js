@@ -66,6 +66,27 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('tfinfinity:lithium_chloride_solution')
         .liquid()
         .components('2x lithium_chloride', '1x water')
-        .formula('(LiCL)(H2O)')
+        .formula('(LiCl)(H2O)')
         .colorAverage()
+
+    // Contains 3 Magnesium Chloride Dust
+    event.create('tfinfinity:magnesium_chloride_solution')
+        .liquid()
+        .components('3x magnesium_chloride', '1x water')
+        .formula('(MgCl2)(H2O)')
+        .colorAverage()
+        
+    // Contains 6 Magnesium Sulfate Dust
+    event.create('tfinfinity:magnesium_sulfate_solution')
+        .liquid()
+        .components('6x tfinfinity:magnesium_sulfate', '1x water')
+        .formula('(MgSO4)(H2O)')
+        .colorAverage()
+
+    // event.create('tfinfinity:rock_salt_solution')
+    //     .formattedDisplayName('Potassium Chloride Solution')
+    //     .liquid()
+    //     .components('2x rock_salt', '1x water')
+    //     .formula('(KCl)(H2O)')
+    //     .colorAverage()
 })

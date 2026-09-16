@@ -99,4 +99,24 @@ ServerEvents.recipes(event => {
         .outputFluids('500x tfinfinity:potassium_sulfate_solution')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
+
+    // Kyanite
+    // Al2SiO5 + Na2CO3 + CaO = 2NaAlO2 + CaSiO3 + CO2 
+    event.recipes.gtceu.electric_blast_furnace('kyanite_alkaline_fusion')
+        .itemInputs('8x gtceu:kyanite_dust')
+        .itemInputs('6x gtceu:soda_ash_dust')
+        .itemInputs('2x gtceu:quicklime_dust')
+        .itemOutputs('tfinfinity:kyanite_sinter_cake')
+        .outputFluids('1000x gtceu:carbon_dioxide')
+        .blastFurnaceTemp(1700)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_bath('wash_kyanite_sinter_cake')
+        .itemInputs('tfinfinity:kyanite_sinter_cake')
+        .inputFluids('4000x minecraft:water')
+        .itemOutputs('5x tfinfinity:wollastonite_dust')
+        .outputFluids('2000x tfinfinity:sodium_aluminate')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
 })

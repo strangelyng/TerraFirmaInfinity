@@ -40,13 +40,20 @@ StartupEvents.registry('gtceu:material', event => {
 
     event.create('tfinfinity:aluminium_sulfate')
         .liquid()
-        .components('2x aluminium', '1x sulfur', '4x oxygen')
+        .components('2x aluminium', '3x sulfur', '12x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .colorAverage()
+        .color(0xA9D2DC)
+        .secondaryColor(0x456E78)
 
     event.create('tfinfinity:ammonium_sulfate')
         .liquid()
         .components('2x nitrogen', '8x hydrogen', '1x sulfur', '4x oxygen')
         .formula('(NH4)2SO4')
-        .colorAverage()
+        .color(0xE3C994)
+        .secondaryColor(0x8C7445)
+})
+
+StartupEvents.registry('item', event => {
+    event.create('tfinfinity:kyanite_sinter_cake')
+        .texture('tfinfinity:item/sinter_cake/kyanite')
 })

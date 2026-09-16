@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_bath('hydrofluoric_acid_from_fluorite')
         .itemInputs('3x gtceu:fluorite_dust')
         .inputFluids('1000x gtceu:sulfuric_acid')
-        .outputFluids('2000x gtceu:hydrofluoric_acid')
+        .outputFluids('2000x tfinfinity:hydrogen_fluoride')
         .itemOutputs('8x gtceu:gypsum_dust')
         .duration(320)
         .EUt(GTValues.VA[GTValues.LV])

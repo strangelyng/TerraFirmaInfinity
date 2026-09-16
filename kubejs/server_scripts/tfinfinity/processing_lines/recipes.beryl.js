@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         .itemInputs('2x tfinfinity:beryllium_oxide_dust')
         .itemInputs('gtceu:carbon_dust')
         .inputFluids('2000x gtceu:chlorine')
-        .itemOutputs('tfinfinity:beryllium_chloride_dust')
+        .itemOutputs('3x tfinfinity:beryllium_chloride_dust')
         .outputFluids('gtceu:carbon_monoxide')
         .blastFurnaceTemp(1700)
         .duration(200)
@@ -48,15 +48,15 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('ammonium_tetrafluoroberyllate_precipitation')
         .itemInputs('5x tfinfinity:beryllium_hydroxide_dust')
         .inputFluids('2000x tfinfinity:ammonium_bifluoride')
-        .itemOutputs('7x tfinfinity:ammonium_tetrafluoroberyllate_dust')
+        .itemOutputs('15x tfinfinity:ammonium_tetrafluoroberyllate_dust')
         .outputFluids('2000x minecraft:water')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.chemical_reactor('beryllium_fluoride') // Better machine for this?
-        .itemInputs('7x tfinfinity:ammonium_tetrafluoroberyllate_dust')
+    event.recipes.gtceu.chemical_reactor('beryllium_fluoride_via_calcination') // Better machine for this?
+        .itemInputs('15x tfinfinity:ammonium_tetrafluoroberyllate_dust')
         .itemOutputs('3x tfinfinity:beryllium_fluoride_dust')
-        .outputFluids('2000x gtceu:hydrofluoric_acid')
+        .outputFluids('2000x tfinfinity:hydrogen_fluoride')
         .outputFluids('1000x gtceu:ammonia')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])

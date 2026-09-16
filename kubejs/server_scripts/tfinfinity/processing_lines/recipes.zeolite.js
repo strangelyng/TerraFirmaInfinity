@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // #region Pollucte
+    // #region Pollucite
     // 0.5Cs2Al2Si4O12.2H2O + 4HCl -> CsCl + AlCl3 + 2SiO2 + 3H2O
     event.recipes.gtceu.chemical_bath('pollucite_leach_liquor')
         .itemInputs('13x gtceu:pollucite_dust')

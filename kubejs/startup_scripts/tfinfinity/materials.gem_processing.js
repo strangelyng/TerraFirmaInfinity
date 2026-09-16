@@ -9,8 +9,8 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('tfinfinity:larnite')
         .dust()
         .components('2x calcium', '1x silicon', '4x oxygen')
-        .color(0xD4D8DB)
-        .secondaryColor(0x9FA5AA)
+        .color(0xC7BBA3)
+        .secondaryColor(0x7A6E57)
 
     // Garnet Group
     event.create('tfinfinity:almandine_sludge_residue')
@@ -45,8 +45,8 @@ StartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('3x tfinfinity:sodium_aluminate', '1x salt')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .color(0xEAF0F6)
-        .secondaryColor(0xAEC0D0)
+        .color(0xA9C3DC)
+        .secondaryColor(0x4B6785)
 
     // Topaz Group
     event.create('tfinfinity:blue_topaz_sludge_residue')
@@ -66,8 +66,8 @@ StartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('1x tfinfinity:sodium_aluminate', '1x tfinfinity:sodium_chromate')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .color(0xFC7815)
-        .secondaryColor(0xC62F00)
+        .color(0xE68A00)
+        .secondaryColor(0x8F4200)
         
     // Beryl Group
     event.create('tfinfinity:emerald_sludge_residue')
@@ -79,18 +79,20 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('tfinfinity:sodium_fluorosilicate')
         .dust()
         .components('2x sodium', '1x silicon', '6x fluorine')
-        .colorAverage()
+        .color(0xA3D6C1)
+        .secondaryColor(0x42735E)
 
     event.create('tfinfinity:hexafluorosilicic_acid')
         .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
         .components('2x hydrogen', '1x silicon', '6x fluorine')
-        .color(0xEFEAA9)
-        .secondaryColor(0xABA04D)
+        .color(0xD1D45C)
+        .secondaryColor(0x696B21)
     
     event.create('tfinfinity:sodium_tetrafluoroberyllate')
         .liquid()
         .components('2x sodium', '1x beryllium', '4x fluorine')
-        .colorAverage()
+        .color(0x9CEBF2)
+        .secondaryColor(0x3F7E85)
 
     event.create('tfinfinity:beryllium_hydroxide')
         .dust()
@@ -101,40 +103,47 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('tfinfinity:beryllium_oxide')
         .dust()
         .components('1x beryllium', '1x oxygen')
-        .colorAverage()
+        .color(0x4cba56)
+        .secondaryColor(0x5e8562)
 
     event.create('tfinfinity:beryllium_chloride')
         .dust()
         .liquid(new GTFluidBuilder().temperature(672))
         .components('1x beryllium', '2x chlorine')
-        .colorAverage()
+        .color(0xD0D660)
+        .secondaryColor(0x757A27)
 
     event.create('tfinfinity:ammonium_bifluoride')
         .liquid()
         .components('1x nitrogen', '5x hydrogen', '2x fluorine')
         .formula('(NH4)(HF2)')
-        .colorAverage()
+        .color(0xCEEBD2)
+        .secondaryColor(0x5F8265)
 
     event.create('tfinfinity:ammonium_tetrafluoroberyllate')
         .dust()
         .components('2x nitrogen', '8x hydrogen', '1x beryllium', '4x fluorine')
         .formula('(NH4)2BeF4')
-        .colorAverage()
+        .color(0xA7EBA5)
+        .secondaryColor(0x478245)
 
     event.create('tfinfinity:sodium_fluoride')
         .liquid()
         .components('1x sodium', '1x fluorine')
-        .colorAverage()
+        .color(0xDFD9C4)
+        .secondaryColor(0x8C846C)
 
     event.create('tfinfinity:beryllium_fluoride')
         .dust()
         .components('1x beryllium', '2x fluorine')
-        .colorAverage()
+        .color(0xB3A3E6)
+        .secondaryColor(0x5E4E94)
 
     event.create('tfinfinity:magnesium_fluoride')
         .dust()
         .components('1x magnesium', '2x fluorine')
-        .colorAverage()
+        .color(0xC2C2FA)
+        .secondaryColor(0x53538C)
 })
 
 StartupEvents.registry('item', event => {
