@@ -1,0 +1,47 @@
+const registerTFISodaliteGroupRecipes = (event) => {   
+    // #region Lazurite
+    // Na3CaAl3Si3O12S + 2CaO + 1.5O2 -> 3NaAlO2 + 3CaSiO3 + SO2
+    event.recipes.gtceu.electric_blast_furnace('lazurite_sintering')
+        .itemInputs('23x gtceu:lazurite_dust')
+        .itemInputs('4x gtceu:quicklime_dust')
+        .inputFluids('1500x gtceu:oxygen')
+        .itemOutputs('tfinfinity:lazurite_sinter_cake')
+        .outputFluids('1000x gtceu:sulfur_dioxide')
+        .blastFurnaceTemp(1700)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+    
+    event.recipes.gtceu.chemical_bath('wash_lazurite_sinter_cake')
+        .itemInputs('tfinfinity:lazurite_sinter_cake')
+        .inputFluids('6000x minecraft:water')
+        .outputFluids('3000x tfinfinity:sodium_aluminate')
+        .itemOutputs('15x tfinfinity:wollastonite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    // #region Sodalite
+    // Na4Al3Si3O12Cl + 3CaO -> 3NaAlO2 + 3CaSiO3 + NaCl
+    event.recipes.gtceu.electric_blast_furnace('sodalite_sintering')
+        .itemInputs('23x gtceu:sodalite_dust')
+        .itemInputs('6x gtceu:quicklime_dust')
+        .itemOutputs('tfinfinity:sodalite_sinter_cake')
+        .blastFurnaceTemp(1700)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+        event.recipes.gtceu.chemical_bath('wash_sodalite_sinter_cake')
+        .itemInputs('tfinfinity:sodalite_sinter_cake')
+        .inputFluids('6000x minecraft:water')
+        .outputFluids('4000x tfinfinity:sodalite_leach_liquor')
+        .itemOutputs('15x tfinfinity:wollastonite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    event.recipes.gtceu.chemical_reactor('sodalite_leach_liquor_carbonation')
+        .inputFluids('4000x tfinfinity:sodalite_leach_liquor')
+        .inputFluids('1500x gtceu:carbon_dioxide')
+        .itemOutputs('21x tfinfinity:aluminium_hydroxide_dust')
+        .outputFluids('1000x gtceu:salt_water')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+}

@@ -7,8 +7,10 @@ StartupEvents.registry('item', event => {
     registerTFIItems(event);
 })
 
+StartupEvents.registry('gtceu:material', event => {
+    registerTFIMaterials(event);
+})
+
 GTCEuStartupEvents.materialModification(event => {
-    registerTFIMaterialModificationCosmetic(event);
-    registerTFIMaterialModificationProperties(event);
-    registerTFIMaterialModificationTools(event);
+    registerTFIMaterialModifications(event);
 })

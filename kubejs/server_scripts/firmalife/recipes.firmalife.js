@@ -13,4 +13,16 @@ const registerFirmalifeRecipes = (event) => {
     event.remove({ id: /firmalife:heating\/ore\/.*/ });
 
     event.remove({ id: /firmalife:welding\/.*/ });
+
+    let recipesToRemove = [
+        'firmalife:heating/oxidized_copper_pipe',
+        'firmalife:heating/copper_pipe'
+    ]
+
+    recipesToRemove.forEach(recipeId => {
+        event.remove({ id: recipeId });
+    })
+
+    TFCMeltingRecipe(event, Item.of('firmalife:oxidized_copper_pipe'), GTMaterials.Copper, 144/4, 'oxidized_irrigation_pipe');
+    TFCMeltingRecipe(event, Item.of('firmalife:copper_pipe'), GTMaterials.Copper, 144/4, 'irrigation_pipe')
 }

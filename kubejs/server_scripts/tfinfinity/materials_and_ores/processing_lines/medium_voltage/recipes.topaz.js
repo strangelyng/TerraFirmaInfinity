@@ -1,0 +1,61 @@
+const registerTFITopazGroupRecipes = (event) => {
+    // #region Blue Topaz
+    // Al2SiO4F2 + Na2CO3 + 3CaO → 2NaAlO2 + Ca2SiO4 + CaF2 + CO2
+    event.recipes.gtceu.electric_blast_furnace('blue_topaz_sintering')
+        .itemInputs('9x gtceu:blue_topaz_dust')
+        .itemInputs('6x gtceu:soda_ash_dust')
+        .itemInputs('6x gtceu:quicklime_dust')
+        .itemOutputs('tfinfinity:blue_topaz_sinter_cake')
+        .outputFluids('1000x gtceu:carbon_dioxide')
+        .blastFurnaceTemp(1700)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+    
+    event.recipes.gtceu.chemical_bath('wash_blue_topaz_sinter_cake')
+        .itemInputs('tfinfinity:blue_topaz_sinter_cake')
+        .inputFluids('4000x minecraft:water')
+        .outputFluids('2000x tfinfinity:sodium_aluminate')
+        .itemOutputs('10x tfinfinity:blue_topaz_sludge_residue_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor('blue_topaz_sludge_treatment')
+        .itemInputs('10x tfinfinity:blue_topaz_sludge_residue_dust')
+        .inputFluids('3000x gtceu:sulfuric_acid')
+        .itemOutputs('24x gtceu:gypsum_dust')
+        .itemOutputs('3x gtceu:silicon_dioxide_dust')
+        .outputFluids('2000x tfinfinity:hydrogen_fluoride')
+        .outputFluids('1000x minecraft:water')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    // #region Topaz
+    // 2Al2SiO5FH + 2Na2CO3 + 5CaO -> 4NaAlO2 + 2Ca2SiO4 + CaF2 + H2O + 2CO2
+    event.recipes.gtceu.electric_blast_furnace('topaz_sintering')
+        .itemInputs('20x gtceu:topaz_dust')
+        .itemInputs('12x gtceu:soda_ash_dust')
+        .itemInputs('10x gtceu:quicklime_dust')
+        .itemOutputs('2x tfinfinity:topaz_sinter_cake')
+        .outputFluids('2000x gtceu:carbon_dioxide')
+        .blastFurnaceTemp(1700)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+    
+    event.recipes.gtceu.chemical_bath('wash_topaz_sinter_cake')
+        .itemInputs('tfinfinity:topaz_sinter_cake')
+        .inputFluids('4000x minecraft:water')
+        .outputFluids('2000x tfinfinity:sodium_aluminate')
+        .itemOutputs('10x tfinfinity:topaz_sludge_residue_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor('topaz_sludge_treatment')
+        .itemInputs('10x tfinfinity:topaz_sludge_residue_dust')
+        .inputFluids('3000x gtceu:sulfuric_acid')
+        .itemOutputs('24x gtceu:gypsum_dust')
+        .itemOutputs('3x gtceu:silicon_dioxide_dust')
+        .outputFluids('1000x tfinfinity:hydrogen_fluoride')
+        .outputFluids('1000x minecraft:water')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+}

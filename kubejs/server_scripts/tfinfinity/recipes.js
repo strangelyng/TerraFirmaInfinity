@@ -8,6 +8,23 @@ const registerTFIRecipes = (event) => {
     registerTFIMaterialMiscRecipes(event);
     registerTFIAlloyRecipes(event);
 
+    registerTFIAcidsRecipes(event);
+    registerTFISolutionsRecipes(event);
+
+    // Processing Lines
+    registerTFIAluminumRecipes(event);
+    registerTFIBerylRecipes(event);
+    registerTFIChromiumRecipes(event);
+    registerTFIClaysRecipes(event);
+    registerTFICorundumGroupRecipes(event);
+    registerTFIGarnetGroupRecipes(event);
+    registerTFIMicaGroupRecipes(event);
+    registerTFISodaliteGroupRecipes(event);
+    registerTFISpodumeneRecipes(event);
+    registerTFITopazGroupRecipes(event);
+    registerTFIZeoliteGroupRecipes(event);
+
+    // Natural World
     registerTFIStoneRecipes(event);
     registerTFIWoodRecipes(event);
 
