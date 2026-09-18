@@ -146,13 +146,15 @@ function processRod(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, rodItem, material, 144/2, 'rod');
 
-        // TODO: Rod Casting?
+        TFCCastingRecipe(event, rodItem, 'tfinfinity:ceramic/fire_rod_mold', true, null, material, 'rod', 72);
 
         const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 
         if (!ingotItem.isEmpty()) {
-            TFCAnvilRecipe(event, rodItem.withCount(2), ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], false, material, 'rod')
+            TFCAnvilRecipe(event, rodItem.withCount(2), ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], false, material, 'rod');
         }
+
+        EmbersStampingRecipe(event, rodItem, 'tfinfinity:rod_stamp', material, 'rod', 72);
     }
 }
 
@@ -187,6 +189,8 @@ function processBolt(event, material) {
         if (!rodItem.isEmpty()) {
             TFCAnvilRecipe(event, boltItem.withCount(4), rodItem, ['punch_last', 'draw_second_last', 'draw_third_last'], false, material, 'bolt');
         }
+
+        // EmbersStampingRecipe(event, boltItem, 'tfinfinity:bolt_stamp', material, 'bolt', getMaterialAmount(TagPrefix.bolt, material) * 144);
     }
 }
 
@@ -221,6 +225,8 @@ function processRing(event, material) {
         if (!rodItem.isEmpty()) {
             TFCAnvilRecipe(event, ringItem.withCount(2), rodItem, ['bend_last', 'hit_second_last', 'bend_third_last'], false, material, 'ring');
         }
+
+        EmbersStampingRecipe(event, ringItem, 'tfinfinity:ring_stamp', material, 'ring', getMaterialAmount(TagPrefix.ring, material) * 144)
     }
 }
 
@@ -267,7 +273,7 @@ function processNugget(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, nuggetItem, material, 144/9, 'nugget');
 
-        // TODO: Nugget Casting?
+        TFCCastingRecipe(event, nuggetItem, 'tfinfinity:ceramic/nugget_mold', false, null, material, 'nugget', 144/9);
 
         const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 
@@ -288,7 +294,7 @@ function processGearSmall(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, smallGearItem, material, getMaterialAmount(TagPrefix.gearSmall, material) * 144, 'small_gear');
 
-        // TODO: Small Gear Casting?
+        TFCCastingRecipe(event, smallGearItem, 'tfinfinity:ceramic/fire_small_gear_mold', true, null, material, 'small_gear', 144);
 
         const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 
@@ -314,6 +320,8 @@ function processGear(event, material) {
         if (!doublePlateItem.isEmpty()) {
             TFCWeldingRecipe(event, gearItem, doublePlateItem, doublePlateItem, material, 'ignore', 4, 1, 2, 'gear'); // Adjust nonTFCTier and Circuit Numbers?
         }
+
+        EmbersStampingRecipe(event, gearItem, 'tfinfinity:large_gear_stamp', material, 'gear', 144*4)
     }
 }
 

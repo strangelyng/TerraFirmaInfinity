@@ -18,7 +18,12 @@ const registerEmbersData = (event) => {
         'embers:raw_plate_stamp',
         'embers:raw_gear_stamp',
         'embers:raw_nugget_stamp',
-        'embers:raw_flat_stamp'
+        'embers:raw_flat_stamp',
+
+        'tfinfinity:raw_large_gear_stamp',
+        'tfinfinity:raw_rod_stamp',
+        // 'tfinfinity:raw_bolt_stamp',
+        'tfinfinity:raw_ring_stamp'
     ].forEach((item) => {
         event.heat({
             ingredient: item,

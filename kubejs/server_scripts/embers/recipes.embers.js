@@ -126,6 +126,51 @@ const registerEmbersRecipes = (event) => {
             'XXXXX'
         ]
     ).id('tfinfinity:knapping/raw_nugget_stamp')
+    
+    event.recipes.tfc.knapping(
+        'tfinfinity:raw_rod_stamp',
+        'tfinfinity:caminite',
+        [
+            'XXXX ',
+            'XXX X',
+            'XX XX',
+            'X XXX',
+            ' XXXX'
+        ]
+    ).id('tfinfinity:knapping/raw_rod_stamp')
+    
+    // event.recipes.tfc.knapping(
+    //     'tfinfinity:raw_bolt_stamp',
+    //     'tfinfinity:caminite',
+    //     [
+    //         'XXXXX',
+    //         'XX  X',
+    //         'X   X',
+    //         'X  XX',
+    //         'XXXXX'
+    //     ]
+    // ).id('tfinfinity:knapping/raw_bolt_stamp')
+    
+    event.recipes.tfc.knapping(
+        'tfinfinity:raw_ring_stamp',
+        'tfinfinity:caminite',
+        [
+            'XXXXX',
+            'X   X',
+            'X X X',
+            'X   X',
+            'XXXXX'
+        ]
+    ).id('tfinfinity:knapping/raw_ring_stamp')
+
+    event.shaped('tfinfinity:raw_large_gear_stamp', [
+        'XXX',
+        'XGX',
+        'XXX'
+    ], {
+        X: 'embers:caminite_blend',
+        G: '#c:gears'
+    }).id('tfinfinity:shaped/raw_large_gear_stamp').keepIngredient('#c:gears')
 
     event.shaped(
         'embers:raw_flat_stamp',
@@ -152,12 +197,19 @@ const registerEmbersRecipes = (event) => {
         'embers:raw_plate_stamp',
         'embers:raw_gear_stamp',
         'embers:raw_nugget_stamp',
-        'embers:raw_flat_stamp'
+        'embers:raw_flat_stamp',
+        
+        'tfinfinity:raw_rod_stamp',
+        'tfinfinity:raw_bolt_stamp'
     ].forEach((item) => {
         event.shapeless('5x embers:caminite_blend',
             [item]
         ).id(`tfinfinity:shapeless/${item.split(":")[1]}_recycling`)
     })
+
+    event.shapeless('8x embers:caminite_blend',
+        'tfinfinity:raw_large_gear_stamp'
+    ).id('tfinfinity:shapeless/raw_large_gear_stamp_recycling')
 
     // #region Caminite Heating
     event.recipes.tfc.heating(
@@ -194,6 +246,26 @@ const registerEmbersRecipes = (event) => {
         'embers:raw_flat_stamp',
         1399
     ).resultItem('embers:flat_stamp').id('tfinfinity:heating/flat_stamp')
+    
+    event.recipes.tfc.heating(
+        'tfinfinity:raw_large_gear_stamp',
+        1399
+    ).resultItem('tfinfinity:large_gear_stamp').id('tfinfinity:heating/large_gear_stamp')
+    
+    event.recipes.tfc.heating(
+        'tfinfinity:raw_rod_stamp',
+        1399
+    ).resultItem('tfinfinity:rod_stamp').id('tfinfinity:heating/rod_stamp')
+    
+    // event.recipes.tfc.heating(
+    //     'tfinfinity:raw_bolt_stamp',
+    //     1399
+    // ).resultItem('tfinfinity:bolt_stamp').id('tfinfinity:heating/bolt_stamp')
+    
+    event.recipes.tfc.heating(
+        'tfinfinity:raw_ring_stamp',
+        1399
+    ).resultItem('tfinfinity:ring_stamp').id('tfinfinity:heating/ring_stamp')
 
     // #endregion
 
