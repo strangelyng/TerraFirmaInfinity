@@ -5,11 +5,12 @@ const registerTFIZeoliteMaterials = (event) => {
         .color(0xEBD783)
         .secondaryColor(0x8C7729)
 
-    event.create('tfinfinity:antimony_trisulfide')
-        .dust()
-        .components('2x antimony', '3x sulfur')
-        .color(0x2E3540)
-        .secondaryColor(0x13171F)
+    // Just Use Stibnite
+    // event.create('tfinfinity:antimony_trisulfide')
+    //     .dust()
+    //     .components('2x antimony', '3x sulfur')
+    //     .color(0x2E3540)
+    //     .secondaryColor(0x13171F)
 
     event.create('tfinfinity:caesium_chloride')
         .dust()

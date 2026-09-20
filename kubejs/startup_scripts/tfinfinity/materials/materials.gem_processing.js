@@ -91,6 +91,7 @@ const registerTFIGemProcessingMaterials = (event) => {
     event.create('tfinfinity:sodium_tetrafluoroberyllate')
         .liquid()
         .components('2x sodium', '1x beryllium', '4x fluorine')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .color(0x9CEBF2)
         .secondaryColor(0x3F7E85)
 
@@ -100,18 +101,18 @@ const registerTFIGemProcessingMaterials = (event) => {
         .formula('Be(OH)2')
         .colorAverage()
 
-    event.create('tfinfinity:beryllium_oxide')
-        .dust()
-        .components('1x beryllium', '1x oxygen')
-        .color(0x4cba56)
-        .secondaryColor(0x5e8562)
-
     event.create('tfinfinity:beryllium_chloride')
         .dust()
-        .liquid(new GTFluidBuilder().temperature(672))
+        // .liquid(new GTFluidBuilder().temperature(672))
         .components('1x beryllium', '2x chlorine')
         .color(0xD0D660)
         .secondaryColor(0x757A27)
+
+    event.create('tfinfinity:ammonium_fluoride')
+        .liquid()
+        .components('1x nitrogen', '4x hydrogen', '1x fluorine')
+        .formula('(NH4)F')
+        .colorAverage() // TODO
 
     event.create('tfinfinity:ammonium_bifluoride')
         .liquid()

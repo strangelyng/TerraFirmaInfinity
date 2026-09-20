@@ -26,15 +26,15 @@ const registerTFIBerylRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.tfinfinity.roaster('beryllium_oxide_from_hydroxide')
+    event.recipes.tfinfinity.roaster('beryllia_from_hydroxide')
         .itemInputs('5x tfinfinity:beryllium_hydroxide_dust')
-        .itemOutputs('2x tfinfinity:beryllium_oxide_dust')
+        .itemOutputs('2x tfinfinity:beryllia_dust')
         .outputFluids('1000x gtceu:steam')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.electric_blast_furnace('beryllium_chloride')
-        .itemInputs('2x tfinfinity:beryllium_oxide_dust')
+        .itemInputs('2x tfinfinity:beryllia_dust')
         .itemInputs('gtceu:carbon_dust')
         .inputFluids('2000x gtceu:chlorine')
         .itemOutputs('3x tfinfinity:beryllium_chloride_dust')
@@ -86,4 +86,34 @@ const registerTFIBerylRecipes = (event) => {
         .outputFluids('3000x tfinfinity:ammonium_sulfate')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
+
+    // Ammonium Fluoride
+    event.recipes.gtceu.chemical_reactor('ammonium_fluoride')
+        .inputFluids('1000x tfinfinity:hexafluorosilicic_acid')
+        .inputFluids('6000x gtceu:ammonia')
+        .inputFluids('2000x minecraft:water')
+        .itemOutputs('3x gtceu:silicon_dioxide_dust')
+        .outputFluids('6000x tfinfinity:ammonium_fluoride')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+    
+    // Ammonium Bifluoride (thermal decompositions)
+    event.recipes.gtceu.chemical_reactor('ammonium_bifluoride')
+        .inputFluids('2000x tfinfinity:ammonium_fluoride')
+        .outputFluids('1000x gtceu:ammonia')
+        .outputFluids('1000x tfinfinity:ammonium_bifluoride')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Beryllium Metal
+    event.recipes.tfinfinity.electrolytic_cell('beryllium_from_chloride')
+        .notConsumableItem(ChemicalHelper.get(TagPrefix.rod, GTMaterials.StainlessSteel, 1)) // Maybe?
+        .chancedInput(ChemicalHelper.get(TagPrefix.rod, GTMaterials.Carbon, 1), 100)
+        .itemInputs('3x tfinfinity:beryllium_chloride_dust') // 1 : 5 Ratio
+        .notConsumableFluid('1440x gtceu:salt')
+        .inputFluids('2000x gtceu:hydrogen') // Inert Atmos to Prevent Oxidation
+        .itemOutputs('1x gtceu:beryllium_dust')
+        .outputFluids('2000x tfinfinity:hydrogen_chloride')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 }

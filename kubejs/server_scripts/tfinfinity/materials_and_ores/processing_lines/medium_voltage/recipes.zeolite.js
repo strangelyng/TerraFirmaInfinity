@@ -50,7 +50,7 @@ const registerTFIZeoliteGroupRecipes = (event) => {
         .itemInputs('14x tfinfinity:caesium_antimony_chloride_cake_dust')
         .inputFluids('1000x minecraft:water')
         .inputFluids('3000x gtceu:hydrogen_sulfide')
-        .itemOutputs('5x tfinfinity:antimony_trisulfide_dust')
+        .itemOutputs('5x gtceu:stibnite_dust') // Antimony Trisulfide
         .outputFluids('3000x tfinfinity:acidic_caesium_chloride_solution')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
@@ -63,4 +63,42 @@ const registerTFIZeoliteGroupRecipes = (event) => {
         .outputFluids('4000x gtceu:hydrochloric_acid')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // Antimony Trisulfide to Trichloride
+    event.recipes.gtceu.chemical_reactor('antimony_trichloride_from_stibnite')
+        .itemInputs('5x gtceu:stibnite_dust') // Antimony Trisulfide
+        .inputFluids('6000x gtceu:hydrochloric_acid')
+        .itemOutputs('8x tfinfinity:antimony_trichloride_dust')
+        .outputFluids('3000x gtceu:hydrogen_sulfide')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor('antimony_trichloride_from_trioxide')
+        .itemInputs('5x gtceu:antimony_trioxide_dust')
+        .inputFluids('6000x gtceu:hydrochloric_acid')
+        .itemOutputs('8x tfinfinity:antimony_trichloride_dust') // 2000x antimony trichloride solution?
+        .outputFluids('3000x minecraft:water')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    // Ammonium Carbonate
+    event.recipes.gtceu.chemical_reactor('sodium_bicarbonate_from_salt') // Overwrite adding Circuit
+        .itemInputs('2x gtceu:salt_dust')
+        .inputFluids('2000x gtceu:ammonia')
+        .inputFluids('1000x minecraft:water')
+        .inputFluids('1000x gtceu:carbon_dioxide')
+        .itemOutputs('2x gtceu:ammonium_chloride_dust')
+        .itemOutputs('6x gtceu:sodium_bicarbonate_dust')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+
+    event.recipes.gtceu.chemical_reactor('ammonium_carbonate')
+        .inputFluids('2000x gtceu:ammonia')
+        .inputFluids('1000x minecraft:water')
+        .inputFluids('1000x gtceu:carbon_dioxide')
+        .itemOutputs('6x tfinfinity:ammonium_carbonate_dust')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
 }

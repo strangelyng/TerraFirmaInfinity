@@ -34,4 +34,13 @@ const registerTFIChromiumRecipes = (event) => {
         .itemOutputs('5x tfinfinity:alumina_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // #region Sodium Sulfate
+    event.recipes.gtceu.chemical_reactor('sodium_sulfate_from_bisulfate')
+        .itemInputs('7x gtceu:sodium_bisulfate_dust')
+        .itemInputs('2x gtceu:salt_dust')
+        .itemOutputs('7x tfinfinity:sodium_sulfate_dust')
+        .outputFluids('1000x gtceu:hydrochloric_acid')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
 }

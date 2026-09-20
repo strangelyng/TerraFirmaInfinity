@@ -81,6 +81,13 @@ const registerTFIMicaGroupRecipes = (event) => {
         .itemOutputs('10x tfinfinity:magnesium_hydroxide_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.electric_blast_furnace('magnesium_hydroxide_calcination')
+        .itemInputs('5x tfinfinity:magnesium_hydroxide_dust')
+        .itemOutputs('2x gtceu:magnesia_dust')
+        .blastFurnaceTemp(1273)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
         
     // #region Mica (Muscovite)
     // KAl3Si3F2O10 + 10HCl + 2H2O -> KCl + 3AlCl3 + 3H4SiO4 + 2HF
