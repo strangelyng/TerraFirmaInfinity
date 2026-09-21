@@ -150,6 +150,17 @@ function processTFCHorseArmor(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, horseArmorItem, material, 144*6, 'horse_armor');
     }
+
+    const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1).getId();
+
+    event.shaped(horseArmorItem.getId(), [
+        'ABA',
+        'CCC'
+    ], {
+        A: 'tfc:jute_fiber',
+        B: 'minecraft:leather_horse_armor',
+        C: doublePlateItem
+    }).id(`tfc:crafting/metal/horse_armor/${material.getName()}`)
 }
 
 function processTFCHangingSigns(event, material) {

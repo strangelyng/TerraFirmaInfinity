@@ -37,9 +37,12 @@ const registerGTCEuData = (event) => {
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty) {
         let item = ChemicalHelper.get(tagPrefix, material, 1);
+
+        if (item.isEmpty()) return;
+
         let prefixHeatCapacity = Math.max(0.124, tfcProperty.getHeatCapacity(tagPrefix)); // Ensure that heatCapacity value doesn't get tooooo low
 
-        if (!item.isEmpty()) event.heat({
+        event.heat({
             ingredient: item,
             heatCapacity: prefixHeatCapacity,
             forgingTemperature: tfcProperty.getForgingTemp(),

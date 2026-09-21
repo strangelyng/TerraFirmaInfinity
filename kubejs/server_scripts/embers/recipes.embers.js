@@ -200,7 +200,7 @@ const registerEmbersRecipes = (event) => {
         'embers:raw_flat_stamp',
         
         'tfinfinity:raw_rod_stamp',
-        'tfinfinity:raw_bolt_stamp'
+        // 'tfinfinity:raw_bolt_stamp'
     ].forEach((item) => {
         event.shapeless('5x embers:caminite_blend',
             [item]

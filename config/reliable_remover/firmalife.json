@@ -1,0 +1,16 @@
+{
+	"action": "remove",
+	"items": [
+                "firmalife:metal/sheet/chromium",
+                "firmalife:metal/double_sheet/chromium",
+                "firmalife:metal/sheet/stainless_steel",
+                "firmalife:metal/double_sheet/stainless_steel",
+                "firmalife:metal/rod/chromium",
+                "firmalife:metal/rod/stainless_steel",
+
+                "firmalife:copper_pipe",
+                "firmalife:oxidized_copper_pipe",
+                "firmalife:irrigation_tank",
+                "firmalife:pumping_station"
+	]
+}

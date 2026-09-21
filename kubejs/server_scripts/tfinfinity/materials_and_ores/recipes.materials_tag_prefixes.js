@@ -826,6 +826,15 @@ function processPlatedBlock(event, material) {
 
     let recipeIdName = material != GTMaterials.Iron ? material.getName() : 'cast_iron';
 
+    event.recipes.gtceu.shaped(platedBlockItem.withCount(4), [
+        ' Ah',
+        'ABA',
+        ' A '
+    ], {
+        A: ChemicalHelper.get(TagPrefix.plate, material, 1).getId(),
+        B: '#minecraft:stone_bricks'
+    }).id(`tfc:crafting/metal/block/${recipeIdName}`)
+
     event.shaped(platedSlabItem.withCount(6), [
         'AAA'
         ], {

@@ -1,0 +1,17 @@
+{
+	"action": "remove",
+	"items": [
+                "beneath:wood/axle/crimson",
+                "beneath:wood/bladed_axle/crimson",
+                "beneath:wood/encased_axle/crimson",
+                "beneath:wood/clutch/crimson",
+                "beneath:wood/gear_box/crimson",
+                "beneath:wood/water_wheel/crimson",
+                "beneath:wood/axle/warped",
+                "beneath:wood/bladed_axle/warped",
+                "beneath:wood/encased_axle/warped",
+                "beneath:wood/clutch/warped",
+                "beneath:wood/gear_box/warped",
+                "beneath:wood/water_wheel/warped"
+	]
+}

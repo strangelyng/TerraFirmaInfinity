@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'minecraft:campfire_cooking' })
 
     registerAE2Recipes(event);
+    registerAFCRecipes(event);
     registerEidolonRepraisedRecipes(event);
     registerEmbersRecipes(event);
     registerFirmalifeRecipes(event);
