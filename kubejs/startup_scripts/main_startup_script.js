@@ -7,6 +7,10 @@ StartupEvents.registry('item', event => {
     registerTFIItems(event);
 })
 
+GTCEuStartupEvents.materialIconInfo(event => {
+    registerTFIMaterialIconSets(event);
+})
+
 StartupEvents.registry('gtceu:material', event => {
     registerTFIMaterials(event);
 })

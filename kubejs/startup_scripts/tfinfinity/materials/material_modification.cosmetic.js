@@ -101,4 +101,36 @@ const registerTFIMaterialModificationCosmetic = (event) => {
     GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY);
 
 	GTMaterials.Neutronium.setMaterialIconSet(GTMaterialIconSet.RADIOACTIVE);
+
+	// TFC Ores
+	GTMaterials.Gypsum.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_gypsum'))
+	GTMaterials.Cinnabar.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_cinnabar'))
+	InfinityMaterials.Cryolite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_cryolite'))
+	GTMaterials.Borax.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_borax'))
+	GTMaterials.Graphite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_graphite'))
+	GTMaterials.Saltpeter.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_saltpeter'))
+	GTMaterials.Sulfur.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_sulfur'))
+	GTMaterials.RockSalt.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_sylvite'))
+	GTMaterials.Amethyst.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_amethyst'))
+	GTMaterials.Diamond.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_diamond'))
+	GTMaterials.Emerald.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_emerald'))
+	GTMaterials.Lapis.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_lapis'))
+	GTMaterials.Opal.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_opal'))
+	GTMaterials.Pyrite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_pyrite'))
+	GTMaterials.Ruby.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_ruby'))
+	GTMaterials.Sapphire.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_sapphire'))
+	GTMaterials.Topaz.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_topaz'))
+
+	GTMaterials.Copper.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_native_copper'))
+	GTMaterials.Gold.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_native_gold'))
+	GTMaterials.Silver.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_native_silver'))
+	GTMaterials.Hematite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_hematite'))
+	GTMaterials.Cassiterite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_cassiterite'))
+	InfinityMaterials.Bismuthinite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_bismuthinite'))
+	GTMaterials.Garnierite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_garnierite'))
+	GTMaterials.Malachite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_malachite'))
+	GTMaterials.Magnetite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_magnetite'))
+	GTMaterials.YellowLimonite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_limonite'))
+	GTMaterials.Sphalerite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_sphalerite'))
+	GTMaterials.Tetrahedrite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_tetrahedrite'))
 }
