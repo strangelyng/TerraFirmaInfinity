@@ -97,12 +97,24 @@ const registerTFIBerylRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
     
-    // Ammonium Bifluoride (thermal decompositions)
+    // Ammonium Bifluoride (thermal decomposition)
     event.recipes.gtceu.chemical_reactor('ammonium_bifluoride')
         .inputFluids('2000x tfinfinity:ammonium_fluoride')
         .outputFluids('1000x gtceu:ammonia')
         .outputFluids('1000x tfinfinity:ammonium_bifluoride')
         .duration(200)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Ammonium Sulfate (thermal decomposition)
+    event.recipes.gtceu.chemical_reactor('ammonium_sulfate')
+        .inputFluids('3000x tfinfinity:ammonium_sulfate')
+        .outputFluids('4000x gtceu:ammonia')
+        .outputFluids('3000x gtceu:sulfur_dioxide')
+        .outputFluids('2000x gtceu:nitrogen')
+        .outputFluids('6000x minecraft:water')
+        .duration(200)
+        .circuit(1)
         .EUt(GTValues.VA[GTValues.MV])
 
     // Beryllium Metal

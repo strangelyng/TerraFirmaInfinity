@@ -11,6 +11,7 @@ const registerTFIAcidsRecipes = (event) => {
         .itemInputs('3x gtceu:silicon_dioxide_dust')
         .inputFluids('6000x gtceu:hydrofluoric_acid')
         .outputFluids('1000x tfinfinity:hexafluorosilicic_acid')
+        .outputFluids('2000x minecraft:water')
         .duration(320)
         .EUt(GTValues.VA[GTValues.MV])
 

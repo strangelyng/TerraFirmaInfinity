@@ -82,14 +82,24 @@ const registerOreLootTables = (event) => {
         global.SAND_COLORS.forEach(sandColor => {
             if (material.hasFlag(InfinityMaterialFlags.GENERATE_SAND_ORES)) {
                 event.addBlockModifier(`gtceu:${sandColor}_${material.getName()}_ore`)
-                .removeLoot(Ingredient.all)
-                .pool((p) => {
-                    p.addEntry(LootEntry.of(richRawOre).withWeight(20))
-                    p.addEntry(LootEntry.of(normalRawOre).withWeight(60))
-                    p.addEntry(LootEntry.of(poorRawOre).withWeight(20))
-                })
-                .addLoot(LootEntry.of(`tfc:sand/${sandColor}`).when(c => c.randomChance(0.2)))
-                .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.05)))
+                    .removeLoot(Ingredient.all)
+                    .pool((p) => {
+                        p.addEntry(LootEntry.of(richRawOre).withWeight(20))
+                        p.addEntry(LootEntry.of(normalRawOre).withWeight(60))
+                        p.addEntry(LootEntry.of(poorRawOre).withWeight(20))
+                    })
+                    .addLoot(LootEntry.of(`tfc:sand/${sandColor}`).when(c => c.randomChance(0.2)))
+                    .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.05)))
+
+                event.addBlockModifier(`gtceu:${sandColor}_sandstone_${material.getName()}_ore`)
+                    .removeLoot(Ingredient.all)
+                    .pool((p) => {
+                        p.addEntry(LootEntry.of(richRawOre).withWeight(20))
+                        p.addEntry(LootEntry.of(normalRawOre).withWeight(60))
+                        p.addEntry(LootEntry.of(poorRawOre).withWeight(20))
+                    })
+                    .addLoot(LootEntry.of(`tfc:sand/${sandColor}`).when(c => c.randomChance(0.2)))
+                    .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.05)))
             }
         })
     })
