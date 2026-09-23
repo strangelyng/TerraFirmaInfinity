@@ -1,6 +1,6 @@
 const registerTFIAcidsRecipes = (event) => {
     event.recipes.gtceu.chemical_bath('hydrofluoric_acid_from_fluorite')
-        .itemInputs('3x gtceu:fluorite_dust')
+        .itemInputs('3x tfinfinity:fluorite_dust')
         .inputFluids('1000x gtceu:sulfuric_acid')
         .outputFluids('2000x tfinfinity:hydrogen_fluoride')
         .itemOutputs('8x gtceu:gypsum_dust')

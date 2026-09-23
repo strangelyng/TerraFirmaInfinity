@@ -51,13 +51,13 @@ const registerTFIGemProcessingMaterials = (event) => {
     // Topaz Group
     event.create('tfinfinity:blue_topaz_sludge_residue')
         .dust()
-        .components('1x tfinfinity:larnite', '1x gtceu:fluorite')
+        .components('1x tfinfinity:larnite', '1x tfinfinity:fluorite')
         .color(0x9EBAB9)
         .secondaryColor(0x7B7584)
 
     event.create('tfinfinity:topaz_sludge_residue')
         .dust()
-        .components('2x tfinfinity:larnite', '1x gtceu:fluorite')
+        .components('2x tfinfinity:larnite', '1x tfinfinity:fluorite')
         .color(0xBAB699)
         .secondaryColor(0x7B7584)
 

@@ -20,7 +20,7 @@ const registerTFIMicaGroupRecipes = (event) => {
     event.recipes.gtceu.chemical_reactor('lepidolite_leach_liquor_defluorination')
         .inputFluids('3000x tfinfinity:lepidolite_leach_liquor')
         .itemInputs('5x gtceu:calcium_hydroxide_dust')
-        .itemOutputs('3x gtceu:fluorite_dust')
+        .itemOutputs('3x tfinfinity:fluorite_dust')
         .outputFluids('3000x tfinfinity:defluorinated_lepidolite_leach_liquor')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
