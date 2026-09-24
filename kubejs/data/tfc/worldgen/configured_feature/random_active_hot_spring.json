@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            "tfc:sapphire_empty_hot_spring",
+            "tfc:emerald_empty_hot_spring",
+            "tfc:empty_hot_spring",
+            "tfc:empty_hot_spring",
+            "tfc:sapphire_hot_spring",
+            "tfc:sapphire_hot_spring",
+            "tfc:sapphire_hot_spring",
+            "tfc:emerald_hot_spring",
+            "tfc:emerald_hot_spring",
+            "tfc:emerald_hot_spring",
+            "tfc:hot_spring",
+            "tfc:hot_spring",
+            "tfc:hot_spring",
+            "tfc:hot_spring",
+            "tfc:hot_spring",
+            "tfc:hot_spring"
+        ]
+    }
+}

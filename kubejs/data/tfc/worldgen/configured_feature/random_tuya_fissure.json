@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            "tfc:tuya_topaz_volcano_fissure",
+            "tfc:tuya_topaz_volcano_fissure",
+            "tfc:tuya_topaz_volcano_fissure",
+            "tfc:tuya_diamond_volcano_fissure",
+            "tfc:tuya_volcano_fissure",
+            "tfc:tuya_volcano_fissure",
+            "tfc:tuya_volcano_fissure",
+            "tfc:tuya_volcano_fissure"
+        ]
+    }
+}
