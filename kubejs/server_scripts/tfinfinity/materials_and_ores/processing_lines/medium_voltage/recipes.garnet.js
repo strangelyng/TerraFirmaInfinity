@@ -8,11 +8,25 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
-    event.recipes.gtceu.chemical_reactor('calcium_carbonate_from_calcium_chloride_solution')
+    event.recipes.gtceu.chemical_reactor('calcium_carbonate_from_chloride_solution')
         .inputFluids('1000x tfinfinity:calcium_chloride_solution')
         .inputFluids('1000x tfinfinity:sodium_carbonate_solution')
         .itemOutputs('5x gtceu:calcium_carbonate_dust')
         .outputFluids('2000x gtceu:salt_water')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor('calcium_hydroxide_from_chloride_solution')
+        .inputFluids('1000x tfinfinity:calcium_chloride_solution')
+        .inputFluids('2000x tfinfinity:sodium_hydroxide_solution')
+        .itemOutputs('5x gtceu:calcium_hydroxide_dust')
+        .outputFluids('2000x gtceu:salt_water')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.tfinfinity.roaster('calcium_oxide_from_calcium_hydroxide')
+        .itemInputs('5x gtceu:calcium_hydroxide_dust')
+        .itemOutputs('2x gtceu:quicklime_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 

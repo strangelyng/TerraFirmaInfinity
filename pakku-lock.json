@@ -1695,6 +1695,47 @@
             ]
         },
         {
+            "pakku_id": "P7O0FxEq498KViEZ",
+            "pakku_links": [
+                "RCJtDvydi8alVpwa"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "worldjs"
+            },
+            "name": {
+                "curseforge": "WorldJS"
+            },
+            "id": {
+                "curseforge": "997691"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "worldjs-1.21.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8819/570/worldjs-1.21.1-1.1.0.jar",
+                    "id": "8819570",
+                    "parent_id": "997691",
+                    "hashes": {
+                        "sha1": "4f026fd6490277ca8ac0888b7687d00cdc3b9c06",
+                        "md5": "761ecb3dc4237e541e6ab23308f8f159"
+                    },
+                    "required_dependencies": [
+                        "238086"
+                    ],
+                    "size": 245166,
+                    "date_published": "2026-09-06T04:50:13.857Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "JaldIin1JTQnKXKT",
             "type": "MOD",
             "slug": {

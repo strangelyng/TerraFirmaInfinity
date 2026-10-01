@@ -141,6 +141,7 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	// Additional Materials
 	InfinityMaterials.Acanthite.setMaterialIconSet(InfinityMaterialIconSet.OCTAHEDRAL_METALLIC);
 	GTMaterials.Barite.setMaterialIconSet(InfinityMaterialIconSet.TABULAR);
+	GTMaterials.Chalcocite.setMaterialIconSet(InfinityMaterialIconSet.OCTAHEDRAL_SHINY);
 	GTMaterials.Galena.setMaterialIconSet(InfinityMaterialIconSet.CUBIC_METALLIC);
 	GTMaterials.Goethite.setMaterialIconSet(InfinityMaterialIconSet.BOTRYOIDAL_METALLIC);
 	GTMaterials.Kyanite.setMaterialIconSet(InfinityMaterialIconSet.TABULAR_FLINT);

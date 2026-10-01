@@ -22,4 +22,58 @@ const registerTFIAcidsRecipes = (event) => {
         .outputFluids('2000x gtceu:hydrochloric_acid')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // #region Hydrochloric Acid Recipes
+    event.remove({ id: 'gtceu:chemical_reactor/hydrochloric_acid' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/hydrochloric_acid' })
+
+    event.recipes.gtceu.chemical_reactor('hydrogen_chloride')
+        .inputFluids('1000x gtceu:hydrogen')
+        .inputFluids('1000x gtceu:chlorine')
+        .outputFluids('1000x tfinfinity:hydrogen_chloride')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.chemical_reactor('hydrochloric_acid')
+        .inputFluids('1000x tfinfinity:hydrogen_chloride')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x gtceu:hydrochloric_acid')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.large_chemical_reactor('hydrochloric_acid_from_elements')
+        .inputFluids('1000x gtceu:hydrogen')
+        .inputFluids('1000x gtceu:chlorine')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x gtceu:hydrochloric_acid')
+        .circuit(24)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // #region Hydrofluoric Acid Recipes
+    event.remove({ id: 'gtceu:chemical_reactor/hydrofluoric_acid_from_elements' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/hydrofluoric_acid_from_elements' })
+
+    event.recipes.gtceu.chemical_reactor('hydrogen_fluoride')
+        .inputFluids('1000x gtceu:hydrogen')
+        .inputFluids('1000x gtceu:fluorine')
+        .outputFluids('1000x tfinfinity:hydrogen_fluoride')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.chemical_reactor('hydrofluoric_acid_from_gas')
+        .inputFluids('1000x tfinfinity:hydrogen_fluoride')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x gtceu:hydrofluoric_acid')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.large_chemical_reactor('hydrofluoric_acid_from_elements')
+        .inputFluids('1000x gtceu:hydrogen')
+        .inputFluids('1000x gtceu:fluorine')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x gtceu:hydrofluoric_acid')
+        .circuit(24)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 }

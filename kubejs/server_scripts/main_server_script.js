@@ -31,6 +31,10 @@ TFCEvents.data(event => {
     registerTFCData(event);
 })
 
+ServerEvents.registry('neoforge:biome_modifier', event => {
+    registerTFIBiomeModifiers(event);
+})
+
 ServerEvents.recipes(event => {
     // event.remove({ type: 'minecraft:smelting' })
     event.remove({ type: 'minecraft:blasting' })
