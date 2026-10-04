@@ -57,20 +57,20 @@ const registerTFIBiomeModifiers = (event) => {
     event.create('swamp_veins', 'add_features')
         .biomes(swamp_biomes)
         .step('underground_ores')
-        .features('#tfc:worldgen/in_biome/veins/swamp')
+        .features('#tfc:in_biome/veins/swamp')
         
     event.create('volcanic_veins', 'add_features')
         .biomes(volcanic_biomes)
         .step('underground_ores')
-        .features('#tfc:worldgen/in_biome/veins/volcanic')
+        .features('#tfc:in_biome/veins/volcanic')
         
     event.create('beach_veins', 'add_features')
         .biomes(beach_biomes)
         .step('underground_ores')
-        .features('#tfc:worldgen/in_biome/veins/beach')
+        .features('#tfc:in_biome/veins/beach')
 
     event.create('atoll_veins', 'add_features')
         .biomes(atoll_biomes)
         .step('underground_ores')
-        .features('#tfc:worldgen/in_biome/veins/atoll')
+        .features('#tfc:in_biome/veins/atoll')
 }
