@@ -1,0 +1,413 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "tfc:fluid/spring_water",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 60,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:granite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:granite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:granite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:diorite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:diorite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:diorite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:gabbro_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:gabbro_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gabbro_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:rhyolite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:rhyolite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:rhyolite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:basalt_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:basalt_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:basalt_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:andesite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:andesite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:andesite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:dacite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:dacite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dacite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:tuff_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:tuff_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:tuff_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:shale_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:shale_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:shale_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:claystone_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:claystone_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:claystone_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:limestone_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:limestone_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:limestone_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:conglomerate_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:conglomerate_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:conglomerate_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:dolomite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:dolomite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dolomite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:chert_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:chert_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chert_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:chalk_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:chalk_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chalk_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:quartzite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:quartzite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:quartzite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:slate_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:slate_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:slate_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:phyllite_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:phyllite_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:phyllite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:schist_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:schist_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:schist_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:gneiss_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:gneiss_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gneiss_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:marble_calcite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "tfinfinity:marble_fluorite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:marble_barite_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

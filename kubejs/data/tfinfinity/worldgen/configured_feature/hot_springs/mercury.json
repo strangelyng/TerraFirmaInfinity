@@ -1,0 +1,497 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "tfc:fluid/spring_water",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 60,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:granite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:granite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:granite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:granite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:diorite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:diorite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:diorite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:diorite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:gabbro_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gabbro_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gabbro_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:gabbro_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:rhyolite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:rhyolite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:rhyolite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:rhyolite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:basalt_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:basalt_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:basalt_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:basalt_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:andesite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:andesite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:andesite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:andesite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:dacite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dacite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dacite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:dacite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:tuff_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:tuff_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:tuff_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:tuff_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:shale_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:shale_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:shale_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:shale_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:claystone_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:claystone_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:claystone_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:claystone_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:limestone_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:limestone_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:limestone_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:limestone_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:conglomerate_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:conglomerate_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:conglomerate_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:conglomerate_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:dolomite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dolomite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dolomite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:dolomite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:chert_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chert_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chert_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:chert_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:chalk_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chalk_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chalk_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:chalk_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:quartzite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:quartzite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:quartzite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:quartzite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:slate_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:slate_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:slate_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:slate_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:phyllite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:phyllite_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:phyllite_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:phyllite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:schist_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:schist_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:schist_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:schist_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:gneiss_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gneiss_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gneiss_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:gneiss_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:marble_cinnabar_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:marble_stibnite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:marble_redstone_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:marble_opal_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

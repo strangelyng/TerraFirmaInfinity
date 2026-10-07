@@ -1,0 +1,497 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "tfc:fluid/spring_water",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 60,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:granite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:granite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:granite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:granite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:diorite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:diorite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:diorite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:diorite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:gabbro_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gabbro_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:gabbro_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gabbro_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:rhyolite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:rhyolite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:rhyolite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:rhyolite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:basalt_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:basalt_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:basalt_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:basalt_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:andesite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:andesite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:andesite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:andesite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:dacite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dacite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:dacite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dacite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:tuff_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:tuff_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:tuff_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:tuff_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:shale_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:shale_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:shale_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:shale_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:claystone_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:claystone_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:claystone_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:claystone_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:limestone_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:limestone_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:limestone_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:limestone_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:conglomerate_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:conglomerate_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:conglomerate_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:conglomerate_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:dolomite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dolomite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:dolomite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dolomite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:chert_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chert_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:chert_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chert_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:chalk_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chalk_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:chalk_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chalk_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:quartzite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:quartzite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:quartzite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:quartzite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:slate_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:slate_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:slate_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:slate_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:phyllite_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:phyllite_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:phyllite_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:phyllite_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:schist_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:schist_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:schist_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:schist_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:gneiss_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gneiss_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:gneiss_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gneiss_quartzite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 35,
+                            "block": "gtceu:marble_gold_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:marble_silver_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "tfinfinity:marble_acanthite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:marble_quartzite_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

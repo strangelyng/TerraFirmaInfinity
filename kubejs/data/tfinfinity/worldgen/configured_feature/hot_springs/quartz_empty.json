@@ -1,0 +1,413 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "minecraft:air",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 25,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:granite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:granite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:granite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:diorite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:diorite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:diorite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:gabbro_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gabbro_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:gabbro_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:rhyolite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:rhyolite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:rhyolite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:basalt_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:basalt_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:basalt_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:andesite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:andesite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:andesite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:dacite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dacite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:dacite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:tuff_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:tuff_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:tuff_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:shale_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:shale_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:shale_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:claystone_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:claystone_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:claystone_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:limestone_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:limestone_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:limestone_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:conglomerate_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:conglomerate_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:conglomerate_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:dolomite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dolomite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:dolomite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:chert_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chert_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:chert_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:chalk_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chalk_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:chalk_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:quartzite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:quartzite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:quartzite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:slate_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:slate_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:slate_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:phyllite_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:phyllite_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:phyllite_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:schist_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:schist_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:schist_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:gneiss_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gneiss_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:gneiss_opal_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 60,
+                            "block": "gtceu:marble_quartzite_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:marble_calcite_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:marble_opal_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

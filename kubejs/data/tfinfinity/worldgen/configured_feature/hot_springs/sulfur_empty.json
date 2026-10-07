@@ -1,0 +1,245 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "minecraft:air",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 20,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:granite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:diorite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:gabbro_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:rhyolite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:basalt_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:andesite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:dacite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:tuff_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:shale_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:claystone_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:limestone_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:conglomerate_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:dolomite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:chert_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:chalk_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:quartzite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:slate_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:phyllite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:schist_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:gneiss_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 100,
+                            "block": "gtceu:marble_sulfur_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

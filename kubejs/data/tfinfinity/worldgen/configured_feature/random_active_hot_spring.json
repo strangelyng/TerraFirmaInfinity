@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+        "default": "tfinfinity:random_empty_hot_spring",
+        "features": [
+            {
+                "chance": 0.66,
+                "feature": "tfinfinity:active_hot_spring_selector"
+            }
+        ]
+    }
+}

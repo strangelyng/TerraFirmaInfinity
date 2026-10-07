@@ -1,0 +1,413 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "tfc:fluid/spring_water",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 50,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:granite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:granite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:granite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:diorite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:diorite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:diorite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gabbro_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:gabbro_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gabbro_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:rhyolite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:rhyolite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:rhyolite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:basalt_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:basalt_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:basalt_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:andesite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:andesite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:andesite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dacite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:dacite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dacite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:tuff_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:tuff_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:tuff_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:shale_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:shale_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:shale_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:claystone_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:claystone_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:claystone_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:limestone_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:limestone_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:limestone_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:conglomerate_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:conglomerate_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:conglomerate_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dolomite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:dolomite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:dolomite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chert_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:chert_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chert_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chalk_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:chalk_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:chalk_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:quartzite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:quartzite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:quartzite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:slate_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:slate_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:slate_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:phyllite_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:phyllite_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:phyllite_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:schist_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:schist_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:schist_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gneiss_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:gneiss_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:gneiss_sulfur_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 25,
+                            "block": "gtceu:marble_calcite_ore"
+                        },
+                        {
+                            "weight": 45,
+                            "block": "gtceu:marble_gypsum_ore"
+                        },
+                        {
+                            "weight": 30,
+                            "block": "gtceu:marble_sulfur_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

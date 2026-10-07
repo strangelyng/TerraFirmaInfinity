@@ -1,0 +1,497 @@
+{
+    "type": "tfc:hot_spring",
+    "config": {
+        "fluid_state": "minecraft:air",
+        "radius": 14,
+        "decoration": {
+            "radius": 5,
+            "count": 30,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:granite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:granite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:granite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:granite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:diorite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:diorite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:diorite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:diorite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:gabbro_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:gabbro_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gabbro_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:gabbro_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:rhyolite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:rhyolite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:rhyolite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:rhyolite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:basalt_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:basalt_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:basalt_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:basalt_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:andesite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:andesite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:andesite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:andesite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:dacite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:dacite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dacite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:dacite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/tuff"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:tuff_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:tuff_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:tuff_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:tuff_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/shale"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:shale_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:shale_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:shale_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:shale_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/claystone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:claystone_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:claystone_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:claystone_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:claystone_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/limestone"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:limestone_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:limestone_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:limestone_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:limestone_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/conglomerate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:conglomerate_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:conglomerate_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:conglomerate_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:conglomerate_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dolomite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:dolomite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:dolomite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:dolomite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:dolomite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chert"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:chert_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:chert_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chert_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:chert_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/chalk"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:chalk_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:chalk_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:chalk_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:chalk_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:quartzite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:quartzite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:quartzite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:quartzite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:slate_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:slate_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:slate_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:slate_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:phyllite_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:phyllite_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:phyllite_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:phyllite_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:schist_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:schist_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:schist_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:schist_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:gneiss_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:gneiss_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:gneiss_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:gneiss_barite_ore"
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "weight": 50,
+                            "block": "gtceu:marble_realgar_ore"
+                        },
+                        {
+                            "weight": 15,
+                            "block": "gtceu:marble_pyrite_ore"
+                        },
+                        {
+                            "weight": 25,
+                            "block": "gtceu:marble_cinnabar_ore"
+                        },
+                        {
+                            "weight": 10,
+                            "block": "gtceu:marble_barite_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
