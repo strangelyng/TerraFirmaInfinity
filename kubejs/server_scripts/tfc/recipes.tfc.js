@@ -17,6 +17,13 @@ const registerTFCRecipes = (event) => {
         event.remove({ id: recipeId });
     })
 
+    event.remove({ id: /tfc:quern\/powder\/.*/ });
+
+    event.recipes.tfc.quern(
+        '2x tfc:powder/flux',
+        '#tfc:fluxstone'
+    ).id('tfc:quern/powder/flux')
+
     event.shaped('tfc:white_kaolin_clay', [
         'XX',
         'XX'

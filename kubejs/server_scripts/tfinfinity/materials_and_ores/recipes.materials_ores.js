@@ -59,10 +59,10 @@ function processPoorRawOre(event, material) {
     const smallDustItem = ChemicalHelper.get(TagPrefix.dustSmall, material, 2);
 
     if (oreMultiplier > 1) {
-        event.recipes.tfc.quern(
-            crushedOreItem.copyWithCount(oreMultiplier / 2),
+        event.shapeless(crushedOreItem.copyWithCount(oreMultiplier / 2), [
+            '#gtceu:crafting_tools/hammer',
             poorRawOreItem
-        ).id(`tfinfinity:quern/crushed_ore_from_poor_raw_${materialName}`)
+        ]).damageIngredient('#gtceu:crafting_tools/hammer').id(`tfinfinity:shapeless/hammer_crushing_poor_raw_${materialName}`)
 
         event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${materialName}_ore_to_crushed_ore`)
             .itemInputs(poorRawOreItem)
@@ -71,10 +71,10 @@ function processPoorRawOre(event, material) {
             .EUt(GTValues.VH[GTValues.LV])
             .category(GTRecipeCategories.ORE_FORGING)
     } else {
-        event.recipes.tfc.quern(
-            smallDustItem,
+        event.shapeless(smallDustItem, [
+            '#gtceu:crafting_tools/hammer',
             poorRawOreItem
-        ).id(`tfinfinity:quern/crushed_ore_from_poor_raw_${materialName}`)
+        ]).damageIngredient('#gtceu:crafting_tools/hammer').id(`tfinfinity:shapeless/hammer_crushing_poor_raw_${materialName}`)
 
         event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${materialName}_ore_to_crushed_ore`)
             .itemInputs(poorRawOreItem)
@@ -101,6 +101,8 @@ function processPoorRawOre(event, material) {
 }
 
 function processNormalRawOre(event, material) {
+    const materialName = material.getName();
+
     const rawOreItem = ChemicalHelper.get(TagPrefix.rawOre, material, 1);
     if (rawOreItem.isEmpty()) return;
 
@@ -118,10 +120,34 @@ function processNormalRawOre(event, material) {
     const oreMultiplier = oreProperty.getOreMultiplier();
     crushedOreItem.setCount(oreMultiplier);
 
-    event.recipes.tfc.quern(
-        crushedOreItem,
+    event.shapeless(crushedOreItem, [
+        '#gtceu:crafting_tools/hammer',
         rawOreItem
-    ).id(`tfinfinity:quern/crushed_ore_from_normal_raw_${material.getName()}`)
+    ]).damageIngredient('#gtceu:crafting_tools/hammer').id(`tfinfinity:shapeless/hammer_crushing_raw_${materialName}`)
+
+    event.recipes.gtceu.forge_hammer(`hammer_raw_${materialName}_ore_to_crushed_ore`)
+        .itemInputs(rawOreItem)
+        .itemOutputs(crushedOreItem)
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.LV])
+        .category(GTRecipeCategories.ORE_FORGING)
+
+
+    const byproductMaterial = oreProperty.getOreByProduct(0, material);
+    let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
+
+    if (byproductItem.isEmpty()) {
+        byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1);
+    }
+
+    event.recipes.gtceu.macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
+        .itemInputs(rawOreItem)
+        .itemOutputs(crushedOreItem)
+        .chancedOutput(crushedOreItem.copyWithCount(1), 5000)
+        .chancedOutput(byproductItem, 1400)
+        .duration(400)
+        .EUt(2)
+        .category(GTRecipeCategories.ORE_CRUSHING)
 }
 
 function processRichRawOre(event, material) {
@@ -144,10 +170,10 @@ function processRichRawOre(event, material) {
     const oreMultiplier = oreProperty.getOreMultiplier() * 2;
     crushedOreItem.setCount(oreMultiplier);
 
-    event.recipes.tfc.quern(
-        crushedOreItem,
+    event.shapeless(crushedOreItem, [
+        '#gtceu:crafting_tools/hammer',
         richRawOreItem
-    ).id(`tfinfinity:quern/crushed_ore_from_rich_raw_${materialName}`)
+    ]).damageIngredient('#gtceu:crafting_tools/hammer').id(`tfinfinity:shapeless/hammer_crushing_rich_raw_${materialName}`)
 
     event.recipes.gtceu.forge_hammer(`hammer_rich_raw_${materialName}_ore_to_crushed_ore`)
         .itemInputs(richRawOreItem)
@@ -197,34 +223,61 @@ function processRawOreBlock(event, material) {
 function processCrushedOre(event, material) {
     const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
     if (crushedOreItem.isEmpty()) return;
+    
+    event.remove({ id: `gtceu:shapeless/crushed_ore_to_dust_${material.getName()}` })
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, crushedOreItem, material, calcAmountOfMetal(64, tfcProperty.getPercentOfMaterial()), 'crushed_ore', true, 0);
     }
+
+    const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
+
+    event.recipes.tfc.quern(
+        impureDustItem,
+        crushedOreItem
+    ).id(`tfinfinity:quern/impure_dust_from_${material.getName()}_crushed_ore`)
 }
 
 function processPurifiedOre(event, material) {
     const purifiedOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1);
     if (purifiedOreItem.isEmpty()) return;
+    
+    event.remove({ id: `gtceu:shapeless/purified_ore_to_dust_${material.getName()}` })
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, purifiedOreItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'purified_ore', true, 1);
     }
+
+    const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
+
+    event.recipes.tfc.quern(
+        pureDustItem,
+        purifiedOreItem
+    ).id(`tfinfinity:quern/pure_dust_from_${material.getName()}_purified_ore`)
 }
 
 function processRefinedOre(event, material) {
     const refinedOreItem = ChemicalHelper.get(TagPrefix.crushedRefined, material, 1);
     if (refinedOreItem.isEmpty()) return;
 
+    event.remove({ id: `gtceu:shapeless/centrifuged_ore_to_dust_${material.getName()}` })
+
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, refinedOreItem, material, calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial()), 'refined_ore', true, 2);
     }
+
+    const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
+
+    event.recipes.tfc.quern(
+        dustItem,
+        refinedOreItem
+    ).id(`tfinfinity:quern/dust_from_${material.getName()}_refined_ore`)
 }
 
 function processImpureDust(event, material) {

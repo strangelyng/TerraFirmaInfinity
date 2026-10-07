@@ -52,7 +52,7 @@ function processPowder(event, material) {
     }
         
     const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
-    if (!dustItem.isEmpty()) {
+    if (!dustItem.isEmpty() && material != InfinityMaterials.Kaolinite) {
         event.recipes.tfc.quern(powderItem.withCount(4), dustItem)
             .id(`tfinfinity:quern/${material.getName()}_powder_from_dust`)
     }
