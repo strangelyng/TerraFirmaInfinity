@@ -51,6 +51,9 @@ const registerOreLootTables = (event) => {
     forEachMaterial(material => {
         if (!material.hasProperty(PropertyKey.ORE)) return;
 
+        let materialName = material.getName();
+        let materialModid = material.getModid();
+
         let richRawOre = ChemicalHelper.get(InfinityTagPrefix.richRawOre, material, 1).getItem().getId();
         let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1).getItem().getId();
         let poorRawOre = ChemicalHelper.get(InfinityTagPrefix.poorRawOre, material, 1).getItem().getId();
@@ -68,7 +71,7 @@ const registerOreLootTables = (event) => {
             .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.2)));
 
         global.STONE_TYPES.forEach(stoneType => {
-            event.addBlockModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
+            event.addBlockModifier(`${materialModid}:${stoneType}_${materialName}_ore`)
                 .removeLoot(Ingredient.all)
                 .pool((p) => {
                     p.addEntry(LootEntry.of(richRawOre).withWeight(20))
@@ -81,7 +84,7 @@ const registerOreLootTables = (event) => {
 
         global.SAND_COLORS.forEach(sandColor => {
             if (material.hasFlag(InfinityMaterialFlags.GENERATE_SAND_ORES)) {
-                event.addBlockModifier(`gtceu:${sandColor}_${material.getName()}_ore`)
+                event.addBlockModifier(`${materialModid}:${sandColor}_${materialName}_ore`)
                     .removeLoot(Ingredient.all)
                     .pool((p) => {
                         p.addEntry(LootEntry.of(richRawOre).withWeight(20))
@@ -91,7 +94,7 @@ const registerOreLootTables = (event) => {
                     .addLoot(LootEntry.of(`tfc:sand/${sandColor}`).when(c => c.randomChance(0.2)))
                     .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.05)))
 
-                event.addBlockModifier(`gtceu:${sandColor}_sandstone_${material.getName()}_ore`)
+                event.addBlockModifier(`${materialModid}:${sandColor}_sandstone_${materialName}_ore`)
                     .removeLoot(Ingredient.all)
                     .pool((p) => {
                         p.addEntry(LootEntry.of(richRawOre).withWeight(20))
