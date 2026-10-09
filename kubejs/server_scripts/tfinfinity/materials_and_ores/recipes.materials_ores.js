@@ -221,10 +221,10 @@ function processRawOreBlock(event, material) {
 }
 
 function processCrushedOre(event, material) {
+    const materialName = material.getName();
+
     const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
     if (crushedOreItem.isEmpty()) return;
-    
-    event.remove({ id: `gtceu:shapeless/crushed_ore_to_dust_${material.getName()}` })
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
@@ -234,17 +234,22 @@ function processCrushedOre(event, material) {
 
     const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
 
+    event.shapeless(impureDustItem, [
+        '#gtceu:crafting_tools/mortar',
+        crushedOreItem
+    ]).damageIngredient('#gtceu:crafting_tools/mortar').id(`gtceu:shapeless/crushed_ore_to_dust_${materialName}`)
+
     event.recipes.tfc.quern(
         impureDustItem,
         crushedOreItem
-    ).id(`tfinfinity:quern/impure_dust_from_${material.getName()}_crushed_ore`)
+    ).id(`tfinfinity:quern/impure_dust_from_${materialName}_crushed_ore`)
 }
 
 function processPurifiedOre(event, material) {
+    const materialName = material.getName();
+
     const purifiedOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1);
     if (purifiedOreItem.isEmpty()) return;
-    
-    event.remove({ id: `gtceu:shapeless/purified_ore_to_dust_${material.getName()}` })
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
@@ -254,17 +259,22 @@ function processPurifiedOre(event, material) {
 
     const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
 
+    event.shapeless(pureDustItem, [
+        '#gtceu:crafting_tools/mortar',
+        purifiedOreItem
+    ]).damageIngredient('#gtceu:crafting_tools/mortar').id(`gtceu:shapeless/purified_ore_to_dust_${materialName}`)
+
     event.recipes.tfc.quern(
         pureDustItem,
         purifiedOreItem
-    ).id(`tfinfinity:quern/pure_dust_from_${material.getName()}_purified_ore`)
+    ).id(`tfinfinity:quern/pure_dust_from_${materialName}_purified_ore`)
 }
 
 function processRefinedOre(event, material) {
+    const materialName = material.getName();
+
     const refinedOreItem = ChemicalHelper.get(TagPrefix.crushedRefined, material, 1);
     if (refinedOreItem.isEmpty()) return;
-
-    event.remove({ id: `gtceu:shapeless/centrifuged_ore_to_dust_${material.getName()}` })
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
@@ -274,10 +284,15 @@ function processRefinedOre(event, material) {
 
     const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
 
+    event.shapeless(dustItem, [
+        '#gtceu:crafting_tools/mortar',
+        refinedOreItem
+    ]).damageIngredient('#gtceu:crafting_tools/mortar').id(`gtceu:shapeless/centrifuged_ore_to_dust_${materialName}`)
+
     event.recipes.tfc.quern(
         dustItem,
         refinedOreItem
-    ).id(`tfinfinity:quern/dust_from_${material.getName()}_refined_ore`)
+    ).id(`tfinfinity:quern/dust_from_${materialName}_refined_ore`)
 }
 
 function processImpureDust(event, material) {
