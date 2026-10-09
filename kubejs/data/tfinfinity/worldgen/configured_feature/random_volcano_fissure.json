@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+        "default": "tfc:volcano_fissure",
+        "features": [
+            {
+                "chance": 0.5,
+                "feature": "tfinfinity:volcano_fissures/volcano_selector"
+            }
+        ]
+    }
+}

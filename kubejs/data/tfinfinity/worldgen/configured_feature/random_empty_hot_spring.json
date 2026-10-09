@@ -5,7 +5,7 @@
         "features": [
             {
                 "chance": 0.5,
-                "feature": "tfinfinity:empty_hot_spring_selector"
+                "feature": "tfinfinity:hot_springs/empty_hot_spring_selector"
             }
         ]
     }

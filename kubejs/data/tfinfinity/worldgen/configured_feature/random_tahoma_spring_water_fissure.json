@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+        "default": "tfc:tahoma_volcano_spring_water_fissure",
+        "features": [
+            {
+                "chance": 0.66,
+                "feature": "tfinfinity:volcano_fissures/tahoma_spring_water_selector"
+            }
+        ]
+    }
+}

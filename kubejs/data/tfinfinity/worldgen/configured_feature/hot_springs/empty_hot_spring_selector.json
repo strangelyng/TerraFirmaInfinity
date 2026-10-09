@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            "tfinfinity:hot_springs/empty/calcite",
+            "tfinfinity:hot_springs/empty/calcite",
+            "tfinfinity:hot_springs/empty/sulfur",
+            "tfinfinity:hot_springs/empty/sulfur",
+            "tfinfinity:hot_springs/empty/sulfur",
+            "tfinfinity:hot_springs/empty/fluorite",
+            "tfinfinity:hot_springs/empty/gold_silver",
+            "tfinfinity:hot_springs/empty/gypsum",
+            "tfinfinity:hot_springs/empty/mercury",
+            "tfinfinity:hot_springs/empty/quartz",
+            "tfinfinity:hot_springs/empty/quartz",
+            "tfinfinity:hot_springs/empty/sulfide"
+        ]
+    }
+}
