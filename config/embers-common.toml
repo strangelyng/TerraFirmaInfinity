@@ -74,6 +74,8 @@
 		# Default: 2.0
 		# Range: 0.0 ~ 1024.0
 		level_bonus_scalar = 2.0
+		#If true, discover metal crystal seeds from loaded c:ingots and c:nuggets tags. If false, only Embers' predefined crystal seeds are listed and craftable.
+		enable_dynamic_metal_seeds = false
 
 	[parameters.hearth_coil]
 		#The amount of ember consumed per tick.
@@ -92,6 +94,8 @@
 	[parameters.create]
 		#Enables experimental Create-powered Embers machine upgrades and their recipes. Requires Create to be installed.
 		enable_experimental_create_mechanics = true
+		#Enables Embers fuel, Hearth Coil, Ember Funnel, and Atmospheric Bellows integration with Create blaze burners.
+		enable_blaze_burner_integration = true
 
 		[parameters.create.blaze_burner]
 			#The amount of ember a Create blaze burner consumes each tick while sustained by ember.

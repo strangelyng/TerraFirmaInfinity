@@ -1,3 +1,4 @@
 {
-    "block.eidolon_repraised.crucible": "Alchemist Crucible"
+    "block.eidolon_repraised.crucible": "Alchemist Crucible",
+    "config.jade.plugin_eidolon_repraised.enthrall_tooltip": "Entrall Tooltip"
 }

@@ -138,6 +138,9 @@
     "ancient_altar": true,
     "hellforge": true
   },
+  "eidolon_repraised": {
+    "enthrall_tooltip": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,

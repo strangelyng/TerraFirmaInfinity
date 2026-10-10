@@ -1,8 +1,8 @@
 {
-  "enableEmiRemoval": false,
   "showToast": true,
   "showChatMessages": true,
-  "reloadEmi": false,
+  "reloadRrv": false,
+  "devMode": false,
   "ignoredTags": [
     "c:hidden_from_recipe_viewers"
   ]
