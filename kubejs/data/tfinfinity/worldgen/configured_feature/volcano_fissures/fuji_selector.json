@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfc:fuji_topaz_volcano_fissure",
-            "tfc:fuji_topaz_volcano_fissure",
-            "tfc:fuji_topaz_volcano_fissure",
-            "tfc:fuji_diamond_volcano_fissure"
+            "tfinfinity:volcano_fissures/fuji/topaz",
+            "tfinfinity:volcano_fissures/fuji/topaz",
+            "tfinfinity:volcano_fissures/fuji/topaz",
+            "tfinfinity:volcano_fissures/fuji/diamond"
         ]
     }
 }

@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfc:crater_lake_sapphire_volcano_spring_water_fissure",
-            "tfc:crater_lake_sapphire_volcano_spring_water_fissure",
-            "tfc:crater_lake_emerald_volcano_spring_water_fissure",
-            "tfc:crater_lake_emerald_volcano_spring_water_fissure"
+            "tfinfinity:volcano_fissures/crater_lake/sapphire_spring_water",
+            "tfinfinity:volcano_fissures/crater_lake/sapphire_spring_water",
+            "tfinfinity:volcano_fissures/crater_lake/emerald_spring_water",
+            "tfinfinity:volcano_fissures/crater_lake/emerald_spring_water"
         ]
     }
 }

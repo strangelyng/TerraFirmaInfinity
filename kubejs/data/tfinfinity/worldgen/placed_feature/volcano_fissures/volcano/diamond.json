@@ -1,0 +1,13 @@
+{
+    "feature": "tfinfinity:volcano_fissures/configured/diamond",
+    "placement": [
+        {
+            "type": "tfc:volcano",
+            "center": true
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

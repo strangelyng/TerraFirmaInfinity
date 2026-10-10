@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfc:fuji_sapphire_volcano_spring_water_fissure",
-            "tfc:fuji_sapphire_volcano_spring_water_fissure",
-            "tfc:fuji_emerald_volcano_spring_water_fissure",
-            "tfc:fuji_emerald_volcano_spring_water_fissure"
+            "tfinfinity:volcano_fissures/fuji/sapphire_spring_water",
+            "tfinfinity:volcano_fissures/fuji/sapphire_spring_water",
+            "tfinfinity:volcano_fissures/fuji/emerald_spring_water",
+            "tfinfinity:volcano_fissures/fuji/emerald_spring_water"
         ]
     }
 }
