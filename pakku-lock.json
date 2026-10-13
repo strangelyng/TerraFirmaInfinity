@@ -507,7 +507,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "eidolon_repraised-1.21.1-0.5.0.5.jar",
+                    "file_name": "eidolon_repraised-1.21.1-0.5.0.6.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -516,18 +516,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9009/395/eidolon_repraised-1.21.1-0.5.0.5.jar",
-                    "id": "9009395",
+                    "url": "https://edge.forgecdn.net/files/9148/441/eidolon_repraised-1.21.1-0.5.0.6.jar",
+                    "id": "9148441",
                     "parent_id": "870250",
                     "hashes": {
-                        "sha1": "16e05ed430094812d617a0edcd44498b30080eed",
-                        "md5": "62e24fd9ea1f91766283f7ba6aa2d451"
+                        "sha1": "78263fe38b3bb6f8c076c3d4a5413606037a8965",
+                        "md5": "780ae8958e5113bb139bfadc96c2cad3"
                     },
                     "required_dependencies": [
                         "309927"
                     ],
-                    "size": 4055160,
-                    "date_published": "2026-09-29T13:57:15.823Z"
+                    "size": 4055600,
+                    "date_published": "2026-10-12T17:28:34.417Z"
                 }
             ]
         },
@@ -546,7 +546,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "embers-reignited-1.21.1-1.5.8.jar",
+                    "file_name": "embers-reignited-1.21.1-1.5.9.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -554,16 +554,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8909/613/embers-reignited-1.21.1-1.5.8.jar",
-                    "id": "8909613",
+                    "url": "https://edge.forgecdn.net/files/9130/942/embers-reignited-1.21.1-1.5.9.jar",
+                    "id": "9130942",
                     "parent_id": "1579725",
                     "hashes": {
-                        "sha1": "3c31d70501c6b588c1a72221908954858f8660b1",
-                        "md5": "db2d56ca48029c7cddad30af3ccd14e4"
+                        "sha1": "ca93a7caa9a0dae23b2244f76f5d27f7d31b4681",
+                        "md5": "d77750b6d9747cebd2058922155d879a"
                     },
                     "required_dependencies": [],
-                    "size": 15881644,
-                    "date_published": "2026-09-18T06:53:15.110Z"
+                    "size": 15894849,
+                    "date_published": "2026-10-11T15:30:38.323Z"
                 }
             ]
         },
@@ -709,16 +709,16 @@
             "files": [
                 {
                     "type": "github",
-                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20261010-161617-d73adfb.jar",
+                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20261013-082745-b6fb712.jar",
                     "release_type": "release",
-                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20261010-161617-d73adfb.jar",
-                    "id": "628406496",
+                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20261013-082745-b6fb712.jar",
+                    "id": "636395456",
                     "parent_id": "615400306",
                     "hashes": {
-                        "sha256": "647c53c83faead28470cbb299472aea604254c20bcc5fb3cda1612e8d31b39a6"
+                        "sha256": "9e96d3ce717aa64e00de8767de6028ea650b27c70f8f9e39fe807cb7ec19ca4e"
                     },
-                    "size": 16915183,
-                    "date_published": "2026-10-10T16:16:22Z"
+                    "size": 16918811,
+                    "date_published": "2026-10-13T08:27:53Z"
                 }
             ]
         },
@@ -1280,7 +1280,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_recipes-3.4.1+1.21.1-neoforge.jar",
+                    "file_name": "reliable_recipes-3.5.1+1.21.1-neoforge.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -1288,16 +1288,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9093/621/reliable_recipes-3.4.1+1.21.1-neoforge.jar",
-                    "id": "9093621",
+                    "url": "https://edge.forgecdn.net/files/9127/776/reliable_recipes-3.5.1+1.21.1-neoforge.jar",
+                    "id": "9127776",
                     "parent_id": "1414959",
                     "hashes": {
-                        "sha1": "51f3b3c98cde534f7808d684b2f56583ca613501",
-                        "md5": "209642f9636f3a4fcdda95a9824ae65f"
+                        "sha1": "454495228cf8d178decc1560734dbc1354bf5b35",
+                        "md5": "a8c5a5f5a6a91d50a7f2e2faaf01b5a4"
                     },
                     "required_dependencies": [],
-                    "size": 186559,
-                    "date_published": "2026-10-07T21:48:06.550Z"
+                    "size": 192724,
+                    "date_published": "2026-10-11T10:20:50.167Z"
                 }
             ]
         },
@@ -1320,7 +1320,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_remover-3.5.1+1.21.1-neoforge.jar",
+                    "file_name": "reliable_remover-3.5.3+1.21.1-neoforge.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -1329,18 +1329,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9105/528/reliable_remover-3.5.1+1.21.1-neoforge.jar",
-                    "id": "9105528",
+                    "url": "https://edge.forgecdn.net/files/9142/273/reliable_remover-3.5.3+1.21.1-neoforge.jar",
+                    "id": "9142273",
                     "parent_id": "1420447",
                     "hashes": {
-                        "sha1": "7fdee8d7bc1cb51775c386ac39a9c3e481388edc",
-                        "md5": "85b19ad007d5d1fe42e2f6b42ae3733f"
+                        "sha1": "e94ce7dd847569f91e62f2f8d80e1ea6ecc1ae70",
+                        "md5": "cf6775ef86ede5e366c03f7b78b16779"
                     },
                     "required_dependencies": [
                         "1414959"
                     ],
-                    "size": 174746,
-                    "date_published": "2026-10-09T06:49:17.607Z"
+                    "size": 175490,
+                    "date_published": "2026-10-12T05:09:48.800Z"
                 }
             ]
         },
