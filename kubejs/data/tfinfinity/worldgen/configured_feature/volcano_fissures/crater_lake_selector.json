@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfinfinity:volcano_fissures/crater_lake/topaz",
-            "tfinfinity:volcano_fissures/crater_lake/topaz",
-            "tfinfinity:volcano_fissures/crater_lake/topaz",
-            "tfinfinity:volcano_fissures/crater_lake/diamond"
+            "tfinfinity:volcano_fissures/crater_lake/kimberlite",
+            "tfinfinity:volcano_fissures/crater_lake/molybdenum",
+            "tfinfinity:volcano_fissures/crater_lake/porphyry_copper",
+            "tfinfinity:volcano_fissures/crater_lake/tin_tungsten"
         ]
     }
 }

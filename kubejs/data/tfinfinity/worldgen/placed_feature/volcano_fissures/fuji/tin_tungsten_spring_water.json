@@ -1,0 +1,15 @@
+{
+    "feature": "tfinfinity:volcano_fissures/configured/tin_tungsten_spring_water",
+    "placement": [
+        {
+            "type": "tfc:stratovolcano",
+            "variant": "fuji",
+            "center": true,
+            "hash_min": 0.8
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

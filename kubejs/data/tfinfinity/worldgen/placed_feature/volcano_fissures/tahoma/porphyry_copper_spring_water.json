@@ -1,0 +1,15 @@
+{
+    "feature": "tfinfinity:volcano_fissures/configured/porphyry_copper_spring_water",
+    "placement": [
+        {
+            "type": "tfc:stratovolcano",
+            "variant": "tahoma",
+            "center": true,
+            "hash_max": 0.8
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

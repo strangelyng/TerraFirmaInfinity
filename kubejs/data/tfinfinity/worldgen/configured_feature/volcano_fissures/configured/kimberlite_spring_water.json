@@ -1,0 +1,316 @@
+{
+    "type": "tfc:fissure",
+    "config": {
+        "wall_state": "tfc:rock/raw/basalt",
+        "fluid_state": "tfc:fluid/spring_water",
+        "count": 3,
+        "radius": 6,
+        "max_piece_length": 12,
+        "decoration": {
+            "radius": 8,
+            "count": 90,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:rhyolite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:rhyolite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:rhyolite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:rhyolite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:basalt_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:basalt_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:basalt_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:basalt_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:andesite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:andesite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:andesite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:andesite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:dacite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:dacite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:dacite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:dacite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:granite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:granite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:granite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:granite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:diorite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:diorite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:diorite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:diorite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:gabbro_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:gabbro_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gabbro_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:gabbro_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:quartzite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:quartzite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:quartzite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:quartzite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:slate_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:slate_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:slate_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:slate_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:phyllite_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:phyllite_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:phyllite_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:phyllite_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:schist_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:schist_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:schist_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:schist_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:gneiss_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:gneiss_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gneiss_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:gneiss_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:marble_diamond_ore",
+                            "weight": 25
+                        },
+                        {
+                            "block": "gtceu:marble_ilmenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:marble_chromite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:marble_olivine_ore",
+                            "weight": 20
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,316 @@
+{
+    "type": "tfc:fissure",
+    "config": {
+        "wall_state": "tfc:rock/raw/basalt",
+        "fluid_state": "tfc:fluid/spring_water",
+        "count": 3,
+        "radius": 6,
+        "max_piece_length": 12,
+        "decoration": {
+            "radius": 8,
+            "count": 90,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:rhyolite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:rhyolite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:rhyolite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:rhyolite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:basalt_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:basalt_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:basalt_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:basalt_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:andesite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:andesite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:andesite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:andesite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:dacite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:dacite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:dacite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:dacite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:granite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:granite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:granite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:granite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:diorite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:diorite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:diorite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:diorite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:gabbro_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:gabbro_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gabbro_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:gabbro_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:quartzite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:quartzite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:quartzite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:quartzite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:slate_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:slate_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:slate_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:slate_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:phyllite_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:phyllite_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:phyllite_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:phyllite_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:schist_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:schist_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:schist_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:schist_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:gneiss_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:gneiss_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gneiss_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:gneiss_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:marble_cassiterite_ore",
+                            "weight": 40
+                        },
+                        {
+                            "block": "tfinfinity:marble_wolframite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:marble_scheelite_ore",
+                            "weight": 20
+                        },
+                        {
+                            "block": "gtceu:marble_quartzite_ore",
+                            "weight": 10
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

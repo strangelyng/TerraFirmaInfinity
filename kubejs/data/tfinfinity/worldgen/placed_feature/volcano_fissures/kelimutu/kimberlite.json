@@ -1,0 +1,16 @@
+{
+    "feature": "tfinfinity:volcano_fissures/configured/kimberlite",
+    "placement": [
+        {
+            "type": "tfc:stratovolcano",
+            "variant": "kelimutu",
+            "center": true,
+            "use_offset_center": true,
+            "hash_max": 0.25
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

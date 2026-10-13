@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfinfinity:volcano_fissures/fuji/topaz",
-            "tfinfinity:volcano_fissures/fuji/topaz",
-            "tfinfinity:volcano_fissures/fuji/topaz",
-            "tfinfinity:volcano_fissures/fuji/diamond"
+            "tfinfinity:volcano_fissures/fuji/kimberlite",
+            "tfinfinity:volcano_fissures/fuji/molybdenum",
+            "tfinfinity:volcano_fissures/fuji/porphyry_copper",
+            "tfinfinity:volcano_fissures/fuji/tin_tungsten"
         ]
     }
 }

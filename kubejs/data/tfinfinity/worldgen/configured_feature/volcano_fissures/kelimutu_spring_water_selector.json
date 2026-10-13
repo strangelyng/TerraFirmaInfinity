@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfinfinity:volcano_fissures/kelimutu/sapphire_spring_water",
-            "tfinfinity:volcano_fissures/kelimutu/sapphire_spring_water",
-            "tfinfinity:volcano_fissures/kelimutu/emerald_spring_water",
-            "tfinfinity:volcano_fissures/kelimutu/emerald_spring_water"
+            "tfinfinity:volcano_fissures/kelimutu/kimberlite_spring_water",
+            "tfinfinity:volcano_fissures/kelimutu/molybdenum_spring_water",
+            "tfinfinity:volcano_fissures/kelimutu/porphyry_copper_spring_water",
+            "tfinfinity:volcano_fissures/kelimutu/tin_tungsten_spring_water"
         ]
     }
 }

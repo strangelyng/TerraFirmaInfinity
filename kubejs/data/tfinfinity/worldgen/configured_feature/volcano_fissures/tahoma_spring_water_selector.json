@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfinfinity:volcano_fissures/tahoma/sapphire_spring_water",
-            "tfinfinity:volcano_fissures/tahoma/sapphire_spring_water",
-            "tfinfinity:volcano_fissures/tahoma/emerald_spring_water",
-            "tfinfinity:volcano_fissures/tahoma/emerald_spring_water"
+            "tfinfinity:volcano_fissures/tahoma/kimberlite_spring_water",
+            "tfinfinity:volcano_fissures/tahoma/molybdenum_spring_water",
+            "tfinfinity:volcano_fissures/tahoma/porphyry_copper_spring_water",
+            "tfinfinity:volcano_fissures/tahoma/tin_tungsten_spring_water"
         ]
     }
 }

@@ -1,0 +1,15 @@
+{
+    "feature": "tfinfinity:volcano_fissures/configured/kimberlite",
+    "placement": [
+        {
+            "type": "tfc:stratovolcano",
+            "variant": "fuji",
+            "center": true,
+            "hash_max": 0.6
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

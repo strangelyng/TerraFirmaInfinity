@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfinfinity:volcano_fissures/kelimutu/topaz",
-            "tfinfinity:volcano_fissures/kelimutu/topaz",
-            "tfinfinity:volcano_fissures/kelimutu/topaz",
-            "tfinfinity:volcano_fissures/kelimutu/diamond"
+            "tfinfinity:volcano_fissures/kelimutu/kimberlite",
+            "tfinfinity:volcano_fissures/kelimutu/molybdenum",
+            "tfinfinity:volcano_fissures/kelimutu/porphyry_copper",
+            "tfinfinity:volcano_fissures/kelimutu/tin_tungsten"
         ]
     }
 }

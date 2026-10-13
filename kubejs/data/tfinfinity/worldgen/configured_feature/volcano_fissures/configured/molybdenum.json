@@ -1,0 +1,316 @@
+{
+    "type": "tfc:fissure",
+    "config": {
+        "wall_state": "tfc:rock/raw/basalt",
+        "fluid_state": "minecraft:lava",
+        "count": 3,
+        "radius": 6,
+        "max_piece_length": 12,
+        "decoration": {
+            "radius": 8,
+            "count": 90,
+            "rarity": 3,
+            "blocks": [
+                {
+                    "replace": [
+                        "tfc:rock/raw/rhyolite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:rhyolite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:rhyolite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:rhyolite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:rhyolite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/basalt"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:basalt_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:basalt_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:basalt_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:basalt_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/andesite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:andesite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:andesite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:andesite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:andesite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/dacite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:dacite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:dacite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:dacite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:dacite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/granite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:granite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:granite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:granite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:granite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/diorite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:diorite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:diorite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:diorite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:diorite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gabbro"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:gabbro_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gabbro_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gabbro_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gabbro_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/quartzite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:quartzite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:quartzite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:quartzite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:quartzite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/slate"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:slate_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:slate_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:slate_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:slate_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/phyllite"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:phyllite_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:phyllite_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:phyllite_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:phyllite_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/schist"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:schist_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:schist_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:schist_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:schist_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/gneiss"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:gneiss_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gneiss_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gneiss_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:gneiss_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                },
+                {
+                    "replace": [
+                        "tfc:rock/raw/marble"
+                    ],
+                    "with": [
+                        {
+                            "block": "gtceu:marble_wulfenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:marble_powellite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:marble_molybdenite_ore",
+                            "weight": 30
+                        },
+                        {
+                            "block": "gtceu:marble_galena_ore",
+                            "weight": 10
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -2,10 +2,10 @@
     "type": "minecraft:simple_random_selector",
     "config": {
         "features": [
-            "tfinfinity:volcano_fissures/tahoma/topaz",
-            "tfinfinity:volcano_fissures/tahoma/topaz",
-            "tfinfinity:volcano_fissures/tahoma/topaz",
-            "tfinfinity:volcano_fissures/tahoma/diamond"
+            "tfinfinity:volcano_fissures/tahoma/kimberlite",
+            "tfinfinity:volcano_fissures/tahoma/molybdenum",
+            "tfinfinity:volcano_fissures/tahoma/porphyry_copper",
+            "tfinfinity:volcano_fissures/tahoma/tin_tungsten"
         ]
     }
 }
