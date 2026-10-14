@@ -1,0 +1,242 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "salts_evaporite_basin",
+        "rarity": 90,
+        "density": 0.3,
+        "min_y": -20,
+        "max_y": 1,
+        "project": true,
+        "project_offset": true,
+        "size": 25,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:sand/black"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:black_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:black_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/black"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:black_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:black_sandstone_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:brown_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:brown_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:brown_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:brown_sandstone_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/green"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:green_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:green_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/green"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:green_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:green_sandstone_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/pink"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:pink_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:pink_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/pink"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:pink_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:pink_sandstone_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/red"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:red_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:red_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/red"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:red_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:red_sandstone_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/white"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:white_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:white_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/white"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:white_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:white_sandstone_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:yellow_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:yellow_rock_salt_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:yellow_sandstone_salt_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:yellow_sandstone_rock_salt_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 3,
+                    "block": "gtceu:salt_indicator"
+                },
+                {
+                    "weight": 2,
+                    "block": "gtceu:rock_salt_indicator"
+                }
+            ]
+        }
+    }
+}

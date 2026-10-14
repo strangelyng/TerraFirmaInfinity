@@ -1,0 +1,226 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "palygorskite_basin",
+        "rarity": 90,
+        "density": 0.3,
+        "min_y": -20,
+        "max_y": 1,
+        "project": true,
+        "project_offset": true,
+        "size": 25,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:sand/black"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:black_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:black_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/black"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:black_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:black_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:brown_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:brown_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:brown_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:brown_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/green"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:green_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:green_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/green"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:green_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:green_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/pink"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:pink_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:pink_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/pink"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:pink_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:pink_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/red"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:red_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:red_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/red"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:red_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:red_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/white"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:white_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:white_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/white"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:white_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:white_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:yellow_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:yellow_glauconite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 70,
+                        "block": "gtceu:yellow_sandstone_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:yellow_sandstone_glauconite_sand_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

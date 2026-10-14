@@ -1,0 +1,165 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "sedex_sulfide_deposit",
+        "rarity": 210,
+        "density": 0.3,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 25,
+        "height": 10,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chalk_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:chalk_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chalk_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/chert"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chert_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:chert_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chert_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/claystone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:claystone_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:claystone_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:claystone_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/conglomerate"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:conglomerate_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:conglomerate_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:conglomerate_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:dolomite_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:dolomite_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:dolomite_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:limestone_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:limestone_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:limestone_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/shale"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:shale_sphalerite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:shale_galena_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:shale_pyrite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "tfc:ore/small_sphalerite"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:galena_indicator"
+                }
+            ]
+        }
+    }
+}

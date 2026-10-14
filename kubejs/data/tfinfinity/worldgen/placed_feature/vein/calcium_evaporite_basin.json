@@ -1,0 +1,10 @@
+{
+  "feature": "tfinfinity:vein/calcium_evaporite_basin",
+  "placement": [
+    {
+      "type": "tfc:climate",
+      "max_groundwater": 150,
+      "min_temperature": 18
+    }
+  ]
+}

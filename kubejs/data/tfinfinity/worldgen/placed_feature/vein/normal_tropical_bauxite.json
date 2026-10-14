@@ -1,0 +1,10 @@
+{
+  "feature": "tfinfinity:vein/normal_tropical_bauxite",
+  "placement": [
+    {
+      "type": "tfc:climate",
+      "min_groundwater": 300,
+      "min_temperature": 18
+    }
+  ]
+}

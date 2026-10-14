@@ -1,0 +1,69 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "deep_magnesiochromite",
+        "rarity": 270,
+        "density": 0.25,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "size": 30,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:basalt_chromite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:basalt_magnesite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:basalt_olivine_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:gabbro_chromite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gabbro_magnesite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gabbro_olivine_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 0,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 5,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "gtceu:chromite_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:olivine_indicator"
+                }
+            ]
+        }
+    }
+}

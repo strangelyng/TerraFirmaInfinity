@@ -1,0 +1,136 @@
+{
+    "type": "tfc:pipe_vein",
+    "config": {
+        "random_name": "deep_sodalite_deposit",
+        "rarity": 240,
+        "density": 0.3,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "height": 80,
+        "radius": 10,
+        "min_skew": 7,
+        "max_skew": 20,
+        "min_slant": 2,
+        "max_slant": 5,
+        "sign": 0.0,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gneiss_lazurite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:gneiss_sodalite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:gneiss_lapis_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:gneiss_calcite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 30,
+                        "block": "gtceu:marble_lazurite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:marble_sodalite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:marble_lapis_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:marble_calcite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "weight": 30,
+                        "block": "gtceu:phyllite_lazurite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:phyllite_sodalite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:phyllite_lapis_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:phyllite_calcite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "weight": 30,
+                        "block": "gtceu:quartzite_lazurite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:quartzite_sodalite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:quartzite_lapis_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:quartzite_calcite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "weight": 30,
+                        "block": "gtceu:schist_lazurite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:schist_sodalite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:schist_lapis_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:schist_calcite_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

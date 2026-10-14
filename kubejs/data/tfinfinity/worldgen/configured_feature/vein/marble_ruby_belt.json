@@ -1,0 +1,211 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "marble_ruby_belt",
+        "rarity": 40,
+        "density": 1.0,
+        "min_y": -40,
+        "max_y": -4,
+        "project": true,
+        "project_offset": true,
+        "size": 50,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/slate"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 6,
+                        "block": "gtceu:marble_ruby_ore"
+                    },
+                    {
+                        "weight": 94,
+                        "block": "tfc:rock/raw/marble"
+                    }
+                ]
+            }
+        ]
+    }
+}

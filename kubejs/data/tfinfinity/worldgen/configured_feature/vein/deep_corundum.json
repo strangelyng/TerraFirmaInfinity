@@ -1,0 +1,141 @@
+{
+    "type": "tfc:pipe_vein",
+    "config": {
+        "random_name": "deep_corundum",
+        "rarity": 270,
+        "density": 0.2,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "height": 80,
+        "radius": 10,
+        "min_skew": 7,
+        "max_skew": 20,
+        "min_slant": 2,
+        "max_slant": 5,
+        "sign": 0.0,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:andesite_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:andesite_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:basalt_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:basalt_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:dacite_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:dacite_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:rhyolite_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:rhyolite_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/tuff"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:tuff_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:tuff_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:diorite_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:diorite_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:gabbro_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:gabbro_green_sapphire_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:granite_sapphire_ore"
+                    },
+                    {
+                        "weight": 50,
+                        "block": "gtceu:granite_green_sapphire_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "type": "tfc:pipe_vein",
+    "config": {
+        "random_name": "deep_red_garnet",
+        "rarity": 270,
+        "density": 0.2,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "height": 80,
+        "radius": 10,
+        "min_skew": 7,
+        "max_skew": 20,
+        "min_slant": 2,
+        "max_slant": 5,
+        "sign": 0.0,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:gneiss_pyrope_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:gneiss_almandine_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gneiss_red_garnet_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:marble_pyrope_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:marble_almandine_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:marble_red_garnet_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:phyllite_pyrope_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:phyllite_almandine_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:phyllite_red_garnet_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:quartzite_pyrope_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:quartzite_almandine_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:quartzite_red_garnet_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:schist_pyrope_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:schist_almandine_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:schist_red_garnet_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/slate"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:slate_pyrope_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:slate_almandine_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:slate_red_garnet_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

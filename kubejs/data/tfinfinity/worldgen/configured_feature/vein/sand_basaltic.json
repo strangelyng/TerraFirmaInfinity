@@ -1,0 +1,72 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "sand_basaltic",
+        "rarity": 180,
+        "density": 0.25,
+        "min_y": -5,
+        "max_y": 1,
+        "project": true,
+        "project_offset": false,
+        "size": 20,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:sand/black"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:black_basaltic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:black_garnet_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/green"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:green_basaltic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:green_garnet_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/red"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:red_basaltic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:red_garnet_sand_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "gtceu:basaltic_mineral_sand_indicator"
+                }
+            ]
+        }
+    }
+}

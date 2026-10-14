@@ -1,0 +1,98 @@
+{
+    "type": "tfc:pipe_vein",
+    "config": {
+        "random_name": "normal_stibnite_electrum",
+        "rarity": 200,
+        "density": 0.25,
+        "min_y": -30,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "height": 60,
+        "radius": 10,
+        "min_skew": 7,
+        "max_skew": 20,
+        "min_slant": 2,
+        "max_slant": 5,
+        "sign": 0.0,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:diorite_gold_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:diorite_silver_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:diorite_stibnite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:gabbro_gold_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:gabbro_silver_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gabbro_stibnite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 35,
+                        "block": "gtceu:granite_gold_ore"
+                    },
+                    {
+                        "weight": 35,
+                        "block": "gtceu:granite_silver_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:granite_stibnite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "tfc:ore/small_native_gold"
+                },
+                {
+                    "weight": 2,
+                    "block": "tfc:ore/small_native_silver"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:stibnite_indicator"
+                }
+            ]
+        }
+    }
+}

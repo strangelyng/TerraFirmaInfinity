@@ -1,0 +1,128 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "surface_bauxite_karst",
+        "rarity": 160,
+        "density": 0.25,
+        "min_y": -20,
+        "max_y": -5,
+        "project": true,
+        "project_offset": false,
+        "size": 20,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:chalk_bauxite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chalk_hematite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:chalk_goethite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:chalk_bastnasite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:dolomite_bauxite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:dolomite_hematite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:dolomite_goethite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:dolomite_bastnasite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:limestone_bauxite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:limestone_hematite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:limestone_goethite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:limestone_bastnasite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:marble_bauxite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:marble_hematite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:marble_goethite_ore"
+                    },
+                    {
+                        "weight": 5,
+                        "block": "gtceu:marble_bastnasite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 3,
+                    "block": "gtceu:bauxite_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "tfc:ore/small_hematite"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:goethite_indicator"
+                }
+            ]
+        }
+    }
+}

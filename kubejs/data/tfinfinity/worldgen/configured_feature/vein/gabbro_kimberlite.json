@@ -1,0 +1,32 @@
+{
+    "type": "tfc:pipe_vein",
+    "config": {
+        "random_name": "gabbro_kimberlite",
+        "rarity": 80,
+        "density": 0.15,
+        "min_y": -64,
+        "max_y": 100,
+        "project": false,
+        "project_offset": false,
+        "height": 60,
+        "radius": 5,
+        "min_skew": 5,
+        "max_skew": 13,
+        "min_slant": 0,
+        "max_slant": 2,
+        "sign": 0.0,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:gabbro_diamond_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

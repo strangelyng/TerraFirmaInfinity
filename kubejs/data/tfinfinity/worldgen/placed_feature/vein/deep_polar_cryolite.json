@@ -1,0 +1,9 @@
+{
+  "feature": "tfinfinity:vein/deep_polar_cryolite",
+  "placement": [
+    {
+      "type": "tfc:climate",
+      "max_temperature": -12
+    }
+  ]
+}

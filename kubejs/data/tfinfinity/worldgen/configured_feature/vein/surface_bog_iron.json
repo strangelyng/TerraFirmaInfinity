@@ -1,0 +1,165 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "surface_bog_iron",
+        "rarity": 120,
+        "density": 0.3,
+        "min_y": -30,
+        "max_y": -5,
+        "project": true,
+        "project_offset": false,
+        "size": 20,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:chalk_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:chalk_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chalk_garnierite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/chert"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:chert_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:chert_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chert_garnierite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/claystone"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:claystone_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:claystone_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:claystone_garnierite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/conglomerate"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:conglomerate_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:conglomerate_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:conglomerate_garnierite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:dolomite_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:dolomite_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:dolomite_garnierite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:limestone_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:limestone_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:limestone_garnierite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/shale"
+                ],
+                "with": [
+                    {
+                        "weight": 75,
+                        "block": "gtceu:shale_yellow_limonite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:shale_goethite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:shale_garnierite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 3,
+                    "block": "tfc:ore/small_limonite"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:goethite_indicator"
+                }
+            ]
+        }
+    }
+}

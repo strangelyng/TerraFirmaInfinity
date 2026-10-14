@@ -1,0 +1,71 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "sand_garnet",
+        "rarity": 180,
+        "density": 0.25,
+        "min_y": -5,
+        "max_y": 1,
+        "project": true,
+        "project_offset": false,
+        "size": 20,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:sand/black"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:black_garnet_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/green"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:green_garnet_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/pink"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:pink_garnet_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:yellow_garnet_sand_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "gtceu:garnet_sand_indicator"
+                }
+            ]
+        }
+    }
+}

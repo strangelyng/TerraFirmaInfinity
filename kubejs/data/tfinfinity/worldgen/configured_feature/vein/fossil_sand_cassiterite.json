@@ -1,0 +1,114 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "fossil_sand_cassiterite",
+        "rarity": 140,
+        "density": 0.25,
+        "min_y": -20,
+        "max_y": -5,
+        "project": true,
+        "size": 20,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:sand/black"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:black_cassiterite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:brown_cassiterite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/red"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:red_cassiterite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:yellow_cassiterite_sand_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/black"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:black_sandstone_cassiterite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:brown_sandstone_cassiterite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/red"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:red_sandstone_cassiterite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:yellow_sandstone_cassiterite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "gtceu:cassiterite_sand_indicator"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "feature": "tfinfinity:vein/salts_evaporite_basin",
+  "placement": [
+    {
+      "type": "tfc:climate",
+      "max_groundwater": 150,
+      "min_temperature": 18
+    }
+  ]
+}

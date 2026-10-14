@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "tfinfinity:vein/high_sulfur",
+    "tfinfinity:vein/normal_alunite",
+    "tfinfinity:vein/normal_asbestos",
+    "tfinfinity:vein/normal_zeolite",
+    "tfinfinity:vein/volcanogenic_massive_sulfide"
+  ]
+}

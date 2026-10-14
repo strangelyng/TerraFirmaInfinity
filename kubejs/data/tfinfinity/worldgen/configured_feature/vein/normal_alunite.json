@@ -1,0 +1,111 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "normal_alunite",
+        "rarity": 160,
+        "density": 0.25,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 20,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:andesite_alunite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:andesite_nether_quartz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:andesite_opal_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:basalt_alunite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:basalt_nether_quartz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:basalt_opal_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:dacite_alunite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:dacite_nether_quartz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:dacite_opal_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:rhyolite_alunite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:rhyolite_nether_quartz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:rhyolite_opal_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/tuff"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:tuff_alunite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:tuff_nether_quartz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:tuff_opal_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

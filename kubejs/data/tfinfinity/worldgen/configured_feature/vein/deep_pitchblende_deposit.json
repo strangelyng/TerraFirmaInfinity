@@ -1,0 +1,100 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "deep_pitchblende_deposit",
+        "rarity": 360,
+        "density": 0.2,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "size": 30,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:diorite_pitchblende_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:diorite_uraninite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:diorite_amethyst_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "tfinfinity:diorite_thorite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:gabbro_pitchblende_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:gabbro_uraninite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:gabbro_amethyst_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "tfinfinity:gabbro_thorite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:granite_pitchblende_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:granite_uraninite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:granite_amethyst_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "tfinfinity:granite_thorite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 0,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 5,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "gtceu:pitchblende_indicator"
+                },
+                {
+                    "weight": 3,
+                    "block": "gtceu:amethyst_indicator"
+                }
+            ]
+        }
+    }
+}

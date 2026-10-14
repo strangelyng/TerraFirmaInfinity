@@ -1,0 +1,115 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "normal_asbestos",
+        "rarity": 160,
+        "density": 0.3,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 20,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:andesite_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:basalt_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:dacite_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:rhyolite_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/tuff"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:tuff_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:diorite_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:gabbro_asbestos_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "gtceu:granite_asbestos_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "gtceu:asbestos_indicator"
+                }
+            ]
+        }
+    }
+}

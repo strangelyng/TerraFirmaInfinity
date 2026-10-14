@@ -1,0 +1,107 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "sand_rare_earth",
+        "rarity": 240,
+        "density": 0.25,
+        "min_y": -5,
+        "max_y": 1,
+        "project": true,
+        "project_offset": false,
+        "size": 20,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:sand/black"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:black_granitic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:black_cassiterite_sand_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:black_monazite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:brown_granitic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:brown_cassiterite_sand_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:brown_monazite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/red"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:red_granitic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:red_cassiterite_sand_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:red_monazite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:sand/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:yellow_granitic_mineral_sand_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:yellow_cassiterite_sand_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:yellow_monazite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "gtceu:granitic_mineral_sand_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:cassiterite_sand_indicator"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,245 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "normal_nickel_cobalt_copper",
+        "rarity": 240,
+        "density": 0.25,
+        "min_y": -30,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 25,
+        "height": 10,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:gneiss_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gneiss_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:gneiss_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:marble_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:marble_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:marble_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:quartzite_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:quartzite_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:quartzite_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:schist_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:schist_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:schist_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:andesite_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:andesite_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:andesite_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:basalt_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:basalt_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:basalt_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:dacite_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:dacite_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:dacite_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:rhyolite_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:rhyolite_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:rhyolite_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:diorite_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:diorite_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:diorite_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:gabbro_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gabbro_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:gabbro_chalcopyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "gtceu:granite_pentlandite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:granite_cobaltite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:granite_chalcopyrite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 5,
+                    "block": "gtceu:pentlandite_indicator"
+                },
+                {
+                    "weight": 3,
+                    "block": "gtceu:cobaltite_indicator"
+                },
+                {
+                    "weight": 2,
+                    "block": "gtceu:chalcopyrite_indicator"
+                }
+            ]
+        }
+    }
+}

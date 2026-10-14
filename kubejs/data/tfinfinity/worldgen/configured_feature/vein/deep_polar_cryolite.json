@@ -1,0 +1,100 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "deep_polar_cryolite",
+        "rarity": 240,
+        "density": 0.35,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "size": 40,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "tfinfinity:diorite_cryolite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "tfinfinity:diorite_fluorite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:diorite_blue_topaz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:diorite_galena_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "tfinfinity:gabbro_cryolite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "tfinfinity:gabbro_fluorite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:gabbro_blue_topaz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:gabbro_galena_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 50,
+                        "block": "tfinfinity:granite_cryolite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "tfinfinity:granite_fluorite_ore"
+                    },
+                    {
+                        "weight": 15,
+                        "block": "gtceu:granite_blue_topaz_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:granite_galena_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 0,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 5,
+            "blocks": [
+                {
+                    "weight": 3,
+                    "block": "tfinfinity:cryolite_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:galena_indicator"
+                }
+            ]
+        }
+    }
+}

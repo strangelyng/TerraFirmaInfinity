@@ -1,0 +1,227 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "normal_banded_iron",
+        "rarity": 180,
+        "density": 0.25,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 25,
+        "height": 10,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chalk_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:chalk_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/chert"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chert_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:chert_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/claystone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:claystone_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:claystone_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/conglomerate"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:conglomerate_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:conglomerate_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:dolomite_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:dolomite_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:limestone_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:limestone_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/shale"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:shale_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:shale_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:gneiss_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:gneiss_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:marble_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:marble_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:phyllite_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:phyllite_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:quartzite_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:quartzite_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:schist_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:schist_magnetite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/slate"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:slate_hematite_ore"
+                    },
+                    {
+                        "weight": 40,
+                        "block": "gtceu:slate_magnetite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "tfc:ore/small_hematite"
+                },
+                {
+                    "weight": 1,
+                    "block": "tfc:ore/small_magnetite"
+                }
+            ]
+        }
+    }
+}

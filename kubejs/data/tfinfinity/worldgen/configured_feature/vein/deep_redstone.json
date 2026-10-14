@@ -1,0 +1,179 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "deep_redstone",
+        "rarity": 240,
+        "density": 0.2,
+        "min_y": -50,
+        "max_y": 20,
+        "project": false,
+        "project_offset": false,
+        "size": 30,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/gneiss"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:gneiss_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gneiss_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gneiss_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:marble_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:marble_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:marble_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/phyllite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:phyllite_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:phyllite_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:phyllite_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/quartzite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:quartzite_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:quartzite_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:quartzite_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/schist"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:schist_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:schist_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:schist_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:diorite_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:diorite_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:diorite_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:gabbro_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gabbro_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:gabbro_cinnabar_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:granite_redstone_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:granite_sulfur_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:granite_cinnabar_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 0,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 5,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "gtceu:redstone_indicator"
+                }
+            ]
+        }
+    }
+}

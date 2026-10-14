@@ -1,0 +1,71 @@
+{
+    "type": "tfc:cluster_vein",
+    "config": {
+        "random_name": "surface_bismuthinite",
+        "rarity": 90,
+        "density": 0.2,
+        "min_y": -20,
+        "max_y": -5,
+        "project": true,
+        "project_offset": false,
+        "size": 20,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/tuff"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "tfinfinity:tuff_bismuthinite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "tfinfinity:diorite_bismuthinite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "tfinfinity:gabbro_bismuthinite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 100,
+                        "block": "tfinfinity:granite_bismuthinite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 14,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "tfc:ore/small_bismuthinite"
+                }
+            ]
+        }
+    }
+}

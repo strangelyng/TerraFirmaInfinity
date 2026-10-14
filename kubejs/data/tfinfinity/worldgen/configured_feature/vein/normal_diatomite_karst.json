@@ -1,0 +1,108 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "normal_diatomite_karst",
+        "rarity": 240,
+        "density": 0.3,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 20,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chalk_diatomite_ore"
+                    },
+                    {
+                        "weight": 24,
+                        "block": "gtceu:chalk_gypsum_ore"
+                    },
+                    {
+                        "weight": 16,
+                        "block": "gtceu:chalk_sulfur_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:dolomite_diatomite_ore"
+                    },
+                    {
+                        "weight": 24,
+                        "block": "gtceu:dolomite_gypsum_ore"
+                    },
+                    {
+                        "weight": 16,
+                        "block": "gtceu:dolomite_sulfur_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:limestone_diatomite_ore"
+                    },
+                    {
+                        "weight": 24,
+                        "block": "gtceu:limestone_gypsum_ore"
+                    },
+                    {
+                        "weight": 16,
+                        "block": "gtceu:limestone_sulfur_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/marble"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:marble_diatomite_ore"
+                    },
+                    {
+                        "weight": 24,
+                        "block": "gtceu:marble_gypsum_ore"
+                    },
+                    {
+                        "weight": 16,
+                        "block": "gtceu:marble_sulfur_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 3,
+                    "block": "gtceu:diatomite_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:gypsum_indicator"
+                }
+            ]
+        }
+    }
+}

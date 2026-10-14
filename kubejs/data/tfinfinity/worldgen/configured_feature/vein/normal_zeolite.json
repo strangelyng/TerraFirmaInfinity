@@ -1,0 +1,55 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "normal_zeolite",
+        "rarity": 180,
+        "density": 0.25,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 20,
+        "height": 5,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 30,
+                        "block": "gtceu:basalt_zeolite_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "gtceu:basalt_calcite_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "gtceu:basalt_fullers_earth_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:basalt_glauconite_sand_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 1,
+                    "block": "gtceu:fullers_earth_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:zeolite_indicator"
+                }
+            ]
+        }
+    }
+}

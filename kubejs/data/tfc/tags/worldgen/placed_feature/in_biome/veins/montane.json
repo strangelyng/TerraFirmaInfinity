@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "tfinfinity:vein/high_cassiterite",
+    "tfinfinity:vein/high_galena",
+    "tfinfinity:vein/high_gold",
+    "tfinfinity:vein/high_silver"
+  ]
+}

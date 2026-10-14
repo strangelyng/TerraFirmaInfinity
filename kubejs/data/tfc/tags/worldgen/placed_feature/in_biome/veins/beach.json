@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "tfinfinity:vein/sand_basaltic",
+    "tfinfinity:vein/sand_cassiterite",
+    "tfinfinity:vein/sand_garnet",
+    "tfinfinity:vein/sand_glauconite",
+    "tfinfinity:vein/sand_granitic",
+    "tfinfinity:vein/sand_rare_earth"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+    "type": "tfc:pipe_vein",
+    "config": {
+        "random_name": "normal_porphyry_copper",
+        "rarity": 180,
+        "density": 0.3,
+        "min_y": -30,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "height": 60,
+        "radius": 10,
+        "min_skew": 7,
+        "max_skew": 20,
+        "min_slant": 2,
+        "max_slant": 5,
+        "sign": 0.0,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/andesite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:andesite_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:andesite_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:andesite_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:andesite_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:basalt_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:basalt_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:basalt_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:basalt_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dacite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:dacite_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:dacite_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:dacite_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:dacite_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/rhyolite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:rhyolite_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:rhyolite_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:rhyolite_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:rhyolite_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/tuff"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:tuff_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:tuff_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:tuff_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:tuff_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/diorite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:diorite_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:diorite_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:diorite_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:diorite_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/gabbro"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:gabbro_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:gabbro_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:gabbro_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:gabbro_pyrite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/granite"
+                ],
+                "with": [
+                    {
+                        "weight": 40,
+                        "block": "gtceu:granite_chalcopyrite_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:granite_chalcocite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:granite_copper_ore"
+                    },
+                    {
+                        "weight": 25,
+                        "block": "gtceu:granite_pyrite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 2,
+                    "block": "gtceu:chalcopyrite_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "gtceu:chalcocite_indicator"
+                }
+            ]
+        }
+    }
+}
