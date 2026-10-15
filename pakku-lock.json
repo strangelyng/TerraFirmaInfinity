@@ -709,16 +709,16 @@
             "files": [
                 {
                     "type": "github",
-                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20261013-082745-b6fb712.jar",
+                    "file_name": "gtceu-1.21.1-8.0.0-SNAPSHOT+20261014-192234-44ea3da.jar",
                     "release_type": "release",
-                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20261013-082745-b6fb712.jar",
-                    "id": "636395456",
+                    "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/latest-1.21/gtceu-1.21.1-8.0.0-SNAPSHOT+20261014-192234-44ea3da.jar",
+                    "id": "641400653",
                     "parent_id": "615400306",
                     "hashes": {
-                        "sha256": "9e96d3ce717aa64e00de8767de6028ea650b27c70f8f9e39fe807cb7ec19ca4e"
+                        "sha256": "e84136cc87dd0a5ca54dae872445e2ae3e38450289e7bf57bbde68c508a9034c"
                     },
-                    "size": 16918811,
-                    "date_published": "2026-10-13T08:27:53Z"
+                    "size": 16918940,
+                    "date_published": "2026-10-14T19:22:40Z"
                 }
             ]
         },

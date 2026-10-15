@@ -42,10 +42,11 @@ This version is a massive restructuring, that began with a complete wipe of the 
 - Added recipes for Hydrogen Chloride and Hydrogen Fluoride
 - Added biome modifiers to certain biomes for custom ore vein generation
   - Swamps, Volcanic Biomes, Beaches, and Atolls (in addition to built-in Mountain, River, and Collisional Mountains)
-- Added custom ore veins that generate beneath Hot Springs and Volcanoes
-  - These follow the shape of the fissures that generate beneath them and have natural variation in both depth and density.
-  - Active hot springs typically have greater density
-  - Veins associated with volcanoes are larger than Hot Spring veins
+- Overhauled ore generation with custom veins (WIP)
+  - Including Hot Spring and Volcano fissure veins
+    - These follow the shape of the fissures that generate beneath them and have natural variation in both depth and density.
+    - Active hot springs typically have greater density
+    - Veins associated with volcanoes are larger than Hot Spring veins
 
 ### Changes
 - Disabled many unused and redundant items using Reliable Remover

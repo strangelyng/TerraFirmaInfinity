@@ -607,6 +607,10 @@ tools:
 
 # Config options for Game Mechanics
 gameplay:
+  # Allow Fortune to multiply GregTech ore drops after base yields and hammer conversion.
+  # Does not affect Silk Touch drops. Default: false
+  enableOreFortune: false
+
   # Enable hazardous materials
   # Default: true
   hazardsEnabled: true
