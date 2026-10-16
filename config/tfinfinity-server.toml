@@ -1,0 +1,100 @@
+	[prospector_picks.copper]
+		#
+		# Length of search area.
+		# Default: 15
+		# Range: 0 ~ 200
+		copperOreProspectorLength = 15
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 5
+		# Range: 0 ~ 50
+		copperOreProspectorHalfWidth = 5
+
+	[prospector_picks.bronze]
+		#
+		# Length of search area.
+		# Default: 20
+		# Range: 0 ~ 200
+		bronzeOreProspectorLength = 20
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 8
+		# Range: 0 ~ 50
+		bronzeOreProspectorHalfWidth = 8
+
+	[prospector_picks.wrought_iron]
+		#
+		# Length of search area.
+		# Default: 30
+		# Range: 0 ~ 200
+		wroughtIronOreProspectorLength = 30
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 10
+		# Range: 0 ~ 50
+		wroughtIronOreProspectorHalfWidth = 10
+
+	[prospector_picks.steel]
+		#
+		# Length of search area.
+		# Default: 40
+		# Range: 0 ~ 200
+		steelOreProspectorLength = 40
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 12
+		# Range: 0 ~ 50
+		steelOreProspectorHalfWidth = 12
+
+	[prospector_picks.black_steel]
+		#
+		# Length of search area.
+		# Default: 50
+		# Range: 0 ~ 200
+		blackSteelOreProspectorLength = 50
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 15
+		# Range: 0 ~ 50
+		blackSteelOreProspectorHalfWidth = 15
+
+	[prospector_picks.blue_steel]
+		#
+		# Length of search area.
+		# Default: 75
+		# Range: 0 ~ 200
+		blueSteelOreProspectorLength = 75
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 15
+		# Range: 0 ~ 50
+		blueSteelOreProspectorHalfWidth = 15
+		#
+		# Should the Blue Steel Prospector's Pick render particles per vein (vague)?
+		# Setting false will render particles per block (precise).
+		# Default: false
+		blueSteelProspectorRender = false
+
+	[prospector_picks.red_steel]
+		#
+		# Length of search area.
+		# Default: 50
+		# Range: 0 ~ 200
+		redSteelOreProspectorLength = 50
+		#
+		# Half the width of the search area.
+		# Example: If you want a 20x20 set the value to 10
+		# Default: 25
+		# Range: 0 ~ 50
+		redSteelOreProspectorHalfWidth = 25
+		#
+		# Should the Red Steel Prospector's Pick render particles per vein (vague)?
+		# Setting false will render particles per block (precise).
+		# Default: true
+		redSteelProspectorRender = true

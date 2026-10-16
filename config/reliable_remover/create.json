@@ -11,6 +11,9 @@
         "create:crushed_raw_zinc",
         "create:crushed_raw_platinum",
         "create:crushed_raw_silver",
-        "create:crushed_raw_lead"
+        "create:crushed_raw_lead",
+        
+        "create:powdered_obsidian",
+        "create:sturdy_sheet"
     ]
 }
