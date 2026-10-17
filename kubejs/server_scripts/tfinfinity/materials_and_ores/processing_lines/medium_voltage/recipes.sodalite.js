@@ -10,6 +10,7 @@ const registerTFISodaliteGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
     
     event.recipes.gtceu.chemical_bath('wash_lazurite_sinter_cake')
         .itemInputs('tfinfinity:lazurite_sinter_cake')
@@ -28,6 +29,7 @@ const registerTFISodaliteGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
 
         event.recipes.gtceu.chemical_bath('wash_sodalite_sinter_cake')
         .itemInputs('tfinfinity:sodalite_sinter_cake')

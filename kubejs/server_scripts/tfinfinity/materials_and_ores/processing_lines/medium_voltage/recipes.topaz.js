@@ -10,6 +10,7 @@ const registerTFITopazGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
     
     event.recipes.gtceu.chemical_bath('wash_blue_topaz_sinter_cake')
         .itemInputs('tfinfinity:blue_topaz_sinter_cake')
@@ -49,6 +50,7 @@ const registerTFITopazGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
     
     event.recipes.gtceu.chemical_bath('wash_topaz_sinter_cake')
         .itemInputs('tfinfinity:topaz_sinter_cake')

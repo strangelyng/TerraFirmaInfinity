@@ -9,6 +9,7 @@ const registerTFIBerylRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
+        .merge({ data: { ebf_temp: 1700 }})
     
     event.recipes.gtceu.chemical_bath('wash_emerald_sinter_cake')
         .itemInputs('tfinfinity:emerald_sinter_cake')
@@ -42,6 +43,7 @@ const registerTFIBerylRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
 
     // TODO: ELECTROLYSIS in Molten Salt for Berylluum Metal
 
@@ -69,6 +71,7 @@ const registerTFIBerylRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
 
     event.recipes.gtceu.chemical_reactor('emerald_sludge_residue_separation')
         .itemInputs('9x tfinfinity:emerald_sludge_residue_dust')

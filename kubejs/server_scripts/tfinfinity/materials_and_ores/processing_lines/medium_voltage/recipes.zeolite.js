@@ -11,6 +11,7 @@ const registerTFIZeoliteGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
 
     event.recipes.gtceu.chemical_bath('wash_zeolite_sinter_cake')
         .itemInputs('tfinfinity:zeolite_sinter_cake')

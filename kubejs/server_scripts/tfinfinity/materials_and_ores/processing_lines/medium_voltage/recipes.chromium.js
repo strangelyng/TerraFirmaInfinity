@@ -24,23 +24,27 @@ const registerTFIChromiumRecipes = (event) => {
         .itemOutputs('5x tfinfinity:chromium_oxide_dust')
         .itemOutputs('6x gtceu:soda_ash_dust')
         .outputFluids('1000x gtceu:carbon_monoxide')
+        .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
         
     event.recipes.gtceu.electric_blast_furnace('chromium_from_chromium_oxide')
         .itemInputs('5x tfinfinity:chromium_oxide_dust')
         .itemInputs('2x gtceu:aluminium_dust')
         .itemOutputs('2x gtceu:chromium_dust')
         .itemOutputs('5x tfinfinity:alumina_dust')
+        .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
+        .merge({ data: { ebf_temp: 1700 }})
 
     // #region Sodium Sulfate
     event.recipes.gtceu.chemical_reactor('sodium_sulfate_from_bisulfate')
         .itemInputs('7x gtceu:sodium_bisulfate_dust')
         .itemInputs('2x gtceu:salt_dust')
         .itemOutputs('7x tfinfinity:sodium_sulfate_dust')
-        .outputFluids('1000x gtceu:hydrochloric_acid')
+        .outputFluids('1000x tfinfinity:hydrogen_chloride')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 }
