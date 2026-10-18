@@ -104,6 +104,16 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 
 	GTMaterials.Neutronium.setMaterialIconSet(GTMaterialIconSet.RADIOACTIVE);
 
+	// #region TFC Tools
+	GTMaterials.Bronze.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_bronze'))
+	GTMaterials.BismuthBronze.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_bismuth_bronze'))
+	GTMaterials.BlackBronze.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_black_bronze'))
+	GTMaterials.WroughtIron.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_wrought_iron'))
+	GTMaterials.Steel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_steel'))
+	GTMaterials.BlackSteel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_black_steel'))
+	GTMaterials.BlueSteel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_blue_steel'))
+	GTMaterials.RedSteel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_red_steel'))
+
 	// #region Ores
 
 	// TFC Ores
@@ -125,9 +135,9 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.Sapphire.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_sapphire'))
 	GTMaterials.Topaz.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_topaz'))
 
-	GTMaterials.Copper.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_native_copper'))
-	GTMaterials.Gold.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_native_gold'))
-	GTMaterials.Silver.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_native_silver'))
+	GTMaterials.Copper.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_copper'))
+	GTMaterials.Gold.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_gold'))
+	GTMaterials.Silver.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_silver'))
 	GTMaterials.Hematite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_hematite'))
 	GTMaterials.Cassiterite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_cassiterite'))
 	InfinityMaterials.Bismuthinite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_bismuthinite'))

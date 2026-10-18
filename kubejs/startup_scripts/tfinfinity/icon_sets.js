@@ -35,13 +35,13 @@ const registerTFIMaterialIconSets = (event) => {
     event.createIconSet('tfc_topaz', GTMaterialIconSet.GEM_HORIZONTAL)
     
     // Graded Ores
-    event.createIconSet('tfc_native_copper', GTMaterialIconSet.BRIGHT)
+    event.createIconSet('tfc_copper', GTMaterialIconSet.BRIGHT)
 
-    event.createIconSet('tfc_native_gold', GTMaterialIconSet.SHINY)
+    event.createIconSet('tfc_gold', GTMaterialIconSet.SHINY)
 
     event.createIconSet('tfc_hematite', GTMaterialIconSet.DULL)
 
-    event.createIconSet('tfc_native_silver', GTMaterialIconSet.SHINY)
+    event.createIconSet('tfc_silver', GTMaterialIconSet.SHINY)
 
     event.createIconSet('tfc_cassiterite', GTMaterialIconSet.ROUGH)
 
@@ -58,4 +58,15 @@ const registerTFIMaterialIconSets = (event) => {
     event.createIconSet('tfc_sphalerite', GTMaterialIconSet.DULL)
 
     event.createIconSet('tfc_tetrahedrite', GTMaterialIconSet.DULL)
+
+    // Tool Metals
+    event.createIconSet('tfc_bismuth_bronze', GTMaterialIconSet.METALLIC)
+    event.createIconSet('tfc_black_bronze', GTMaterialIconSet.METALLIC)
+    event.createIconSet('tfc_bronze', GTMaterialIconSet.METALLIC)
+    
+    event.createIconSet('tfc_wrought_iron', GTMaterialIconSet.METALLIC)
+    event.createIconSet('tfc_steel', GTMaterialIconSet.METALLIC)
+    event.createIconSet('tfc_black_steel', GTMaterialIconSet.METALLIC)
+    event.createIconSet('tfc_blue_steel', GTMaterialIconSet.METALLIC)
+    event.createIconSet('tfc_red_steel', GTMaterialIconSet.METALLIC)
 }
