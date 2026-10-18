@@ -4,5 +4,8 @@
     "item.tfc.powder.soda_ash": "Soda Ash Powder",
     "block.tfc.fluid.lye": "Potash Lye",
     "item.tfc.bucket.lye": "Potash Lye Bucket",
-    "fluid.tfc.lye": "Potash Lye"
+    "fluid.tfc.lye": "Potash Lye",
+    "block.tfc.fluid.salt_water": "Sea Water",
+    "item.tfc.bucket.salt_water": "Sea Water Bucket",
+    "fluid.tfc.salt_water": "Sea Water"
 }

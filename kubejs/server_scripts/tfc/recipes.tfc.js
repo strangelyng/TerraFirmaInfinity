@@ -19,6 +19,19 @@ const registerTFCRecipes = (event) => {
 
     event.remove({ id: /tfc:quern\/powder\/.*/ });
 
+    // Re-add the mysteriously missing barrel cooling recipes
+    event.recipes.tfc.instant_barrel(Fluid.sizedIngredientOf('#tfc:infinite_water', 1))
+        .inputItem(TFC.ingredient.heat(1))
+        .outputItem(TFC.isp.copyInputStack().addHeat(-5))
+        .sound('minecraft:block.fire.extinguish')
+        .id('tfinfinity:barrel/water_cooling')
+        
+    event.recipes.tfc.instant_barrel(Fluid.sizedIngredientOf('#firmalife:oils', 1))
+        .inputItem(TFC.ingredient.heat(1))
+        .outputItem(TFC.isp.copyInputStack().addHeat(-40))
+        .sound('minecraft:block.fire.extinguish')
+        .id('tfinfinity:barrel/oil_cooling')
+
     event.recipes.tfc.quern(
         '2x tfc:powder/flux',
         '#tfc:fluxstone'
