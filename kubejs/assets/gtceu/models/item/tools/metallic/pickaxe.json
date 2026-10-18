@@ -1,0 +1,8 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gtceu:item/tools/metallic/handle_pickaxe",
+    "layer1": "gtceu:item/tools/metallic/pickaxe",
+    "layer2": "gtceu:item/tools/metallic/pickaxe_overlay"
+  }
+}

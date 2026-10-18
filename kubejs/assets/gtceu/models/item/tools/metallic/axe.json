@@ -1,0 +1,8 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gtceu:item/tools/metallic/handle_axe",
+    "layer1": "gtceu:item/tools/metallic/axe",
+    "layer2": "gtceu:item/tools/metallic/axe_overlay"
+  }
+}
