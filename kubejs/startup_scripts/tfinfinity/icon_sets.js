@@ -58,15 +58,4 @@ const registerTFIMaterialIconSets = (event) => {
     event.createIconSet('tfc_sphalerite', GTMaterialIconSet.DULL)
 
     event.createIconSet('tfc_tetrahedrite', GTMaterialIconSet.DULL)
-
-    // Tool Metals
-    event.createIconSet('tfc_bismuth_bronze', GTMaterialIconSet.METALLIC)
-    event.createIconSet('tfc_black_bronze', GTMaterialIconSet.METALLIC)
-    event.createIconSet('tfc_bronze', GTMaterialIconSet.METALLIC)
-    
-    event.createIconSet('tfc_wrought_iron', GTMaterialIconSet.METALLIC)
-    event.createIconSet('tfc_steel', GTMaterialIconSet.METALLIC)
-    event.createIconSet('tfc_black_steel', GTMaterialIconSet.METALLIC)
-    event.createIconSet('tfc_blue_steel', GTMaterialIconSet.METALLIC)
-    event.createIconSet('tfc_red_steel', GTMaterialIconSet.METALLIC)
 }

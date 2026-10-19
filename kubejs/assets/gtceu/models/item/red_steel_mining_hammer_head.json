@@ -1,0 +1,6 @@
+{
+    "parent": "gtceu:item/template/overlay_only",
+    "textures": {
+        "layer2": "gtceu:item/tools/tfc_red_steel/tool_head_mining_hammer"
+    }
+}

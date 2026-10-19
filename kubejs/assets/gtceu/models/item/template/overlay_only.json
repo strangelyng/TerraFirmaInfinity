@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tfinfinity:item/layer_transparent",
+        "layer1": "tfinfinity:item/layer_transparent"
+    }
+}

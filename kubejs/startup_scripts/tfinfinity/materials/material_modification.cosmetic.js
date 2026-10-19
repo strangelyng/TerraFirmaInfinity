@@ -5,14 +5,20 @@ const registerTFIMaterialModificationCosmetic = (event) => {
     // #region Colors
 
 	/* TFC Mats */
-	GTMaterials.Bismuth.setMaterialARGB(0x82C2A0)
-	GTMaterials.Bismuth.setMaterialSecondaryARGB(0x43677D)
+	GTMaterials.Bismuth.setMaterialARGB(0x94b38d)
+	GTMaterials.Bismuth.setMaterialSecondaryARGB(0x3e679c)
 
 	GTMaterials.BismuthBronze.setMaterialARGB(0x80BD7E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x606E4F)
 
 	GTMaterials.BlackBronze.setMaterialARGB(0x8F648C)
 	GTMaterials.BlackBronze.setMaterialSecondaryARGB(0x3C3852)
+
+	GTMaterials.BlueSteel.setMaterialARGB(0xacd1e6)
+	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x446ed8)
+
+	GTMaterials.RedSteel.setMaterialARGB(0xff936f)
+	GTMaterials.RedSteel.setMaterialSecondaryARGB(0xe60032)
 
 	GTMaterials.Garnierite.setMaterialARGB(0x5e7951)
 	GTMaterials.Garnierite.setMaterialSecondaryARGB(0x1c3d32)
@@ -26,10 +32,6 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	// Credits to TerraFirmaGreg
 	GTMaterials.Steel.setMaterialARGB(0x9AA9AB)
 	GTMaterials.SteelMagnetic.setMaterialARGB(0x9AA9AB)
-	GTMaterials.RedSteel.setMaterialARGB(0xDE7B80)
-	GTMaterials.RedSteel.setMaterialSecondaryARGB(0xE12323)
-	GTMaterials.BlueSteel.setMaterialARGB(0xA0B6EC)
-	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x2B5CD8)
 	GTMaterials.Iron.setMaterialARGB(0x503d32)
 	GTMaterials.Iron.setMaterialSecondaryARGB(0x131212)
 	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)
@@ -103,16 +105,6 @@ const registerTFIMaterialModificationCosmetic = (event) => {
     GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY);
 
 	GTMaterials.Neutronium.setMaterialIconSet(GTMaterialIconSet.RADIOACTIVE);
-
-	// #region TFC Tools
-	GTMaterials.Bronze.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_bronze'))
-	GTMaterials.BismuthBronze.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_bismuth_bronze'))
-	GTMaterials.BlackBronze.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_black_bronze'))
-	GTMaterials.WroughtIron.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_wrought_iron'))
-	GTMaterials.Steel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_steel'))
-	GTMaterials.BlackSteel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_black_steel'))
-	GTMaterials.BlueSteel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_blue_steel'))
-	GTMaterials.RedSteel.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_red_steel'))
 
 	// #region Ores
 
