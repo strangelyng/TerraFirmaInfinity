@@ -8,6 +8,9 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.Bismuth.setMaterialARGB(0x94b38d)
 	GTMaterials.Bismuth.setMaterialSecondaryARGB(0x3e679c)
 
+	GTMaterials.Copper.setMaterialARGB(0xf39170)
+	GTMaterials.Copper.setMaterialSecondaryARGB(0xb83c3c)
+
 	GTMaterials.BismuthBronze.setMaterialARGB(0x80BD7E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x606E4F)
 

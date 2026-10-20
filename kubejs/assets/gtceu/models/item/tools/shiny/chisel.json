@@ -1,8 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "gtceu:item/tools/metallic/chisel",
   "textures": {
-    "layer0": "gtceu:item/tools/shiny/chisel_base",
-    "layer1": "gtceu:item/tools/shiny/chisel",
-    "layer2": "gtceu:item/tools/shiny/chisel_overlay"
+    "layer1": "gtceu:item/tools/shiny/chisel"
   }
 }

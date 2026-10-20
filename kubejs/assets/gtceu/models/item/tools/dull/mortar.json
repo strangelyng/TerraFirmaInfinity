@@ -1,8 +1,3 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "gtceu:item/tools/mortar_base",
-    "layer1": "gtceu:item/tools/mortar",
-    "layer2": "gtceu:item/tools/mortar_overlay"
-  }
+  "parent": "gtceu:item/tools/mortar"
 }

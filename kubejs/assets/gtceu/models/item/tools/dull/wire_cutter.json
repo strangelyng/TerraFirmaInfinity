@@ -1,8 +1,3 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "gtceu:item/tools/wire_cutter_base",
-    "layer1": "gtceu:item/tools/wire_cutter",
-    "layer2": "gtceu:item/tools/wire_cutter_overlay"
-  }
+  "parent": "gtceu:item/tools/wire_cutter"
 }

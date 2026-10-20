@@ -1,8 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "gtceu:item/tools/mace",
   "textures": {
-    "layer0": "gtceu:item/tools/shiny/mace_base",
-    "layer1": "gtceu:item/tools/shiny/mace",
-    "layer2": "gtceu:item/tools/shiny/mace_overlay"
+    "layer1": "gtceu:item/tools/shiny/mace"
   }
 }

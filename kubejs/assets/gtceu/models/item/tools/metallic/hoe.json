@@ -1,8 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "gtceu:item/tools/hoe",
   "textures": {
-    "layer0": "gtceu:item/tools/metallic/handle_hoe",
-    "layer1": "gtceu:item/tools/metallic/hoe",
-    "layer2": "gtceu:item/tools/metallic/hoe_overlay"
+    "layer1": "gtceu:item/tools/metallic/hoe"
   }
 }

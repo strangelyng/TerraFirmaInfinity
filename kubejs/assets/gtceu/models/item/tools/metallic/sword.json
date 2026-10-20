@@ -1,8 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "gtceu:item/tools/sword",
   "textures": {
-    "layer0": "gtceu:item/tools/metallic/sword_base",
-    "layer1": "gtceu:item/tools/metallic/sword",
-    "layer2": "gtceu:item/tools/metallic/sword_overlay"
+    "layer1": "gtceu:item/tools/metallic/sword"
   }
 }

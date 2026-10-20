@@ -1,0 +1,7 @@
+{
+  "parent": "gtceu:item/material_sets/metallic/tool_head_butchery_knife",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/bright/tool_head_butchery_knife",
+    "layer1": "gtceu:item/material_sets/bright/tool_head_butchery_knife_secondary"
+  }
+}

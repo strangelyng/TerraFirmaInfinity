@@ -1,8 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "gtceu:item/tools/metallic/shovel",
   "textures": {
-    "layer0": "gtceu:item/tools/shiny/handle_shovel",
-    "layer1": "gtceu:item/tools/shiny/shovel",
-    "layer2": "gtceu:item/tools/shiny/shovel_overlay"
+    "layer1": "gtceu:item/tools/shiny/shovel"
   }
 }

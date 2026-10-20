@@ -1,0 +1,6 @@
+{
+  "parent": "gtceu:item/material_sets/dull/tool_head_spade",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/metallic/tool_head_spade"
+  }
+}
