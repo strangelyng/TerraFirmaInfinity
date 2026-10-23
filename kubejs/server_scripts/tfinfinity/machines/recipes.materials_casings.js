@@ -57,6 +57,17 @@ const registerTFICasingRecipes = (event) => {
         B: 'minecraft:bricks'
     }).id('tfinifinity:shaped/hp_steam_machine_casing')
 
+    event.recipes.gtceu.shaped('2x tfinfinity:electrode_assembly', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: '#c:plates/steel',
+        B: 'gtceu:copper_single_cable',
+        C: '#c:rods/graphite',
+        D: '#c:frames/steel'
+    }).id('tfinfinity:shaped/electrode_assembly')
+
     // #region Base GT Casings
     event.recipes.gtceu.shaped('2x gtceu:steel_machine_casing', [
         'AAA',

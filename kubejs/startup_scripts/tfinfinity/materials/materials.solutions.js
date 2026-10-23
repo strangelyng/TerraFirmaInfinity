@@ -68,4 +68,9 @@ const registerTFISolutionMaterials = (event) => {
         .liquid()
         .components('6x tfinfinity:magnesium_sulfate', '1x water')
         .colorAverage()
+
+    event.create('tfinfinity:sodium_metavanadate_solution')
+        .liquid()
+        .components('5x tfinfinity:sodium_metavanadate','1x water')
+        .colorAverage()
 }

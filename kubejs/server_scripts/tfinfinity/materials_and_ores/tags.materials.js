@@ -29,6 +29,14 @@ const registerTFIMaterialItemTags = (event) => {
     event.add('c:plates/any_bronze', ['#c:plates/bronze', '#c:plates/bismuth_bronze', '#c:plates/black_bronze'])
     event.add('c:double_plates/any_bronze', ['#c:double_plates/bronze', '#c:double_plates/bismuth_bronze', '#c:double_plates/black_bronze'])
 
+    event.add('c:chipped_gems/any_quartz', ['#c:chipped_gems/quartzite', '#:chipped_gems/nether_quartz'])
+    event.add('c:flawed_gems/any_quartz', ['#c:flawed_gems/quartzite', '#:flawed_gems/nether_quartz'])
+    event.add('c:gems/any_quartz', ['#c:gems/quartzite', '#:gems/nether_quartz'])
+    event.add('c:flawless_gems/any_quartz', ['#c:flawless_gems/quartzite', '#:flawless_gems/nether_quartz'])
+    event.add('c:exquisite_gems/any_quartz', ['#c:exquisite_gems/quartzite', '#:exquisite_gems/nether_quartz'])
+    
+    event.add('c:dusts/any_quartz', ['#c:dusts/quartzite', '#:dusts/nether_quartz'])
+
     forEachMaterial(material => {
         if (!material.hasProperty(InfinityPropertyKey.TFC_PROPERTY)) {
             return;

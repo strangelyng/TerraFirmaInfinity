@@ -1,0 +1,298 @@
+{
+    "type": "tfc:disc_vein",
+    "config": {
+        "random_name": "normal_vanadinite",
+        "rarity": 180,
+        "density": 0.25,
+        "min_y": 10,
+        "max_y": 70,
+        "project": false,
+        "project_offset": false,
+        "size": 20,
+        "height": 10,
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/chalk"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chalk_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:chalk_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chalk_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/chert"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:chert_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:chert_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:chert_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/claystone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:claystone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:claystone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:claystone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/conglomerate"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:conglomerate_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:conglomerate_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:conglomerate_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/dolomite"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:dolomite_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:dolomite_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:dolomite_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/limestone"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:limestone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:limestone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:limestone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:rock/raw/shale"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:shale_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:shale_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:shale_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/black"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:black_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:black_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:black_sandstone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/brown"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:brown_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:brown_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:brown_sandstone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/green"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:green_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:green_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:green_sandstone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/pink"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:pink_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:pink_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:pink_sandstone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/red"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:red_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:red_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:red_sandstone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/white"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:white_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:white_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:white_sandstone_wulfenite_ore"
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfc:raw_sandstone/yellow"
+                ],
+                "with": [
+                    {
+                        "weight": 60,
+                        "block": "gtceu:yellow_sandstone_galena_ore"
+                    },
+                    {
+                        "weight": 30,
+                        "block": "tfinfinity:yellow_sandstone_vanadinite_ore"
+                    },
+                    {
+                        "weight": 10,
+                        "block": "gtceu:yellow_sandstone_wulfenite_ore"
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 24,
+            "depth": 35,
+            "underground_rarity": 1,
+            "underground_count": 0,
+            "blocks": [
+                {
+                    "weight": 3,
+                    "block": "gtceu:galena_indicator"
+                },
+                {
+                    "weight": 1,
+                    "block": "tfinfinity:vanadinite_indicator"
+                }
+            ]
+        }
+    }
+}

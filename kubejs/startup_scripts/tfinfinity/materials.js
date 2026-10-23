@@ -5,6 +5,7 @@ const registerTFIMaterials = (event) => {
     registerTFIGemProcessingMaterials(event);
     registerTFILithiumMaterials(event);
     registerTFIMicaMaterials(event);
+    registerTFIVanadiumMaterials(event);
     registerTFIZeoliteMaterials(event);
     
     registerTFISolutionMaterials(event);

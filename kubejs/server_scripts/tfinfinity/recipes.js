@@ -7,14 +7,20 @@ const registerTFIRecipes = (event) => {
     registerTFIComponentRecipes(event);
     registerTFIMaterialMiscRecipes(event);
     registerTFIAlloyRecipes(event);
+    registerTFISteelsRecipes(event);
 
     registerTFIAcidsRecipes(event);
     registerTFISolutionsRecipes(event);
 
     // Processing Lines
+
+    /// Elements
     registerTFIAluminumRecipes(event);
-    registerTFIBerylRecipes(event);
     registerTFIChromiumRecipes(event);
+    registerTFIVanadiumRecipes(event);
+
+    /// Minerals
+    registerTFIBerylRecipes(event);
     registerTFIClaysRecipes(event);
     registerTFICorundumGroupRecipes(event);
     registerTFIGarnetGroupRecipes(event);
