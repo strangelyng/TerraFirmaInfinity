@@ -1,10 +1,4 @@
 const registerTFIChromiumMaterials = (event) => {
-    // event.create('tfinfinity:chromium_oxide')
-    //     .dust()
-    //     .components('2x chromium', '3x oxygen')
-    //     .color(0x5F853B)
-    //     .secondaryColor(0x354733)
-
     event.create('tfinfinity:sodium_chromate')
         .liquid()
         .components('2x sodium', '1x chromium', '4x oxygen')

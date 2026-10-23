@@ -32,6 +32,18 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.Sphalerite.setMaterialARGB(0xbcbebb)
 	GTMaterials.Sphalerite.setMaterialSecondaryARGB(0xa0a097)
 
+	GTMaterials.Amethyst.setMaterialARGB(0xcd9ef0)
+	GTMaterials.Amethyst.setMaterialSecondaryARGB(0x8b69ca)
+
+	GTMaterials.Diamond.setMaterialARGB(0x9ff8e5)
+	GTMaterials.Diamond.setMaterialSecondaryARGB(0x20c3b3)
+
+	GTMaterials.Sapphire.setMaterialARGB(0x65c7ff)
+	GTMaterials.Sapphire.setMaterialSecondaryARGB(0x0d38c8)
+
+	GTMaterials.Topaz.setMaterialARGB(0xffbe5a)
+	GTMaterials.Topaz.setMaterialSecondaryARGB(0xa96028)
+
 	// Credits to TerraFirmaGreg
 	GTMaterials.Steel.setMaterialARGB(0x9AA9AB)
 	GTMaterials.SteelMagnetic.setMaterialARGB(0x9AA9AB)
@@ -83,11 +95,11 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.Electrum.setMaterialARGB(0xFFF9B8)
 	GTMaterials.Electrum.setMaterialSecondaryARGB(0xBF581D)
 
-	GTMaterials.HastelloyC276.setMaterialARGB(0xEBF5FF)
-	GTMaterials.HastelloyC276.setMaterialSecondaryARGB(0xA1B5D4)
+	// GTMaterials.HastelloyC276.setMaterialARGB(0xEBF5FF)
+	// GTMaterials.HastelloyC276.setMaterialSecondaryARGB(0xA1B5D4)
 
-	GTMaterials.HSLASteel.setMaterialARGB(0xCED9F0)
-	GTMaterials.HSLASteel.setMaterialSecondaryARGB(0x7297C2)
+	// GTMaterials.HSLASteel.setMaterialARGB(0xCED9F0)
+	// GTMaterials.HSLASteel.setMaterialSecondaryARGB(0x7297C2)
 
 	GTMaterials.TungstenCarbide.setMaterialARGB(0x494F6E)
 	GTMaterials.TungstenCarbide.setMaterialSecondaryARGB(0x101323)
@@ -144,7 +156,6 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.Tetrahedrite.setMaterialIconSet(GTRegistries.MATERIAL_ICON_SETS.get('gtceu:tfc_tetrahedrite'))
 
 	// Additional Materials
-	InfinityMaterials.Acanthite.setMaterialIconSet(InfinityMaterialIconSet.OCTAHEDRAL_METALLIC);
 	GTMaterials.Barite.setMaterialIconSet(InfinityMaterialIconSet.TABULAR);
 	GTMaterials.Chalcocite.setMaterialIconSet(InfinityMaterialIconSet.OCTAHEDRAL_SHINY);
 	GTMaterials.Galena.setMaterialIconSet(InfinityMaterialIconSet.CUBIC_METALLIC);

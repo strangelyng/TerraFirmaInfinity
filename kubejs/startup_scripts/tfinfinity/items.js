@@ -2,8 +2,6 @@
 "use strict";
 
 const registerTFIItems = (event) => {
-    registerSinterCakes(event);
-
     event.create('tfinfinity:unfired_caminite_brick')
         .texture('tfinfinity:item/unfired_caminite_brick');
 

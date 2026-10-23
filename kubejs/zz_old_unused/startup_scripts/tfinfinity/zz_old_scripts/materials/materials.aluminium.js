@@ -16,13 +16,6 @@ const registerTFIAluminumMaterials = (event) => {
         // .secondaryColor(0xC27D38)
         .colorAverage()
     
-    // event.create('tfinfinity:alumina')
-    //     .dust()
-    //     .components('2x aluminium', '3x oxygen')
-    //     .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    //     .color(0xEBF1F5)
-    //     .secondaryColor(0xC5D1DA)
-    
     event.create('tfinfinity:aluminium_fluoride')
         .dust()
         .liquid(new GTFluidBuilder().temperature(1560))
