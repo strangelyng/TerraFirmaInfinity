@@ -1,6 +1,7 @@
 {
   "parent": "gtceu:item/tools/mining_hammer",
   "textures": {
-    "layer1": "gtceu:item/tools/bright/mining_hammer"
+    "layer1": "gtceu:item/tools/bright/mining_hammer",
+    "layer2": "gtceu:item/tools/bright/mining_hammer_overlay"
   }
 }

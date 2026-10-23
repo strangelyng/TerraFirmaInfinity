@@ -1,6 +1,7 @@
 {
   "parent": "gtceu:item/tools/file",
   "textures": {
-    "layer1": "gtceu:item/tools/bright/file"
+    "layer1": "gtceu:item/tools/bright/file",
+    "layer2": "gtceu:item/tools/bright/file_overlay"
   }
 }

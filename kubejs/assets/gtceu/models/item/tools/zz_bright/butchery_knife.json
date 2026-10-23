@@ -1,6 +1,7 @@
 {
   "parent": "gtceu:item/tools/butchery_knife",
   "textures": {
-    "layer1": "gtceu:item/tools/bright/butchery_knife"
+    "layer1": "gtceu:item/tools/bright/butchery_knife",
+    "layer2": "gtceu:item/tools/bright/butchery_knife_overlay"
   }
 }

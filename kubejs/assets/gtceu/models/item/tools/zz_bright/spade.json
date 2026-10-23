@@ -1,6 +1,7 @@
 {
   "parent": "gtceu:item/tools/spade",
   "textures": {
-    "layer1": "gtceu:item/tools/bright/spade"
+    "layer1": "gtceu:item/tools/bright/spade",
+    "layer2": "gtceu:item/tools/bright/spade_overlay"
   }
 }

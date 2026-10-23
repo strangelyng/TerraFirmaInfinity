@@ -1,6 +1,7 @@
 {
   "parent": "gtceu:item/tools/screwdriver",
   "textures": {
-    "layer1": "gtceu:item/tools/bright/screwdriver"
+    "layer1": "gtceu:item/tools/bright/screwdriver",
+    "layer2": "gtceu:item/tools/bright/screwdriver_overlay"
   }
 }
