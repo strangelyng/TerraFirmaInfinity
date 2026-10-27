@@ -13,7 +13,7 @@ function makeSolutionRecipes(event, solution, material) {
         componentAmountTotal += component.amount();
     }
 
-    let dustStack = ChemicalHelper.get(TagPrefix.dust, material, componentAmountTotal);
+    let dustStack = InfinityHelpers.get(TagPrefix.dust, material, componentAmountTotal);
 
     event.recipes.gtceu.mixer(solutionName)
         .inputFluids('1000x minecraft:water')

@@ -184,60 +184,60 @@ const registerTFIMaterialModificationTools = (event) => {
     // TODO: Rework these, especially past LV (Currently based too heavily off of TFG progression)
 
     // ULV Tools
-    GTMaterials.Bronze.addFlags(InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE);
-    GTMaterials.CobaltBrass.addFlags(InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE);
+    GTMaterials.Bronze.get().addFlags(InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE);
+    GTMaterials.CobaltBrass.get().addFlags(InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE);
 
-    GTMaterials.Copper.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.Copper.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 4.0, 300, 1, ULVTools).build())
     
-    GTMaterials.Bronze.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.Bronze.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.Bronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.0, 4.0, 650, 2, ULVTools).build())
 
-    GTMaterials.BismuthBronze.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.BismuthBronze.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 4.0, 600, 2, ULVTools).build())
     
-    GTMaterials.BlackBronze.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.BlackBronze.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 5.0, 740, 2, ULVTools).build())
     
-    GTMaterials.WroughtIron.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.WroughtIron.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.WroughtIron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 4, 1100, 2, ULVTools).build())
     
-    GTMaterials.Steel.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.Steel.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.Steel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 5, 1650, 3, ULVTools).build())
     
     GTMaterials.DamascusSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 6, 1900, 3, ULVTools).build())
 
-    GTMaterials.BlackSteel.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
+    GTMaterials.BlackSteel.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD)
     GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 5.5, 2100, 3, ULVTools).build())
 
     // LV Tools
-    GTMaterials.BlueSteel.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+    GTMaterials.BlueSteel.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.BlueSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(9, 5, 2600, 3, LVTools).build());
 
-    GTMaterials.RedSteel.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+    GTMaterials.RedSteel.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.RedSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 7.5, 3250, 3, LVTools).build());
 
     // MV Tools
-    GTMaterials.VanadiumSteel.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+    GTMaterials.VanadiumSteel.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.VanadiumSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 8, 4250, 3, MVTools).build());
 
     // HV Tools
-	GTMaterials.Ultimet.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+	GTMaterials.Ultimet.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.Ultimet.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(16, 9, 4250, 4, HVTools).build());
 
     // EV Tools
-	GTMaterials.TungstenCarbide.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+	GTMaterials.TungstenCarbide.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.TungstenCarbide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(34, 12, 4250, 4, EVTools).build());
 
     // IV Tools
-	GTMaterials.HSSE.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+	GTMaterials.HSSE.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.HSSE.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(44, 13, 5576, 3, IVTools).build());
 
     // LuV Tools
-	GTMaterials.Duranium.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+	GTMaterials.Duranium.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(54, 14, 7200, 5, IVTools).build());
 	
-    GTMaterials.NaquadahAlloy.addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
+    GTMaterials.NaquadahAlloy.get().addFlags(InfinityMaterialFlags.GENERATE_SCREWDRIVER_HEAD, InfinityMaterialFlags.GENERATE_WRENCH_HEAD, InfinityMaterialFlags.GENERATE_WIRE_CUTTER_HEAD, InfinityMaterialFlags.GENERATE_BUZZSAW_BLADE, InfinityMaterialFlags.GENERATE_DRILL_HEAD, InfinityMaterialFlags.GENERATE_CHAINSAW_HEAD)
 	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(64, 15, 7200, 5, IVTools).build());
 
     // UV Tools

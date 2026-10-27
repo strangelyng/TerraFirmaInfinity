@@ -1,0 +1,6 @@
+{
+  "parent": "tfinfinity:item/material_sets/metallic/ingot",
+  "textures": {
+    "layer2": "tfinfinity:item/material_sets/malignant/ingot_overlay"
+  }
+}

@@ -27,7 +27,7 @@ const registerTFIChromiumRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
         
     event.recipes.gtceu.electric_blast_furnace('chromium_from_chromium_oxide')
         .itemInputs('5x tfinfinity:chromium_oxide_dust')
@@ -37,7 +37,7 @@ const registerTFIChromiumRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     // #region Sodium Sulfate
     event.recipes.gtceu.chemical_reactor('sodium_sulfate_from_bisulfate')

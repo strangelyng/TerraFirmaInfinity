@@ -16,13 +16,13 @@ function calcAmountOfMetal(baseTotal, percent) {
 function getMacerateOutput(material, count) {
     let outputMaterial = material.getProperty(PropertyKey.INGOT).getMacerateInto();
 
-    return ChemicalHelper.get(TagPrefix.dust, outputMaterial != null ? outputMaterial : material, count);
+    return InfinityHelpers.get(TagPrefix.dust, outputMaterial != null ? outputMaterial : material, count);
 }
 
 function getArcOutput(material, count) {
     let outputMaterial = material.getProperty(PropertyKey.INGOT).getArcSmeltingInto();
 
-    return ChemicalHelper.get(TagPrefix.ingot, outputMaterial != null ? outputMaterial : material, count);
+    return InfinityHelpers.get(TagPrefix.ingot, outputMaterial != null ? outputMaterial : material, count);
 }
 
 function getExtractOutput(material, count) {
@@ -229,7 +229,7 @@ function TFCWeldingRecipe(event, outputItem, inputItem1, inputItem2, material, b
  */
 function simpleRecyclingRecipes(event, tagPrefix, material) {
     const materialName = material.getName();
-    const inputItem = ChemicalHelper.get(tagPrefix, material, 1);
+    const inputItem = InfinityHelpers.get(tagPrefix, material, 1);
     const materialAmount = tagPrefix.getMaterialAmount(material) / GTValues.M;
     const recipeDuration = calcRecycleDuration(material, materialAmount);
 

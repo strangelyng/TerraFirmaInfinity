@@ -39,7 +39,7 @@ const registerTFIAluminumRecipes = (event) => {
         .blastFurnaceTemp(1273)
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
-        .merge({ data: { ebf_temp: 1273 }})
+        .blastFurnaceTemp(1273)
 
     // #region Aluminium Fluoride
     event.recipes.gtceu.chemical_reactor('aluminium_fluoride_from_hydroxide')
@@ -112,7 +112,7 @@ const registerTFIAluminumRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     event.recipes.gtceu.chemical_bath('wash_kyanite_sinter_cake')
         .itemInputs('tfinfinity:kyanite_sinter_cake')

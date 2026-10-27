@@ -42,7 +42,7 @@ const registerTFIMaterialItemTags = (event) => {
             return;
         }
 
-        const bars = ChemicalHelper.get(InfinityTagPrefix.bars, material, 1);
+        const bars = InfinityHelpers.get(InfinityTagPrefix.bars, material, 1);
 
         if (!bars.isEmpty()) {
             event.add('tfinfinity:metal_bars', bars.getId())

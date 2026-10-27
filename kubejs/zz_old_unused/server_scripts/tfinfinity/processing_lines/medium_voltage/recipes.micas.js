@@ -8,7 +8,7 @@ const registerTFIMicaGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     event.recipes.gtceu.chemical_bath('wash_lepidolite_sulfate_cake_dust')
         .itemInputs('23x tfinfinity:lepidolite_sulfate_cake_dust')
@@ -89,7 +89,7 @@ const registerTFIMicaGroupRecipes = (event) => {
         .blastFurnaceTemp(1273)
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
-        .merge({ data: { ebf_temp: 1273 }})
+        .blastFurnaceTemp(1273)
         
     // #region Mica (Muscovite)
     // KAl3Si3F2O10 + 10HCl + 2H2O -> KCl + 3AlCl3 + 3H4SiO4 + 2HF

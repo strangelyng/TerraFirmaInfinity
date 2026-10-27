@@ -1,61 +1,90 @@
 const registerTFIMaterialIconSets = (event) => {
     // Ungraded Ores
-    event.createIconSet('tfc_gypsum', GTMaterialIconSet.DULL)
+    event.create('tfinfinity:tfc_gypsum')
+        .parentIconset(GTMaterialIconSet.DULL)
     
-    event.createIconSet('tfc_cinnabar', GTMaterialIconSet.EMERALD)
+    event.create('tfinfinity:tfc_cinnabar')
+        .parentIconset(GTMaterialIconSet.EMERALD)
     
-    event.createIconSet('tfc_cryolite', GTMaterialIconSet.EMERALD)
+    event.create('tfinfinity:tfc_cryolite')
+        .parentIconset(GTMaterialIconSet.EMERALD)
     
-    event.createIconSet('tfc_borax', GTMaterialIconSet.ROUGH)
+    event.create('tfinfinity:tfc_borax')
+        .parentIconset(GTMaterialIconSet.ROUGH)
     
-    event.createIconSet('tfc_graphite', GTMaterialIconSet.DULL)
+    event.create('tfinfinity:tfc_graphite')
+        .parentIconset(GTMaterialIconSet.DULL)
     
-    event.createIconSet('tfc_saltpeter', GTMaterialIconSet.FINE)
+    event.create('tfinfinity:tfc_saltpeter')
+        .parentIconset(GTMaterialIconSet.FINE)
     
-    event.createIconSet('tfc_sulfur', GTMaterialIconSet.DULL)
+    event.create('tfinfinity:tfc_sulfur')
+        .parentIconset(GTMaterialIconSet.DULL)
     
-    event.createIconSet('tfc_sylvite', GTMaterialIconSet.FINE)
+    event.create('tfinfinity:tfc_sylvite')
+        .parentIconset(GTMaterialIconSet.FINE)
     
-    event.createIconSet('tfc_amethyst', GTMaterialIconSet.RUBY)
+    event.create('tfinfinity:tfc_amethyst')
+        .parentIconset(GTMaterialIconSet.RUBY)
     
-    event.createIconSet('tfc_diamond', GTMaterialIconSet.DIAMOND)
+    event.create('tfinfinity:tfc_diamond')
+        .parentIconset(GTMaterialIconSet.DIAMOND)
     
-    event.createIconSet('tfc_emerald', GTMaterialIconSet.EMERALD)
+    event.create('tfinfinity:tfc_emerald')
+        .parentIconset(GTMaterialIconSet.EMERALD)
     
-    event.createIconSet('tfc_lapis', GTMaterialIconSet.LAPIS)
+    event.create('tfinfinity:tfc_lapis')
+        .parentIconset(GTMaterialIconSet.LAPIS)
     
-    event.createIconSet('tfc_opal', GTMaterialIconSet.OPAL)
+    event.create('tfinfinity:tfc_opal')
+        .parentIconset(GTMaterialIconSet.OPAL)
     
-    event.createIconSet('tfc_pyrite', GTMaterialIconSet.ROUGH)
+    event.create('tfinfinity:tfc_pyrite')
+        .parentIconset(GTMaterialIconSet.ROUGH)
     
-    event.createIconSet('tfc_ruby', GTMaterialIconSet.RUBY)
+    event.create('tfinfinity:tfc_ruby')
+        .parentIconset(GTMaterialIconSet.RUBY)
     
-    event.createIconSet('tfc_sapphire', GTMaterialIconSet.EMERALD)
+    event.create('tfinfinity:tfc_sapphire')
+        .parentIconset(GTMaterialIconSet.EMERALD)
     
-    event.createIconSet('tfc_topaz', GTMaterialIconSet.GEM_HORIZONTAL)
+    event.create('tfinfinity:tfc_topaz')
+        .parentIconset(GTMaterialIconSet.GEM_HORIZONTAL)
     
     // Graded Ores
-    event.createIconSet('tfc_copper', GTMaterialIconSet.BRIGHT)
+    event.create('tfinfinity:tfc_copper')
+        .parentIconset(GTMaterialIconSet.BRIGHT)
 
-    event.createIconSet('tfc_gold', GTMaterialIconSet.SHINY)
+    event.create('tfinfinity:tfc_gold')
+        .parentIconset(GTMaterialIconSet.SHINY)
 
-    event.createIconSet('tfc_hematite', GTMaterialIconSet.DULL)
+    event.create('tfinfinity:tfc_hematite')
+        .parentIconset(GTMaterialIconSet.DULL)
 
-    event.createIconSet('tfc_silver', GTMaterialIconSet.SHINY)
+    event.create('tfinfinity:tfc_silver')
+        .parentIconset(GTMaterialIconSet.SHINY)
 
-    event.createIconSet('tfc_cassiterite', GTMaterialIconSet.ROUGH)
+    event.create('tfinfinity:tfc_cassiterite')
+        .parentIconset(GTMaterialIconSet.ROUGH)
 
-    event.createIconSet('tfc_bismuthinite', GTMaterialIconSet.METALLIC)
+    event.create('tfinfinity:tfc_bismuthinite')
+        .parentIconset(GTMaterialIconSet.METALLIC)
 
-    event.createIconSet('tfc_garnierite', GTMaterialIconSet.METALLIC)
+    event.create('tfinfinity:tfc_garnierite')
+        .parentIconset(GTMaterialIconSet.METALLIC)
 
-    event.createIconSet('tfc_malachite', GTMaterialIconSet.LAPIS)
+    event.create('tfinfinity:tfc_malachite')
+        .parentIconset(GTMaterialIconSet.LAPIS)
 
-    event.createIconSet('tfc_magnetite', GTMaterialIconSet.METALLIC)
+    event.create('tfinfinity:tfc_magnetite')
+        .parentIconset(GTMaterialIconSet.METALLIC)
 
-    event.createIconSet('tfc_limonite', GTMaterialIconSet.METALLIC)
+    event.create('tfinfinity:tfc_limonite')
+        .parentIconset(GTMaterialIconSet.METALLIC)
 
-    event.createIconSet('tfc_sphalerite', GTMaterialIconSet.DULL)
+    event.create('tfinfinity:tfc_sphalerite')
+        .parentIconset(GTMaterialIconSet.DULL)
 
-    event.createIconSet('tfc_tetrahedrite', GTMaterialIconSet.DULL)
+    event.create('tfinfinity:tfc_tetrahedrite')
+        .parentIconset(GTMaterialIconSet.DULL)
 }

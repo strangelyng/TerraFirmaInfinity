@@ -6,7 +6,7 @@ const registerTFISpodumeneRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     event.recipes.gtceu.chemical_bath('beta_spodumene_acid_leaching')
         .itemInputs('20x tfinfinity:beta_spodumene_dust')
@@ -51,7 +51,7 @@ const registerTFISpodumeneRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(300)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     event.recipes.gtceu.chemical_bath('wash_spodumene_residue_clinker')
         .itemInputs('tfinfinity:spodumene_residue_clinker')

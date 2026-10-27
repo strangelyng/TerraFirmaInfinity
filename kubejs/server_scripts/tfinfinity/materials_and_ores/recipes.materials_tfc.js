@@ -10,7 +10,7 @@ function processTuyere(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, tuyereItem, material, 144*2, 'tuyere');
 
-        const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
+        const doublePlateItem = InfinityHelpers.get(TagPrefix.plateDouble, material, 1);
 
         if (!doublePlateItem.isEmpty()) {
             TFCAnvilRecipe(event, tuyereItem, doublePlateItem, ['bend_last', 'bend_second_last'], true, material, 'tuyere');
@@ -28,7 +28,7 @@ function processPropickHead(event, material) {
         TFCMeltingRecipe(event, propickHeadItem, material, 144, 'propick_head');
         TFCCastingRecipe(event, propickHeadItem, 'tfc:ceramic/propick_head_mold', false, null, material, 'propick_head', 144);
 
-        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+        const ingotItem = InfinityHelpers.get(TagPrefix.ingot, material, 1);
 
         if (!ingotItem.isEmpty()) {
             TFCAnvilRecipe(event, propickHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'propick_head');
@@ -46,7 +46,7 @@ function processJavelinHead(event, material) {
         TFCMeltingRecipe(event, javelinHeadItem, material, 144, 'javelin_head');
         TFCCastingRecipe(event, javelinHeadItem, 'tfc:ceramic/javelin_head_mold', false, null, material, 'javelin_head', 144);
 
-        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+        const ingotItem = InfinityHelpers.get(TagPrefix.ingot, material, 1);
 
         if (!ingotItem.isEmpty()) {
             TFCAnvilRecipe(event, javelinHeadItem, ingotItem, ['hit_last', 'hit_second_last', 'draw_third_last'], true, material, 'javelin_head');
@@ -63,7 +63,7 @@ function processFishHook(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, fishHookItem, material, 144, 'fish_hook');
 
-        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+        const ingotItem = InfinityHelpers.get(TagPrefix.ingot, material, 1);
 
         if (!ingotItem.isEmpty()) {
             TFCAnvilRecipe(event, fishHookItem, ingotItem, ['bend_any', 'hit_any', 'draw_not_last'], false, material, 'fish_hook');
@@ -78,10 +78,10 @@ function processTFCArmor(event, material) {
 
     if (tfcProperty == null) return;
 
-    const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-    const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-    const doubleIngotItem = ChemicalHelper.get(InfinityTagPrefix.ingotDouble, material, 1);
-    const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
+    const ingotItem = InfinityHelpers.get(TagPrefix.ingot, material, 1);
+    const plateItem = InfinityHelpers.get(TagPrefix.plate, material, 1);
+    const doubleIngotItem = InfinityHelpers.get(InfinityTagPrefix.ingotDouble, material, 1);
+    const doublePlateItem = InfinityHelpers.get(TagPrefix.plateDouble, material, 1);
 
     const unfinishedHelmetItem = tryGetItem(`tfc:metal/unfinished_helmet/${materialName}`);
     const helmetItem = tryGetItem(`tfc:metal/helmet/${materialName}`);
@@ -133,7 +133,7 @@ function processTFCShield(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, shieldItem, material, 144*2, 'shield');
 
-        const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
+        const doublePlateItem = InfinityHelpers.get(TagPrefix.plateDouble, material, 1);
 
         if (!doublePlateItem.isEmpty()) {
             TFCAnvilRecipe(event, shieldItem, doublePlateItem, ['upset_last', 'bend_second_last', 'bend_third_last'], true, material, 'shield');
@@ -151,7 +151,7 @@ function processTFCHorseArmor(event, material) {
         TFCMeltingRecipe(event, horseArmorItem, material, 144*6, 'horse_armor');
     }
 
-    const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1).getId();
+    const doublePlateItem = InfinityHelpers.get(TagPrefix.plateDouble, material, 1).getId();
 
     event.shaped(horseArmorItem.getId(), [
         'ABA',

@@ -7,7 +7,7 @@ const registerGTCEuData = (event) => {
     function makeSluicingData(material) {
         let materialName = material.getName();
 
-        let crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+        let crushedOreItem = InfinityHelpers.get(TagPrefix.crushed, material, 1);
 
         if (!crushedOreItem.isEmpty()) {
             event.deposit({
@@ -16,7 +16,7 @@ const registerGTCEuData = (event) => {
             }, `tfinfinity:crushed_${materialName}_ore`)
         }
 
-        let impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
+        let impureDustItem = InfinityHelpers.get(TagPrefix.dustImpure, material, 1);
 
         if (!impureDustItem.isEmpty()) {
             event.deposit({
@@ -25,7 +25,7 @@ const registerGTCEuData = (event) => {
             }, `tfinfinity:impure_${materialName}_dust`)
         }
 
-        let pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
+        let pureDustItem = InfinityHelpers.get(TagPrefix.dustPure, material, 1);
 
         if (!pureDustItem.isEmpty()) {
             event.deposit({
@@ -36,7 +36,7 @@ const registerGTCEuData = (event) => {
     }
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty) {
-        let item = ChemicalHelper.get(tagPrefix, material, 1);
+        let item = InfinityHelpers.get(tagPrefix, material, 1);
 
         if (item.isEmpty()) return;
 

@@ -9,7 +9,7 @@ const registerTFIBerylRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
     
     event.recipes.gtceu.chemical_bath('wash_emerald_sinter_cake')
         .itemInputs('tfinfinity:emerald_sinter_cake')
@@ -43,7 +43,7 @@ const registerTFIBerylRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     // TODO: ELECTROLYSIS in Molten Salt for Berylluum Metal
 
@@ -71,7 +71,7 @@ const registerTFIBerylRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     event.recipes.gtceu.chemical_reactor('emerald_sludge_residue_separation')
         .itemInputs('9x tfinfinity:emerald_sludge_residue_dust')
@@ -122,8 +122,8 @@ const registerTFIBerylRecipes = (event) => {
 
     // Beryllium Metal
     event.recipes.tfinfinity.electrolytic_cell('beryllium_from_chloride')
-        .notConsumableItem(ChemicalHelper.get(TagPrefix.rod, GTMaterials.StainlessSteel, 1)) // Maybe?
-        .chancedInput(ChemicalHelper.get(TagPrefix.rod, GTMaterials.Carbon, 1), 100)
+        .notConsumableItem('#c:rods/stainless_steel') // Maybe?
+        .chancedInput('#c:rods/carbon', 100)
         .itemInputs('3x tfinfinity:beryllium_chloride_dust') // 1 : 5 Ratio
         .notConsumableFluid('1440x gtceu:salt')
         .inputFluids('2000x gtceu:hydrogen') // Inert Atmos to Prevent Oxidation

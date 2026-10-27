@@ -1,6 +1,6 @@
 {
     "parent": "gtceu:item/template/overlay_only",
     "textures": {
-        "layer2": "gtceu:item/material_sets/tfc_blue_steel/tool_head_mining_hammer"
+        "layer2": "tfinfinity:item/material_sets/tfc_blue_steel/tool_head_mining_hammer"
     }
 }

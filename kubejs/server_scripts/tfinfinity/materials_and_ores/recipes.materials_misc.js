@@ -71,7 +71,7 @@ const registerTFIMaterialMiscRecipes = (event) => {
     // #region Buckets
     TFCAnvilRecipe(event, 
         Item.of('tfc:metal/bucket/blue_steel'), 
-        ChemicalHelper.get(TagPrefix.plate, GTMaterials.BlueSteel, 1),
+        InfinityHelpers.get(TagPrefix.plate, GTMaterials.BlueSteel, 1),
         ['hit_last', 'bend_second_last', 'bend_third_last'],
         false,
         GTMaterials.BlueSteel,
@@ -80,7 +80,7 @@ const registerTFIMaterialMiscRecipes = (event) => {
 
     TFCAnvilRecipe(event,
         Item.of('tfc:metal/bucket/red_steel'),
-        ChemicalHelper.get(TagPrefix.plate, GTMaterials.RedSteel, 1),
+        InfinityHelpers.get(TagPrefix.plate, GTMaterials.RedSteel, 1),
         ['hit_last', 'bend_second_last', 'bend_third_last'],
         false,
         GTMaterials.RedSteel,
@@ -106,7 +106,7 @@ const registerTFIMaterialMiscRecipes = (event) => {
         .tier(2)
         .id('tfinfinity:anvil/refined_iron_bloom');
 
-    event.recipes.tfc.anvil(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 1), Item.of('tfc:refined_iron_bloom'), ['hit_last', 'hit_second_last', 'hit_third_last'])
+    event.recipes.tfc.anvil(InfinityHelpers.get(TagPrefix.ingot, GTMaterials.WroughtIron, 1), Item.of('tfc:refined_iron_bloom'), ['hit_last', 'hit_second_last', 'hit_third_last'])
         .tier(2)
         .id('tfinfinity:anvil/wrought_iron_ingot');
 
@@ -129,7 +129,7 @@ const registerTFIMaterialMiscRecipes = (event) => {
         if (!hcIngotItem.isEmpty()) {
             TFCMeltingRecipe(event, hcIngotItem, material, 144, 'from_high_carbon_ingot')
 
-            let quernDust = ChemicalHelper.get(TagPrefix.dust, material, 1);
+            let quernDust = InfinityHelpers.get(TagPrefix.dust, material, 1);
 
             event.recipes.tfc.quern(quernDust, hcIngotItem)
                 .id(`tfinfinity:quern/${ingot}_ingot_to_dust`);
@@ -144,7 +144,7 @@ const registerTFIMaterialMiscRecipes = (event) => {
     })
 
     event.recipes.tfc.anvil(Item.of('tfc:metal/ingot/high_carbon_steel'),
-        ChemicalHelper.get(TagPrefix.ingot, InfinityMaterials.PigIron, 1),
+        InfinityHelpers.get(TagPrefix.ingot, InfinityMaterials.PigIron, 1),
         ['hit_third_last', 'hit_second_last', 'hit_last'])
         .tier(0)
         .id('tfinfinity:anvil/high_carbon_steel_ingot')
@@ -157,7 +157,7 @@ const registerTFIMaterialMiscRecipes = (event) => {
     }
 
     Object.entries(hcSteelsToIngots).forEach(([inputMaterial, outputMaterial]) => {
-        const outputIngot = ChemicalHelper.get(TagPrefix.ingot, outputMaterial, 1);
+        const outputIngot = InfinityHelpers.get(TagPrefix.ingot, outputMaterial, 1);
         const inputIngot = tryGetItem(`tfc:metal/ingot/${inputMaterial}`);
 
         if (!inputIngot.isEmpty()) {
@@ -179,18 +179,18 @@ const registerTFIMaterialMiscRecipes = (event) => {
 
         switch (material) {
             case 'black_steel': {
-                input1 = ChemicalHelper.get(TagPrefix.ingot, InfinityMaterials.WeakSteel, 1);
-                input2 = ChemicalHelper.get(TagPrefix.ingot, InfinityMaterials.PigIron, 1);
+                input1 = InfinityHelpers.get(TagPrefix.ingot, InfinityMaterials.WeakSteel, 1);
+                input2 = InfinityHelpers.get(TagPrefix.ingot, InfinityMaterials.PigIron, 1);
                 break;
             }
             case 'blue_steel': {
-                input1 = ChemicalHelper.get(TagPrefix.ingot, InfinityMaterials.WeakBlueSteel, 1);
-                input2 = ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlackSteel, 1);
+                input1 = InfinityHelpers.get(TagPrefix.ingot, InfinityMaterials.WeakBlueSteel, 1);
+                input2 = InfinityHelpers.get(TagPrefix.ingot, GTMaterials.BlackSteel, 1);
                 break;
             }
             case 'red_steel': {
-                input1 = ChemicalHelper.get(TagPrefix.ingot, InfinityMaterials.WeakRedSteel, 1);
-                input2 = ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlackSteel, 1);
+                input1 = InfinityHelpers.get(TagPrefix.ingot, InfinityMaterials.WeakRedSteel, 1);
+                input2 = InfinityHelpers.get(TagPrefix.ingot, GTMaterials.BlackSteel, 1);
                 break;
             }
         }

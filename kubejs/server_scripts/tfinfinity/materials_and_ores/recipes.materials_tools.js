@@ -10,7 +10,7 @@ function processShears(event, material) {
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
 
     if (tfcProperty !== null) {
-        const knifeBladeItem = ChemicalHelper.get(InfinityTagPrefix.toolHeadKnife, material, 1);
+        const knifeBladeItem = InfinityHelpers.get(InfinityTagPrefix.toolHeadKnife, material, 1);
 
         if (!knifeBladeItem.isEmpty()) {
             TFCWeldingRecipe(event, shearsItem, knifeBladeItem, knifeBladeItem, material, 'copy_worst', tfcProperty.getAnvilTier(), 1, 1, 'shears'); // Do nonTFCTier and Circuit adjustment
@@ -20,7 +20,7 @@ function processShears(event, material) {
 
 function processGTTool(event, toolType, toolHeadTagPrefix, material) {
     const toolItem = $ToolHelper.get(toolType, material);
-    const toolHeadItem = ChemicalHelper.get(toolHeadTagPrefix, material, 1);
+    const toolHeadItem = InfinityHelpers.get(toolHeadTagPrefix, material, 1);
 
     if (toolItem.isEmpty() || toolHeadItem.isEmpty()) return;
 

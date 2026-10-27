@@ -42,7 +42,7 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
     
     event.recipes.gtceu.chemical_bath('wash_almandine_sinter_cake')
         .itemInputs('tfinfinity:almandine_sinter_cake')
@@ -69,7 +69,7 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
     
     event.recipes.gtceu.chemical_bath('wash_andradite_sinter_cake')
         .itemInputs('tfinfinity:andradite_sinter_cake')
@@ -96,7 +96,7 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
     
     event.recipes.gtceu.chemical_bath('wash_grossular_sinter_cake')
         .itemInputs('tfinfinity:grossular_sinter_cake')
@@ -117,7 +117,7 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
     
     event.recipes.gtceu.chemical_bath('wash_pyrope_sinter_cake')
         .itemInputs('tfinfinity:pyrope_sinter_cake')
@@ -146,7 +146,7 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
     
     event.recipes.gtceu.chemical_bath('wash_spessartine_sinter_cake')
         .itemInputs('tfinfinity:spessartine_sinter_cake')
@@ -174,7 +174,7 @@ const registerTFIGarnetGroupRecipes = (event) => {
         .blastFurnaceTemp(2000)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
-        .merge({ data: { ebf_temp: 2000 }})
+        .blastFurnaceTemp(2000)
     
     event.recipes.gtceu.chemical_bath('wash_uvarovite_sinter_cake')
         .itemInputs('tfinfinity:uvarovite_sinter_cake')

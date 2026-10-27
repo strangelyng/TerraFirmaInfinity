@@ -38,7 +38,7 @@ const registerTFIVanadiumRecipes = (event) => {
         .itemOutputs('25x tfinfinity:alumina_dust')
         .EUt(GTValues.VA[GTValues.MV])
         .duration(200)
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 
     event.recipes.gtceu.electric_blast_furnace('vanadium_pentoxide_calcium_reduction')
         .itemInputs('7x tfinfinity:vanadium_pentoxide_dust')
@@ -47,5 +47,5 @@ const registerTFIVanadiumRecipes = (event) => {
         .itemOutputs('10x gtceu:quicklime_dust')
         .EUt(GTValues.VA[GTValues.MV])
         .duration(200)
-        .merge({ data: { ebf_temp: 1700 }})
+        .blastFurnaceTemp(1700)
 }

@@ -4,7 +4,7 @@
 function processSmallOre(event, material) {
     const materialName = material.getName();
 
-    const smallOreItem = ChemicalHelper.get(InfinityTagPrefix.oreSmall, material, 1);
+    const smallOreItem = InfinityHelpers.get(InfinityTagPrefix.oreSmall, material, 1);
     if (smallOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -13,7 +13,7 @@ function processSmallOre(event, material) {
         TFCMeltingRecipe(event, smallOreItem, material, calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial()), 'small_ore');
     }
 
-    const smallDustItem = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
+    const smallDustItem = InfinityHelpers.get(TagPrefix.dustSmall, material, 1);
     if (smallDustItem.isEmpty()) return;
 
     event.recipes.tfc.quern(smallDustItem, smallOreItem)
@@ -39,7 +39,7 @@ function processSmallOre(event, material) {
 function processPoorRawOre(event, material) {
     const materialName = material.getName();
 
-    const poorRawOreItem = ChemicalHelper.get(InfinityTagPrefix.poorRawOre, material, 1);
+    const poorRawOreItem = InfinityHelpers.get(InfinityTagPrefix.poorRawOre, material, 1);
     if (poorRawOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -48,7 +48,7 @@ function processPoorRawOre(event, material) {
         TFCMeltingRecipe(event, poorRawOreItem, material, calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial()), 'poor_ore', true);
     }
 
-    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+    const crushedOreItem = InfinityHelpers.get(TagPrefix.crushed, material, 1);
 
     if (crushedOreItem.isEmpty()) return;
     
@@ -56,7 +56,7 @@ function processPoorRawOre(event, material) {
     const oreMultiplier = oreProperty.getOreMultiplier();
     crushedOreItem.setCount(crushedOreItem.getCount() * oreMultiplier);
 
-    const smallDustItem = ChemicalHelper.get(TagPrefix.dustSmall, material, 2);
+    const smallDustItem = InfinityHelpers.get(TagPrefix.dustSmall, material, 2);
 
     if (oreMultiplier > 1) {
         event.shapeless(crushedOreItem.copyWithCount(oreMultiplier / 2), [
@@ -85,10 +85,10 @@ function processPoorRawOre(event, material) {
     }
 
     const byproductMaterial = oreProperty.getOreByProduct(0, material);
-    let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
+    let byproductItem = InfinityHelpers.get(TagPrefix.gem, byproductMaterial, 1);
 
     if (byproductItem.isEmpty()) {
-        byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1);
+        byproductItem = InfinityHelpers.get(TagPrefix.dust, byproductMaterial, 1);
     }
 
     event.recipes.gtceu.macerator(`macerate_poor_raw_${materialName}_ore_to_crushed_ore`)
@@ -103,7 +103,7 @@ function processPoorRawOre(event, material) {
 function processNormalRawOre(event, material) {
     const materialName = material.getName();
 
-    const rawOreItem = ChemicalHelper.get(TagPrefix.rawOre, material, 1);
+    const rawOreItem = InfinityHelpers.get(TagPrefix.rawOre, material, 1);
     if (rawOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -112,7 +112,7 @@ function processNormalRawOre(event, material) {
         TFCMeltingRecipe(event, rawOreItem, material, calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial()), 'normal_ore', true);
     }
 
-    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+    const crushedOreItem = InfinityHelpers.get(TagPrefix.crushed, material, 1);
 
     if (crushedOreItem.isEmpty()) return;
     
@@ -134,10 +134,10 @@ function processNormalRawOre(event, material) {
 
 
     const byproductMaterial = oreProperty.getOreByProduct(0, material);
-    let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
+    let byproductItem = InfinityHelpers.get(TagPrefix.gem, byproductMaterial, 1);
 
     if (byproductItem.isEmpty()) {
-        byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1);
+        byproductItem = InfinityHelpers.get(TagPrefix.dust, byproductMaterial, 1);
     }
 
     event.recipes.gtceu.macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
@@ -153,7 +153,7 @@ function processNormalRawOre(event, material) {
 function processRichRawOre(event, material) {
     const materialName = material.getName();
 
-    const richRawOreItem = ChemicalHelper.get(InfinityTagPrefix.richRawOre, material, 1);
+    const richRawOreItem = InfinityHelpers.get(InfinityTagPrefix.richRawOre, material, 1);
     if (richRawOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -162,7 +162,7 @@ function processRichRawOre(event, material) {
         TFCMeltingRecipe(event, richRawOreItem, material, calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial()), 'rich_ore', true);
     }
 
-    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+    const crushedOreItem = InfinityHelpers.get(TagPrefix.crushed, material, 1);
 
     if (crushedOreItem.isEmpty()) return;
     
@@ -184,10 +184,10 @@ function processRichRawOre(event, material) {
 
 
     const byproductMaterial = oreProperty.getOreByProduct(0, material);
-    let byproductItem = ChemicalHelper.get(TagPrefix.gem, byproductMaterial, 1);
+    let byproductItem = InfinityHelpers.get(TagPrefix.gem, byproductMaterial, 1);
 
     if (byproductItem.isEmpty()) {
-        byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1);
+        byproductItem = InfinityHelpers.get(TagPrefix.dust, byproductMaterial, 1);
     }
 
     event.recipes.gtceu.macerator(`macerate_rich_raw_${materialName}_ore_to_crushed_ore`)
@@ -203,12 +203,12 @@ function processRichRawOre(event, material) {
 function processRawOreBlock(event, material) {
     const materialName = material.getName();
 
-    const rawOreBlockItem = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1);
+    const rawOreBlockItem = InfinityHelpers.get(TagPrefix.rawOreBlock, material, 1);
     if (rawOreBlockItem.isEmpty()) return;
 
     event.remove({ id: `gtceu:compressor/compress_${materialName}_to_raw_ore_block` })
 
-    const richRawOreItem = ChemicalHelper.get(InfinityTagPrefix.richRawOre, material, 4);
+    const richRawOreItem = InfinityHelpers.get(InfinityTagPrefix.richRawOre, material, 4);
 
     if (richRawOreItem.isEmpty()) return;
 
@@ -223,7 +223,7 @@ function processRawOreBlock(event, material) {
 function processCrushedOre(event, material) {
     const materialName = material.getName();
 
-    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1);
+    const crushedOreItem = InfinityHelpers.get(TagPrefix.crushed, material, 1);
     if (crushedOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -232,7 +232,7 @@ function processCrushedOre(event, material) {
         TFCMeltingRecipe(event, crushedOreItem, material, calcAmountOfMetal(64, tfcProperty.getPercentOfMaterial()), 'crushed_ore', true, 0);
     }
 
-    const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
+    const impureDustItem = InfinityHelpers.get(TagPrefix.dustImpure, material, 1);
 
     event.shapeless(impureDustItem, [
         '#gtceu:crafting_tools/mortar',
@@ -248,7 +248,7 @@ function processCrushedOre(event, material) {
 function processPurifiedOre(event, material) {
     const materialName = material.getName();
 
-    const purifiedOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1);
+    const purifiedOreItem = InfinityHelpers.get(TagPrefix.crushedPurified, material, 1);
     if (purifiedOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -257,7 +257,7 @@ function processPurifiedOre(event, material) {
         TFCMeltingRecipe(event, purifiedOreItem, material, calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial()), 'purified_ore', true, 1);
     }
 
-    const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
+    const pureDustItem = InfinityHelpers.get(TagPrefix.dustPure, material, 1);
 
     event.shapeless(pureDustItem, [
         '#gtceu:crafting_tools/mortar',
@@ -273,7 +273,7 @@ function processPurifiedOre(event, material) {
 function processRefinedOre(event, material) {
     const materialName = material.getName();
 
-    const refinedOreItem = ChemicalHelper.get(TagPrefix.crushedRefined, material, 1);
+    const refinedOreItem = InfinityHelpers.get(TagPrefix.crushedRefined, material, 1);
     if (refinedOreItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -282,7 +282,7 @@ function processRefinedOre(event, material) {
         TFCMeltingRecipe(event, refinedOreItem, material, calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial()), 'refined_ore', true, 2);
     }
 
-    const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
+    const dustItem = InfinityHelpers.get(TagPrefix.dust, material, 1);
 
     event.shapeless(dustItem, [
         '#gtceu:crafting_tools/mortar',
@@ -296,7 +296,7 @@ function processRefinedOre(event, material) {
 }
 
 function processImpureDust(event, material) {
-    const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1);
+    const impureDustItem = InfinityHelpers.get(TagPrefix.dustImpure, material, 1);
     if (impureDustItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -307,7 +307,7 @@ function processImpureDust(event, material) {
 }
 
 function processPureDust(event, material) {
-    const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1);
+    const pureDustItem = InfinityHelpers.get(TagPrefix.dustPure, material, 1);
     if (pureDustItem.isEmpty()) return;
 
     const tfcProperty = material.getProperty(InfinityPropertyKey.TFC_PROPERTY);
@@ -355,18 +355,18 @@ function processOreSmeltingRecipes(event, material, inputCount, outputCount) {
 
     if (outputMaterial == null || outputMaterial.getProperty(PropertyKey.INGOT) == null) return;
 
-    const ingotItem = ChemicalHelper.get(TagPrefix.ingot, outputMaterial, outputCount);
+    const ingotItem = InfinityHelpers.get(TagPrefix.ingot, outputMaterial, outputCount);
 
-    const poorRawOreItem = ChemicalHelper.get(InfinityTagPrefix.poorRawOre, material, inputCount);
-    const rawOreItem = ChemicalHelper.get(TagPrefix.rawOre, material, inputCount);
-    const richRawOreItem = ChemicalHelper.get(InfinityTagPrefix.richRawOre, material, inputCount);
+    const poorRawOreItem = InfinityHelpers.get(InfinityTagPrefix.poorRawOre, material, inputCount);
+    const rawOreItem = InfinityHelpers.get(TagPrefix.rawOre, material, inputCount);
+    const richRawOreItem = InfinityHelpers.get(InfinityTagPrefix.richRawOre, material, inputCount);
 
-    const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, inputCount);
-    const purifiedOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, inputCount);
-    const refinedOreItem = ChemicalHelper.get(TagPrefix.crushedRefined, material, inputCount);
-    const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, inputCount);
-    const purifiedDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, inputCount);
-    const dustItem = ChemicalHelper.get(TagPrefix.dust, material, inputCount);
+    const crushedOreItem = InfinityHelpers.get(TagPrefix.crushed, material, inputCount);
+    const purifiedOreItem = InfinityHelpers.get(TagPrefix.crushedPurified, material, inputCount);
+    const refinedOreItem = InfinityHelpers.get(TagPrefix.crushedRefined, material, inputCount);
+    const impureDustItem = InfinityHelpers.get(TagPrefix.dustImpure, material, inputCount);
+    const purifiedDustItem = InfinityHelpers.get(TagPrefix.dustPure, material, inputCount);
+    const dustItem = InfinityHelpers.get(TagPrefix.dust, material, inputCount);
 
     event.recipes.gtceu.electric_furnace(`smelt_poor_raw_${materialName}_ore_to_ingot`)
         .itemInputs(poorRawOreItem.withCount(inputCount*2))
