@@ -71,6 +71,8 @@ const registerOreLootTables = (event) => {
             .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.2)));
 
         global.STONE_TYPES.forEach(stoneType => {
+            let stoneMat = GTRegistries.MATERIALS.get(global.ROCK_TO_DUST[stoneType])
+
             event.addBlockModifier(`${materialModid}:${stoneType}_${materialName}_ore`)
                 .removeLoot(Ingredient.all)
                 .pool((p) => {
@@ -78,7 +80,7 @@ const registerOreLootTables = (event) => {
                     p.addEntry(LootEntry.of(normalRawOre).withWeight(60))
                     p.addEntry(LootEntry.of(poorRawOre).withWeight(20))
                 })
-                .addLoot(LootEntry.of(InfinityHelpers.get(TagPrefix.dust, GTMaterials.Stone, 1).getItem().getId()).when(c => c.randomChance(0.2)))
+                .addLoot(LootEntry.of(InfinityHelpers.get(TagPrefix.dust, stoneMat).getItem().getId()).when(c => c.randomChance(0.2)))
                 .addLoot(LootEntry.of(tinyDust).when(c => c.randomChance(0.05)));
         })
 

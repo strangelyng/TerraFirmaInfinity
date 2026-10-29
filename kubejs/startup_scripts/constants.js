@@ -42,6 +42,30 @@ global.ROCK_TO_SAND_COLOR = {
     marble: 'white'
 }
 
+global.ROCK_TO_DUST = {
+    granite: 'tfinfinity:felsic_igneous',
+    diorite: 'tfinfinity:intermediate_igneous',
+    gabbro: 'tfinfinity:mafic_igneous',
+    rhyolite: 'tfinfinity:felsic_igneous',
+    dacite: 'tfinfinity:intermediate_igneous',
+    andesite: 'tfinfinity:intermediate_igneous',
+    basalt: 'tfinfinity:mafic_igneous',
+    shale: 'tfinfinity:clastic_sedimentary',
+    claystone: 'tfinfinity:clastic_sedimentary',
+    limestone: 'tfinfinity:carbonate_sedimentary',
+    conglomerate: 'tfinfinity:clastic_sedimentary',
+    dolomite: 'tfinfinity:carbonate_sedimentary',
+    chert: 'tfinfinity:siliceous_sedimentary',
+    chalk: 'tfinfinity:carbonate_sedimentary',
+    tuff: 'gtceu:tuff',
+    quartzite: 'tfinfinity:metamorphic',
+    slate: 'tfinfinity:metamorphic',
+    phyllite: 'tfinfinity:metamorphic',
+    schist: 'tfinfinity:metamorphic',
+    gneiss: 'tfinfinity:metamorphic',
+    marble: 'tfinfinity:metamorphic'
+}
+
 global.TFC_WOODS = [
     'acacia',
     'ash',

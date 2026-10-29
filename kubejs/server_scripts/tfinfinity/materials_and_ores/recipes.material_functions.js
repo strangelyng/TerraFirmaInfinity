@@ -160,7 +160,7 @@ function TFCCastingRecipe(event, outputItem, ceramicMold, isFireMold, gtMold, ma
     if (canBeCasted
         && tfcProperty !== null
         && ceramicMold !== null
-        && material !== GTMaterials.WroughtIron) {
+        && material !== GTMaterials.WroughtIron.get()) {
             const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
             const recipeId = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
 
@@ -177,7 +177,7 @@ function EmbersStampingRecipe(event, outputItem, stampItem, material, tagPrefixN
     const canBeCasted = material.hasFlag(InfinityMaterialFlags.TFC_CASTABLE) || tagPrefixName == 'ingot';
 
     if (canBeCasted
-        && material !== GTMaterials.WroughtIron) {
+        && material !== GTMaterials.WroughtIron.get()) {
         const outputId = outputItem.getId();
         const fluidId = material.getFluid().id;
         const recipeId = `${materialName}_${tagPrefixName}`;
