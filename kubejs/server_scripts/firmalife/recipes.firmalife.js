@@ -11,6 +11,7 @@ const registerFirmalifeRecipes = (event) => {
 
     event.remove({ id: /firmalife:heating\/metal\/.*/ });
     event.remove({ id: /firmalife:heating\/ore\/.*/ });
+    event.remove({ id: 'firmalife:heating/stainless_steel_jar_lid' });
 
     event.remove({ id: /firmalife:welding\/.*/ });
 

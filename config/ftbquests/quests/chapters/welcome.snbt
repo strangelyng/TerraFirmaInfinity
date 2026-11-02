@@ -1,0 +1,39 @@
+{
+	autofocus_id: "3EF573D122E1BEE7"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		id: "gtceu:overworld_marker"
+	}
+	id: "3B1AF5AA0D9E749F"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_recipe_mod: false
+			icon: {
+				id: "gtceu:overworld_marker"
+			}
+			id: "3EF573D122E1BEE7"
+			preset: "Title"
+			shape: "gear"
+			size: 3.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "39A429CF81FC720D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "3D47C991B87B04AD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+}

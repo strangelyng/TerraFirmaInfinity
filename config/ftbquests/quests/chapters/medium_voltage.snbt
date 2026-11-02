@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "medium_voltage"
+	group: "405153C8117AC1D6"
+	icon: {
+		id: "gtceu:good_electronic_circuit"
+	}
+	id: "0E727BE91D52AE62"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}

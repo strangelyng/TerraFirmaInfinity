@@ -28,4 +28,7 @@ const registerTFIRecipes = (event) => {
     event.replaceInput({ input: 'minecraft:anvil' }, 'minecraft:anvil', 'tfc:metal/anvil/wrought_iron' )
     
     event.replaceInput({ input: 'minecraft:iron_trapdoor' }, 'minecraft:iron_trapdoor', 'tfc:metal/trapdoor/wrought_iron' )
+
+    // Voltage Tiers
+    registerLowVoltageRecipes(event);
 }

@@ -1,0 +1,232 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "low_voltage"
+	group: "405153C8117AC1D6"
+	icon: {
+		id: "gtceu:basic_electronic_circuit"
+	}
+	id: "43CD0192E4C3FDC5"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "gtceu:sulfuric_acid_bucket"
+			}
+			id: "378DD563D8569400"
+			tasks: [
+				{
+					id: "1D0D2497F1A03708"
+					item: { count: 1, id: "gtceu:sulfuric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "665EA6FBE279233F"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"3B3B4E27EB510E7D"
+				"2B5E871D36960CDB"
+				"087A79E5C6157BD3"
+			]
+			id: "65D7F64025F490BE"
+			preset: "Milestone"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2D9A42BA1987E67C"
+				item: { count: 1, id: "gtceu:aluminium_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"65D7F64025F490BE"
+				"10B2A79E0E5AA34A"
+			]
+			id: "7752BA9410C082A5"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "1FBEF3CDB4783B83"
+				item: { count: 1, id: "gtceu:mv_machine_hull" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tfinfinity:bakelite_bucket"
+			}
+			id: "10B2A79E0E5AA34A"
+			tasks: [
+				{
+					id: "7F1B46E54102F5A4"
+					item: { count: 1, id: "tfinfinity:bakelite_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3394AE638E4ADCFB"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10B2A79E0E5AA34A"]
+			icon: {
+				id: "gtceu:phenolic_circuit_board"
+			}
+			id: "76BC8A5EF86CE327"
+			tasks: [{
+				id: "2F61FDA4089184AD"
+				item: { count: 1, id: "gtceu:phenolic_circuit_board" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76BC8A5EF86CE327"]
+			id: "1B6538158DE7DBE4"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2717B96108411530"
+				item: { count: 1, id: "gtceu:good_electronic_circuit" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			id: "2B5E871D36960CDB"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "08ABD961BAE4165C"
+				item: { count: 1, id: "tfinfinity:electrolytic_cell" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["241635D323051C68"]
+			id: "3B3B4E27EB510E7D"
+			tasks: [{
+				id: "02244F68D72EAB2B"
+				item: { count: 1, id: "tfinfinity:alumina_dust" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			id: "459516A4AE09D789"
+			tasks: [{
+				id: "6C22A9243CCB86FA"
+				item: { count: 1, id: "tfinfinity:raw_fluorite" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["76B8F9F121B9AA21"]
+			icon: {
+				id: "tfinfinity:aluminium_fluoride_bucket"
+			}
+			id: "087A79E5C6157BD3"
+			tasks: [
+				{
+					id: "12A96B234059D348"
+					item: { count: 1, id: "tfinfinity:aluminium_fluoride_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3F50A01C2336E050"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"459516A4AE09D789"
+				"378DD563D8569400"
+			]
+			icon: {
+				id: "tfinfinity:hydrogen_fluoride_bucket"
+			}
+			id: "76B8F9F121B9AA21"
+			tasks: [
+				{
+					id: "307E5BB4262B0214"
+					item: { count: 1, id: "tfinfinity:hydrogen_fluoride_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2AFFA4FD342BF1E2"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			icon: {
+				id: "gtceu:raw_bauxite"
+			}
+			id: "1E20BEBB0C3931F8"
+			tasks: [
+				{
+					id: "2859E7C3193A8E64"
+					item: { count: 1, id: "gtceu:raw_bauxite" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3D8EB01EE049E245"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1E20BEBB0C3931F8"]
+			id: "241635D323051C68"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2A64A51D53B15E78"
+				item: { count: 1, id: "gtceu:electric_blast_furnace" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+	]
+}

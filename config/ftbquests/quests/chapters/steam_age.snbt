@@ -1,0 +1,17 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_age"
+	group: "405153C8117AC1D6"
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "gtceu:steel_gear"
+	}
+	id: "0B02FA604EF0F095"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

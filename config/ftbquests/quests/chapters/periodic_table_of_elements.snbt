@@ -1,0 +1,1505 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "periodic_table_of_elements"
+	group: "10687369B639348B"
+	icon: {
+		components: {
+			"ftbquests:icon": "gtceu:textures/gui/overlay/beaker_overlay_1.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "2DB1DDE3044147E6"
+	images: [
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "4E530A39E69243DF"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "3599A8A337F04AEE"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "3A40ED7F5A7D7C16"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "36D32A5709E93289"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "330D0A3ACB24FA49"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "61A092FA44A036EB"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "394361B8B54AA473"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "5DE4C0097E2E2B23"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "7883777F6848EE09"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "424C664278E1753F"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "538E34451581D03D"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "163E9F43611BB522"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "7E85337C9841BA38"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "4B962D716262849B"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "693F937C303C1971"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "3B509A1B1433A4B2"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "624902DA7F5F38E8"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "538E91DE475E2C44"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "12270F23536EA4C7"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "5AECDCB67158742F"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "0519A3037DAAAFEF"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "7EDA3C3B3D63856C"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "1049E3385EA3913C"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "576AC150AA24DF2D"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "4BDBD09BCC4312BE"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "57D7F2C5C6251378"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "386B0D8105200D4F"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "152801CBD45CF4E1"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "742AA405D9A74BD7"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "424056668B7CCEF3"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "17E2A1D572F087A3"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "11B65BB91630858B"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "7448CCDCB8E19244"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "7BD4C68D3988A79A"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "4AB174AA08C27205"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "44B2206AA37C5BDF"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "46ADBD7B3BB7EF1D"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "404BE407316FF917"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "2C9CC20780F1CCE7"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "44DC9C5C7573DE3D"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "1EBCC6754157F305"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "4A902EFCFAE7F159"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "70035EEEB874FFE1"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "75DF0F06DA1C2999"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "67F4221B3BB39BAC"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "1A5F79971313019B"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.0d
+			id: "47713B75C43E6BD3"
+			image: "ftbquests:textures/shapes/circle/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 3.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "gtceu:hydrogen_bucket"
+			}
+			id: "556CBFE7443ADD00"
+			tasks: [
+				{
+					id: "0C5870B7C32F374B"
+					item: { count: 1, id: "gtceu:hydrogen_bucket" }
+					type: "item"
+				}
+				{
+					id: "0B57220F072E1BA4"
+					item: { count: 1, id: "gtceu:deuterium_bucket" }
+					type: "item"
+				}
+				{
+					id: "453FB03BAE852DDD"
+					item: { count: 1, id: "gtceu:tritium_bucket" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			icon: {
+				id: "gtceu:helium_bucket"
+			}
+			id: "0738D99756717AA5"
+			tasks: [
+				{
+					id: "7A553DC515661B90"
+					item: { count: 1, id: "gtceu:helium_bucket" }
+					type: "item"
+				}
+				{
+					id: "011C988140E71BB3"
+					item: { count: 1, id: "gtceu:helium_3_bucket" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			icon: {
+				id: "gtceu:lithium_dust"
+			}
+			id: "273DFDF327C30400"
+			tasks: [{
+				id: "136DFA04990033D2"
+				item: { count: 1, id: "gtceu:lithium_dust" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:beryllium_ingot"
+			}
+			id: "4391F2F744B0EF13"
+			tasks: [{
+				id: "629927E59AECBA99"
+				item: { count: 1, id: "gtceu:beryllium_dust" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:neon_bucket"
+			}
+			id: "623A277140FBB1B7"
+			tasks: [{
+				id: "5C967238D3B0233D"
+				item: { count: 1, id: "gtceu:neon_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:fluorine_bucket"
+			}
+			id: "611FE6782D587369"
+			tasks: [{
+				id: "002EA2E5A4795019"
+				item: { count: 1, id: "gtceu:fluorine_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:oxygen_bucket"
+			}
+			id: "75EDE81D28CEC92B"
+			tasks: [{
+				id: "3DBEE77A1304FF38"
+				item: { count: 1, id: "gtceu:oxygen_bucket" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:nitrogen_bucket"
+			}
+			id: "4E67F962F62BEC61"
+			tasks: [{
+				id: "636A228F34630843"
+				item: { count: 1, id: "gtceu:nitrogen_bucket" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:carbon_ingot"
+			}
+			id: "04DCD02A50FD3F6C"
+			tasks: [{
+				id: "532BDE5B200E85B6"
+				item: { count: 1, id: "gtceu:carbon_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:boron_dust"
+			}
+			id: "01A47643B5F90564"
+			tasks: [{
+				id: "39665607A78CFD79"
+				item: { count: 1, id: "gtceu:boron_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "gtceu:sodium_dust"
+			}
+			id: "0FEAC0946841E43D"
+			tasks: [{
+				id: "53EF941185DBAE00"
+				item: { count: 1, id: "gtceu:sodium_dust" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:magnesium_dust"
+			}
+			id: "76F84E10C5F4A4D1"
+			tasks: [{
+				id: "3BF5B751B02D51C6"
+				item: { count: 1, id: "gtceu:magnesium_dust" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:aluminium_ingot"
+			}
+			id: "4AB4E7A0B09B14A2"
+			tasks: [{
+				id: "252712918898E0CD"
+				item: { count: 1, id: "gtceu:aluminium_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:silicon_ingot"
+			}
+			id: "0B5C45BECB235B50"
+			tasks: [{
+				id: "1A9975357E32079D"
+				item: { count: 1, id: "gtceu:silicon_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:phosphorus_dust"
+			}
+			id: "7704A5C31838B85D"
+			tasks: [{
+				id: "45EBF5EFCB0AB90E"
+				item: { count: 1, id: "gtceu:phosphorus_dust" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:sulfur_dust"
+			}
+			id: "7291064503F01EA8"
+			tasks: [{
+				id: "3A08B15365F2D0CC"
+				item: { count: 1, id: "gtceu:sulfur_dust" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:chlorine_bucket"
+			}
+			id: "6C8220E58B3CCBAC"
+			tasks: [{
+				id: "0C6F71FE3DD4368E"
+				item: { count: 1, id: "gtceu:chlorine_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:argon_bucket"
+			}
+			id: "640E2E8EE73C3B57"
+			tasks: [{
+				id: "76999A8D3C63A84B"
+				item: { count: 1, id: "gtceu:argon_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "gtceu:potassium_dust"
+			}
+			id: "5A0042D548154D33"
+			tasks: [{
+				id: "5F204A3082823FFD"
+				item: { count: 1, id: "gtceu:potassium_dust" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:calcium_dust"
+			}
+			id: "20A0E2C8691845D1"
+			tasks: [{
+				id: "459E912206099C9E"
+				item: { count: 1, id: "gtceu:calcium_dust" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:titanium_ingot"
+			}
+			id: "622C3A5DBDCA9A56"
+			tasks: [{
+				id: "12410B9186C5C89D"
+				item: { count: 1, id: "gtceu:titanium_dust" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:vanadium_ingot"
+			}
+			id: "3C8ABBED2430BE29"
+			tasks: [{
+				id: "56328D9AEB992144"
+				item: { count: 1, id: "gtceu:vanadium_dust" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:chromium_ingot"
+			}
+			id: "2515575E98D522D8"
+			tasks: [{
+				id: "6860ABE623EF0BE1"
+				item: { count: 1, id: "gtceu:chromium_dust" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:manganese_ingot"
+			}
+			id: "128652FF8D8BB59F"
+			tasks: [{
+				id: "27292D3745131568"
+				item: { count: 1, id: "gtceu:manganese_dust" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/cast_iron"
+			}
+			id: "24A06E5802A0E74D"
+			tasks: [{
+				id: "0BA3F2B293473D62"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:iron_dust" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "gtceu:cobalt_ingot"
+			}
+			id: "2348036DDF81833A"
+			tasks: [{
+				id: "128BFEDD3D480A0D"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:cobalt_dust" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "gtceu:nickel_ingot"
+			}
+			id: "36908299C240DA3A"
+			tasks: [{
+				id: "0D05687CFFA42EFA"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:nickel_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "minecraft:copper_ingot"
+			}
+			id: "220832C196FF0FDE"
+			tasks: [{
+				id: "420C2837ED2638D9"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:copper_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "create:zinc_ingot"
+			}
+			id: "7B4D2759E267274D"
+			tasks: [{
+				id: "35494FC8716389B0"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:zinc_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:gallium_ingot"
+			}
+			id: "37F98DE2A2F8D038"
+			tasks: [{
+				id: "4AE825F54109E5F3"
+				item: { count: 1, id: "gtceu:gallium_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:arsenic_dust"
+			}
+			id: "0BB74ECC4047EA1E"
+			tasks: [{
+				id: "2987BE25396C843B"
+				item: { count: 1, id: "gtceu:arsenic_dust" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:bromine_bucket"
+			}
+			id: "34F633D0236817DA"
+			tasks: [{
+				id: "4DA4F3C17795E0F4"
+				item: { count: 1, id: "gtceu:bromine_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:krypton_bucket"
+			}
+			id: "5376C2E88C442955"
+			tasks: [{
+				id: "50CF935FC2D457E7"
+				item: { count: 1, id: "gtceu:krypton_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "gtceu:yttrium_ingot"
+			}
+			id: "7E1ACADC94C6DD22"
+			tasks: [{
+				id: "197D8ADE11342458"
+				item: { count: 1, id: "gtceu:yttrium_dust" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:zirconium_ingot"
+			}
+			id: "01E028200F748113"
+			tasks: [{
+				id: "69D9973025DE681C"
+				item: { count: 1, id: "gtceu:zirconium_dust" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:niobium_ingot"
+			}
+			id: "331A3D11D07927CE"
+			tasks: [{
+				id: "228B5272E25FA133"
+				item: { count: 1, id: "gtceu:niobium_dust" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:molybdenum_ingot"
+			}
+			id: "0717676639D9B6CF"
+			tasks: [{
+				id: "6970B18E8FE370CF"
+				item: { count: 1, id: "gtceu:molybdenum_dust" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:ruthenium_ingot"
+			}
+			id: "2A05E464D643F5A0"
+			tasks: [{
+				id: "600F663152FE8E0E"
+				item: { count: 1, id: "gtceu:ruthenium_dust" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:rhodium_ingot"
+			}
+			id: "3F1DAEA4F69543D5"
+			tasks: [{
+				id: "090461F404B38EDE"
+				item: { count: 1, id: "gtceu:rhodium_dust" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:palladium_ingot"
+			}
+			id: "48E919791F9F5C23"
+			tasks: [{
+				id: "389CCDFE2D9035F8"
+				item: { count: 1, id: "gtceu:palladium_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "gtceu:silver_ingot"
+			}
+			id: "3B1EF93627CE65EC"
+			tasks: [{
+				id: "5C7BABF6D77CA2C5"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:silver_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:cadmium_dust"
+			}
+			id: "240081A4A3782B6A"
+			tasks: [{
+				id: "13F17B9AD8D8312C"
+				item: { count: 1, id: "gtceu:cadmium_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:indium_ingot"
+			}
+			id: "2CDC7ED5AF6D602E"
+			tasks: [{
+				id: "0F64677EED043695"
+				item: { count: 1, id: "gtceu:indium_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "gtceu:tin_ingot"
+			}
+			id: "73F14653F68EB3BF"
+			tasks: [{
+				id: "3481C28F342BD91B"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:tin_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:antimony_ingot"
+			}
+			id: "50AFEE39891C1CF7"
+			tasks: [{
+				id: "4256DBEE76FDEC3F"
+				item: { count: 1, id: "gtceu:antimony_dust" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:iodine_dust"
+			}
+			id: "05C8B392768EEBDC"
+			tasks: [{
+				id: "1B39F29A01C8C494"
+				item: { count: 1, id: "gtceu:iodine_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:xenon_bucket"
+			}
+			id: "3EA24D880C16ACD9"
+			tasks: [{
+				id: "236C2E7571CACC3E"
+				item: { count: 1, id: "gtceu:xenon_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:caesium_dust"
+			}
+			id: "71255526C519DA33"
+			tasks: [{
+				id: "08B88A4ACF1CD9F0"
+				item: { count: 1, id: "gtceu:caesium_dust" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:barium_dust"
+			}
+			id: "1BF260202D18405D"
+			tasks: [{
+				id: "00D96053A66F9135"
+				item: { count: 1, id: "gtceu:barium_dust" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:lanthanum_dust"
+			}
+			id: "34A5184F1CFA039C"
+			tasks: [{
+				id: "0D233034572699A5"
+				item: { count: 1, id: "gtceu:lanthanum_dust" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gtceu:hafnium_ingot"
+			}
+			id: "3EBD475E508C3486"
+			tasks: [{
+				id: "6129BE3FA98B003C"
+				item: { count: 1, id: "gtceu:hafnium_dust" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:tantalum_ingot"
+			}
+			id: "403D7B3940F1F708"
+			tasks: [{
+				id: "3FD43B49BDEC03CB"
+				item: { count: 1, id: "gtceu:tantalum_dust" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:tungsten_ingot"
+			}
+			id: "034CD42A418310D9"
+			tasks: [{
+				id: "2EF8BFDAFEC2B264"
+				item: { count: 1, id: "gtceu:tungsten_dust" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:osmium_ingot"
+			}
+			id: "5D8DF05EC0DDA71D"
+			tasks: [{
+				id: "060DB1C08F14BD30"
+				item: { count: 1, id: "gtceu:osmium_dust" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:iridium_ingot"
+			}
+			id: "4AB1FCBE06741BFE"
+			tasks: [{
+				id: "68BB9393FB37BC3D"
+				item: { count: 1, id: "gtceu:iridium_dust" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:platinum_ingot"
+			}
+			id: "0B4397D403BFF275"
+			tasks: [{
+				id: "76ECCE33BB605864"
+				item: { count: 1, id: "gtceu:platinum_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "minecraft:gold_ingot"
+			}
+			id: "27A50CED4FB85BA1"
+			tasks: [{
+				id: "5A1281B0083353D0"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:gold_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "3CDC395528CD2031"
+			tasks: [{
+				id: "6AF6B77F7D9C7346"
+				item: { count: 1, id: "gtceu:mercury_bucket" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "gtceu:lead_ingot"
+			}
+			id: "42E13B3D029F1D3C"
+			tasks: [{
+				id: "06F99BF06010E5B7"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:lead_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "gtceu:bismuth_ingot"
+			}
+			id: "48D63158198E968A"
+			tasks: [{
+				id: "796392A0F57E625D"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "gtceu:bismuth_dust" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:radon_bucket"
+			}
+			id: "62E020AB446DCE64"
+			tasks: [{
+				id: "0913DAECA698C68B"
+				item: { count: 1, id: "gtceu:radon_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:darmstadtium_ingot"
+			}
+			id: "61574347AECB7B62"
+			tasks: [{
+				id: "007AC3D37BD27AE6"
+				item: { count: 1, id: "gtceu:darmstadtium_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "gtceu:cerium_dust"
+			}
+			id: "51BBF1E5954909DE"
+			tasks: [{
+				id: "7440EEDA1B59ED32"
+				item: { count: 1, id: "gtceu:cerium_dust" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gtceu:neodymium_ingot"
+			}
+			id: "4C651708BE8624FC"
+			tasks: [{
+				id: "2D80EF2885A2841B"
+				item: { count: 1, id: "gtceu:neodymium_dust" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gtceu:samarium_ingot"
+			}
+			id: "1E0650BDF67E910F"
+			tasks: [{
+				id: "4D6E5C4E2F096EF8"
+				item: { count: 1, id: "gtceu:samarium_dust" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gtceu:europium_ingot"
+			}
+			id: "0DC6E59A1277B02F"
+			tasks: [{
+				id: "56F133CE40F3B2BC"
+				item: { count: 1, id: "gtceu:europium_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gtceu:lutetium_dust"
+			}
+			id: "4ACF8EBC4C481BCF"
+			tasks: [{
+				id: "11E64ABC9F0188C5"
+				item: { count: 1, id: "gtceu:lutetium_dust" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gtceu:thorium_ingot"
+			}
+			id: "2F583F72D2BDF547"
+			tasks: [{
+				id: "1D23E9A2F5C7BE1B"
+				item: { count: 1, id: "gtceu:thorium_dust" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				id: "gtceu:uranium_235_ingot"
+			}
+			id: "2445A7C0F66A12B9"
+			tasks: [
+				{
+					id: "559D752E67F274E1"
+					item: { count: 1, id: "gtceu:uranium_238_dust" }
+					type: "item"
+				}
+				{
+					id: "5F5CBDB8C885ADA2"
+					item: { count: 1, id: "gtceu:uranium_235_dust" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				id: "gtceu:plutonium_241_ingot"
+			}
+			id: "09A176F1E618AAFE"
+			tasks: [
+				{
+					id: "26AF905AFFD7A67A"
+					item: { count: 1, id: "gtceu:plutonium_239_dust" }
+					type: "item"
+				}
+				{
+					id: "232F083ED8FDCFCE"
+					item: { count: 1, id: "gtceu:plutonium_241_dust" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				id: "gtceu:americium_ingot"
+			}
+			id: "13D04D7461D5472B"
+			tasks: [{
+				id: "23F064473A699CBD"
+				item: { count: 1, id: "gtceu:americium_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0DC6E59A1277B02F"
+				"4ACF8EBC4C481BCF"
+				"4C651708BE8624FC"
+				"51BBF1E5954909DE"
+				"1E0650BDF67E910F"
+				"34A5184F1CFA039C"
+			]
+			id: "65806C38A51BE7DA"
+			tasks: [{
+				id: "1B7AD251D3A4965D"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2F583F72D2BDF547"
+				"2445A7C0F66A12B9"
+				"09A176F1E618AAFE"
+				"13D04D7461D5472B"
+			]
+			id: "635417C165A2941C"
+			tasks: [{
+				id: "2B12DFA4EC4E5BD3"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 1.0d
+		}
+	]
+}

@@ -1,4 +1,5 @@
 {
+    "material.gtceu.asbestos": "Chrysotile",
     "material.gtceu.cooperite": "Cooperite",
     "material.gtceu.quartzite": "Quartz",
     "material.gtceu.iron": "Cast Iron",
@@ -6,11 +7,7 @@
     "material.gtceu.rock_salt": "Sylvite",
     "material.gtceu.salt": "Halite",
     "material.gtceu.yellow_limonite": "Limonite",
-    "material.gtceu.hsla_steel": "HSLA Steel",
     "material.gtceu.tungstate": "Lithium Tungstate",
-    "material.gtceu.hsss": "HSS-S",
-    "material.gtceu.hsse": "HSS-E",
-    "material.gtceu.hssg": "HSS-G",
     "item.gtceu.iron_dust": "Iron Dust",
     "item.gtceu.small_iron_dust": "Small Pile of Iron Dust",
     "item.gtceu.tiny_iron_dust": "Tiny Pile of Iron Dust",

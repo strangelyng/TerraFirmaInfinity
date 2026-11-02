@@ -1,0 +1,17 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "metallurgic_age"
+	group: "3E3B20DE33056E61"
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "gtceu:wrought_iron_ingot"
+	}
+	id: "574C7D9A75636999"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

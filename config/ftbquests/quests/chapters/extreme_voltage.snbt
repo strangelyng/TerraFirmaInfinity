@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extreme_voltage"
+	group: "405153C8117AC1D6"
+	icon: {
+		id: "gtceu:micro_processor_computer"
+	}
+	id: "274948849129D5AD"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+}
