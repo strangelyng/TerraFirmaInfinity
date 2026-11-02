@@ -1,4 +1,4 @@
-const registerBakeliteRecipes = (event) => {
+const registerLVBakeliteRecipes = (event) => {
     // Syngas
     event.recipes.gtceu.chemical_reactor('tfinfinity:syngas_from_charcoal')
         .itemInputs('#c:gems/charcoal')

@@ -1,4 +1,4 @@
-const registerAsbestosRecipes = (event) => {
+const registerLVAsbestosRecipes = (event) => {
     event.recipes.gtceu.sifter('tfinfinity:sift_asbestos_purified_ore_to_fibers')
         .itemInputs('gtceu:purified_asbestos_ore')
         .chancedOutput('tfinfinity:asbestos_fibers', 2000)

@@ -32,6 +32,8 @@ const registerTFIRecipes = (event) => {
     // New Machines
     registerLoomRecipes(event);
 
-    // Voltage Tiers
+    // Tiers
+    registerPrimitiveRecipes(event);
+
     registerLowVoltageRecipes(event);
 }

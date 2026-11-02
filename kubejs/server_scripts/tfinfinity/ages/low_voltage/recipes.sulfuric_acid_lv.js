@@ -1,4 +1,4 @@
-const registerSulfuricAcidRecipes = (event) => {
+const registerLVSulfuricAcidRecipes = (event) => {
     event.remove({ id: 'gtceu:chemical_reactor/sulfur_trioxide' });
     event.remove({ id: 'gtceu:large_chemical_reactor/sulfur_trioxide' });
 

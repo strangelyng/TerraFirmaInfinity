@@ -1,4 +1,4 @@
-const registerAluminiumRecipes = (event) => {
+const registerLVAluminiumRecipes = (event) => {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium_gas' })
 

@@ -1,6 +1,10 @@
+const registerPrimitiveRecipes = (event) => {
+    registerPrimitiveMagitechRecipes(event);
+}
+
 const registerLowVoltageRecipes = (event) => {
-    registerAsbestosRecipes(event);
-    registerAluminiumRecipes(event);
-    registerBakeliteRecipes(event);
-    registerSulfuricAcidRecipes(event);
+    registerLVAluminiumRecipes(event);
+    registerLVAsbestosRecipes(event);
+    registerLVBakeliteRecipes(event);
+    registerLVSulfuricAcidRecipes(event);
 }
