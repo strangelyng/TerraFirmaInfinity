@@ -29,6 +29,9 @@ const registerTFIRecipes = (event) => {
     
     event.replaceInput({ input: 'minecraft:iron_trapdoor' }, 'minecraft:iron_trapdoor', 'tfc:metal/trapdoor/wrought_iron' )
 
+    // New Machines
+    registerLoomRecipes(event);
+
     // Voltage Tiers
     registerLowVoltageRecipes(event);
 }

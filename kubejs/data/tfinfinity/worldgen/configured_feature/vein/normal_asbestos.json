@@ -16,8 +16,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:andesite_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:andesite_amosite_ore"
                     }
                 ]
             },
@@ -27,8 +31,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:basalt_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:basalt_amosite_ore"
                     }
                 ]
             },
@@ -38,8 +46,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:dacite_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:dacite_amosite_ore"
                     }
                 ]
             },
@@ -49,8 +61,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:rhyolite_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:rhyolite_amosite_ore"
                     }
                 ]
             },
@@ -60,8 +76,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:tuff_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:tuff_amosite_ore"
                     }
                 ]
             },
@@ -71,8 +91,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:diorite_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:diorite_amosite_ore"
                     }
                 ]
             },
@@ -82,8 +106,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:gabbro_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:gabbro_amosite_ore"
                     }
                 ]
             },
@@ -93,8 +121,12 @@
                 ],
                 "with": [
                     {
-                        "weight": 100,
+                        "weight": 80,
                         "block": "gtceu:granite_asbestos_ore"
+                    },
+                    {
+                        "weight": 20,
+                        "block": "tfinfinity:granite_amosite_ore"
                     }
                 ]
             }

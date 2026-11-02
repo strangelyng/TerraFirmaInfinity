@@ -78,7 +78,7 @@ const registerBakeliteRecipes = (event) => {
 
     event.recipes.gtceu.mixer('tfinfinity:bakelite_asbestos')
         .inputFluids('144x tfinfinity:phenolic_resin')
-        .itemInputs('#c:dusts/asbestos')
+        .itemInputs('#c:dusts/amosite')
         .outputFluids('216x tfinfinity:bakelite')
         .duration(20*5)
         .EUt(GTValues.VA[GTValues.LV])

@@ -1,16 +1,16 @@
 const registerAsbestosRecipes = (event) => {
     event.recipes.gtceu.sifter('tfinfinity:sift_asbestos_purified_ore_to_fibers')
         .itemInputs('gtceu:purified_asbestos_ore')
-        .chancedOutput('tfinfinity:asbestos_fibers', 1500)
-        .chancedOutput('gtceu:asbestos_dust', 8500)
+        .chancedOutput('tfinfinity:asbestos_fibers', 2000)
+        .chancedOutput('gtceu:asbestos_dust', 8000)
         .chancedItemOutputLogic(ChanceLogic.XOR)
         .duration(20*20)
         .EUt(GTValues.VH[GTValues.LV])
 
-    event.recipes.gtceu.compressor('tfinfnity:asbestos_fiber_mesh') // Loom?
+    event.recipes.tfinfinity.loom('tfinfnity:asbestos_fiber_mesh')
         .itemInputs('6x tfinfinity:asbestos_fibers')
         .itemOutputs('tfinfinity:asbestos_fiber_mesh')
-        .duration(100)
+        .duration(25*6)
         .EUt(2)
 
     event.recipes.gtceu.compressor('tfinfnity:asbestos_fiber_plate')
@@ -19,7 +19,7 @@ const registerAsbestosRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
-    event.recipes.gtceu.welder('tfinfinity:steel_mesh') // Loom?
+    event.recipes.tfinfinity.loom('tfinfinity:steel_mesh') // TODO: Move this elsewhere
         .itemInputs('8x gtceu:fine_steel_wire')
         .itemOutputs('tfinfinity:steel_mesh')
         .duration(400)
