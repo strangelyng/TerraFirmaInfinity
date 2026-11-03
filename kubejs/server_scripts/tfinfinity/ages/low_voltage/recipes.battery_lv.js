@@ -4,6 +4,26 @@ const registerLVBatteryRecipes = (event) => {
     event.remove({ id: 'gtceu:canner/lithium_battery_lv' })
     event.remove({ id: 'gtceu:canner/cadmium_battery_lv' })
 
+    // Battery Hull to Steel Plates
+    event.remove({ id: 'gtceu:shaped/battery_hull_lv' })
+    event.remove({ id: 'gtceu:assembler/battery_hull_lv' })
+
+    event.shaped('gtceu:lv_battery_hull', [
+        'A',
+        'B',
+        'B'
+    ], {
+        A: 'gtceu:tin_single_cable',
+        B: '#c:plates/steel'
+    }).id('tfinfinity:shaped/lv_battery_hull')
+
+    event.recipes.gtceu.assembler('tfinfinity:lv_battery_hull')
+        .itemInputs('gtceu:tin_single_cable', '#c:plates/steel')
+        .itemOutputs('gtceu:lv_battery_hull')
+        .inputFluids('144x gtceu:polyethylene')
+        .duration(20*20)
+        .EUt(1)
+
     // Lead-Acid Battery
     event.recipes.gtceu.mixer('tfinfinity:lead_acid_paste')
         .itemInputs('4x gtceu:massicot_dust')
@@ -13,7 +33,7 @@ const registerLVBatteryRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.canner('tfinfinity:lead_acid_battery_lv')
-        .itemInputs('gtceu:lv_battery_hull')
+        .itemInputs('gtceu:lv_battery_hull', '2x gtceu:battery_alloy_plate')
         .inputFluids('2000x tfinfinity:lead_acid_paste')
         .itemOutputs('tfinfinity:lv_lead_acid_battery')
         .duration(100)
@@ -47,21 +67,28 @@ const registerLVBatteryRecipes = (event) => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV])
 
+    // Electrodes
+    event.recipes.gtceu.canner('tfinfinity:nickel_hydroxide_electrode')
+        .itemInputs('1x gtceu:steel_tiny_fluid_pipe', '5x tfinfinity:nickel_hydroxide_dust')
+        .itemOutputs('tfinfinity:nickel_hydroxide_electrode')
+        .duration(100)
+        .EUt(2)
+
+    event.recipes.gtceu.canner('tfinfinity:iron_oxide_electrode')
+        .itemInputs('1x gtceu:steel_tiny_fluid_pipe', '5x gtceu:hematite_dust')
+        .itemOutputs('tfinfinity:iron_oxide_electrode')
+        .duration(100)
+        .EUt(2)
+
+    event.recipes.gtceu.canner('tfinfinity:cadmium_oxide_electrode')
+        .itemInputs('1x gtceu:steel_tiny_fluid_pipe', '2x tfinfinity:cadmium_oxide_dust')
+        .itemOutputs('tfinfinity:cadmium_oxide_electrode')
+        .duration(100)
+        .EUt(2)
+
     // Nickel-Iron Battery
-    event.recipes.gtceu.spooling('tfinfinity:nickel_iron_battery_roll_asbestos')
-        .itemInputs('1x gtceu:nickel_plate', '1x gtceu:wrought_iron_plate', '2x tfinfinity:asbestos_fiber_plate')
-        .itemOutputs('tfinfinity:nickel_iron_battery_roll')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.spooling('tfinfinity:nickel_iron_battery_roll_polyethylene')
-        .itemInputs('1x gtceu:nickel_plate', '1x gtceu:wrought_iron_plate', '1x gtceu:polyethylene_foil')
-        .itemOutputs('tfinfinity:nickel_iron_battery_roll')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
     event.recipes.gtceu.canner('tfinfinity:nickel_iron_battery_lv')
-        .itemInputs('gtceu:lv_battery_hull', 'tfinfinity:nickel_iron_battery_roll', '10x tfinfinity:nickel_hydroxide_dust')
+        .itemInputs('gtceu:lv_battery_hull', 'tfinfinity:nickel_hydroxide_electrode', 'tfinfinity:iron_oxide_electrode') // Iron Oxide Hydrates to Iron Hydroxide with the Addition of Potassium Hydroxide
         .inputFluids('1000x tfinfinity:potassium_hydroxide_solution')
         .itemOutputs('tfinfinity:lv_nickel_iron_battery')
         .duration(100)
@@ -74,20 +101,15 @@ const registerLVBatteryRecipes = (event) => {
         .EUt(2)
 
     // Nickel-Cadmium Battery
-    event.recipes.gtceu.spooling('tfinfinity:nickel_cadmium_battery_roll_asbestos')
-        .itemInputs('1x gtceu:nickel_plate', '1x gtceu:cadmium_plate', '2x tfinfinity:asbestos_fiber_plate')
-        .itemOutputs('tfinfinity:nickel_cadmium_battery_roll')
+    event.recipes.tfinfinity.roaster('tfinfinity:cadmium_oxide')
+        .itemInputs('gtceu:cadmium_dust')
+        .inputFluids('1000x gtceu:oxygen')
+        .itemOutputs('2x tfinfinity:cadmium_oxide_dust')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.spooling('tfinfinity:nickel_cadmium_battery_roll_polyethylene')
-        .itemInputs('1x gtceu:nickel_plate', '1x gtceu:cadmium_plate', '1x gtceu:polyethylene_foil')
-        .itemOutputs('tfinfinity:nickel_cadmium_battery_roll')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
+        .EUt(GTValues.VHA[GTValues.LV])
 
     event.recipes.gtceu.canner('tfinfinity:nickel_cadmium_battery_lv')
-        .itemInputs('gtceu:lv_battery_hull', 'tfinfinity:nickel_cadmium_battery_roll', '10x tfinfinity:nickel_hydroxide_dust')
+        .itemInputs('gtceu:lv_battery_hull', 'tfinfinity:nickel_hydroxide_electrode', 'tfinfinity:cadmium_oxide_electrode') // Cadmium Oxide Hydrates to Cadmium Hydroxide with the Addition of Potassium Hydroxide
         .inputFluids('1000x tfinfinity:potassium_hydroxide_solution')
         .itemOutputs('tfinfinity:lv_nickel_cadmium_battery')
         .duration(100)

@@ -23,4 +23,11 @@ const registerBatteryMaterials = (event) => {
         .components('2x sodium', '1x sulfur', '4x oxygen')
         .color(0xEEDC82)
         .secondaryColor(0x4682B4)
+
+    event.create('tfinfinity:cadmium_oxide')
+        .dust()
+        .hazard(HazardProperty.HazardTrigger.ANY, GTMedicalConditions.POISON)
+        .components('1x cadmium', '1x oxygen')
+        .color(0x914325)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 }
