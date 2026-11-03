@@ -4,4 +4,5 @@
 const registerTFIItems = (event) => {
     registerTFIMolds(event);
     registerMaterialItems(event);
+    registerBatteryItems(event);
 }

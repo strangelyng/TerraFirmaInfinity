@@ -1,18 +1,4 @@
 const registerAluminiumMaterials = (event) => {
-    event.create('tfinfinity:sodium_hydroxide_solution')
-        .liquid()
-        .components('3x sodium_hydroxide', '1x water')
-        .color(0xF5FEFF)
-        .secondaryColor(0xA4EBF1)
-        .formula('(NaOH)(H2O)')
-
-    event.create('tfinfinity:sodium_carbonate_solution')
-        .liquid()
-        .components('6x soda_ash', '1x water')
-        .color(0xFFFFFF)
-        .secondaryColor(0xDECDFF)
-        .formula('(Na2CO3)(H2O)')
-
     event.create('tfinfinity:sodium_aluminate')
         .liquid()
         .components('1x sodium', '1x aluminium', '2x oxygen')

@@ -2,35 +2,6 @@ const registerLVAluminiumRecipes = (event) => {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium_gas' })
 
-    // Solutions
-    event.recipes.gtceu.mixer('tfinfinity:sodium_hydroxide_solution')
-        .itemInputs('3x gtceu:sodium_hydroxide_dust')
-        .inputFluids('1000x minecraft:water')
-        .outputFluids('1000x tfinfinity:sodium_hydroxide_solution')
-        .circuit(10)
-        .duration(20*2)
-        .EUt(GTValues.VHA[GTValues.LV])
-
-    event.recipes.gtceu.distillery('tfinfinity:distill_sodium_hydroxide_solution')
-        .inputFluids('1000x tfinfinity:sodium_hydroxide_solution')
-        .itemOutputs('3x gtceu:sodium_hydroxide_dust')
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.LV])
-        
-    event.recipes.gtceu.mixer('tfinfinity:sodium_carbonate_solution')
-        .itemInputs('6x gtceu:soda_ash_dust')
-        .inputFluids('1000x minecraft:water')
-        .outputFluids('1000x tfinfinity:sodium_carbonate_solution')
-        .circuit(10)
-        .duration(20*2)
-        .EUt(GTValues.VHA[GTValues.LV])
-
-    event.recipes.gtceu.distillery('tfinfinity:distill_sodium_carbonate_solution')
-        .inputFluids('1000x tfinfinity:sodium_carbonate_solution')
-        .itemOutputs('6x gtceu:soda_ash_dust')
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.LV])
-
     // Bayer Process
     event.recipes.gtceu.autoclave('tfinfinity:bauxite_bayer_process')
         .itemInputs('5x gtceu:bauxite_dust')

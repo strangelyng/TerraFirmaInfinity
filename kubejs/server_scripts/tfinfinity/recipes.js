@@ -7,6 +7,7 @@ const registerTFIRecipes = (event) => {
     registerTFIComponentRecipes(event);
     registerTFIMaterialMiscRecipes(event);
     registerTFIAlloyRecipes(event);
+    registerSolutionRecipes(event);
 
     // Natural World
     registerTFIStoneRecipes(event);

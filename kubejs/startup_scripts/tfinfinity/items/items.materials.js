@@ -11,7 +11,7 @@ const registerMaterialItems = (event) => {
         .texture('tfinfinity:item/asbestos_fiber_mesh')
     
     event.create('tfinfinity:asbestos_fiber_plate')
-        .displayName('Asbestos Fiber Plate')
+        .displayName('Asbestos Fiber Sheet')
         .texture('tfinfinity:item/asbestos_fiber_plate')
 
     event.create('tfinfinity:asbestos_fiber_diaphragm')
