@@ -76,7 +76,7 @@ const registerLVAluminiumRecipes = (event) => {
         .itemInputs('3x gtceu:coke_dust')
         .outputFluids('576x gtceu:aluminium')
         .outputFluids('3000x gtceu:carbon_dioxide')
-        .duration(600)
+        .duration(840)
         .EUt(GTValues.VA[GTValues.MV])
 
     // Synthetic Cryolite (Technically MV)

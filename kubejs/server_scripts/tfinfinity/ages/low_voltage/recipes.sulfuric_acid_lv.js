@@ -82,7 +82,32 @@ const registerLVSulfuricAcidRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VHA[GTValues.LV])
 
-    // Sulfur Trioxide from Saltpeter
+    /* Sulfuric Acid Direct from Saltpeter and Sulfur
+     *
+     * Total IO (for Sulfuric Acid Production)
+     * IN: 30x Saltpeter Dust + 5x Sulfur Dust + 2B Steam
+     * OUT: 3B Nitrogen Dioxide + 2B Sulfuric Acid + 21x Potassium Sulfate Dust
+     */
+    event.recipes.gtceu.chemical_reactor('tfinfinity:glauber_mixture')
+        .itemInputs('30x gtceu:saltpeter_dust', '5x gtceu:sulfur_dust')
+        .inputFluids('2000x gtceu:steam')
+        .outputFluids('5000x tfinfinity:glauber_mixture', '3000x gtceu:nitrogen_dioxide')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.distillery('tfinfinity:distill_glauber_mixture')
+        .inputFluids('5000x tfinfinity:glauber_mixture')
+        .outputFluids('2000x gtceu:sulfuric_acid')
+        .itemOutputs('21x gtceu:potassium_sulfate_dust')
+        .duration(12*20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    /* Nitric Oxide (and Sulfur Trioxide) from Saltpeter
+     * 
+     * Total IO (for Sulfur Trioxide Production)
+     * IN: 10x Saltpeter Dust + 3x Sulfur Dust + 3B Oxygen
+     * OUT: 3B Nitric Oxide + 2B Sulfur Trioxide + 7x Potassium Sulfate Dust
+     */
     event.recipes.gtceu.chemical_reactor('tfinfinity:sulfur_trioxide_from_saltpeter_air')
         .itemInputs('10x gtceu:saltpeter_dust', '3x gtceu:sulfur_dust') // 2x Excess Sulfur
         .inputFluids('6000x gtceu:air') // Reacts with Atmospheric Oxygen to Produce Sulfur Dioxide
@@ -99,7 +124,12 @@ const registerLVSulfuricAcidRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // Sulfur Trioxide from Pyrite
+    /* Sulfur Trioxide from Pyrite
+     * 
+     * Total IO (for Sulfur Trioxide Production)
+     * IN: 6x Pyrite Dust + 2x Iron Dust + 7B Oxygen + 2B Water
+     * OUT: 5x Hematite Dust + 2B Hydrogen + 1B Sulfur Dioxide + 1B Sulfur Trioxide
+     */
     event.recipes.gtceu.chemical_reactor('tfinfinity:acidic_green_vitriol')
         .itemInputs('6x gtceu:pyrite_dust')
         .inputFluids('7000x gtceu:oxygen', '2000x minecraft:water')
@@ -122,7 +152,12 @@ const registerLVSulfuricAcidRecipes = (event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // Lead Chamber Process
+    /* Lead Chamber Process
+     * 
+     * Total IO (for Sulfuric Acid Production)
+     * IN: 2B Sulfur Dioxide [2x Sulfur Dust + 4B Oxygen] + 2B Water + 2B Oxygen
+     * OUT: 2B Sulfuric Acid
+     */
     event.recipes.gtceu.chemical_reactor('tfinfinity:lead_chamber_process_reaction')
         .notConsumableItem('6x #c:foils/lead')
         .inputFluids('1000x gtceu:sulfur_dioxide', '1000x gtceu:nitrogen_dioxide', '1000x gtceu:steam')

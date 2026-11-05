@@ -6,6 +6,12 @@ const registerSolutionMaterials = (event) => {
         .secondaryColor(0xA4EBF1)
         .formula('(NaOH)(H2O)')
 
+    event.create('tfinfinity:caustic_brine')
+        .liquid()
+        .components('1x tfinfinity:sodium_hydroxide_solution', '2x salt')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .color(0xA4EBF1)
+
     event.create('tfinfinity:sodium_carbonate_solution')
         .liquid()
         .components('6x soda_ash', '1x water')
