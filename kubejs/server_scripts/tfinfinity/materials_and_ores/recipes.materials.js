@@ -22,7 +22,6 @@ const registerTFIMaterialRecipes = (event) => {
     forEachMaterial(material => {
         if (material.hasProperty(PropertyKey.DUST)) {
             processDust(event, material);
-            processPowder(event, material);
         }
 
         const toolProperty = material.getProperty(PropertyKey.TOOL);

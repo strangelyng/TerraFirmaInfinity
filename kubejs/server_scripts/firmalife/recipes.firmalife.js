@@ -70,7 +70,7 @@ const registerFirmalifeRecipes = (event) => {
         'AAA',
         'BCB'
     ], {
-        A: '#c:powders/salt',
+        A: '#c:small_dusts/salt',
         B: 'firmalife:sealed_bricks',
         C: '#c:plates/wrought_iron'
     }).id('firmalife:crafting/ashtray')
