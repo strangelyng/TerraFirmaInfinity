@@ -115,6 +115,10 @@ const registerTFIMaterialModificationCosmetic = (event) => {
 	GTMaterials.Platinum.get().setMaterialARGB(0xccdff5)
 	GTMaterials.Platinum.get().setMaterialSecondaryARGB(0x59563a)
 
+	// TFC Powders
+	GTMaterials.PotassiumCarbonate.get().setMaterialARGB(0xAFA598)
+	GTMaterials.PotassiumCarbonate.get().setMaterialSecondaryARGB(0x7D705A)
+
     // #region Icon Sets
     GTMaterials.Aluminium.getMaterialInfo().setIconSet(GTMaterialIconSet.SHINY);
     GTMaterials.Cupronickel.getMaterialInfo().setIconSet(GTMaterialIconSet.SHINY);
