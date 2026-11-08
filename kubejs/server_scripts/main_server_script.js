@@ -13,6 +13,7 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('fluid', event => {
     registerTFIMaterialFluidTags(event);
+    registerTFCFluidTags(event);
 })
 
 LootJS.lootTables(event => {

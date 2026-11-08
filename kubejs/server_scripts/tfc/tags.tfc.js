@@ -18,3 +18,18 @@ const registerTFCItemTags = (event) => {
         event.remove(`c:storage_blocks/${material}`, `tfc:metal/block/${material}`)
     })
 }
+
+const registerTFCFluidTags = (event) => {
+    let ingredientFluids = [
+        'gtceu:ice',
+        'gtceu:creosote',
+        'gtceu:concrete',
+        'tfinfinity:latex',
+        'tfinfinity:vulcanized_latex',
+        'tfinfinity:conifer_pitch',
+        'tfinfinity:runic_sap',
+        'tfinfinity:cursed_sap'
+    ]
+
+    event.add('tfc:ingredients', ingredientFluids) // Allows use in barrels, pots, wooden buckets, etc.
+}

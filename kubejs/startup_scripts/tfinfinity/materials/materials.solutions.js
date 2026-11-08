@@ -37,4 +37,9 @@ const registerSolutionMaterials = (event) => {
         .components('7x tfinfinity:sodium_sulfate', '1x water')
         .color(0xEEDC82)
         .secondaryColor(0x4682B4)
+
+    event.create('tfinfinity:calcium_hydroxide_solution')
+        .liquid()
+        .components('5x calcium_hydroxide', '1x water')
+        .colorAverage()
 }

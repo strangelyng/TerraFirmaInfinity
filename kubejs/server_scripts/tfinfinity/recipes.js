@@ -30,11 +30,14 @@ const registerTFIRecipes = (event) => {
     
     event.replaceInput({ input: 'minecraft:iron_trapdoor' }, 'minecraft:iron_trapdoor', 'tfc:metal/trapdoor/wrought_iron' )
 
+    // Chemical Processes
+    registerAlkaliRecipes(event);
+
     // New Machines
     registerLoomRecipes(event);
 
     // Tiers
     registerPrimitiveRecipes(event);
-
     registerLowVoltageRecipes(event);
+    registerMediumVoltageRecipes(event);
 }

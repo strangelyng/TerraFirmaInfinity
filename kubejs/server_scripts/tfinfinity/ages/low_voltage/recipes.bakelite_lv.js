@@ -83,15 +83,6 @@ const registerLVBakeliteRecipes = (event) => {
         .duration(20*5)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // Phenolic Circuit Boards
-    event.remove({ id: 'gtceu:assembler/phenolic_board' })
-    
-    event.recipes.gtceu.forming_press('phenolic_circuit_board')
-        .itemInputs('2x tfinfinity:bakelite_foil', '2x minecraft:paper', 'gtceu:resin_circuit_board')
-        .itemOutputs('gtceu:phenolic_circuit_board')
-        .duration(7.5*20)
-        .EUt(GTValues.VA[GTValues.LV])
-
     // ULV Machine Hulls & Buses
     event.recipes.gtceu.assembler('tfinfinity:hull_ulv_bakelite')
         .itemInputs('gtceu:ulv_machine_casing', '2x gtceu:red_alloy_single_cable')

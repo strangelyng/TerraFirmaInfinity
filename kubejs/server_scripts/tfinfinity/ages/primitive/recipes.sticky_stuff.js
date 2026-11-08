@@ -1,0 +1,3 @@
+const registerPrimitiveStickyStuffRecipes = (event) => {
+
+}
