@@ -155,4 +155,9 @@ const registerGTCEuData = (event) => {
         ingredient: 'gtceu:compressed_coke_clay',
         heatCapacity: 1.0
     }, 'tfinfinity:compressed_coke_clay')
+
+    event.heat({
+        ingredient: 'gtceu:small_calcite_dust',
+        heatCapacity: 0.7
+    }, 'tfinfinity:small_calcite_dust')
 }

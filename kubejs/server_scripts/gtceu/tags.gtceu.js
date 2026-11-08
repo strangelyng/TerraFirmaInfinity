@@ -18,4 +18,9 @@ const registerGTCEUItemTags = (event) => {
      * Prevents clutter and misleading blocks (ore blocks that generate but are never used)
      */
     // event.add('c:hidden_from_recipe_viewers', '#c:ores')
+
+    event.add('gtceu:crafting_tools/hammer', 'tfc:stone/hammer/igneous_extrusive')
+    event.add('gtceu:crafting_tools/hammer', 'tfc:stone/hammer/igneous_intrusive')
+    event.add('gtceu:crafting_tools/hammer', 'tfc:stone/hammer/metamorphic')
+    event.add('gtceu:crafting_tools/hammer', 'tfc:stone/hammer/sedimentary')
 }

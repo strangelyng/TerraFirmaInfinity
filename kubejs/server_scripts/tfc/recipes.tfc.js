@@ -37,6 +37,15 @@ const registerTFCRecipes = (event) => {
         '#tfc:fluxstone'
     ).id('tfc:quern/powder/flux')
 
+    event.recipes.tfc.heating(
+        ['#c:small_dusts/calcite', '#c:small_dusts/calcium_carbonate'],
+        840
+    ).resultItem('tfc:powder/lime').id('tfc:heating/powder/lime')
+
+    event.shapeless('tfc:fire_clay', [
+        '#c:dusts/kaolinite', '#c:dusts/graphite', 'minecraft:clay_ball'
+    ]).id('tfinfinity:shapeless/fire_clay_from_dusts')
+
     event.shaped('tfc:white_kaolin_clay', [
         'XX',
         'XX'
