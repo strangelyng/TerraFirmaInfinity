@@ -2,10 +2,6 @@
 "use_strict";
 
 const registerMinecraftRecipes = (event) => {
-    event.smelting('minecraft:brick', 'tfc:ceramic/unfired_brick')
-        .cookingTime(200)
-        .id('minecraft:brick')
-
     event.shaped('minecraft:spyglass', [
         'A',
         'B',

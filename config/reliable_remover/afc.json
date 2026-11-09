@@ -1,6 +1,8 @@
 {
     "action": "remove",
     "items": [
+        "afc:rubber_bar",
+
         "afc:wood/axle/baobab",
         "afc:wood/bladed_axle/baobab",
         "afc:wood/encased_axle/baobab",

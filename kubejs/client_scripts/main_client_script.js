@@ -63,3 +63,7 @@ ClientEvents.lang('en_us', event => {
         event.renameItem(`firmalife:ore/rich_${gradedOre}`, `Rich Raw ${formattedName}`);
     })
 })
+
+ItemEvents.modifyTooltips(event => {
+    event.add('tfinfinity:lamp_casting_mold', [Text.gray("Mold for making Lamps")])
+})

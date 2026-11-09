@@ -22,5 +22,24 @@
   "showEmiChatMessages": true,
   "reloadAfterRemoval": false,
   "blacklistedItems": [
+    "gtceu:rubber_sapling",
+    "gtceu:rubber_log",
+    "gtceu:rubber_leaves",
+    "gtceu:stripped_rubber_log",
+    "gtceu:rubber_wood",
+    "gtceu:stripped_rubber_wood",
+    "gtceu:rubber_planks",
+    "gtceu:rubber_slab",
+    "gtceu:rubber_fence",
+    "gtceu:rubber_sign",
+    "gtceu:rubber_hanging_sign",
+    "gtceu:rubber_pressure_plate",
+    "gtceu:rubber_trapdoor",
+    "gtceu:rubber_stairs",
+    "gtceu:rubber_button",
+    "gtceu:rubber_fence_gate",
+    "gtceu:rubber_door",
+    "gtceu:rubber_boat",
+    "gtceu:rubber_chest_boat"
   ]
 }

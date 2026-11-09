@@ -8,6 +8,25 @@ global.STONE_TYPES = [
     'quartzite', 'slate', 'phyllite', 'schist', 'gneiss', 'marble'
 ]
 
+global.DYE_COLORS = [
+    'white',
+    'light_gray',
+    'gray',
+    'black',
+    'brown',
+    'red',
+    'orange',
+    'yellow',
+    'lime',
+    'green',
+    'cyan',
+    'light_blue',
+    'blue',
+    'purple',
+    'magenta',
+    'pink'
+]
+
 global.SAND_COLORS = [
     'brown',
     'white',
@@ -16,6 +35,17 @@ global.SAND_COLORS = [
     'yellow',
     'green',
     'pink'
+]
+
+global.SOIL_TYPES = [
+    'entisol',
+    'aridisol',
+    'oxisol',
+    'fluvisol',
+    'andisol',
+    'podzol',
+    'alfisol',
+    'mollisol'
 ]
 
 global.ROCK_TO_SAND_COLOR = {

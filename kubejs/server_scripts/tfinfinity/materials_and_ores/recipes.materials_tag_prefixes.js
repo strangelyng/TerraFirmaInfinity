@@ -672,6 +672,24 @@ function processAnvil(event, material) {
     if (tfcProperty !== null) {
         TFCMeltingRecipe(event, anvilItem, material, getMaterialAmount(InfinityTagPrefix.anvil, material) * 144, 'anvil');
     }
+
+    const ingotItem = InfinityHelpers.get(TagPrefix.ingot, material, 1)
+    event.recipes.gtceu.alloy_smelter(`tfinfinity:cast_${material.getName()}_anvil`)
+        .itemInputs(ingotItem.withCount(14))
+        .notConsumableItem('gtceu:anvil_casting_mold')
+        .itemOutputs(anvilItem)
+        .duration(material.getMass() * 14)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    let castingFluid = material.getFluid(144*14);
+    if (castingFluid != null && material != GTMaterials.WroughtIron.get()) {
+        event.recipes.gtceu.fluid_solidifier(`tfinfinity:solidify_${material.getName()}_anvil`)
+            .inputFluids(castingFluid)
+            .notConsumableItem('gtceu:anvil_casting_mold')
+            .itemOutputs(anvilItem)
+            .duration(material.getMass() * 14)
+            .EUt(GTValues.VA[GTValues.LV])
+    }
 }
 
 function processBars(event, material) {
@@ -741,8 +759,31 @@ function processLamp(event, material) {
 
         if (!ingotItem.isEmpty()) {
             TFCAnvilRecipe(event, unfinishedLampItem, ingotItem, ['bend_last', 'bend_second_last', 'draw_third_last'], false, material, 'unfinished_lamp')
+
+            event.recipes.gtceu.alloy_smelter(`tfinfinity:cast_unfinished_${material.getName()}_lamp`)
+                .itemInputs(ingotItem)
+                .notConsumableItem('tfinfinity:lamp_casting_mold')
+                .itemOutputs(unfinishedLampItem)
+                .duration(material.getMass())
+                .EUt(GTValues.VA[GTValues.LV])
+
+            let castingFluid = material.getFluid(144);
+            if (castingFluid != null && material != GTMaterials.WroughtIron.get()) {
+                event.recipes.gtceu.fluid_solidifier(`tfinfinity:solidify_unfinished_${material.getName()}_lamp`)
+                    .inputFluids(castingFluid)
+                    .notConsumableItem('tfinfinity:lamp_casting_mold')
+                    .itemOutputs(unfinishedLampItem)
+                    .duration(material.getMass())
+                    .EUt(GTValues.VA[GTValues.LV])
+            }
         }
     }
+
+    event.recipes.gtceu.packer(`tfinfinity:${material.getName()}_lamp`)
+        .itemInputs(unfinishedLampItem, 'tfc:lamp_glass')
+        .itemOutputs(lampItem)
+        .duration(5*20)
+        .EUt(GTValues.VA[GTValues.LV])
 }
 
 function processTrapdoor(event, material) {

@@ -126,4 +126,8 @@ const registerTFIMolds = (event) => {
         ])
         .tag('tfc:molds')
         .tag('tfc:fired_molds')
+
+    // #region GT Molds
+    event.create('tfinfinity:lamp_casting_mold')
+        .displayName('Casting Mold (Lamp)')
 }

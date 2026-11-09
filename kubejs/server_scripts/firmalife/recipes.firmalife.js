@@ -75,6 +75,15 @@ const registerFirmalifeRecipes = (event) => {
         C: '#c:plates/wrought_iron'
     }).id('firmalife:crafting/ashtray')
 
+    event.shaped('firmalife:sealed_bricks', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: '#minecraft:stone_bricks',
+        B: '#c:wax'
+    }).id('firmalife:crafting/sealed_bricks')
+
     event.shaped('firmalife:compost_tumbler', [
         'ABA',
         'CDC'

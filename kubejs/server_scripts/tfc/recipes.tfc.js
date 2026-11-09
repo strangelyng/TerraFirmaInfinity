@@ -31,44 +31,32 @@ const registerTFCRecipes = (event) => {
         .outputItem(TFC.isp.copyInputStack().addHeat(-40))
         .sound('minecraft:block.fire.extinguish')
         .id('tfinfinity:barrel/oil_cooling')
+        
+    event.recipes.tfc.instant_barrel(Fluid.sizedIngredientOf('gtceu:ice', 1))
+        .inputItem(TFC.ingredient.heat(1))
+        .outputItem(TFC.isp.copyInputStack().addHeat(-40))
+        .sound('minecraft:block.fire.extinguish')
+        .id('tfinfinity:barrel/ice_cooling')
 
     event.recipes.tfc.quern(
         '2x tfc:powder/flux',
         '#tfc:fluxstone'
     ).id('tfc:quern/powder/flux')
 
+    event.recipes.tfc.quern(
+        'gtceu:charcoal_dust',
+        'minecraft:charcoal'
+    ).id('tfinfinity:quern/charcoal_dust')
+
+    event.recipes.tfc.quern(
+        'gtceu:coke_dust',
+        'gtceu:coke_gem'
+    ).id('tfinfinity:quern/coke_dust')
+
     event.recipes.tfc.heating(
         ['#c:small_dusts/calcite', '#c:small_dusts/calcium_carbonate'],
         840
     ).resultItem('tfc:powder/lime').id('tfc:heating/powder/lime')
-
-    event.shapeless('tfc:fire_clay', [
-        '#c:dusts/kaolinite', '#c:dusts/graphite', 'minecraft:clay_ball'
-    ]).id('tfinfinity:shapeless/fire_clay_from_dusts')
-
-    event.shaped('tfc:white_kaolin_clay', [
-        'XX',
-        'XX'
-    ], {
-        X: 'tfc:kaolin_clay'
-    }).id('tfinfinity:shaped/white_kaolin_clay')
-
-    event.shaped('3x tfc:ceramic/unfired_brick', [
-        'XXX',
-        'XfX'
-    ], {
-        X: 'minecraft:clay_ball',
-        f: 'gtceu:brick_wooden_form'
-    }).keepIngredient('gtceu:brick_wooden_form').id('tfinfinity:shaped/unfired_brick')
-
-    event.shaped('3x tfc:ceramic/unfired_fire_brick', [
-        'XXX',
-        'XfX'
-    ], {
-        X: 'tfc:fire_clay',
-        f: 'gtceu:brick_wooden_form'
-    }).keepIngredient('gtceu:brick_wooden_form').id('tfinfinity:shaped/unfired_fire_brick')
-    
 
     // Replace Sheets with Plates
     TFCAnvilRecipe(event, 'minecraft:copper_door', '#c:double_plates/copper', ['hit_last', 'punch_not_last', 'draw_not_last'], false, GTMaterials.Copper, 'door');

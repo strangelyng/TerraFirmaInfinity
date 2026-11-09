@@ -45,6 +45,13 @@ const registerEmbersRecipes = (event) => {
         M: 'tfc:mortar'
     }).id('embers:caminite_bricks')
 
+    event.recipes.gtceu.assembler('tfinfinity:caminite_bricks')
+        .itemInputs('5x embers:caminite_brick')
+        .inputFluids('72x gtceu:concrete')
+        .itemOutputs('4x embers:caminite_bricks')
+        .duration(20)
+        .EUt(4)
+
     event.shaped('4x embers:archaic_bricks', [
         'BMB',
         'MBM',
@@ -53,6 +60,13 @@ const registerEmbersRecipes = (event) => {
         B: 'embers:archaic_brick',
         M: 'tfc:mortar'
     }).id('embers:archaic_bricks')
+
+    event.recipes.gtceu.assembler('tfinfinity:archaic_bricks')
+        .itemInputs('5x embers:archaic_brick')
+        .inputFluids('72x gtceu:concrete')
+        .itemOutputs('4x embers:archaic_bricks')
+        .duration(20)
+        .EUt(4)
 
     // #region Caminite Knapping
     event.recipes.tfc.knapping(
@@ -251,11 +265,15 @@ const registerEmbersRecipes = (event) => {
         'tfinfinity:raw_large_gear_stamp',
         1399
     ).resultItem('tfinfinity:large_gear_stamp').id('tfinfinity:heating/large_gear_stamp')
+
+    event.smelting('tfinfinity:large_gear_stamp', 'tfinfinity:raw_large_gear_stamp').id('tfinfinity:large_gear_stamp')
     
     event.recipes.tfc.heating(
         'tfinfinity:raw_rod_stamp',
         1399
     ).resultItem('tfinfinity:rod_stamp').id('tfinfinity:heating/rod_stamp')
+
+    event.smelting('tfinfinity:rod_stamp', 'tfinfinity:raw_rod_stamp').id('tfinfinity:rod_stamp')
     
     // event.recipes.tfc.heating(
     //     'tfinfinity:raw_bolt_stamp',
@@ -267,9 +285,25 @@ const registerEmbersRecipes = (event) => {
         1399
     ).resultItem('tfinfinity:ring_stamp').id('tfinfinity:heating/ring_stamp')
 
+    event.smelting('tfinfinity:ring_stamp', 'tfinfinity:raw_ring_stamp').id('tfinfinity:ring_stamp')
+
     // #endregion
 
     event.smelting('embers:caminite_brick', 'tfinfinity:unfired_caminite_brick')
         .cookingTime(200)
         .id('embers:caminite_brick')
+
+    event.recipes.gtceu.alloy_smelter('tfinfinity:caminite_brick')
+        .itemInputs('embers:caminite_blend')
+        .notConsumableItem('gtceu:ingot_casting_mold')
+        .itemOutputs('embers:caminite_brick')
+        .duration(10*20)
+        .EUt(2)
+
+    event.recipes.gtceu.alloy_smelter('tfinfinity:caminite_plate')
+        .itemInputs('5x embers:caminite_blend')
+        .notConsumableItem('gtceu:plate_casting_mold')
+        .itemOutputs('embers:caminite_plate')
+        .duration(10*20)
+        .EUt(2)
 }

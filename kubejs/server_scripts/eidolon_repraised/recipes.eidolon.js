@@ -119,4 +119,11 @@ const registerEidolonRepraisedRecipes = (event) => {
         B: 'eidolon_repraised:elder_brick',
         M: 'tfc:mortar'
     }).id('eidolon_repraised:elder_bricks')
+
+    event.recipes.gtceu.assembler('tfinfinity:elder_bricks')
+        .itemInputs('5x eidolon_repraised:elder_brick')
+        .inputFluids('72x gtceu:concrete')
+        .itemOutputs('4x eidolon_repraised:elder_bricks')
+        .duration(20)
+        .EUt(4)
 }

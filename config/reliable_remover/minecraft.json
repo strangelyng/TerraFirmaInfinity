@@ -374,6 +374,8 @@
 		"minecraft:pufferfish",
 		"minecraft:bread",
 		"minecraft:cookie",
-		"minecraft:cake"
+		"minecraft:cake",
+
+    	"minecraft:sugar_cane"
 	]
 }

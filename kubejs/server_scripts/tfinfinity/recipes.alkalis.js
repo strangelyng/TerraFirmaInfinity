@@ -70,7 +70,7 @@ const registerAlkaliRecipes = (event) => {
         .duration(20*10)
         .EUt(GTValues.VHA[GTValues.LV])
 
-    event.recipes.gtceu.chemical_reactor('tfinfinity:calcium_hydroxide_solution')
+    event.recipes.gtceu.chemical_reactor('tfinfinity:direct_calcium_hydroxide_solution')
         .circuit(1)
         .itemInputs('2x gtceu:quicklime_dust')
         .inputFluids('2000x minecraft:water')
@@ -85,7 +85,7 @@ const registerAlkaliRecipes = (event) => {
         .duration(20*4)
         .EUt(GTValues.VA[GTValues.LV])
 
-    event.recipes.tfinfinity.roaster('tfinfinity:quicklime_from_calcite')
+    event.recipes.tfinfinity.roaster('tfinfinity:quicklime_from_calcium_hydroxide')
         .circuit(1)    
         .itemInputs('5x gtceu:calcium_hydroxide_dust')
         .itemOutputs('2x gtceu:quicklime_dust')
@@ -96,6 +96,14 @@ const registerAlkaliRecipes = (event) => {
     // Lime Process
     event.recipes.gtceu.chemical_reactor('tfinfinity:lime_process')
         .inputFluids('1000x tfinfinity:calcium_hydroxide_solution', '1000x tfinfinity:sodium_carbonate_solution')
+        .itemOutputs('5x gtceu:calcite_dust')
+        .outputFluids('2000x tfinfinity:sodium_hydroxide_solution')
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor('tfinfinity:lime_process_from_dust')
+        .inputFluids('1000x tfinfinity:calcium_hydroxide_solution', '1000x minecraft:water')
+        .itemInputs('6x gtceu:soda_ash_dust')
         .itemOutputs('5x gtceu:calcite_dust')
         .outputFluids('2000x tfinfinity:sodium_hydroxide_solution')
         .duration(20*10)

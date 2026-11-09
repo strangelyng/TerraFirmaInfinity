@@ -23,6 +23,8 @@
         "eidolon_repraised:silver_ore",
         "eidolon_repraised:deep_silver_ore",
         "eidolon_repraised:silver_block",
-        "eidolon_repraised:raw_silver_block"
+        "eidolon_repraised:raw_silver_block",
+        
+        "eidolon_repraised:sulfur"
     ]
 }

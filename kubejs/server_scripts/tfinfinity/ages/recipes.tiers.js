@@ -1,8 +1,8 @@
 const registerPrimitiveRecipes = (event) => {
     registerPrimitiveMagitechRecipes(event);
-    registerPrimitiveGlassRecipes(event);
     registerPrimitivePaperRecipes(event);
-    registerPrimitiveStickyStuffRecipes(event);
+    registerPrimitiveResinRecipes(event);
+    registerPrimitiveRubberRecipes(event);
     registerULVCircuitRecipes(event);
 }
 
