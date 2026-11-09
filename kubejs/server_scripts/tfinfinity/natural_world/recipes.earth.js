@@ -53,6 +53,22 @@ const registerTFIEarthRecipes = (event) => {
 
 
     global.SOIL_TYPES.forEach(soil => {
+        // Crafting
+        event.shaped(`tfc:mud_bricks/${soil}_slab`, [
+            'XX'
+        ], {
+            X: `tfc:mud_brick/${soil}`
+        }).id(`tfinfinity:shaped/mud_bricks/${soil}_slab`)
+
+        event.shaped(`tfc:mud_bricks/${soil}_stairs`, [
+            'X ',
+            'XX'
+        ], {
+            X: `tfc:mud_brick/${soil}`
+        }).id(`tfinfinity:shaped/mud_bricks/${soil}_stairs`)
+
+
+        // GT Machines
         event.recipes.gtceu.mixer(`tfinfinity:coarse_${soil}`)
             .itemInputs(`tfc:dirt/${soil}`, '#c:gravels')
             .itemOutputs(`2x tfc:coarse_dirt/${soil}`)

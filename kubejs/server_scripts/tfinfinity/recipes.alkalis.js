@@ -6,26 +6,32 @@ const registerAlkaliRecipes = (event) => {
         .duration(30*20)
         .EUt(120)
 
-    event.recipes.tfc.barrel_instant(
-        Fluid.of('minecraft:water', 500)
-    ).inputItem('tfc:powder/lime').outputFluid(Fluid.of('tfc:limewater', 500)).id('tfc:barrel/limewater')
+    event.remove({ id: 'tfc:barrel/limewater' })
+
+    event.recipes.tfc.instant_barrel(
+        Fluid.sizedIngredientOf('minecraft:water', 250) // Reduced from 500
+    ).inputItem('#c:small_dusts/quicklime').outputFluid(Fluid.of('tfc:limewater', 250)).id('tfinfinity:barrel/limewater')
+
+    event.recipes.tfc.instant_barrel(
+        Fluid.sizedIngredientOf('minecraft:water', 1000)
+    ).inputItem('#c:dusts/quicklime').outputFluid(Fluid.of('tfc:limewater', 1000)).id('tfinfinity:barrel/limewater_from_dust')
 
     event.remove({ id: 'tfc:pot/lye' })
     event.remove({ id: 'firmalife:vat/lye' })
 
     event.recipes.tfc.pot(
-        ['tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash'],
-        Fluid.of('minecraft:water', 1000),
+        [ 'gtceu:potash_dust', 'gtceu:potash_dust', 'gtceu:potash_dust' ],
+        Fluid.sizedIngredientOf('minecraft:water', 1000),
         2400,
         600
     ).fluidOutput(Fluid.of('tfc:lye', 1000)).id('tfinfinity:pot/lye')
 
     event.recipes.firmalife.vat(
-        'tfc:powder/wood_ash',
-        Fluid.of('minecraft:water', 250),
-        600,
+        '3x gtceu:potash_dust',
+        Fluid.of('minecraft:water', 1000),
+        1200,
         300
-    ).outputFluid(Fluid.of('tfc:lye', 250)).id('tfinfinity:vat/lye')
+    ).outputFluid(Fluid.of('tfc:lye', 1000)).id('tfinfinity:vat/lye')
 
     // Chloralkali Process
     event.remove({ id: 'gtceu:electrolyzer/salt_water_electrolysis'})

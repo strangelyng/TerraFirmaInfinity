@@ -73,6 +73,21 @@ const registerTFIWoodRecipes = (event) => {
     })
 
     global.TFC_LUMBER.forEach(lumber => {
+        // Crafting
+        event.shaped(`tfc:wood/planks/${lumber}_slab`, [
+            'XX'
+        ], {
+            X: `tfc:wood/lumber/${lumber}`
+        }).id(`tfinfinity:crafting/wood/planks/${lumber}_slab`)
+
+        event.shaped(`tfc:wood/planks/${lumber}_stairs`, [
+            'X ',
+            'XX'
+        ], {
+            X: `tfc:wood/lumber/${lumber}`
+        }).id(`tfinfinity:crafting/wood/planks/${lumber}_stairs`)
+
+        // GT Machines
         event.recipes.gtceu.compressor(`tfinfinity:compress_${lumber}_lumber_to_block`)
             .itemInputs(`4x tfc:wood/lumber/${lumber}`)
             .itemOutputs(`tfc:wood/planks/${lumber}`)
@@ -81,6 +96,21 @@ const registerTFIWoodRecipes = (event) => {
     })
 
     global.AFC_LUMBER.forEach(lumber => {
+        // Crafting
+        event.shaped(`afc:wood/planks/${lumber}_slab`, [
+            'XX'
+        ], {
+            X: `afc:wood/lumber/${lumber}`
+        }).id(`tfinfinity:crafting/wood/planks/${lumber}_slab`)
+
+        event.shaped(`afc:wood/planks/${lumber}_stairs`, [
+            'X ',
+            'XX'
+        ], {
+            X: `afc:wood/lumber/${lumber}`
+        }).id(`tfinfinity:crafting/wood/planks/${lumber}_stairs`)
+
+        // GT Machines
         event.recipes.gtceu.compressor(`tfinfinity:compress_${lumber}_lumber_to_block`)
             .itemInputs(`4x afc:wood/lumber/${lumber}`)
             .itemOutputs(`afc:wood/planks/${lumber}`)

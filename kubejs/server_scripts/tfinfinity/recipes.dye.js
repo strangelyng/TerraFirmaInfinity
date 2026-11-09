@@ -17,6 +17,9 @@ const registerDyeRecipes = (event) => {
     const alabasterTypes = ['bricks', 'polished', 'raw']
 
     global.DYE_COLORS.forEach(color => {
+        // #region Recipe Removals
+        event.remove({ id: `gtceu:assembler/${color}_banner` })
+
         // #region Dye Production
         event.remove({ id: `tfc:pot/${color}_dye` })
         event.remove({ id: `firmalife:vat/${color}_dye` })
@@ -139,6 +142,14 @@ const registerDyeRecipes = (event) => {
                 Fluid.of(`tfc:${color}_dye`, 144),
                 1200
             ).inputItem('minecraft:white_banner').outputItem(`minecraft:${color}_banner`).id(`tfc:barrel/${color}_banner`)
+
+            event.recipes.gtceu.chemical_bath(`tfinfinity:dye_white_banner_to_${color}`)
+                .itemInputs(`minecraft:white_banner`)
+                .inputFluids(`144x tfc:${color}_dye`)
+                .itemOutputs(`minecraft:${color}_banner`)
+                .duration(20)
+                .EUt(GTValues.VA[GTValues.ULV])
+                .category(GTRecipeCategories.CHEM_DYES)
 
             event.recipes.tfc.sealed_barrel(
                 Fluid.of(`tfc:${color}_dye`, 144),

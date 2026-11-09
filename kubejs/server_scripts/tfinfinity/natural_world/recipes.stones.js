@@ -3,6 +3,20 @@
 
 const registerTFIStoneRecipes = (event) => {
     global.STONE_TYPES.forEach(stone => {
+        // #region Crafting
+        event.shaped(`tfc:rock/cobble/${stone}_slab`, [
+            'XX'
+        ], {
+            X: `tfc:rock/loose/${stone}`
+        }).id(`tfinfinity:crafting/rock/cobble/${stone}_slab`)
+
+        event.shaped(`tfc:rock/cobble/${stone}_stairs`, [
+            'X ',
+            'XX'
+        ], {
+            X: `tfc:rock/loose/${stone}`
+        }).id(`tfinfinity:crafting/rock/cobble/${stone}_stairs`)
+
         // #region Hammering
         event.recipes.gtceu.forge_hammer(`tfinfinity:raw_${stone}_to_cobble`)
             .itemInputs(`tfc:rock/raw/${stone}`)
@@ -135,6 +149,36 @@ const registerTFIStoneRecipes = (event) => {
     })
 
     // #region Alabaster
+    event.recipes.tfc.sealed_barrel(
+        Fluid.of('tfc:limewater', 100),
+        1200
+    ).inputItem('2x #c:poor_raw_materials/gypsum').outputItem('tfc:alabaster/raw').id(`tfinfinity:barrel/alabaster_raw_poor`)
+
+    event.recipes.tfc.sealed_barrel(
+        Fluid.of('tfc:limewater', 200),
+        1200
+    ).inputItem('#c:rich_raw_materials/gypsum').outputItem('2x tfc:alabaster/raw').id(`tfinfinity:barrel/alabaster_raw_rich`)
+
+    event.recipes.tfc.shapeless(
+        '2x tfc:alabaster_brick',
+        [
+            '#c:tools/chisel',
+            '#c:poor_raw_materials/gypsum'
+        ],
+        '#c:tools/chisel',
+        TFC.isp.copyInputStack().damageInput()
+    ).id('tfinfinity:crafting/alabaster_brick_poor')
+
+    event.recipes.tfc.shapeless(
+        '8x tfc:alabaster_brick',
+        [
+            '#c:tools/chisel',
+            '#c:rich_raw_materials/gypsum'
+        ],
+        '#c:tools/chisel',
+        TFC.isp.copyInputStack().damageInput()
+    ).id('tfinfinity:crafting/alabaster_brick_rich')
+
     event.recipes.gtceu.assembler('tfinfinity:alabaster_bricks')
         .itemInputs('5x tfc:alabaster_brick')
         .inputFluids('72x gtceu:concrete')

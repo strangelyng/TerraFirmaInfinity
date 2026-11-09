@@ -73,4 +73,20 @@ const registerSolutionRecipes = (event) => {
         .itemOutputs('5x gtceu:calcium_hydroxide_dust')
         .duration(60)
         .EUt(GTValues.VHA[GTValues.LV])
+
+    // Limewater - Dilute Calcium Hydroxide Solution (CaO)(H2O)2
+    event.recipes.gtceu.mixer('tfinfinity:limewater')
+        .itemInputs('1x gtceu:quicklime_dust')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x tfc:limewater')
+        .duration(20*2)
+        .EUt(GTValues.VHA[GTValues.LV])
+
+    // Potash Lye - Dilute Potassium Hydroxide Solution
+    event.recipes.gtceu.mixer('tfinfinity:potash_lye')
+        .itemInputs('3x gtceu:potash_dust')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x tfc:lye')
+        .duration(20*2)
+        .EUt(GTValues.VHA[GTValues.LV])
 }
