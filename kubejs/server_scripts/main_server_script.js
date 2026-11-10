@@ -3,6 +3,8 @@
 
 ServerEvents.tags('block', event => {
     registerAE2BlockTags(event);
+    registerAFCBlockTags(event);
+    registerMalumBlockTags(event);
 })
 
 ServerEvents.tags('item', event => {
