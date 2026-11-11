@@ -487,6 +487,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:hydrogen_bucket"
 			}
@@ -512,6 +513,7 @@
 			y: -5.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:helium_bucket"
 			}
@@ -532,6 +534,7 @@
 			y: -5.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:lithium_dust"
 			}
@@ -545,6 +548,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:beryllium_ingot"
 			}
@@ -558,6 +562,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:neon_bucket"
 			}
@@ -571,6 +576,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:fluorine_bucket"
 			}
@@ -584,6 +590,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:oxygen_bucket"
 			}
@@ -597,6 +604,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:nitrogen_bucket"
 			}
@@ -610,6 +618,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:carbon_ingot"
 			}
@@ -623,6 +632,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:boron_dust"
 			}
@@ -636,6 +646,7 @@
 			y: -4.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:sodium_dust"
 			}
@@ -649,6 +660,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:magnesium_dust"
 			}
@@ -662,6 +674,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:aluminium_ingot"
 			}
@@ -675,6 +688,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:silicon_ingot"
 			}
@@ -688,6 +702,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:phosphorus_dust"
 			}
@@ -701,6 +716,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:sulfur_dust"
 			}
@@ -714,6 +730,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:chlorine_bucket"
 			}
@@ -727,6 +744,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:argon_bucket"
 			}
@@ -740,6 +758,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:potassium_dust"
 			}
@@ -753,6 +772,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:calcium_dust"
 			}
@@ -766,6 +786,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:titanium_ingot"
 			}
@@ -779,6 +800,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:vanadium_ingot"
 			}
@@ -792,6 +814,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:chromium_ingot"
 			}
@@ -805,6 +828,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:manganese_ingot"
 			}
@@ -818,6 +842,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -834,6 +859,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -850,6 +876,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -866,6 +893,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -882,6 +910,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -898,6 +927,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:gallium_ingot"
 			}
@@ -911,6 +941,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:arsenic_dust"
 			}
@@ -924,6 +955,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:bromine_bucket"
 			}
@@ -937,6 +969,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:krypton_bucket"
 			}
@@ -950,6 +983,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:yttrium_ingot"
 			}
@@ -963,6 +997,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:zirconium_ingot"
 			}
@@ -976,6 +1011,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:niobium_ingot"
 			}
@@ -989,6 +1025,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:molybdenum_ingot"
 			}
@@ -1002,6 +1039,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:ruthenium_ingot"
 			}
@@ -1015,6 +1053,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:rhodium_ingot"
 			}
@@ -1028,6 +1067,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:palladium_ingot"
 			}
@@ -1041,6 +1081,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -1057,6 +1098,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:cadmium_dust"
 			}
@@ -1070,6 +1112,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:indium_ingot"
 			}
@@ -1083,6 +1126,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -1099,6 +1143,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:antimony_ingot"
 			}
@@ -1112,6 +1157,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:iodine_dust"
 			}
@@ -1125,6 +1171,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:xenon_bucket"
 			}
@@ -1138,6 +1185,7 @@
 			y: -1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:caesium_dust"
 			}
@@ -1151,6 +1199,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:barium_dust"
 			}
@@ -1164,6 +1213,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:lanthanum_dust"
 			}
@@ -1177,6 +1227,7 @@
 			y: 2.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:hafnium_ingot"
 			}
@@ -1190,6 +1241,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:tantalum_ingot"
 			}
@@ -1203,6 +1255,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:tungsten_ingot"
 			}
@@ -1216,6 +1269,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:osmium_ingot"
 			}
@@ -1229,6 +1283,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:iridium_ingot"
 			}
@@ -1242,6 +1297,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:platinum_ingot"
 			}
@@ -1255,6 +1311,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -1271,6 +1328,10 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
+			icon: {
+				id: "gtceu:mercury_bucket"
+			}
 			id: "3CDC395528CD2031"
 			tasks: [{
 				id: "6AF6B77F7D9C7346"
@@ -1281,6 +1342,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -1297,6 +1359,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				components: {
 					"tfc:heat": { }
@@ -1313,6 +1376,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:radon_bucket"
 			}
@@ -1326,6 +1390,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:darmstadtium_ingot"
 			}
@@ -1339,6 +1404,7 @@
 			y: 1.0d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:cerium_dust"
 			}
@@ -1352,6 +1418,7 @@
 			y: 2.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:neodymium_ingot"
 			}
@@ -1365,6 +1432,7 @@
 			y: 2.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:samarium_ingot"
 			}
@@ -1378,6 +1446,7 @@
 			y: 2.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:europium_ingot"
 			}
@@ -1391,6 +1460,7 @@
 			y: 2.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:lutetium_dust"
 			}
@@ -1404,6 +1474,7 @@
 			y: 2.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:thorium_ingot"
 			}
@@ -1417,6 +1488,7 @@
 			y: 3.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:uranium_235_ingot"
 			}
@@ -1437,6 +1509,7 @@
 			y: 3.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:plutonium_241_ingot"
 			}
@@ -1457,6 +1530,7 @@
 			y: 3.5d
 		}
 		{
+			disable_toast: true
 			icon: {
 				id: "gtceu:americium_ingot"
 			}
@@ -1478,6 +1552,7 @@
 				"1E0650BDF67E910F"
 				"34A5184F1CFA039C"
 			]
+			disable_toast: true
 			id: "65806C38A51BE7DA"
 			tasks: [{
 				id: "1B7AD251D3A4965D"
@@ -1493,6 +1568,7 @@
 				"09A176F1E618AAFE"
 				"13D04D7461D5472B"
 			]
+			disable_toast: true
 			id: "635417C165A2941C"
 			tasks: [{
 				id: "2B12DFA4EC4E5BD3"
